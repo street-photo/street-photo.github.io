@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychogeography — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Psychogeography</p>
+        <h1>Psychogeography for Street Photographers</h1>
+        <p class="tutorial-intro">The city is not neutral ground. Every street carries an emotional charge—melancholy, tension, openness, dread. Psychogeography teaches you to read those invisible currents and translate them into photographs that feel like the places they depict.</p>
+    </header>
+
+    <main class="tutorial-content">
+
+        <!-- Section 1: What Psychogeography Is -->
+        <section class="tutorial-section">
+            <h2>What Psychogeography Is</h2>
+            <p>Psychogeography is the study of how geographical environments affect the emotions and behavior of individuals. Coined by Guy Debord and the Situationist International in 1950s Paris, the term describes a practice as old as cities themselves: the act of wandering through urban space with heightened attention to its psychological effects. It is an emotional and imaginative reading of place—not what a street <em>is</em>, but what it <em>does</em> to you.</p>
+
+            <p>For photographers, psychogeography reframes the city as a field of forces rather than a collection of subjects. You stop looking for interesting people or dramatic light and begin attending to something subtler: the way a particular intersection makes you uneasy, or how a neglected courtyard holds a strange stillness. The photograph becomes a record not just of what was there, but of what was <em>felt</em> there.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="300" y="35" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">TWO WAYS OF READING A STREET</text>
+
+                    <!-- Left: Functional -->
+                    <rect x="30" y="55" width="250" height="300" fill="#e8e2d6" rx="5"/>
+                    <text x="155" y="80" text-anchor="middle" font-size="12" fill="#1a1a1a" font-weight="500">FUNCTIONAL READING</text>
+
+                    <!-- Street grid (functional) -->
+                    <line x1="60" y1="110" x2="60" y2="330" stroke="#999" stroke-width="2"/>
+                    <line x1="120" y1="110" x2="120" y2="330" stroke="#999" stroke-width="2"/>
+                    <line x1="180" y1="110" x2="180" y2="330" stroke="#999" stroke-width="2"/>
+                    <line x1="240" y1="110" x2="240" y2="330" stroke="#999" stroke-width="2"/>
+                    <line x1="40" y1="150" x2="260" y2="150" stroke="#999" stroke-width="2"/>
+                    <line x1="40" y1="210" x2="260" y2="210" stroke="#999" stroke-width="2"/>
+                    <line x1="40" y1="270" x2="260" y2="270" stroke="#999" stroke-width="2"/>
+
+                    <!-- Labels (functional) -->
+                    <text x="90" y="140" text-anchor="middle" font-size="8" fill="#666">Shop</text>
+                    <text x="150" y="140" text-anchor="middle" font-size="8" fill="#666">Bank</text>
+                    <text x="210" y="140" text-anchor="middle" font-size="8" fill="#666">Café</text>
+                    <text x="90" y="195" text-anchor="middle" font-size="8" fill="#666">Office</text>
+                    <text x="150" y="195" text-anchor="middle" font-size="8" fill="#666">Park</text>
+                    <text x="210" y="195" text-anchor="middle" font-size="8" fill="#666">Office</text>
+                    <text x="90" y="255" text-anchor="middle" font-size="8" fill="#666">Flat</text>
+                    <text x="150" y="255" text-anchor="middle" font-size="8" fill="#666">Flat</text>
+                    <text x="210" y="255" text-anchor="middle" font-size="8" fill="#666">School</text>
+
+                    <!-- Route A to B -->
+                    <circle cx="60" cy="120" r="6" fill="#999"/>
+                    <text x="60" y="123" text-anchor="middle" font-size="8" fill="#fff" font-weight="600">A</text>
+                    <circle cx="240" cy="310" r="6" fill="#999"/>
+                    <text x="240" y="313" text-anchor="middle" font-size="8" fill="#fff" font-weight="600">B</text>
+                    <path d="M60,126 L60,210 L240,210 L240,304" stroke="#999" stroke-width="2.5" stroke-dasharray="6,3" fill="none" marker-end="url(#arrow-func)"/>
+
+                    <!-- Right: Psychogeographic -->
+                    <rect x="320" y="55" width="250" height="300" fill="#f0e8dc" rx="5"/>
+                    <text x="445" y="80" text-anchor="middle" font-size="12" fill="#1a1a1a" font-weight="500">PSYCHOGEOGRAPHIC READING</text>
+
+                    <!-- Emotion zones -->
+                    <ellipse cx="380" cy="160" rx="45" ry="35" fill="#e63946" opacity="0.2"/>
+                    <text x="380" y="155" text-anchor="middle" font-size="8" fill="#e63946">Tension</text>
+                    <text x="380" y="167" text-anchor="middle" font-size="7" fill="#e63946">oppressive walls</text>
+
+                    <ellipse cx="490" cy="200" rx="50" ry="40" fill="#2a9d8f" opacity="0.2"/>
+                    <text x="490" y="195" text-anchor="middle" font-size="8" fill="#2a9d8f">Calm</text>
+                    <text x="490" y="207" text-anchor="middle" font-size="7" fill="#2a9d8f">old trees, quiet</text>
+
+                    <ellipse cx="420" cy="280" rx="55" ry="30" fill="#f4a261" opacity="0.25"/>
+                    <text x="420" y="275" text-anchor="middle" font-size="8" fill="#c47a30">Nostalgia</text>
+                    <text x="420" y="287" text-anchor="middle" font-size="7" fill="#c47a30">faded signage</text>
+
+                    <ellipse cx="520" cy="130" rx="30" ry="25" fill="#6c5ce7" opacity="0.2"/>
+                    <text x="520" y="128" text-anchor="middle" font-size="8" fill="#6c5ce7">Wonder</text>
+                    <text x="520" y="140" text-anchor="middle" font-size="7" fill="#6c5ce7">light shaft</text>
+
+                    <ellipse cx="370" cy="330" rx="35" ry="20" fill="#1a1a1a" opacity="0.1"/>
+                    <text x="370" y="333" text-anchor="middle" font-size="8" fill="#555">Unease</text>
+
+                    <!-- Drift path (wandering) -->
+                    <path d="M350,120 C370,140 400,130 380,165 C360,200 420,220 490,195 C530,180 510,250 420,275 C380,290 360,310 370,335" stroke="#e63946" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+                    <circle cx="350" cy="120" r="4" fill="#e63946"/>
+                    <circle cx="370" cy="335" r="4" fill="#e63946"/>
+
+                    <!-- Arrow defs -->
+                    <defs>
+                        <marker id="arrow-func" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+                        </marker>
+                    </defs>
+                </svg>
+                <p class="visualization-caption">A functional map shows routes between destinations. A psychogeographic map reveals emotional territories—zones of tension, calm, wonder, and unease that have nothing to do with efficiency.</p>
+            </div>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>Psychogeography does not replace documentary observation. It deepens it. When you attend to the emotional texture of a place, you see things the hurrying eye misses—the way light pools in an alley that makes people linger, or the sharp geometry that makes a corner feel hostile. These are the invisible subjects of your most resonant photographs.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Atmosphere Over Destination -->
+        <section class="tutorial-section">
+            <h2>Atmosphere Over Destination</h2>
+            <p>Most photographers walk with a destination in mind. They head toward a known market, a famous intersection, a spot where the light is good at a certain hour. Psychogeography asks you to abandon the destination and follow the atmosphere instead. Why do some streets feel charged with possibility while the parallel street, architecturally identical, feels dead? Why does a particular underpass produce a shiver of melancholy that the bridge above does not?</p>
+
+            <p>Atmosphere is not metaphor—it is a real perceptual phenomenon. The height of buildings relative to street width creates compression or release. Materials absorb or reflect sound, changing the acoustic character of a walk. Vegetation, decay, cleanliness, the age of signage, the rhythm of doorways—all contribute to a street's emotional signature. The psychogeographic photographer learns to notice these signatures before reaching for the camera.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">ATMOSPHERIC SPECTRUM OF URBAN SPACE</text>
+
+                    <!-- Spectrum bar -->
+                    <defs>
+                        <linearGradient id="atmo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#1a1a1a"/>
+                            <stop offset="25%" style="stop-color:#6c5ce7"/>
+                            <stop offset="50%" style="stop-color:#e63946"/>
+                            <stop offset="75%" style="stop-color:#f4a261"/>
+                            <stop offset="100%" style="stop-color:#f5f0e6"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="50" y="55" width="500" height="20" fill="url(#atmo-gradient)" rx="10"/>
+
+                    <!-- Spectrum labels -->
+                    <text x="50" y="90" text-anchor="start" font-size="9" fill="#1a1a1a" font-weight="500">OPPRESSIVE</text>
+                    <text x="175" y="90" text-anchor="middle" font-size="9" fill="#6c5ce7" font-weight="500">MELANCHOLIC</text>
+                    <text x="300" y="90" text-anchor="middle" font-size="9" fill="#e63946" font-weight="500">CHARGED</text>
+                    <text x="425" y="90" text-anchor="middle" font-size="9" fill="#c47a30" font-weight="500">WARM</text>
+                    <text x="550" y="90" text-anchor="end" font-size="9" fill="#999" font-weight="500">OPEN</text>
+
+                    <!-- Oppressive: Narrow corridor -->
+                    <g transform="translate(50, 120)">
+                        <rect x="0" y="0" width="80" height="120" fill="#2d2d2d" rx="2"/>
+                        <rect x="5" y="5" width="70" height="110" fill="#3d3d3d"/>
+                        <!-- Narrow gap -->
+                        <rect x="30" y="5" width="20" height="110" fill="#4a4a4a"/>
+                        <!-- Tiny sky sliver -->
+                        <rect x="33" y="0" width="14" height="5" fill="#8899aa"/>
+                        <text x="40" y="145" text-anchor="middle" font-size="8" fill="#666">Narrow alleys</text>
+                        <text x="40" y="156" text-anchor="middle" font-size="8" fill="#666">Low ceilings</text>
+                        <text x="40" y="167" text-anchor="middle" font-size="8" fill="#666">No sky</text>
+                    </g>
+
+                    <!-- Melancholic: Faded facade -->
+                    <g transform="translate(160, 120)">
+                        <rect x="0" y="0" width="80" height="120" fill="#8a7f9e" opacity="0.3" rx="2"/>
+                        <rect x="10" y="15" width="20" height="25" fill="none" stroke="#8a7f9e" stroke-width="1.5" rx="1"/>
+                        <rect x="50" y="15" width="20" height="25" fill="none" stroke="#8a7f9e" stroke-width="1.5" rx="1"/>
+                        <rect x="10" y="55" width="20" height="25" fill="none" stroke="#8a7f9e" stroke-width="1.5" rx="1"/>
+                        <rect x="50" y="55" width="20" height="25" fill="none" stroke="#8a7f9e" stroke-width="1.5" rx="1"/>
+                        <!-- Crack -->
+                        <path d="M40,0 L38,30 L42,60 L39,90 L41,120" stroke="#8a7f9e" stroke-width="1" fill="none"/>
+                        <text x="40" y="145" text-anchor="middle" font-size="8" fill="#666">Weathered facades</text>
+                        <text x="40" y="156" text-anchor="middle" font-size="8" fill="#666">Empty windows</text>
+                        <text x="40" y="167" text-anchor="middle" font-size="8" fill="#666">Peeling layers</text>
+                    </g>
+
+                    <!-- Charged: Busy intersection -->
+                    <g transform="translate(270, 120)">
+                        <rect x="0" y="0" width="80" height="120" fill="#e63946" opacity="0.1" rx="2"/>
+                        <!-- Crossroads -->
+                        <line x1="40" y1="0" x2="40" y2="120" stroke="#e63946" stroke-width="2" opacity="0.5"/>
+                        <line x1="0" y1="60" x2="80" y2="60" stroke="#e63946" stroke-width="2" opacity="0.5"/>
+                        <!-- Energy dots -->
+                        <circle cx="40" cy="60" r="8" fill="#e63946" opacity="0.3"/>
+                        <circle cx="40" cy="60" r="16" fill="none" stroke="#e63946" stroke-width="1" opacity="0.3"/>
+                        <circle cx="40" cy="60" r="25" fill="none" stroke="#e63946" stroke-width="1" opacity="0.2"/>
+                        <circle cx="20" cy="30" r="3" fill="#e63946" opacity="0.5"/>
+                        <circle cx="60" cy="40" r="3" fill="#e63946" opacity="0.5"/>
+                        <circle cx="25" cy="85" r="3" fill="#e63946" opacity="0.5"/>
+                        <circle cx="55" cy="90" r="3" fill="#e63946" opacity="0.5"/>
+                        <text x="40" y="145" text-anchor="middle" font-size="8" fill="#666">Crossroads</text>
+                        <text x="40" y="156" text-anchor="middle" font-size="8" fill="#666">Convergence</text>
+                        <text x="40" y="167" text-anchor="middle" font-size="8" fill="#666">Human density</text>
+                    </g>
+
+                    <!-- Warm: Lived-in street -->
+                    <g transform="translate(380, 120)">
+                        <rect x="0" y="0" width="80" height="120" fill="#f4a261" opacity="0.15" rx="2"/>
+                        <!-- Doorways with warm light -->
+                        <rect x="10" y="70" width="20" height="50" fill="#f4a261" opacity="0.4" rx="1"/>
+                        <rect x="50" y="70" width="20" height="50" fill="#f4a261" opacity="0.4" rx="1"/>
+                        <!-- Awning -->
+                        <path d="M5,65 L75,65 L70,70 L10,70 Z" fill="#c47a30" opacity="0.4"/>
+                        <!-- Plant -->
+                        <circle cx="40" cy="55" r="8" fill="#2a9d8f" opacity="0.3"/>
+                        <rect x="38" y="55" width="4" height="12" fill="#2a9d8f" opacity="0.4"/>
+                        <text x="40" y="145" text-anchor="middle" font-size="8" fill="#666">Warm light</text>
+                        <text x="40" y="156" text-anchor="middle" font-size="8" fill="#666">Human scale</text>
+                        <text x="40" y="167" text-anchor="middle" font-size="8" fill="#666">Lived-in textures</text>
+                    </g>
+
+                    <!-- Open: Wide plaza -->
+                    <g transform="translate(490, 120)">
+                        <rect x="0" y="0" width="80" height="120" fill="#ddd8cc" opacity="0.3" rx="2"/>
+                        <!-- Sky -->
+                        <rect x="0" y="0" width="80" height="60" fill="#c8d8e8" opacity="0.3" rx="2"/>
+                        <!-- Low horizon -->
+                        <line x1="0" y1="80" x2="80" y2="80" stroke="#cac4b8" stroke-width="1"/>
+                        <!-- Tiny figure -->
+                        <ellipse cx="40" cy="90" rx="3" ry="4" fill="#999"/>
+                        <line x1="40" y1="94" x2="40" y2="108" stroke="#999" stroke-width="1.5"/>
+                        <text x="40" y="145" text-anchor="middle" font-size="8" fill="#666">Wide sky</text>
+                        <text x="40" y="156" text-anchor="middle" font-size="8" fill="#666">Open plaza</text>
+                        <text x="40" y="167" text-anchor="middle" font-size="8" fill="#666">Horizon visible</text>
+                    </g>
+
+                    <!-- Bottom note -->
+                    <text x="300" y="320" text-anchor="middle" font-size="10" fill="#1a1a1a">The same city contains all of these atmospheres within walking distance.</text>
+                    <text x="300" y="338" text-anchor="middle" font-size="10" fill="#666">Your task: feel the shift as you cross from one zone to the next.</text>
+                </svg>
+                <p class="visualization-caption">Urban atmosphere is not subjective whimsy—it arises from measurable spatial qualities: enclosure ratios, material textures, acoustic signatures, and the presence or absence of sky.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li><strong>Walk without a map</strong>—let your feet follow what feels interesting rather than what is efficient</li>
+                <li><strong>Notice transitions</strong>—the most photographically rich moments often occur at the boundary between two different atmospheres</li>
+                <li><strong>Name what you feel</strong>—before photographing, articulate the emotional quality of the space: oppressive? expectant? abandoned? intimate?</li>
+                <li><strong>Slow your pace</strong>—atmosphere reveals itself to those who linger, not to those who stride through</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: The City as Psychological Terrain -->
+        <section class="tutorial-section">
+            <h2>The City as Psychological Terrain</h2>
+            <p>A conventional map is a tool of efficiency. It shows you the shortest path between two points and names streets by administrative decision. A psychogeographic map is something else entirely: it charts the city as experienced terrain, where distances are measured not in meters but in mood shifts, and where boundaries are drawn not by borough lines but by emotional thresholds.</p>
+
+            <p>Think of the neighborhoods you know well. There are invisible borders that no map records—the point on a walk where comfort gives way to alertness, where the domestic yields to the industrial, where quiet residential streets open suddenly onto roaring thoroughfares. These thresholds are real. They change how you hold your camera, how quickly you walk, what you notice. A psychogeographic map makes them visible.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 700 500">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="700" height="500" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="350" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">PSYCHOGEOGRAPHIC MAP: EMOTIONAL ZONES OF AN IMAGINED DISTRICT</text>
+
+                    <!-- Zone: Industrial Unease (top-left) -->
+                    <path d="M50,80 L200,60 L240,140 L180,200 L60,180 Z" fill="#1a1a1a" opacity="0.12"/>
+                    <path d="M50,80 L200,60 L240,140 L180,200 L60,180 Z" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6,3"/>
+                    <text x="140" y="120" text-anchor="middle" font-size="11" fill="#444" font-weight="500">UNEASE</text>
+                    <text x="140" y="135" text-anchor="middle" font-size="8" fill="#666">empty warehouses</text>
+                    <text x="140" y="147" text-anchor="middle" font-size="8" fill="#666">echoing footsteps</text>
+
+                    <!-- Zone: Threshold / Friction (center band) -->
+                    <path d="M180,200 L240,140 L380,130 L420,200 L390,260 L200,270 Z" fill="#e63946" opacity="0.1"/>
+                    <path d="M180,200 L240,140 L380,130 L420,200 L390,260 L200,270 Z" fill="none" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <text x="300" y="190" text-anchor="middle" font-size="11" fill="#e63946" font-weight="500">FRICTION</text>
+                    <text x="300" y="205" text-anchor="middle" font-size="8" fill="#c44">gentrification edge</text>
+                    <text x="300" y="217" text-anchor="middle" font-size="8" fill="#c44">old meets new</text>
+
+                    <!-- Zone: Nostalgia (right) -->
+                    <path d="M420,200 L380,130 L500,80 L600,110 L620,200 L560,260 L480,250 Z" fill="#f4a261" opacity="0.15"/>
+                    <path d="M420,200 L380,130 L500,80 L600,110 L620,200 L560,260 L480,250 Z" fill="none" stroke="#c47a30" stroke-width="1.5" stroke-dasharray="5,3"/>
+                    <text x="510" y="165" text-anchor="middle" font-size="11" fill="#c47a30" font-weight="500">NOSTALGIA</text>
+                    <text x="510" y="180" text-anchor="middle" font-size="8" fill="#b07020">1960s shopfronts</text>
+                    <text x="510" y="192" text-anchor="middle" font-size="8" fill="#b07020">hand-painted signs</text>
+
+                    <!-- Zone: Calm / Refuge (bottom-left) -->
+                    <path d="M60,180 L180,200 L200,270 L220,350 L130,380 L40,320 Z" fill="#2a9d8f" opacity="0.12"/>
+                    <path d="M60,180 L180,200 L200,270 L220,350 L130,380 L40,320 Z" fill="none" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="5,3"/>
+                    <text x="130" y="290" text-anchor="middle" font-size="11" fill="#2a9d8f" font-weight="500">REFUGE</text>
+                    <text x="130" y="305" text-anchor="middle" font-size="8" fill="#237a6f">hidden garden</text>
+                    <text x="130" y="317" text-anchor="middle" font-size="8" fill="#237a6f">canal towpath</text>
+
+                    <!-- Zone: Energy / Attraction (bottom-center) -->
+                    <path d="M200,270 L390,260 L430,340 L350,400 L220,380 L220,350 Z" fill="#6c5ce7" opacity="0.1"/>
+                    <path d="M200,270 L390,260 L430,340 L350,400 L220,380 L220,350 Z" fill="none" stroke="#6c5ce7" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <text x="320" y="320" text-anchor="middle" font-size="11" fill="#6c5ce7" font-weight="500">ATTRACTION</text>
+                    <text x="320" y="335" text-anchor="middle" font-size="8" fill="#5a4bd6">market square</text>
+                    <text x="320" y="347" text-anchor="middle" font-size="8" fill="#5a4bd6">congregation point</text>
+
+                    <!-- Zone: Void / Blankness (bottom-right) -->
+                    <path d="M480,250 L560,260 L620,200 L650,280 L600,380 L500,400 L430,340 L390,260 Z" fill="#cac4b8" opacity="0.2"/>
+                    <path d="M480,250 L560,260 L620,200 L650,280 L600,380 L500,400 L430,340 L390,260 Z" fill="none" stroke="#999" stroke-width="1.5" stroke-dasharray="6,3"/>
+                    <text x="540" y="320" text-anchor="middle" font-size="11" fill="#888" font-weight="500">VOID</text>
+                    <text x="540" y="335" text-anchor="middle" font-size="8" fill="#999">car parks</text>
+                    <text x="540" y="347" text-anchor="middle" font-size="8" fill="#999">non-places</text>
+
+                    <!-- Drift path through zones -->
+                    <path d="M90,130 C130,150 170,160 210,180 C260,200 280,220 300,240 C320,260 310,290 320,310 C340,340 380,340 420,310 C460,280 500,260 530,230 C550,210 540,170 510,150" stroke="#1a1a1a" stroke-width="2" fill="none" opacity="0.6"/>
+                    <!-- Drift dots marking pauses -->
+                    <circle cx="90" cy="130" r="4" fill="#1a1a1a" opacity="0.7"/>
+                    <circle cx="210" cy="180" r="4" fill="#e63946" opacity="0.7"/>
+                    <circle cx="300" cy="240" r="5" fill="#6c5ce7" opacity="0.7"/>
+                    <circle cx="420" cy="310" r="4" fill="#6c5ce7" opacity="0.7"/>
+                    <circle cx="510" cy="150" r="4" fill="#c47a30" opacity="0.7"/>
+
+                    <!-- Legend -->
+                    <g transform="translate(50, 430)">
+                        <line x1="0" y1="0" x2="30" y2="0" stroke="#1a1a1a" stroke-width="2" opacity="0.6"/>
+                        <circle cx="15" cy="0" r="3" fill="#1a1a1a" opacity="0.7"/>
+                        <text x="40" y="4" font-size="9" fill="#1a1a1a">Drift path (walk as experienced)</text>
+                    </g>
+                    <g transform="translate(300, 430)">
+                        <line x1="0" y1="0" x2="30" y2="0" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,4"/>
+                        <text x="40" y="4" font-size="9" fill="#1a1a1a">Emotional boundary (felt, not signed)</text>
+                    </g>
+                    <g transform="translate(50, 455)">
+                        <text x="0" y="4" font-size="9" fill="#666" font-style="italic">Zones overlap, blur, and shift with time of day. This map records a single walk's emotional geography.</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">A psychogeographic map is never finished. Each walk through the same district produces a different emotional reading, depending on light, weather, mood, and the slow accumulation of memory.</p>
+            </div>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>The zones on a psychogeographic map do not correspond to administrative boundaries. A single block can contain two or three distinct emotional territories. The photographer who learns to sense these transitions gains an invisible compositional tool: the ability to position themselves at thresholds where emotional qualities collide.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Memory, Ruins & Residue -->
+        <section class="tutorial-section">
+            <h2>Memory, Ruins &amp; Residue</h2>
+            <p>Cities are palimpsests. Beneath every surface lies another, older surface. The ghost of a painted advertisement bleeds through whitewash. A bricked-up doorway remembers a passage that no longer exists. A vacant lot holds the footprint of a demolished building, its absence as present as any structure. Psychogeography pays attention to these residues—the traces of past lives that persist in the physical fabric of the city.</p>
+
+            <p>For the street photographer, residue is an extraordinary subject. It allows you to photograph time itself—not the frozen instant of a decisive moment, but deep time, the slow accumulation of years inscribed in stone, plaster, rust, and absence. A photograph of a wall bearing fifty years of layered posters is a photograph of duration. A shot of footpaths worn into grass across a planned plaza is a photograph of collective desire overriding design.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">LAYERS OF URBAN MEMORY</text>
+
+                    <!-- Wall cross-section showing layers -->
+                    <!-- Base layer: oldest -->
+                    <rect x="80" y="60" width="440" height="280" fill="#b5a48a" rx="3"/>
+                    <text x="300" y="330" text-anchor="middle" font-size="9" fill="#f5f0e6" opacity="0.7">ORIGINAL BRICK — 1890s</text>
+
+                    <!-- Layer 2: first plaster -->
+                    <rect x="80" y="60" width="440" height="240" fill="#c9b99a" rx="3"/>
+
+                    <!-- Peeling reveal of layer 2 -->
+                    <path d="M80,200 Q120,180 150,210 Q180,230 200,200 Q230,170 260,200 Q280,220 300,195 Q330,170 360,200 Q380,215 400,195 Q430,175 460,205 Q490,230 520,200" fill="#c9b99a" stroke="#b5a48a" stroke-width="1"/>
+
+                    <!-- Layer 3: painted signage era -->
+                    <rect x="80" y="60" width="440" height="180" fill="#d4c8b0" rx="3"/>
+                    <!-- Ghost lettering -->
+                    <text x="300" y="140" text-anchor="middle" font-size="28" fill="#c9b99a" font-weight="500" opacity="0.6" letter-spacing="8">PROVISIONS</text>
+                    <text x="300" y="165" text-anchor="middle" font-size="10" fill="#c9b99a" opacity="0.5">— Est. 1923 —</text>
+
+                    <!-- Layer 4: modern paint -->
+                    <rect x="80" y="60" width="440" height="120" fill="#e0d8c8" rx="3"/>
+
+                    <!-- Graffiti layer -->
+                    <text x="180" y="100" font-size="16" fill="#888" opacity="0.4" transform="rotate(-5, 180, 100)">2007</text>
+
+                    <!-- Current surface -->
+                    <rect x="80" y="60" width="440" height="60" fill="#eae4d6" rx="3"/>
+                    <text x="300" y="95" text-anchor="middle" font-size="10" fill="#999">CURRENT SURFACE — freshly painted, apparently blank</text>
+
+                    <!-- Arrows showing depth -->
+                    <line x1="560" y1="70" x2="560" y2="335" stroke="#1a1a1a" stroke-width="1"/>
+                    <line x1="555" y1="70" x2="565" y2="70" stroke="#1a1a1a" stroke-width="1"/>
+                    <line x1="555" y1="335" x2="565" y2="335" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="580" y="200" text-anchor="middle" font-size="9" fill="#1a1a1a" transform="rotate(90, 580, 200)">DEPTH OF TIME</text>
+
+                    <!-- Layer labels on right -->
+                    <text x="540" y="88" text-anchor="end" font-size="8" fill="#999">Now</text>
+                    <text x="540" y="145" text-anchor="end" font-size="8" fill="#b09070">1920s–50s</text>
+                    <text x="540" y="225" text-anchor="end" font-size="8" fill="#a08868">1900s–20s</text>
+                    <text x="540" y="310" text-anchor="end" font-size="8" fill="#8a7a60">1890s</text>
+
+                    <!-- Bottom annotation -->
+                    <text x="300" y="370" text-anchor="middle" font-size="10" fill="#1a1a1a">Every surface is a cross-section of time.</text>
+                    <text x="300" y="385" text-anchor="middle" font-size="10" fill="#666">The psychogeographic eye reads walls like geologists read rock strata.</text>
+                </svg>
+                <p class="visualization-caption">A single urban wall may contain a century of layered history. When plaster peels or paint fades, deeper eras surface—ghost signage, older color schemes, even the handwriting of long-dead sign painters.</p>
+            </div>
+
+            <p>The ruins do not need to be dramatic. A slightly discolored rectangle on a wall where a sign once hung. A row of hooks with nothing on them. A staircase that leads to a sealed door. These micro-ruins carry enormous suggestive power. They invite the viewer to reconstruct what once was, and that act of imaginative reconstruction is where the photograph's emotional resonance lives.</p>
+
+            <ul class="tips-list">
+                <li><strong>Look for palimpsests</strong>—surfaces where multiple eras are visible simultaneously</li>
+                <li><strong>Photograph absence</strong>—empty hooks, sealed doorways, demolition scars on party walls</li>
+                <li><strong>Attend to wear patterns</strong>—polished handrails, worn steps, and desire paths record the movement of thousands of bodies over years</li>
+                <li><strong>Notice the anachronistic</strong>—a 1950s shopfront beside a glass tower, a gas lamp among LEDs</li>
+            </ul>
+        </section>
+
+        <!-- Section 5: Emotional Cartography -->
+        <section class="tutorial-section">
+            <h2>Emotional Cartography</h2>
+            <p>Emotional cartography is the practice of building a personal atlas of moods. Unlike the psychogeographic map—which charts a single walk—an emotional cartography accumulates over weeks, months, even years of returning to the same territory. It records not just how a place feels, but how that feeling changes with light, season, your own state of mind.</p>
+
+            <p>The four cardinal elements of an emotional cartography are <em>moods</em> (sustained emotional tones), <em>frictions</em> (points of discomfort or conflict), <em>thresholds</em> (boundaries where character shifts), and <em>attractors</em> (places that draw you back without clear rational reason). Every serious street photographer develops this cartography unconsciously. Making it deliberate transforms it into a creative method.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 700 480">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="700" height="480" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="350" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">EMOTIONAL CARTOGRAPHY: FOUR CARDINAL ELEMENTS</text>
+
+                    <!-- Quadrant grid -->
+                    <line x1="350" y1="50" x2="350" y2="420" stroke="#cac4b8" stroke-width="1"/>
+                    <line x1="40" y1="235" x2="660" y2="235" stroke="#cac4b8" stroke-width="1"/>
+
+                    <!-- Q1: Moods (top-left) -->
+                    <text x="195" y="70" text-anchor="middle" font-size="13" fill="#6c5ce7" font-weight="500">MOODS</text>
+                    <text x="195" y="85" text-anchor="middle" font-size="9" fill="#666">sustained emotional tones</text>
+
+                    <!-- Mood cloud visualization -->
+                    <ellipse cx="140" cy="140" rx="60" ry="30" fill="#6c5ce7" opacity="0.08"/>
+                    <ellipse cx="200" cy="155" rx="70" ry="35" fill="#6c5ce7" opacity="0.06"/>
+                    <ellipse cx="160" cy="180" rx="55" ry="25" fill="#6c5ce7" opacity="0.1"/>
+                    <text x="120" y="130" font-size="9" fill="#6c5ce7">melancholy</text>
+                    <text x="200" y="150" font-size="10" fill="#6c5ce7" font-weight="500">stillness</text>
+                    <text x="140" y="170" font-size="8" fill="#6c5ce7">expectancy</text>
+                    <text x="230" y="180" font-size="9" fill="#6c5ce7">warmth</text>
+                    <text x="100" y="200" font-size="8" fill="#6c5ce7">heaviness</text>
+                    <text x="190" y="205" font-size="9" fill="#6c5ce7">longing</text>
+
+                    <!-- Q2: Frictions (top-right) -->
+                    <text x="505" y="70" text-anchor="middle" font-size="13" fill="#e63946" font-weight="500">FRICTIONS</text>
+                    <text x="505" y="85" text-anchor="middle" font-size="9" fill="#666">points of discomfort or conflict</text>
+
+                    <!-- Friction sparks -->
+                    <g transform="translate(505, 155)">
+                        <!-- Collision point -->
+                        <line x1="-60" y1="0" x2="-10" y2="0" stroke="#e63946" stroke-width="2"/>
+                        <line x1="60" y1="0" x2="10" y2="0" stroke="#e63946" stroke-width="2"/>
+                        <!-- Sparks -->
+                        <line x1="0" y1="0" x2="-15" y2="-25" stroke="#e63946" stroke-width="1.5"/>
+                        <line x1="0" y1="0" x2="12" y2="-20" stroke="#e63946" stroke-width="1.5"/>
+                        <line x1="0" y1="0" x2="0" y2="-30" stroke="#e63946" stroke-width="1.5"/>
+                        <line x1="0" y1="0" x2="-20" y2="15" stroke="#e63946" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="18" y2="18" stroke="#e63946" stroke-width="1"/>
+                        <circle cx="0" cy="0" r="4" fill="#e63946"/>
+                    </g>
+                    <text x="460" y="200" font-size="8" fill="#e63946">surveillance cameras</text>
+                    <text x="530" y="210" font-size="9" fill="#e63946">hostile architecture</text>
+                    <text x="480" y="225" font-size="8" fill="#e63946">class boundaries</text>
+
+                    <!-- Q3: Thresholds (bottom-left) -->
+                    <text x="195" y="255" text-anchor="middle" font-size="13" fill="#2a9d8f" font-weight="500">THRESHOLDS</text>
+                    <text x="195" y="270" text-anchor="middle" font-size="9" fill="#666">boundaries where character shifts</text>
+
+                    <!-- Threshold visualization: two zones with border -->
+                    <rect x="80" y="290" width="100" height="80" fill="#2a9d8f" opacity="0.08" rx="3"/>
+                    <rect x="210" y="290" width="100" height="80" fill="#2a9d8f" opacity="0.18" rx="3"/>
+                    <!-- Dotted threshold line -->
+                    <line x1="195" y1="285" x2="195" y2="380" stroke="#2a9d8f" stroke-width="2.5" stroke-dasharray="3,3"/>
+                    <text x="130" y="335" text-anchor="middle" font-size="9" fill="#2a9d8f">ZONE A</text>
+                    <text x="130" y="350" text-anchor="middle" font-size="8" fill="#2a9d8f">residential</text>
+                    <text x="260" y="335" text-anchor="middle" font-size="9" fill="#2a9d8f">ZONE B</text>
+                    <text x="260" y="350" text-anchor="middle" font-size="8" fill="#2a9d8f">commercial</text>
+                    <text x="195" y="400" text-anchor="middle" font-size="8" fill="#237a6f">the step where everything changes</text>
+
+                    <!-- Q4: Attractors (bottom-right) -->
+                    <text x="505" y="255" text-anchor="middle" font-size="13" fill="#c47a30" font-weight="500">ATTRACTORS</text>
+                    <text x="505" y="270" text-anchor="middle" font-size="9" fill="#666">places that draw you back</text>
+
+                    <!-- Attractor: gravitational pull -->
+                    <circle cx="505" cy="340" r="12" fill="#f4a261" opacity="0.5"/>
+                    <circle cx="505" cy="340" r="25" fill="none" stroke="#f4a261" stroke-width="1" opacity="0.4"/>
+                    <circle cx="505" cy="340" r="40" fill="none" stroke="#f4a261" stroke-width="1" opacity="0.3"/>
+                    <circle cx="505" cy="340" r="55" fill="none" stroke="#f4a261" stroke-width="1" opacity="0.2"/>
+                    <!-- Small figures drawn inward -->
+                    <circle cx="445" cy="310" r="3" fill="#c47a30" opacity="0.6"/>
+                    <line x1="448" y1="312" x2="470" y2="325" stroke="#c47a30" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
+                    <circle cx="560" cy="370" r="3" fill="#c47a30" opacity="0.6"/>
+                    <line x1="557" y1="368" x2="535" y2="355" stroke="#c47a30" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
+                    <circle cx="520" cy="285" r="3" fill="#c47a30" opacity="0.6"/>
+                    <line x1="518" y1="288" x2="512" y2="315" stroke="#c47a30" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
+                    <text x="505" y="410" text-anchor="middle" font-size="8" fill="#c47a30">that corner you keep returning to</text>
+
+                    <!-- Bottom note -->
+                    <text x="350" y="455" text-anchor="middle" font-size="10" fill="#1a1a1a">Together, these four elements constitute a photographer's emotional atlas of their territory.</text>
+                </svg>
+                <p class="visualization-caption">Moods pervade, frictions spark, thresholds divide, attractors pull. Learning to identify each element gives you a vocabulary for understanding why you photograph certain places and avoid others.</p>
+            </div>
+
+            <div class="key-concept">
+                <h4>Building Your Cartography</h4>
+                <p>Keep a small notebook alongside your camera. After each walk, sketch the route and annotate it with emotional observations: where you felt drawn, where you felt repelled, where the mood shifted. Over time, patterns emerge. You begin to see your own psychogeography—the personal emotional map that no one else shares, and which produces photographs no one else could make.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Walking as Reading -->
+        <section class="tutorial-section">
+            <h2>Walking as Reading</h2>
+            <p>The Situationists spoke of the <em>dérive</em>—the drift—as a technique for reading the city. A dérive is not a stroll. It is a purposeful surrender to the pull of the terrain. You set out without a destination and allow the city to guide your movement. When a street attracts, you follow it. When a space repels, you note the repulsion and move on. The walk becomes a form of reading, and the city becomes a text.</p>
+
+            <p>For the photographer, walking-as-reading means treating every element of the streetscape as potentially significant. The angle of a shadow is a sentence. A row of identical windows is a rhythm. A broken fence is a caesura—a pause in the city's syntax. You do not need to photograph everything you read; the reading itself sharpens your eye for the images that matter.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">THE DÉRIVE: READING THE CITY AS TEXT</text>
+
+                    <!-- Street as text metaphor -->
+                    <!-- "Page" of the city -->
+                    <rect x="50" y="50" width="500" height="250" fill="#eae4d6" rx="3" stroke="#cac4b8" stroke-width="1"/>
+
+                    <!-- Street "lines" of text -->
+                    <!-- Line 1: buildings as words -->
+                    <g transform="translate(70, 80)">
+                        <rect x="0" y="0" width="40" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="50" y="0" width="60" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="120" y="0" width="30" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="170" y="0" width="80" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="260" y="0" width="45" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="320" y="0" width="55" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="385" y="0" width="70" height="20" fill="#cac4b8" rx="2"/>
+                    </g>
+
+                    <!-- Line 2: with a "gap" (empty lot = caesura) -->
+                    <g transform="translate(70, 115)">
+                        <rect x="0" y="0" width="55" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="65" y="0" width="70" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="145" y="0" width="40" height="20" fill="#cac4b8" rx="2"/>
+                        <!-- Gap / caesura -->
+                        <text x="215" y="15" font-size="10" fill="#e63946">—</text>
+                        <rect x="240" y="0" width="50" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="300" y="0" width="75" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="385" y="0" width="70" height="20" fill="#cac4b8" rx="2"/>
+                    </g>
+
+                    <!-- Line 3: emphasis (highlighted building = key phrase) -->
+                    <g transform="translate(70, 150)">
+                        <rect x="0" y="0" width="45" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="55" y="0" width="60" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="125" y="0" width="90" height="20" fill="#e63946" opacity="0.2" rx="2" stroke="#e63946" stroke-width="1"/>
+                        <rect x="225" y="0" width="50" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="285" y="0" width="35" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="330" y="0" width="65" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="405" y="0" width="50" height="20" fill="#cac4b8" rx="2"/>
+                    </g>
+
+                    <!-- Line 4 -->
+                    <g transform="translate(70, 185)">
+                        <rect x="0" y="0" width="70" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="80" y="0" width="40" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="130" y="0" width="55" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="195" y="0" width="80" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="285" y="0" width="45" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="340" y="0" width="60" height="20" fill="#cac4b8" rx="2"/>
+                        <rect x="410" y="0" width="45" height="20" fill="#cac4b8" rx="2"/>
+                    </g>
+
+                    <!-- Annotations -->
+                    <!-- Caesura annotation -->
+                    <line x1="285" y1="130" x2="285" y2="115" stroke="#e63946" stroke-width="1"/>
+                    <line x1="285" y1="115" x2="380" y2="115" stroke="#e63946" stroke-width="1"/>
+                    <text x="385" y="112" font-size="8" fill="#e63946">caesura — empty lot,</text>
+                    <text x="385" y="122" font-size="8" fill="#e63946">a pause in the street's rhythm</text>
+
+                    <!-- Emphasis annotation -->
+                    <line x1="170" y1="175" x2="170" y2="185" stroke="#e63946" stroke-width="1"/>
+                    <text x="70" y="225" font-size="8" fill="#e63946">↑ emphasis — the building that stops you mid-stride</text>
+
+                    <!-- Reading direction -->
+                    <path d="M75,250 C150,245 200,260 270,248 C340,236 400,255 525,245" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow-read)"/>
+                    <text x="300" y="275" text-anchor="middle" font-size="9" fill="#666">direction of the walk = direction of reading</text>
+
+                    <defs>
+                        <marker id="arrow-read" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#1a1a1a"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Bottom note -->
+                    <text x="300" y="325" text-anchor="middle" font-size="10" fill="#1a1a1a" font-style="italic">"The street is a sentence. The photographer is a reader who sometimes quotes."</text>
+                </svg>
+                <p class="visualization-caption">When you treat the street as a text, compositional decisions become acts of interpretation. You choose what to "quote"—which fragment of the city's long sentence deserves to be isolated and preserved.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li><strong>Practice the dérive</strong>—set aside two hours with no destination and follow only what attracts your attention</li>
+                <li><strong>Read the syntax</strong>—notice rhythm (repeated elements), punctuation (gaps and interruptions), and emphasis (elements that break the pattern)</li>
+                <li><strong>Let boredom guide you</strong>—if a street bores you, that boredom is information; cross to the next block</li>
+                <li><strong>Walk at the speed of noticing</strong>—when you see something, slow down; when the interest fades, move on</li>
+            </ul>
+        </section>
+
+        <!-- Section 7: Photographing Invisible Forces -->
+        <section class="tutorial-section">
+            <h2>Photographing Invisible Forces</h2>
+            <p>The central challenge of psychogeographic photography is making the invisible visible. Mood, tension, unease, serenity—these are not objects. You cannot point the camera at "melancholy" and press the shutter. And yet certain photographs radiate a powerful emotional quality that goes beyond their literal content. The question is: how?</p>
+
+            <p>The answer is not illustration. Photographing a sad person does not produce a photograph about sadness—it produces a portrait. Psychogeographic photography works through formal means: framing, tonality, spatial relationships, the presence or absence of human figures, the treatment of light and shadow. A narrow vertical frame with converging walls produces claustrophobia. An empty bench in raking light produces loneliness not because benches are sad, but because the geometry of the image—the ratio of emptiness to object—enacts the experience of isolation.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 700 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="700" height="400" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="350" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">FORMAL STRATEGIES FOR INVISIBLE FORCES</text>
+
+                    <!-- Strategy 1: Compression = Oppression -->
+                    <g transform="translate(30, 55)">
+                        <rect x="0" y="0" width="130" height="160" fill="#eae4d6" stroke="#cac4b8" stroke-width="1" rx="2"/>
+                        <!-- Tall narrow walls -->
+                        <rect x="15" y="10" width="35" height="140" fill="#8a8070"/>
+                        <rect x="80" y="10" width="35" height="140" fill="#8a8070"/>
+                        <!-- Narrow sky sliver -->
+                        <rect x="50" y="10" width="30" height="15" fill="#b8c8d8"/>
+                        <!-- Tiny figure crushed -->
+                        <ellipse cx="65" cy="130" rx="4" ry="5" fill="#555"/>
+                        <line x1="65" y1="135" x2="65" y2="145" stroke="#555" stroke-width="1.5"/>
+                        <text x="65" y="175" text-anchor="middle" font-size="9" fill="#1a1a1a" font-weight="500">Compression</text>
+                        <text x="65" y="190" text-anchor="middle" font-size="8" fill="#666">= Oppression</text>
+                        <text x="65" y="210" text-anchor="middle" font-size="7" fill="#999">Tight framing, tall</text>
+                        <text x="65" y="220" text-anchor="middle" font-size="7" fill="#999">walls, minimal sky</text>
+                    </g>
+
+                    <!-- Strategy 2: Emptiness = Isolation -->
+                    <g transform="translate(185, 55)">
+                        <rect x="0" y="0" width="130" height="160" fill="#eae4d6" stroke="#cac4b8" stroke-width="1" rx="2"/>
+                        <!-- Vast empty space -->
+                        <rect x="10" y="100" width="110" height="5" fill="#cac4b8"/>
+                        <!-- Single small element -->
+                        <rect x="90" y="85" width="12" height="15" fill="#999" rx="1"/>
+                        <!-- Emptiness around it -->
+                        <text x="65" y="175" text-anchor="middle" font-size="9" fill="#1a1a1a" font-weight="500">Emptiness</text>
+                        <text x="65" y="190" text-anchor="middle" font-size="8" fill="#666">= Isolation</text>
+                        <text x="65" y="210" text-anchor="middle" font-size="7" fill="#999">Vast negative space,</text>
+                        <text x="65" y="220" text-anchor="middle" font-size="7" fill="#999">small solitary subject</text>
+                    </g>
+
+                    <!-- Strategy 3: Obscured = Mystery -->
+                    <g transform="translate(340, 55)">
+                        <rect x="0" y="0" width="130" height="160" fill="#eae4d6" stroke="#cac4b8" stroke-width="1" rx="2"/>
+                        <!-- Dark scene with partial reveal -->
+                        <rect x="10" y="10" width="110" height="140" fill="#4a4a4a"/>
+                        <!-- Light slice -->
+                        <rect x="55" y="10" width="20" height="140" fill="#d4cec2" opacity="0.4"/>
+                        <!-- Partial figure in light -->
+                        <rect x="58" y="60" width="14" height="40" fill="#888"/>
+                        <text x="65" y="175" text-anchor="middle" font-size="9" fill="#1a1a1a" font-weight="500">Obscurity</text>
+                        <text x="65" y="190" text-anchor="middle" font-size="8" fill="#666">= Mystery</text>
+                        <text x="65" y="210" text-anchor="middle" font-size="7" fill="#999">Deep shadow, partial</text>
+                        <text x="65" y="220" text-anchor="middle" font-size="7" fill="#999">visibility, suggestion</text>
+                    </g>
+
+                    <!-- Strategy 4: Convergence = Tension -->
+                    <g transform="translate(495, 55)">
+                        <rect x="0" y="0" width="130" height="160" fill="#eae4d6" stroke="#cac4b8" stroke-width="1" rx="2"/>
+                        <!-- Converging lines -->
+                        <line x1="10" y1="150" x2="65" y2="40" stroke="#888" stroke-width="2"/>
+                        <line x1="120" y1="150" x2="65" y2="40" stroke="#888" stroke-width="2"/>
+                        <line x1="10" y1="100" x2="120" y2="100" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+                        <!-- Vanishing point marker -->
+                        <circle cx="65" cy="40" r="5" fill="none" stroke="#e63946" stroke-width="1.5"/>
+                        <text x="65" y="175" text-anchor="middle" font-size="9" fill="#1a1a1a" font-weight="500">Convergence</text>
+                        <text x="65" y="190" text-anchor="middle" font-size="8" fill="#666">= Tension</text>
+                        <text x="65" y="210" text-anchor="middle" font-size="7" fill="#999">Lines pulling inward,</text>
+                        <text x="65" y="220" text-anchor="middle" font-size="7" fill="#999">vanishing point as focal stress</text>
+                    </g>
+
+                    <!-- Strategy 5: Repetition = Monotony/Rhythm -->
+                    <g transform="translate(110, 250)">
+                        <rect x="0" y="0" width="130" height="110" fill="#eae4d6" stroke="#cac4b8" stroke-width="1" rx="2"/>
+                        <!-- Repeated identical windows -->
+                        <rect x="12" y="15" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="35" y="15" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="58" y="15" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="81" y="15" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="104" y="15" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="12" y="50" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="35" y="50" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="58" y="50" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="81" y="50" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <rect x="104" y="50" width="16" height="20" fill="none" stroke="#888" stroke-width="1.5"/>
+                        <text x="65" y="92" text-anchor="middle" font-size="9" fill="#1a1a1a" font-weight="500">Repetition = Monotony</text>
+                    </g>
+
+                    <!-- Strategy 6: Decay = Time/Loss -->
+                    <g transform="translate(340, 250)">
+                        <rect x="0" y="0" width="130" height="110" fill="#eae4d6" stroke="#cac4b8" stroke-width="1" rx="2"/>
+                        <!-- Crumbling edge -->
+                        <path d="M15,15 L100,15 L105,20 L95,30 L100,45 L90,60 L95,75 L85,85 L15,85 Z" fill="#b5a48a" opacity="0.5"/>
+                        <!-- Texture lines (cracks) -->
+                        <path d="M40,20 L45,40 L38,55 L42,75" stroke="#8a7a60" stroke-width="1" fill="none"/>
+                        <path d="M70,18 L65,35 L72,50" stroke="#8a7a60" stroke-width="1" fill="none"/>
+                        <text x="65" y="92" text-anchor="middle" font-size="9" fill="#1a1a1a" font-weight="500">Decay = Time / Loss</text>
+                    </g>
+
+                    <!-- Bottom note -->
+                    <text x="350" y="390" text-anchor="middle" font-size="10" fill="#1a1a1a">The invisible becomes visible through formal choices, not through literal depiction.</text>
+                </svg>
+                <p class="visualization-caption">Each formal strategy produces an emotional effect without depicting emotion directly. Compression creates oppression. Emptiness creates isolation. The photographer's job is to choose the formal means that match the felt quality of the place.</p>
+            </div>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>Never illustrate. If you want to photograph unease, do not look for someone who appears uneasy. Instead, find the spatial or tonal quality that <em>produces</em> unease—a corridor that narrows, a light that flickers at the edge of frame, an empty chair facing a wall. Let the form do the emotional work.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: Repetition & Return -->
+        <section class="tutorial-section">
+            <h2>Repetition &amp; Return</h2>
+            <p>A single visit to a place yields a surface impression. Ten visits yield recognition. Fifty visits yield intimacy. Psychogeographic depth comes from repetition—returning to the same streets, the same corners, the same thresholds, until the place's deeper character emerges from beneath the novelty of first encounter.</p>
+
+            <p>Repetition is not redundancy. Each return is different because you are different—your mood, your attention, the season, the time of day. The place itself changes too: a shop closes, scaffolding appears, a tree is cut down. Over time, you accumulate a layered understanding that no single walk could provide. You begin to see the place as a living entity with rhythms, cycles, and slow transformations.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">DEPTH THROUGH RETURN</text>
+
+                    <!-- Vertical depth axis -->
+                    <line x1="80" y1="60" x2="80" y2="360" stroke="#1a1a1a" stroke-width="1.5"/>
+                    <text x="40" y="210" text-anchor="middle" font-size="10" fill="#1a1a1a" transform="rotate(-90, 40, 210)">DEPTH OF UNDERSTANDING</text>
+
+                    <!-- Horizontal time axis -->
+                    <line x1="80" y1="360" x2="560" y2="360" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arrow-time)"/>
+                    <text x="320" y="390" text-anchor="middle" font-size="10" fill="#1a1a1a">VISITS OVER TIME →</text>
+
+                    <!-- Visit layers (stacking deeper) -->
+                    <!-- Visit 1: surface -->
+                    <rect x="100" y="80" width="80" height="30" fill="#cac4b8" rx="3"/>
+                    <text x="140" y="100" text-anchor="middle" font-size="8" fill="#666">Visit 1</text>
+                    <text x="220" y="97" font-size="8" fill="#999">Surface impressions: "interesting alley"</text>
+
+                    <!-- Visit 5 -->
+                    <rect x="100" y="120" width="160" height="30" fill="#b5a48a" opacity="0.8" rx="3"/>
+                    <text x="140" y="140" text-anchor="middle" font-size="8" fill="#666">Visit 5</text>
+                    <text x="300" y="137" font-size="8" fill="#999">Notice the light changes at 4pm</text>
+
+                    <!-- Visit 10 -->
+                    <rect x="100" y="160" width="240" height="30" fill="#a09080" opacity="0.7" rx="3"/>
+                    <text x="140" y="180" text-anchor="middle" font-size="8" fill="#eee">Visit 10</text>
+                    <text x="380" y="177" font-size="8" fill="#999">Recognize the regulars, their rhythms</text>
+
+                    <!-- Visit 20 -->
+                    <rect x="100" y="200" width="320" height="30" fill="#8a7a60" opacity="0.7" rx="3"/>
+                    <text x="140" y="220" text-anchor="middle" font-size="8" fill="#eee">Visit 20</text>
+                    <text x="460" y="217" font-size="8" fill="#999">Seasonal shifts</text>
+
+                    <!-- Visit 30 -->
+                    <rect x="100" y="240" width="380" height="30" fill="#706050" opacity="0.7" rx="3"/>
+                    <text x="140" y="260" text-anchor="middle" font-size="8" fill="#eee">Visit 30</text>
+                    <text x="300" y="257" font-size="8" fill="#ddd">Begin seeing what has changed—and what endures</text>
+
+                    <!-- Visit 50+ -->
+                    <rect x="100" y="280" width="440" height="40" fill="#4a3a2a" opacity="0.7" rx="3"/>
+                    <text x="140" y="305" text-anchor="middle" font-size="8" fill="#eee">Visit 50+</text>
+                    <text x="300" y="298" font-size="8" fill="#ddd">Intimacy: you carry the place's history in your body.</text>
+                    <text x="300" y="312" font-size="8" fill="#ccc">Photographs now contain invisible layers of accumulated knowledge.</text>
+
+                    <!-- Curve showing insight -->
+                    <path d="M100,80 C200,90 250,140 300,200 C350,260 400,290 540,310" stroke="#e63946" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+                    <text x="555" y="308" font-size="8" fill="#e63946">insight</text>
+
+                    <defs>
+                        <marker id="arrow-time" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#1a1a1a"/>
+                        </marker>
+                    </defs>
+                </svg>
+                <p class="visualization-caption">Early visits produce broad impressions. Sustained return produces depth—an intimate, layered understanding that transforms how you photograph a place.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li><strong>Choose a territory</strong>—select a small area (a few blocks) and commit to returning weekly for at least three months</li>
+                <li><strong>Vary your timing</strong>—visit at dawn, midday, dusk, and night; each reveals a different character</li>
+                <li><strong>Document changes</strong>—photograph the same spot repeatedly; over months, the accumulated images become a meditation on impermanence</li>
+                <li><strong>Trust the process</strong>—the best psychogeographic photographs often emerge after weeks of apparent failure, when familiarity finally yields to revelation</li>
+            </ul>
+        </section>
+
+        <!-- Section 9: From Documentary to Poetic Urban Observation -->
+        <section class="tutorial-section">
+            <h2>From Documentary to Poetic Urban Observation</h2>
+            <p>Street photography sits uneasily between document and art. At one extreme lies pure documentary—the faithful record of what happened in a specific place at a specific time. At the other lies pure aesthetics—the image as formal composition, emptied of social content. Psychogeography offers a third position: <em>poetic urban observation</em>, where the photograph is simultaneously a document of a real place and an expression of its emotional resonance.</p>
+
+            <p>This is not an escape from reality into abstraction. The poetic observer remains rooted in the actual city—its people, its architecture, its weather, its politics. But the poetic observer also attends to what cannot be documented in any literal sense: the weight of history in a facade, the loneliness of a plaza at noon, the way a particular configuration of walls and light produces a feeling that has no name. The psychogeographic photograph lives in this space between the verifiable and the felt.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="500">THE SPECTRUM OF PHOTOGRAPHIC APPROACHES</text>
+
+                    <!-- Spectrum line -->
+                    <line x1="60" y1="170" x2="540" y2="170" stroke="#1a1a1a" stroke-width="2"/>
+
+                    <!-- Left pole: Pure Documentary -->
+                    <circle cx="60" cy="170" r="6" fill="#1a1a1a"/>
+                    <text x="60" y="200" text-anchor="middle" font-size="11" fill="#1a1a1a" font-weight="500">DOCUMENTARY</text>
+                    <text x="60" y="215" text-anchor="middle" font-size="8" fill="#666">What happened</text>
+                    <text x="60" y="227" text-anchor="middle" font-size="8" fill="#666">Evidence</text>
+                    <text x="60" y="239" text-anchor="middle" font-size="8" fill="#666">Factual</text>
+
+                    <!-- Right pole: Pure Aesthetics -->
+                    <circle cx="540" cy="170" r="6" fill="#1a1a1a"/>
+                    <text x="540" y="200" text-anchor="middle" font-size="11" fill="#1a1a1a" font-weight="500">AESTHETICS</text>
+                    <text x="540" y="215" text-anchor="middle" font-size="8" fill="#666">How it looks</text>
+                    <text x="540" y="227" text-anchor="middle" font-size="8" fill="#666">Form</text>
+                    <text x="540" y="239" text-anchor="middle" font-size="8" fill="#666">Abstract</text>
+
+                    <!-- Psychogeographic zone (highlighted middle area, offset toward documentary) -->
+                    <rect x="200" y="120" width="160" height="100" fill="#e63946" opacity="0.08" rx="5"/>
+                    <rect x="200" y="120" width="160" height="100" fill="none" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,4" rx="5"/>
+
+                    <!-- Psychogeography marker -->
+                    <circle cx="280" cy="170" r="8" fill="#e63946"/>
+                    <text x="280" y="115" text-anchor="middle" font-size="11" fill="#e63946" font-weight="500">PSYCHOGEOGRAPHY</text>
+                    <text x="280" y="255" text-anchor="middle" font-size="8" fill="#e63946">What it felt like</text>
+                    <text x="280" y="267" text-anchor="middle" font-size="8" fill="#e63946">Real place, felt experience</text>
+                    <text x="280" y="279" text-anchor="middle" font-size="8" fill="#e63946">Poetic observation</text>
+
+                    <!-- Other approaches marked -->
+                    <circle cx="120" cy="170" r="4" fill="#666"/>
+                    <text x="120" y="155" text-anchor="middle" font-size="7" fill="#666">Photojournalism</text>
+
+                    <circle cx="190" cy="170" r="4" fill="#666"/>
+                    <text x="190" y="155" text-anchor="middle" font-size="7" fill="#666">Social documentary</text>
+
+                    <circle cx="400" cy="170" r="4" fill="#666"/>
+                    <text x="400" y="155" text-anchor="middle" font-size="7" fill="#666">New Topographics</text>
+
+                    <circle cx="480" cy="170" r="4" fill="#666"/>
+                    <text x="480" y="155" text-anchor="middle" font-size="7" fill="#666">Abstract</text>
+
+                    <!-- Connecting note -->
+                    <text x="300" y="310" text-anchor="middle" font-size="10" fill="#1a1a1a">Psychogeography doesn't abandon the real—it reveals layers of experience within it.</text>
+                </svg>
+                <p class="visualization-caption">Psychogeographic photography occupies a distinctive position: grounded in real places like documentary, but attentive to emotional resonance like art. It is the practice of being both faithful witness and sensitive interpreter.</p>
+            </div>
+
+            <p>Consider the photographers whose work embodies this position. Eugène Atget documented Paris with clinical precision, yet his empty streets radiate an uncanny melancholy. Luigi Ghirri photographed ordinary Italian landscapes and found in them a dreamlike strangeness. Daido Moriyama turned Tokyo into a landscape of grain, blur, and existential disquiet. None of these photographers abandoned the real city. All of them found within it an emotional dimension that transcends mere record.</p>
+
+            <div class="key-concept">
+                <h4>Your Position</h4>
+                <p>You do not need to choose between documentary and poetry. The psychogeographic approach lets you hold both. Photograph what is real. Photograph what you feel. When these two impulses converge in a single frame, you have made an image that is both true and resonant—a document of a world that exists and an experience that is yours alone.</p>
+            </div>
+        </section>
+
+        <!-- Section 10: Practice Exercises -->
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+
+            <div class="exercise">
+                <h4>Assignment: The Dérive</h4>
+                <p>Choose a neighborhood you know only slightly. Set aside three hours. Leave your phone's map off. Walk without a destination, following only what attracts your attention—a change in light, an interesting texture, a sound, a feeling of curiosity or unease. Photograph only when something strikes you as emotionally resonant, not merely visually interesting. Afterward, sketch your route from memory and annotate it with the emotions you felt at each point. Compare your emotional map to a street map of the same area.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: Atmosphere Pairs</h4>
+                <p>In a single walk, find and photograph two adjacent streets that have radically different atmospheres—one oppressive and one open, or one melancholic and one energized. Make one photograph in each that captures the emotional quality without showing anything dramatic. Present them as a diptych. The challenge: can a viewer who has never visited these streets feel the difference?</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: The Palimpsest</h4>
+                <p>Spend a day photographing surfaces that reveal multiple layers of time—peeling posters, ghost signage, patched walls, buildings showing renovation scars. Make at least twenty exposures. In editing, select the five images that most powerfully evoke a sense of duration and accumulated history. Write a single sentence for each, describing not what you see but what you feel the surface remembers.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: Emotional Cartography</h4>
+                <p>Choose a territory of no more than four city blocks. Visit it once a week for a month, each time at a different time of day. On each visit, bring a small notebook and note the emotional quality of each street and intersection—moods, frictions, thresholds, and attractors. After four visits, compile your notes into a single drawn map using colors and symbols to represent emotional qualities. Use this map to plan a photographic shoot: go directly to the thresholds and friction points, and make images there.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: Invisible Forces</h4>
+                <p>Choose a single word from this list: <em>tension</em>, <em>longing</em>, <em>unease</em>, <em>stillness</em>, <em>erosion</em>. Spend one walk making photographs that embody this word without illustrating it literally. No people looking tense, no clichéd lonely benches. Instead, use formal strategies—compression, emptiness, obscurity, convergence, repetition, decay—to produce the emotional quality in the image itself. Review your contact sheet and select the three images that most powerfully evoke the word.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: Functional vs. Psychogeographic Navigation</h4>
+                <p>Choose a starting point and a destination roughly one kilometer apart. Walk the route twice. First, take the fastest route your phone suggests—the functional path. Photograph what you notice. Second, walk between the same two points by the most emotionally interesting route, even if it takes three times as long. Photograph what you notice. Compare the two sets of images. What did the efficient route miss? What did the wandering route reveal?</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: Repetition and Return</h4>
+                <p>Select a single intersection or small plaza. Visit it ten times over two weeks at different times and in different weather. Each visit, make five photographs. At the end, lay all fifty images out together. What patterns emerge? What changed? What endured? Select a final sequence of eight images that tells the story of this place's character as revealed through sustained attention.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="urban-landscape.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Urban Landscape</span>
+            </a>
+            <a href="../index.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Home</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>
