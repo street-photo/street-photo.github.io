@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light & Shadow — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Light & Shadow</p>
+        <h1>Painting with Light</h1>
+        <p class="tutorial-intro">Light is the photographer's medium. Learn to see, understand, and harness light to transform ordinary scenes into extraordinary images.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Understanding Light Direction</h2>
+            <p>The direction of light fundamentally changes how we perceive a scene. Each direction creates different shadows, highlights, and emotional qualities. Learning to read light direction is essential for street photography.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <defs>
+                        <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#fff7e6"/>
+                            <stop offset="100%" style="stop-color:#f5f0e6;stop-opacity:0"/>
+                        </radialGradient>
+                    </defs>
+                    
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Section dividers -->
+                    <line x1="200" y1="0" x2="200" y2="400" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="4,4"/>
+                    <line x1="400" y1="0" x2="400" y2="400" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="4,4"/>
+                    
+                    <!-- FRONT LIGHT (left section) -->
+                    <text x="100" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">FRONT LIGHT</text>
+                    
+                    <!-- Sun position -->
+                    <circle cx="100" cy="80" r="20" fill="url(#sun-glow)"/>
+                    <circle cx="100" cy="80" r="12" fill="#ffb703"/>
+                    
+                    <!-- Light rays -->
+                    <line x1="100" y1="100" x2="100" y2="180" stroke="#ffb703" stroke-width="2" stroke-dasharray="4,2"/>
+                    
+                    <!-- Subject (flat lighting) -->
+                    <ellipse cx="100" cy="220" rx="25" ry="30" fill="#888"/>
+                    <circle cx="92" cy="212" r="4" fill="#666"/>
+                    <circle cx="108" cy="212" r="4" fill="#666"/>
+                    <ellipse cx="100" cy="230" rx="8" ry="3" fill="#666"/>
+                    
+                    <!-- Description -->
+                    <text x="100" y="280" text-anchor="middle" font-size="9" fill="#666">Flat, even</text>
+                    <text x="100" y="295" text-anchor="middle" font-size="9" fill="#666">Less dramatic</text>
+                    
+                    <!-- SIDE LIGHT (middle section) -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">SIDE LIGHT</text>
+                    
+                    <!-- Sun position -->
+                    <circle cx="220" cy="180" r="20" fill="url(#sun-glow)"/>
+                    <circle cx="220" cy="180" r="12" fill="#ffb703"/>
+                    
+                    <!-- Light rays -->
+                    <line x1="235" y1="180" x2="270" y2="200" stroke="#ffb703" stroke-width="2" stroke-dasharray="4,2"/>
+                    
+                    <!-- Subject (dramatic side lighting) -->
+                    <ellipse cx="300" cy="220" rx="25" ry="30" fill="#aaa"/>
+                    <!-- Light side -->
+                    <path d="M 275,220 Q 275,190 300,190 L 300,250 Q 275,250 275,220" fill="#ccc"/>
+                    <!-- Shadow side -->
+                    <path d="M 325,220 Q 325,190 300,190 L 300,250 Q 325,250 325,220" fill="#555"/>
+                    <!-- Features -->
+                    <circle cx="288" cy="212" r="4" fill="#999"/>
+                    <circle cx="312" cy="212" r="4" fill="#333"/>
+                    
+                    <!-- Shadow -->
+                    <ellipse cx="340" cy="250" rx="30" ry="8" fill="#1a1a1a" opacity="0.3"/>
+                    
+                    <!-- Description -->
+                    <text x="300" y="280" text-anchor="middle" font-size="9" fill="#666">Dramatic contrast</text>
+                    <text x="300" y="295" text-anchor="middle" font-size="9" fill="#666">Reveals texture</text>
+                    
+                    <!-- BACK LIGHT (right section) -->
+                    <text x="500" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">BACK LIGHT</text>
+                    
+                    <!-- Sun position -->
+                    <circle cx="500" cy="120" r="25" fill="url(#sun-glow)"/>
+                    <circle cx="500" cy="120" r="15" fill="#ffb703"/>
+                    
+                    <!-- Light rays -->
+                    <line x1="500" y1="145" x2="500" y2="175" stroke="#ffb703" stroke-width="2" stroke-dasharray="4,2"/>
+                    <line x1="485" y1="140" x2="465" y2="175" stroke="#ffb703" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.6"/>
+                    <line x1="515" y1="140" x2="535" y2="175" stroke="#ffb703" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.6"/>
+                    
+                    <!-- Subject (silhouette) -->
+                    <ellipse cx="500" cy="220" rx="25" ry="30" fill="#1a1a1a"/>
+                    <!-- Rim light -->
+                    <path d="M 475,220 Q 475,190 500,190 Q 525,190 525,220 Q 525,250 500,250 Q 475,250 475,220" fill="none" stroke="#ffb703" stroke-width="2" opacity="0.6"/>
+                    
+                    <!-- Long shadow -->
+                    <ellipse cx="500" cy="320" rx="60" ry="15" fill="#1a1a1a" opacity="0.2"/>
+                    <polygon points="475,250 430,320 570,320 525,250" fill="#1a1a1a" opacity="0.15"/>
+                    
+                    <!-- Description -->
+                    <text x="500" y="360" text-anchor="middle" font-size="9" fill="#666">Silhouettes</text>
+                    <text x="500" y="375" text-anchor="middle" font-size="9" fill="#666">Rim lighting</text>
+                </svg>
+                <p class="visualization-caption">Three fundamental lighting directions and their effects on a subject.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Golden Hours</h4>
+                <p>The hour after sunrise and before sunset provides the most flattering natural light. The low sun angle creates long shadows, warm tones, and dimensional lighting that transforms ordinary scenes. Many street photographers consider this the optimal time to shoot.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Harsh Light vs. Soft Light</h2>
+            <p>The quality of light—whether harsh or soft—dramatically affects mood. Harsh light creates strong contrast and defined shadows; soft light wraps gently around subjects with smooth transitions.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Harsh light scene -->
+                        <rect x="0" y="0" width="250" height="200" fill="#f5f0e6"/>
+                        
+                        <!-- Building with hard shadow -->
+                        <rect x="50" y="40" width="80" height="120" fill="#d4d4d4"/>
+                        <!-- Hard shadow -->
+                        <polygon points="130,40 200,80 200,200 130,160" fill="#1a1a1a" opacity="0.7"/>
+                        
+                        <!-- Figure with hard shadow -->
+                        <g transform="translate(100, 140)">
+                            <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#888"/>
+                            <rect x="-6" y="-15" width="12" height="30" fill="#777"/>
+                            <line x1="-4" y1="15" x2="-8" y2="35" stroke="#666" stroke-width="4"/>
+                            <line x1="4" y1="15" x2="8" y2="35" stroke="#666" stroke-width="4"/>
+                        </g>
+                        <!-- Figure's hard shadow -->
+                        <ellipse cx="140" cy="175" rx="25" ry="6" fill="#1a1a1a" opacity="0.6"/>
+                        
+                        <!-- Sun indicator -->
+                        <circle cx="30" cy="30" r="15" fill="#ffb703"/>
+                    </svg>
+                    <h4>Harsh / Direct Light</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Strong shadows, high contrast, midday sun</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Soft light scene -->
+                        <rect x="0" y="0" width="250" height="200" fill="#e8e4dc"/>
+                        
+                        <!-- Building with soft shadow -->
+                        <rect x="50" y="40" width="80" height="120" fill="#c8c8c8"/>
+                        <!-- Soft shadow gradient -->
+                        <defs>
+                            <linearGradient id="soft-shadow" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.2"/>
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="130,40 180,60 180,180 130,160" fill="url(#soft-shadow)"/>
+                        
+                        <!-- Figure with soft shadow -->
+                        <g transform="translate(100, 140)">
+                            <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#999"/>
+                            <rect x="-6" y="-15" width="12" height="30" fill="#888"/>
+                            <line x1="-4" y1="15" x2="-8" y2="35" stroke="#777" stroke-width="4"/>
+                            <line x1="4" y1="15" x2="8" y2="35" stroke="#777" stroke-width="4"/>
+                        </g>
+                        <!-- Figure's soft shadow -->
+                        <ellipse cx="115" cy="177" rx="20" ry="5" fill="#1a1a1a" opacity="0.15"/>
+                        
+                        <!-- Overcast sky indicator -->
+                        <rect x="10" y="10" width="60" height="30" rx="10" fill="#ccc" opacity="0.5"/>
+                    </svg>
+                    <h4>Soft / Diffused Light</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Gentle shadows, low contrast, overcast</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Chiaroscuro: The Drama of Contrast</h2>
+            <p>Borrowed from Renaissance painting, chiaroscuro (Italian for "light-dark") describes the bold contrast between light and shadow. In street photography, this technique creates dramatic, almost theatrical images.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Dark background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#1a1a1a"/>
+                    
+                    <!-- Dramatic light beam -->
+                    <defs>
+                        <linearGradient id="light-beam" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f5f0e6;stop-opacity:0.9"/>
+                            <stop offset="50%" style="stop-color:#f5f0e6;stop-opacity:0.4"/>
+                            <stop offset="100%" style="stop-color:#f5f0e6;stop-opacity:0"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Light cone from upper left -->
+                    <polygon points="0,0 250,0 400,400 150,400" fill="url(#light-beam)" opacity="0.3"/>
+                    
+                    <!-- Ground reflection -->
+                    <rect x="150" y="340" width="250" height="60" fill="#f5f0e6" opacity="0.15"/>
+                    
+                    <!-- Figure stepping into light -->
+                    <g transform="translate(280, 300)">
+                        <!-- Shadow side of figure -->
+                        <ellipse cx="5" cy="-60" rx="18" ry="22" fill="#2a2a2a"/>
+                        <rect x="-10" y="-38" width="25" height="55" fill="#252525"/>
+                        <line x1="-5" y1="17" x2="-15" y2="60" stroke="#222" stroke-width="8"/>
+                        <line x1="10" y1="17" x2="20" y2="60" stroke="#222" stroke-width="8"/>
+                        <line x1="0" y1="-20" x2="-20" y2="0" stroke="#222" stroke-width="6"/>
+                        <line x1="5" y1="-20" x2="25" y2="-5" stroke="#222" stroke-width="6"/>
+                        
+                        <!-- Light side of figure -->
+                        <ellipse cx="-5" cy="-62" rx="12" ry="18" fill="#a09080"/>
+                        <path d="M -15,-38 L -15,10 L 5,10 L 5,-38 Z" fill="#8a7a6a"/>
+                        <line x1="-10" y1="15" x2="-18" y2="55" stroke="#7a6a5a" stroke-width="6"/>
+                    </g>
+                    
+                    <!-- Light source indication -->
+                    <circle cx="50" cy="50" r="30" fill="#f5f0e6" opacity="0.2"/>
+                    <text x="50" y="100" text-anchor="middle" font-size="10" fill="#f5f0e6" opacity="0.6">LIGHT SOURCE</text>
+                    
+                    <!-- Label -->
+                    <text x="500" y="380" text-anchor="middle" font-size="14" fill="#f5f0e6" opacity="0.8">CHIAROSCURO</text>
+                </svg>
+                <p class="visualization-caption">Chiaroscuro creates dramatic tension by placing a lit subject against deep shadow.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li>Look for light streaming through gaps between buildings</li>
+                <li>Position yourself so subjects walk into pools of light</li>
+                <li>Expose for the highlights to preserve the dramatic contrast</li>
+                <li>Embrace pure black shadows—they add to the drama</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Shadow as Subject</h2>
+            <p>Shadows themselves can become the primary subject of your photograph. Long shadows tell stories about what exists outside the frame, creating mystery and intrigue.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <!-- Ground -->
+                    <rect x="0" y="0" width="600" height="350" fill="#d4cec2"/>
+                    
+                    <!-- Long dramatic shadows without visible subjects -->
+                    <!-- Person walking shadow -->
+                    <g transform="translate(150, 100)">
+                        <ellipse cx="0" cy="0" rx="15" ry="40" fill="#1a1a1a" opacity="0.4" transform="skewX(-30)"/>
+                        <!-- Body shadow -->
+                        <rect x="-8" y="30" width="16" height="80" fill="#1a1a1a" opacity="0.35" transform="skewX(-30)"/>
+                        <!-- Leg shadows -->
+                        <rect x="-12" y="100" width="8" height="60" fill="#1a1a1a" opacity="0.3" transform="skewX(-30)"/>
+                        <rect x="4" y="105" width="8" height="55" fill="#1a1a1a" opacity="0.3" transform="skewX(-30)"/>
+                    </g>
+                    
+                    <!-- Bicycle shadow -->
+                    <g transform="translate(350, 80)">
+                        <!-- Wheels -->
+                        <ellipse cx="0" cy="60" rx="35" ry="12" fill="none" stroke="#1a1a1a" stroke-width="3" opacity="0.35" transform="skewX(-25)"/>
+                        <ellipse cx="70" cy="60" rx="35" ry="12" fill="none" stroke="#1a1a1a" stroke-width="3" opacity="0.35" transform="skewX(-25)"/>
+                        <!-- Frame -->
+                        <line x1="0" y1="60" x2="35" y2="20" stroke="#1a1a1a" stroke-width="3" opacity="0.35" transform="skewX(-25)"/>
+                        <line x1="35" y1="20" x2="70" y2="60" stroke="#1a1a1a" stroke-width="3" opacity="0.35" transform="skewX(-25)"/>
+                        <line x1="0" y1="60" x2="70" y2="60" stroke="#1a1a1a" stroke-width="2" opacity="0.35" transform="skewX(-25)"/>
+                        <!-- Handlebars -->
+                        <line x1="32" y1="15" x2="20" y2="5" stroke="#1a1a1a" stroke-width="3" opacity="0.35" transform="skewX(-25)"/>
+                        <line x1="38" y1="15" x2="50" y2="5" stroke="#1a1a1a" stroke-width="3" opacity="0.35" transform="skewX(-25)"/>
+                    </g>
+                    
+                    <!-- Lamppost shadow -->
+                    <g transform="translate(500, 50)">
+                        <rect x="-3" y="0" width="6" height="250" fill="#1a1a1a" opacity="0.3" transform="skewX(-35)"/>
+                        <ellipse cx="0" cy="-10" rx="20" ry="8" fill="#1a1a1a" opacity="0.25" transform="skewX(-35)"/>
+                    </g>
+                    
+                    <!-- Edge of frame (implied subjects outside) -->
+                    <rect x="0" y="0" width="20" height="350" fill="#1a1a1a" opacity="0.1"/>
+                    
+                    <text x="300" y="330" text-anchor="middle" font-size="11" fill="#1a1a1a" opacity="0.6">Shadows tell the story of subjects outside the frame</text>
+                </svg>
+                <p class="visualization-caption">Shadows alone can create a complete narrative, suggesting presence without showing the subject.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Light Spectrum Through the Day</h2>
+            <p>Light changes dramatically throughout the day. Understanding these changes helps you plan your shooting and anticipate opportunities.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 200">
+                    <!-- Timeline -->
+                    <line x1="50" y1="100" x2="550" y2="100" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Dawn -->
+                    <circle cx="80" cy="100" r="20" fill="#ff9e7a"/>
+                    <text x="80" y="140" text-anchor="middle" font-size="9" fill="#1a1a1a">Dawn</text>
+                    <text x="80" y="155" text-anchor="middle" font-size="8" fill="#666">Soft, warm</text>
+                    <text x="80" y="167" text-anchor="middle" font-size="8" fill="#666">pink/orange</text>
+                    
+                    <!-- Golden Hour AM -->
+                    <circle cx="160" cy="100" r="22" fill="#ffb347"/>
+                    <text x="160" y="140" text-anchor="middle" font-size="9" fill="#1a1a1a">Golden Hr</text>
+                    <text x="160" y="155" text-anchor="middle" font-size="8" fill="#666">Warm, long</text>
+                    <text x="160" y="167" text-anchor="middle" font-size="8" fill="#666">shadows</text>
+                    
+                    <!-- Midday -->
+                    <circle cx="300" cy="100" r="25" fill="#fff5cc"/>
+                    <circle cx="300" cy="100" r="20" fill="#ffeb99"/>
+                    <text x="300" y="145" text-anchor="middle" font-size="9" fill="#1a1a1a">Midday</text>
+                    <text x="300" y="160" text-anchor="middle" font-size="8" fill="#666">Harsh, overhead</text>
+                    <text x="300" y="172" text-anchor="middle" font-size="8" fill="#666">high contrast</text>
+                    
+                    <!-- Golden Hour PM -->
+                    <circle cx="440" cy="100" r="22" fill="#ffb347"/>
+                    <text x="440" y="140" text-anchor="middle" font-size="9" fill="#1a1a1a">Golden Hr</text>
+                    <text x="440" y="155" text-anchor="middle" font-size="8" fill="#666">Rich, warm</text>
+                    <text x="440" y="167" text-anchor="middle" font-size="8" fill="#666">dramatic</text>
+                    
+                    <!-- Dusk/Blue Hour -->
+                    <circle cx="520" cy="100" r="20" fill="#7eb8da"/>
+                    <text x="520" y="140" text-anchor="middle" font-size="9" fill="#1a1a1a">Blue Hour</text>
+                    <text x="520" y="155" text-anchor="middle" font-size="8" fill="#666">Cool, soft</text>
+                    <text x="520" y="167" text-anchor="middle" font-size="8" fill="#666">mysterious</text>
+                    
+                    <!-- Time labels -->
+                    <text x="80" y="60" text-anchor="middle" font-size="8" fill="#999">5-6 AM</text>
+                    <text x="160" y="60" text-anchor="middle" font-size="8" fill="#999">6-8 AM</text>
+                    <text x="300" y="55" text-anchor="middle" font-size="8" fill="#999">11 AM-2 PM</text>
+                    <text x="440" y="60" text-anchor="middle" font-size="8" fill="#999">5-7 PM</text>
+                    <text x="520" y="60" text-anchor="middle" font-size="8" fill="#999">7-8 PM</text>
+                </svg>
+                <p class="visualization-caption">The quality and color of natural light changes dramatically throughout the day.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercise</h2>
+            <div class="exercise">
+                <h4>Assignment: Light Study</h4>
+                <p>Choose one location and photograph it at three different times: morning golden hour, harsh midday, and evening golden hour. Compare how the same scene is transformed by different light. Notice changes in shadow length, color temperature, and mood.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Chasing Shadows</h4>
+                <p>Spend an afternoon photographing only shadows. Look for interesting shadow shapes, overlapping shadows, and shadows that tell stories. Train yourself to see shadows as subjects rather than just absence of light.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="composition.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Composition</span>
+            </a>
+            <a href="moment.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">The Decisive Moment</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>
