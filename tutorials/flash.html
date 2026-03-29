@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash & Artificial Light — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="style.html">Style</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Flash & Artificial Light</p>
+        <h1>Flash & Artificial Light in Street Photography</h1>
+        <p class="tutorial-intro">Flash does more than brighten a scene. It redraws the hierarchy of attention, pushes subjects out of the city's visual noise, and gives street photography a sharper, stranger, more deliberate pulse.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Why Flash Changes the Street</h2>
+            <p>Natural street photography often feels observational: light already exists, and the photographer waits for form, gesture, and timing to align. Flash changes that relationship. The moment is still discovered, but the rendering is no longer purely found. A burst of artificial light introduces directness. It announces a point of view.</p>
+            <p>That is why flashed street photographs can feel theatrical even when nothing staged has happened. The flash separates the subject from ambient reality. Backgrounds fall away, skin takes on clarity, and the scene begins to look less like a continuous slice of life and more like an encounter. The city becomes a set. The passerby becomes, for a fraction of a second, a performer.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 360" aria-labelledby="flash-street-title">
+                    <title id="flash-street-title">How flash separates a subject from ambient reality</title>
+                    <defs>
+                        <radialGradient id="ambient-haze" cx="50%" cy="40%" r="70%">
+                            <stop offset="0%" style="stop-color:#d9d2c7;stop-opacity:0.9" />
+                            <stop offset="100%" style="stop-color:#f5f0e6;stop-opacity:1" />
+                        </radialGradient>
+                        <radialGradient id="flash-burst" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#fffaf0;stop-opacity:1" />
+                            <stop offset="60%" style="stop-color:#f8e8c8;stop-opacity:0.45" />
+                            <stop offset="100%" style="stop-color:#f8e8c8;stop-opacity:0" />
+                        </radialGradient>
+                    </defs>
+
+                    <rect x="0" y="0" width="600" height="360" fill="url(#ambient-haze)" />
+                    <line x1="300" y1="20" x2="300" y2="340" stroke="#1a1a1a" stroke-width="0.6" stroke-dasharray="5,5" />
+
+                    <text x="150" y="30" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">AMBIENT-ONLY STREET</text>
+                    <text x="450" y="30" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">FLASH-LED STREET</text>
+
+                    <rect x="40" y="70" width="220" height="180" fill="#d8d2c6" stroke="#1a1a1a" stroke-width="1" />
+                    <rect x="55" y="95" width="50" height="80" fill="#c8c1b5" />
+                    <rect x="118" y="110" width="34" height="65" fill="#bcb4a8" />
+                    <rect x="165" y="90" width="70" height="85" fill="#cec7ba" />
+                    <rect x="40" y="250" width="220" height="40" fill="#b0a99c" />
+                    <g transform="translate(150, 220)">
+                        <ellipse cx="0" cy="-35" rx="16" ry="20" fill="#81796e" />
+                        <rect x="-14" y="-15" width="28" height="45" fill="#7a7368" />
+                        <line x1="-8" y1="30" x2="-14" y2="65" stroke="#70695f" stroke-width="6" />
+                        <line x1="8" y1="30" x2="14" y2="65" stroke="#70695f" stroke-width="6" />
+                    </g>
+                    <ellipse cx="150" cy="292" rx="58" ry="12" fill="#1a1a1a" opacity="0.08" />
+                    <text x="150" y="315" text-anchor="middle" font-size="10" fill="#666">Continuous tone, modest separation</text>
+
+                    <rect x="340" y="70" width="220" height="180" fill="#29251f" stroke="#1a1a1a" stroke-width="1" />
+                    <rect x="355" y="95" width="50" height="80" fill="#3d3832" />
+                    <rect x="418" y="110" width="34" height="65" fill="#332f2a" />
+                    <rect x="465" y="90" width="70" height="85" fill="#3a352f" />
+                    <rect x="340" y="250" width="220" height="40" fill="#1f1b17" />
+                    <circle cx="450" cy="170" r="85" fill="url(#flash-burst)" />
+                    <g transform="translate(450, 216)">
+                        <ellipse cx="0" cy="-38" rx="18" ry="22" fill="#f1dfc6" />
+                        <rect x="-15" y="-16" width="30" height="48" fill="#181818" />
+                        <line x1="-8" y1="32" x2="-14" y2="66" stroke="#111" stroke-width="6" />
+                        <line x1="8" y1="32" x2="14" y2="66" stroke="#111" stroke-width="6" />
+                        <ellipse cx="-6" cy="-40" rx="3" ry="4" fill="#7d654d" />
+                        <ellipse cx="6" cy="-40" rx="3" ry="4" fill="#7d654d" />
+                    </g>
+                    <rect x="365" y="285" width="170" height="24" fill="#111" rx="4" opacity="0.95" />
+                    <text x="450" y="301" text-anchor="middle" font-size="10" fill="#f5f0e6">foreground crisp • background subdued • encounter intensified</text>
+                </svg>
+                <p class="visualization-caption">Flash does not simply add light; it rearranges attention, making the subject feel carved out of the street.</p>
+            </div>
+
+            <div class="key-concept">
+                <h4>Flash as Interpretation</h4>
+                <p>Think of flash less as technical correction and more as editorial emphasis. You are deciding which plane of reality matters most: the immediate human presence in front of you, not the full tonal democracy of ambient light.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>On-Camera vs Off-Camera Logic</h2>
+            <p>In theory, off-camera flash offers more sculpted light. You can push the source to the side, create dimensional shadows, and make the lighting feel cinematic. In controlled portraiture, that flexibility is invaluable. On the street, however, flexibility often loses to speed.</p>
+            <p>Candid work rewards simplicity. The camera is already in your hand, the timing window is measured in seconds, and you may be walking, reframing, or responding to an unpredictable human gesture. That is why on-camera flash dominates practical street use. It is compact, repeatable, and aligned with wherever the lens points. It may be less nuanced, but it is far more available.</p>
+            <p>Off-camera setups can work for looser documentary portrait sessions, collaborations, or previsualized corners where you wait for people to enter a prepared field of light. But if the goal is to move through public space and react quickly, on-camera flash remains the street photographer's default logic: one body, one camera, one light, one instant.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 220">
+                        <rect x="0" y="0" width="250" height="220" fill="#f5f0e6" />
+                        <text x="125" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a1a">ON-CAMERA</text>
+                        <rect x="92" y="55" width="66" height="40" rx="4" fill="#1a1a1a" />
+                        <rect x="108" y="38" width="34" height="18" rx="2" fill="#333" />
+                        <circle cx="131" cy="75" r="14" fill="#555" />
+                        <circle cx="131" cy="75" r="7" fill="#1a1a1a" />
+                        <polygon points="131,85 80,150 182,150" fill="#e6c983" opacity="0.7" />
+                        <g transform="translate(125, 165)">
+                            <circle cx="0" cy="-16" r="8" fill="#a08d79" />
+                            <rect x="-7" y="-8" width="14" height="24" fill="#645d56" />
+                        </g>
+                        <text x="125" y="190" text-anchor="middle" font-size="9" fill="#666">Fast alignment with framing</text>
+                        <text x="125" y="204" text-anchor="middle" font-size="9" fill="#666">Best for candid movement</text>
+                    </svg>
+                    <h4>Direct, portable, immediate</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Less sculpting, more reliability when the scene changes every second.</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 220">
+                        <rect x="0" y="0" width="250" height="220" fill="#f5f0e6" />
+                        <text x="125" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a1a">OFF-CAMERA</text>
+                        <rect x="145" y="115" width="48" height="28" rx="4" fill="#1a1a1a" />
+                        <circle cx="169" cy="129" r="10" fill="#555" />
+                        <rect x="42" y="52" width="26" height="18" rx="2" fill="#333" />
+                        <line x1="55" y1="70" x2="55" y2="154" stroke="#333" stroke-width="4" />
+                        <line x1="55" y1="154" x2="38" y2="188" stroke="#333" stroke-width="3" />
+                        <line x1="55" y1="154" x2="72" y2="188" stroke="#333" stroke-width="3" />
+                        <polygon points="68,74 140,116 112,165" fill="#e6c983" opacity="0.5" />
+                        <g transform="translate(130, 168)">
+                            <circle cx="0" cy="-17" r="8" fill="#a08d79" />
+                            <rect x="-7" y="-9" width="14" height="24" fill="#645d56" />
+                        </g>
+                        <text x="125" y="190" text-anchor="middle" font-size="9" fill="#666">More sculpted light</text>
+                        <text x="125" y="204" text-anchor="middle" font-size="9" fill="#666">Slower, more conspicuous</text>
+                    </svg>
+                    <h4>Control with logistical cost</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Excellent for semi-planned encounters, awkward for pure candid flow.</p>
+                </div>
+            </div>
+
+            <ul class="tips-list">
+                <li><strong>Choose on-camera</strong> when moving through crowds, working quickly, or reacting to spontaneous expressions.</li>
+                <li><strong>Choose off-camera</strong> when you can pre-position light and accept a slower rhythm.</li>
+                <li><strong>Keep the system simple:</strong> every extra cable, trigger, or stand is another obstacle between recognition and response.</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Balancing Flash and Ambient Light</h2>
+            <p>The most important mental model is this: ambient exposure and flash exposure are related, but not identical. Ambient light is shaped mainly by shutter speed, aperture, and ISO. Flash exposure is shaped mainly by flash power, aperture, ISO, and subject distance. The shutter affects ambient dramatically, but—within sync limits—it does not meaningfully change the brightness of the brief flash burst itself.</p>
+            <p>This is the hinge on which flashed street work turns. If you want the background brighter, you usually slow the shutter, raise ISO, or open the aperture. If you want the flashed subject brighter, you raise flash power, open the aperture, raise ISO, or move closer. Once you feel these two layers separately, the technique stops being mysterious.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 380" aria-labelledby="balance-title">
+                    <title id="balance-title">Ambient exposure and flash exposure interaction</title>
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6" />
+
+                    <text x="300" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">TWO EXPOSURES, ONE FRAME</text>
+
+                    <rect x="40" y="60" width="230" height="210" rx="6" fill="#e1dbd0" stroke="#1a1a1a" stroke-width="1.2" />
+                    <rect x="330" y="60" width="230" height="210" rx="6" fill="#ddd6ca" stroke="#1a1a1a" stroke-width="1.2" />
+
+                    <text x="155" y="85" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a1a">AMBIENT LAYER</text>
+                    <text x="445" y="85" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a1a">FLASH LAYER</text>
+
+                    <rect x="75" y="120" width="160" height="22" fill="#7c7469" />
+                    <rect x="75" y="155" width="110" height="22" fill="#938a7f" />
+                    <rect x="75" y="190" width="190" height="22" fill="#645d55" />
+                    <text x="155" y="235" text-anchor="middle" font-size="9" fill="#666">Room tone, signs, sky, street lamps</text>
+                    <text x="155" y="255" text-anchor="middle" font-size="9" fill="#666">Main controls: shutter • ISO • aperture</text>
+
+                    <circle cx="445" cy="165" r="68" fill="#f7e7be" opacity="0.6" />
+                    <circle cx="445" cy="165" r="34" fill="#fff8e6" opacity="0.9" />
+                    <g transform="translate(445, 198)">
+                        <ellipse cx="0" cy="-35" rx="17" ry="20" fill="#e5c6a9" />
+                        <rect x="-14" y="-14" width="28" height="45" fill="#262626" />
+                    </g>
+                    <text x="445" y="255" text-anchor="middle" font-size="9" fill="#666">Main controls: flash power • distance</text>
+                    <text x="445" y="270" text-anchor="middle" font-size="9" fill="#666">also aperture and ISO</text>
+
+                    <line x1="270" y1="165" x2="330" y2="165" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="5,4" />
+                    <text x="300" y="155" text-anchor="middle" font-size="10" fill="#e63946">combine</text>
+
+                    <rect x="120" y="300" width="360" height="50" rx="5" fill="#1a1a1a" />
+                    <text x="300" y="320" text-anchor="middle" font-size="10" fill="#f5f0e6">PRACTICAL RECIPE</text>
+                    <text x="300" y="338" text-anchor="middle" font-size="9" fill="#c8c0b3">Set ambient first for the background mood, then raise or lower flash until the person sits properly inside that world.</text>
+                </svg>
+                <p class="visualization-caption">A flashed street frame is usually a blend of ambient atmosphere and flash-defined subject brightness.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <rect x="0" y="0" width="250" height="200" fill="#201c18" />
+                        <text x="125" y="25" text-anchor="middle" font-size="11" font-weight="600" fill="#f5f0e6">LOW AMBIENT + STRONG FLASH</text>
+                        <circle cx="125" cy="105" r="56" fill="#fff2cc" opacity="0.4" />
+                        <g transform="translate(125, 125)">
+                            <ellipse cx="0" cy="-28" rx="14" ry="16" fill="#efd4b5" />
+                            <rect x="-12" y="-12" width="24" height="36" fill="#0f0f0f" />
+                        </g>
+                        <text x="125" y="180" text-anchor="middle" font-size="9" fill="#cfc7bb">Punchy subject, dark background</text>
+                    </svg>
+                    <h4>Graphic separation</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">The classic bold flash look: crisp foreground, receding environment.</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <rect x="0" y="0" width="250" height="200" fill="#5b6170" />
+                        <rect x="0" y="120" width="250" height="80" fill="#4a4f59" />
+                        <circle cx="125" cy="102" r="48" fill="#fff2cc" opacity="0.28" />
+                        <g transform="translate(125, 126)">
+                            <ellipse cx="0" cy="-28" rx="14" ry="16" fill="#efd4b5" />
+                            <rect x="-12" y="-12" width="24" height="36" fill="#1f1f1f" />
+                        </g>
+                        <text x="125" y="180" text-anchor="middle" font-size="9" fill="#f0ebe2">More ambient retained, gentler flash presence</text>
+                    </svg>
+                    <h4>Integrated realism</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">A slower shutter lets the place breathe while flash still clarifies the subject.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Day Flash / Fill Flash</h2>
+            <p>Midday light is often unflattering because it creates steep eye sockets, hard nose shadows, and bright backgrounds that can overwhelm a face. Fill flash does not try to overpower the sun completely. Instead, it lifts what the sun crushes. The best day flash feels corrective rather than flashy: it restores legibility to features without announcing itself too loudly.</p>
+            <p>In practical terms, you expose for the sunlit scene first, then add enough flash to open the shadows on the face, hat brim, or dark clothing. Done well, fill flash keeps the scene believable while making the person feel properly present inside it.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 340" aria-labelledby="fill-title">
+                    <title id="fill-title">Day flash filling harsh facial shadows</title>
+                    <defs>
+                        <radialGradient id="sun-fill" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ffd36b;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ffd36b;stop-opacity:0" />
+                        </radialGradient>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="340" fill="#f5f0e6" />
+                    <line x1="300" y1="25" x2="300" y2="320" stroke="#1a1a1a" stroke-width="0.6" stroke-dasharray="5,5" />
+                    <text x="150" y="32" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">HARSH SUN ONLY</text>
+                    <text x="450" y="32" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">SUN + FILL FLASH</text>
+
+                    <circle cx="80" cy="70" r="38" fill="url(#sun-fill)" />
+                    <circle cx="80" cy="70" r="20" fill="#ffb703" />
+                    <line x1="96" y1="86" x2="145" y2="132" stroke="#ffb703" stroke-width="2" stroke-dasharray="5,3" />
+
+                    <g transform="translate(160, 205)">
+                        <ellipse cx="0" cy="-42" rx="42" ry="54" fill="#cdb7a1" />
+                        <path d="M -42,-42 Q 0,-74 42,-42 L 42,8 Q 0,34 -42,8 Z" fill="#d9c2aa" />
+                        <path d="M -8,-10 Q 0,-2 8,-10" stroke="#6d5a4a" stroke-width="3" fill="none" />
+                        <path d="M -22,-24 Q -12,-15 -4,-26" stroke="#6d5a4a" stroke-width="3" fill="none" />
+                        <path d="M 4,-26 Q 12,-15 22,-24" stroke="#6d5a4a" stroke-width="3" fill="none" />
+                        <path d="M -18,-18 Q -2,10 20,2" fill="#6f6357" opacity="0.45" />
+                        <path d="M 8,-50 Q 36,-20 22,22" fill="#7e7062" opacity="0.35" />
+                    </g>
+                    <text x="150" y="300" text-anchor="middle" font-size="10" fill="#666">Deep eye and cheek shadows</text>
+
+                    <circle cx="380" cy="70" r="38" fill="url(#sun-fill)" />
+                    <circle cx="380" cy="70" r="20" fill="#ffb703" />
+                    <line x1="396" y1="86" x2="446" y2="132" stroke="#ffb703" stroke-width="2" stroke-dasharray="5,3" />
+                    <rect x="500" y="145" width="42" height="28" rx="4" fill="#1a1a1a" />
+                    <polygon points="500,159 450,182 450,136" fill="#fff3d5" opacity="0.7" />
+
+                    <g transform="translate(450, 205)">
+                        <ellipse cx="0" cy="-42" rx="42" ry="54" fill="#d9c2aa" />
+                        <path d="M -42,-42 Q 0,-74 42,-42 L 42,8 Q 0,34 -42,8 Z" fill="#e2cab2" />
+                        <path d="M -8,-10 Q 0,-2 8,-10" stroke="#6d5a4a" stroke-width="3" fill="none" />
+                        <path d="M -22,-24 Q -12,-15 -4,-24" stroke="#6d5a4a" stroke-width="3" fill="none" />
+                        <path d="M 4,-24 Q 12,-15 22,-24" stroke="#6d5a4a" stroke-width="3" fill="none" />
+                        <path d="M -14,-16 Q 0,0 16,-6" fill="#836d5c" opacity="0.16" />
+                        <path d="M 8,-50 Q 36,-20 22,18" fill="#8b7968" opacity="0.14" />
+                    </g>
+                    <text x="450" y="300" text-anchor="middle" font-size="10" fill="#666">Features reopened without killing the sun</text>
+                </svg>
+                <p class="visualization-caption">Fill flash at midday is most useful when it lifts facial shadows while leaving the sunlit character of the scene intact.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li>Start with subtle flash output; fill is usually about restraint.</li>
+                <li>Watch for hats, brows, and deep-set eyes—these are classic fill-flash situations.</li>
+                <li>If the flash is obvious in daylight, it may be too strong unless obviousness is the point.</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Night Flash Aesthetic</h2>
+            <p>At night, flash becomes less corrective and more declarative. It can produce the signature look many people associate with flash-led street photography: hard edges, luminous skin, dark peripheries, and a sense of urban compression. The foreground snaps into certainty while the background becomes a murmur of signage, asphalt, and black space.</p>
+            <p>This look carries emotional consequences. It can feel raw, insolent, energized, or surreal. A subway entrance turns into a stage door. A convenience-store glow becomes an incidental spotlight. If you underexpose the ambient slightly, the city stops competing with the person and starts acting as atmosphere around them.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 360" aria-labelledby="night-flash-title">
+                    <title id="night-flash-title">Night flash aesthetic with crisp foreground and dark surroundings</title>
+                    <defs>
+                        <linearGradient id="night-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#15151d" />
+                            <stop offset="100%" style="stop-color:#09090c" />
+                        </linearGradient>
+                        <radialGradient id="neon-splash" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ff5ea8;stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color:#ff5ea8;stop-opacity:0" />
+                        </radialGradient>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="360" fill="url(#night-wall)" />
+                    <rect x="0" y="285" width="600" height="75" fill="#0d0d10" />
+                    <rect x="48" y="80" width="110" height="140" fill="#101015" />
+                    <rect x="65" y="100" width="76" height="30" fill="#ff5ea8" opacity="0.8" />
+                    <text x="103" y="120" text-anchor="middle" font-size="14" fill="#1a1a1a" font-weight="600">OPEN</text>
+                    <ellipse cx="103" cy="145" rx="70" ry="48" fill="url(#neon-splash)" />
+
+                    <rect x="445" y="52" width="110" height="178" fill="#111217" />
+                    <rect x="468" y="76" width="22" height="28" fill="#ffc66d" opacity="0.8" />
+                    <rect x="510" y="76" width="22" height="28" fill="#ffc66d" opacity="0.45" />
+                    <rect x="468" y="122" width="22" height="28" fill="#15151a" />
+                    <rect x="510" y="122" width="22" height="28" fill="#fff3d2" opacity="0.7" />
+
+                    <circle cx="300" cy="170" r="100" fill="#fff1d1" opacity="0.22" />
+                    <g transform="translate(300, 225)">
+                        <ellipse cx="0" cy="-52" rx="26" ry="30" fill="#f0d1b4" />
+                        <rect x="-22" y="-24" width="44" height="68" fill="#1c1c1f" />
+                        <line x1="-14" y1="44" x2="-20" y2="82" stroke="#16161a" stroke-width="8" />
+                        <line x1="14" y1="44" x2="20" y2="82" stroke="#16161a" stroke-width="8" />
+                        <ellipse cx="-8" cy="-56" rx="5" ry="6" fill="#7b5f49" />
+                        <ellipse cx="8" cy="-56" rx="5" ry="6" fill="#7b5f49" />
+                        <path d="M -10,-36 Q 0,-28 10,-36" stroke="#7b5f49" stroke-width="3" fill="none" />
+                    </g>
+                    <ellipse cx="300" cy="314" rx="95" ry="20" fill="#fff1d1" opacity="0.08" />
+
+                    <text x="300" y="42" text-anchor="middle" font-size="14" font-weight="600" fill="#f5f0e6">BOLD CONTRAST • CRISP FOREGROUND • URBAN ENERGY</text>
+                    <text x="300" y="336" text-anchor="middle" font-size="10" fill="#8f8b84">Underexposed ambient preserves mood; flash defines the human event.</text>
+                </svg>
+                <p class="visualization-caption">Night flash often works by letting the city stay dark enough to feel electric while the subject receives a clean, decisive hit of light.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Flash Distance &amp; Falloff</h2>
+            <p>Flash feels dramatic partly because it drops off quickly with distance. A person one meter away may be bright and detailed; the wall four meters behind them may be far darker than your eye expects. You do not need to memorize equations to use this well. You only need a feel for proximity.</p>
+            <p>The closer your subject is to the flash, the more pronounced the separation becomes. This is why many strong flash street pictures are made at relatively short distances. The light is not wandering evenly through the whole block. It is concentrated near the photographer, then it dissipates fast.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 360" aria-labelledby="falloff-title">
+                    <title id="falloff-title">Distance and flash falloff intuition</title>
+                    <rect x="0" y="0" width="600" height="360" fill="#f5f0e6" />
+                    <text x="300" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">DISTANCE CHANGES FLASH FAST</text>
+
+                    <rect x="60" y="150" width="42" height="28" rx="4" fill="#1a1a1a" />
+                    <polygon points="102,164 150,180 150,148" fill="#f6ddb0" opacity="0.9" />
+                    <text x="81" y="198" text-anchor="middle" font-size="10" fill="#1a1a1a">FLASH</text>
+
+                    <line x1="120" y1="245" x2="550" y2="245" stroke="#1a1a1a" stroke-width="1" />
+                    <line x1="180" y1="240" x2="180" y2="250" stroke="#1a1a1a" stroke-width="1" />
+                    <line x1="300" y1="240" x2="300" y2="250" stroke="#1a1a1a" stroke-width="1" />
+                    <line x1="420" y1="240" x2="420" y2="250" stroke="#1a1a1a" stroke-width="1" />
+                    <text x="180" y="266" text-anchor="middle" font-size="9" fill="#666">1m</text>
+                    <text x="300" y="266" text-anchor="middle" font-size="9" fill="#666">2m</text>
+                    <text x="420" y="266" text-anchor="middle" font-size="9" fill="#666">4m</text>
+
+                    <circle cx="180" cy="165" r="50" fill="#fff0cb" opacity="0.9" />
+                    <g transform="translate(180, 190)">
+                        <ellipse cx="0" cy="-28" rx="13" ry="15" fill="#e7c8aa" />
+                        <rect x="-11" y="-12" width="22" height="36" fill="#2a2a2a" />
+                    </g>
+                    <text x="180" y="104" text-anchor="middle" font-size="10" fill="#1a1a1a">near subject</text>
+                    <text x="180" y="118" text-anchor="middle" font-size="10" fill="#e63946">bright</text>
+
+                    <circle cx="300" cy="165" r="34" fill="#fff0cb" opacity="0.45" />
+                    <g transform="translate(300, 200)">
+                        <ellipse cx="0" cy="-20" rx="10" ry="12" fill="#b79f88" />
+                        <rect x="-8" y="-8" width="16" height="28" fill="#4a4a4a" />
+                    </g>
+                    <text x="300" y="104" text-anchor="middle" font-size="10" fill="#1a1a1a">mid distance</text>
+                    <text x="300" y="118" text-anchor="middle" font-size="10" fill="#666">moderate</text>
+
+                    <circle cx="420" cy="165" r="20" fill="#fff0cb" opacity="0.18" />
+                    <g transform="translate(420, 208)" opacity="0.55">
+                        <ellipse cx="0" cy="-15" rx="8" ry="9" fill="#8e877f" />
+                        <rect x="-6" y="-6" width="12" height="22" fill="#666" />
+                    </g>
+                    <text x="420" y="104" text-anchor="middle" font-size="10" fill="#1a1a1a">farther away</text>
+                    <text x="420" y="118" text-anchor="middle" font-size="10" fill="#666">falls off quickly</text>
+
+                    <path d="M 165,290 Q 260,210 430,305" fill="none" stroke="#e63946" stroke-width="2" />
+                    <text x="458" y="308" font-size="10" fill="#e63946">brightness drops faster than intuition suggests</text>
+                </svg>
+                <p class="visualization-caption">Flash rewards working close. Small changes in distance can radically change how bright a person appears.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#f5f0e6" />
+                        <text x="125" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a1a">CLOSE SUBJECT</text>
+                        <rect x="18" y="80" width="26" height="18" rx="3" fill="#1a1a1a" />
+                        <polygon points="44,89 105,115 105,63" fill="#f3ddb0" opacity="0.75" />
+                        <circle cx="106" cy="93" r="44" fill="#fff0cb" opacity="0.85" />
+                        <ellipse cx="106" cy="96" rx="18" ry="22" fill="#e4c5a5" />
+                        <rect x="90" y="114" width="32" height="36" fill="#222" />
+                        <text x="125" y="162" text-anchor="middle" font-size="9" fill="#666">Strong subject-background separation</text>
+                    </svg>
+                    <h4>High impact</h4>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#f5f0e6" />
+                        <text x="125" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#1a1a1a">DISTANT SUBJECT</text>
+                        <rect x="18" y="80" width="26" height="18" rx="3" fill="#1a1a1a" />
+                        <polygon points="44,89 185,130 185,48" fill="#f3ddb0" opacity="0.4" />
+                        <circle cx="184" cy="92" r="22" fill="#fff0cb" opacity="0.22" />
+                        <ellipse cx="184" cy="96" rx="10" ry="12" fill="#b9b0a4" />
+                        <rect x="176" y="108" width="16" height="24" fill="#555" />
+                        <text x="125" y="162" text-anchor="middle" font-size="9" fill="#666">Less clarity, less dramatic separation</text>
+                    </svg>
+                    <h4>Lower efficiency</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Ethics and Presence</h2>
+            <p>Flash changes the social contract because it is difficult to ignore. Ambient street photography can remain almost invisible; flash introduces an event. Even when legal, it can feel more invasive because the subject experiences the photograph physically, not just hypothetically. There is a brief interruption, a punctuation mark of light.</p>
+            <p>That does not make flash unethical by default, but it does raise the threshold for self-awareness. You should be more attentive to vulnerability, distress, intoxication, grief, and power imbalance. Ask not only whether you can make the photograph, but what your use of flash does to the encounter. Does it reveal character, or does it merely impose yourself on someone else's moment?</p>
+            <p>Presence matters here. If you use flash, own your presence. Hiding while doing something conspicuous creates tension. Calm body language, clear intent, and willingness to acknowledge people afterward are often more respectful than theatrical stealth.</p>
+
+            <div class="key-concept">
+                <h4>The Flash Test</h4>
+                <p>If the light itself feels like part of the subject's humiliation, back away. If the light clarifies a public scene without exploiting vulnerability, the image may still carry force and dignity.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li>Avoid flashing people in visibly fragile situations unless you have a compelling, humane reason.</li>
+                <li>Be especially cautious at very close range; physical intensity multiplies ethical intensity.</li>
+                <li>If challenged, respond with composure rather than defensiveness.</li>
+                <li>Respect your own instincts—unease is often useful moral information.</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Working Fast with Flash</h2>
+            <p>Good flash technique in the street is less about complex theory than about removing hesitation. You want a setup that is stable enough to trust and flexible enough to survive changing conditions. Many photographers succeed with a modest fixed routine: manual exposure, a fixed focal length, a known focus zone, and a flash power range they can adjust by feel.</p>
+            <p>The essential workflow is simple. First, decide how much ambient you want. Second, set a practical shutter speed and aperture that support your movement and depth of field. Third, let flash do the final work on the subject. Once the relationship is close, stop tinkering. The street punishes indecision.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 390" aria-labelledby="workflow-title">
+                    <title id="workflow-title">Fast flash workflow and starter settings</title>
+                    <rect x="0" y="0" width="600" height="390" fill="#f5f0e6" />
+                    <text x="300" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">FAST FIELD WORKFLOW</text>
+
+                    <rect x="35" y="60" width="120" height="92" rx="6" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1" />
+                    <text x="95" y="84" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a1a">1. SET AMBIENT</text>
+                    <text x="95" y="106" text-anchor="middle" font-size="9" fill="#666">Choose how bright</text>
+                    <text x="95" y="120" text-anchor="middle" font-size="9" fill="#666">the background should feel.</text>
+                    <text x="95" y="136" text-anchor="middle" font-size="9" fill="#e63946">Usually slightly darker</text>
+
+                    <rect x="175" y="60" width="120" height="92" rx="6" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1" />
+                    <text x="235" y="84" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a1a">2. LOCK DISTANCE</text>
+                    <text x="235" y="106" text-anchor="middle" font-size="9" fill="#666">Work in a known zone:</text>
+                    <text x="235" y="120" text-anchor="middle" font-size="9" fill="#666">about 1m to 2.5m</text>
+                    <text x="235" y="136" text-anchor="middle" font-size="9" fill="#e63946">Stay consistent</text>
+
+                    <rect x="315" y="60" width="120" height="92" rx="6" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1" />
+                    <text x="375" y="84" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a1a">3. TUNE FLASH</text>
+                    <text x="375" y="106" text-anchor="middle" font-size="9" fill="#666">Raise or lower power</text>
+                    <text x="375" y="120" text-anchor="middle" font-size="9" fill="#666">until faces sit correctly.</text>
+                    <text x="375" y="136" text-anchor="middle" font-size="9" fill="#e63946">Adjust in small steps</text>
+
+                    <rect x="455" y="60" width="110" height="92" rx="6" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1" />
+                    <text x="510" y="84" text-anchor="middle" font-size="11" font-weight="600" fill="#1a1a1a">4. SHOOT</text>
+                    <text x="510" y="106" text-anchor="middle" font-size="9" fill="#666">Do not re-engineer</text>
+                    <text x="510" y="120" text-anchor="middle" font-size="9" fill="#666">every frame.</text>
+                    <text x="510" y="136" text-anchor="middle" font-size="9" fill="#e63946">Protect rhythm</text>
+
+                    <line x1="155" y1="106" x2="175" y2="106" stroke="#1a1a1a" stroke-width="1.2" />
+                    <line x1="295" y1="106" x2="315" y2="106" stroke="#1a1a1a" stroke-width="1.2" />
+                    <line x1="435" y1="106" x2="455" y2="106" stroke="#1a1a1a" stroke-width="1.2" />
+
+                    <rect x="55" y="205" width="490" height="135" rx="6" fill="#1a1a1a" />
+                    <text x="300" y="228" text-anchor="middle" font-size="12" font-weight="600" fill="#f5f0e6">SOLID STARTING POINTS</text>
+                    <text x="120" y="258" font-size="10" fill="#cfc6b8">Night / bold flash:</text>
+                    <text x="250" y="258" font-size="10" fill="#f5f0e6">1/125–1/250 • f/5.6–f/8 • ISO 400–1600</text>
+                    <text x="120" y="283" font-size="10" fill="#cfc6b8">Day / fill flash:</text>
+                    <text x="250" y="283" font-size="10" fill="#f5f0e6">Expose for daylight first, then add subtle flash</text>
+                    <text x="120" y="308" font-size="10" fill="#cfc6b8">Focus habit:</text>
+                    <text x="250" y="308" font-size="10" fill="#f5f0e6">Pre-focus or zone focus for your usual working distance</text>
+                    <text x="120" y="333" font-size="10" fill="#cfc6b8">Field habit:</text>
+                    <text x="250" y="333" font-size="10" fill="#f5f0e6">Review occasionally, not after every encounter</text>
+                </svg>
+                <p class="visualization-caption">A dependable flash workflow comes from repeating a few decisions until they become instinctive.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li>Keep spare batteries accessible; flash rhythm collapses quickly when power becomes uncertain.</li>
+                <li>Use a focal length and distance you can judge intuitively.</li>
+                <li>Make only one variable change at a time when the look is off.</li>
+                <li>Once a setup works, spend your attention on people, not menus.</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Famous Flash-Led Street Aesthetics</h2>
+            <p>Flash has a long history in street-adjacent photography, but it has not served one single style. In some hands it becomes confrontational: close range, frontal light, social friction. In others it becomes elegant and strange: a coolly composed stage of nightlife, fashion, and performance. Some photographers use flash to intensify urban energy; others use it to isolate absurdity, vulnerability, or wit.</p>
+            <p>Looking across classic flash-led work, a few recurring qualities appear. The light is often direct. The frame tolerates strong blacks. Faces and fabrics carry tactile crispness. The city remains present, but as a charged environment rather than a fully described backdrop. Study those traditions for attitude and structure, not for imitation. The goal is not to copy a known flash signature, but to understand what kind of emotional weather flash creates when you use it on purpose.</p>
+
+            <div class="key-concept">
+                <h4>Reference Without Imitation</h4>
+                <p>Look for how different photographers use flash to position the viewer: as witness, intruder, participant, or collaborator. That relational choice matters more than surface style.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            <div class="exercise">
+                <h4>Exercise 1: One Corner, Three Balances</h4>
+                <p>Work one street corner at dusk or night. Make three sets of frames: one with strong flash and dark ambient, one with balanced flash and ambient, and one with subtle flash and brighter ambient. Compare how the emotional tone changes even when the location stays constant.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 2: Fill Flash in Harsh Noon</h4>
+                <p>Photograph people walking through direct sun. First shoot without flash, then add restrained fill flash to lift the face. Study what changes in the eyes, cheeks, and under the brow. Aim for correction, not spectacle.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 3: Distance Discipline</h4>
+                <p>Commit to one working distance for an hour—roughly one to two meters. Notice how much more consistent your flash exposure becomes when your physical spacing is deliberate rather than accidental.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 4: Ethics Review</h4>
+                <p>After a flash walk, review your pictures and ask not only which ones are visually strongest, but which ones feel fair. Train your editing eye to include judgment about presence, dignity, and intent.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="light.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Light &amp; Shadow</span>
+            </a>
+            <a href="night.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Night Street Photography</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

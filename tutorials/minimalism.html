@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalism — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Minimalism</p>
+        <h1>Minimalist Street Photography</h1>
+        <p class="tutorial-intro">The art of reduction. Learn to create powerful images by eliminating everything except the essential—where every element must earn its place in the frame.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Less is More</h2>
+            <p>Minimalist photography is the discipline of visual restraint. In a world of visual noise, the minimalist approach cuts through the clutter to reveal pure, distilled moments. It's not about having less—it's about making what remains matter more.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Left side: cluttered -->
+                    <rect x="0" y="0" width="280" height="400" fill="#e8e2d6"/>
+                    <text x="140" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">CLUTTERED</text>
+                    
+                    <!-- Cluttered elements -->
+                    <rect x="20" y="60" width="50" height="70" fill="#cac4b8"/>
+                    <rect x="80" y="80" width="40" height="90" fill="#b8b2a6"/>
+                    <rect x="130" y="50" width="60" height="80" fill="#d4cec2"/>
+                    <rect x="200" y="70" width="55" height="75" fill="#a8a29a"/>
+                    <circle cx="60" cy="200" r="25" fill="#9a948a"/>
+                    <rect x="100" y="170" width="45" height="60" fill="#8a847a"/>
+                    <rect x="160" y="160" width="50" height="70" fill="#beb8ac"/>
+                    <circle cx="240" cy="190" r="30" fill="#c4beb2"/>
+                    <rect x="30" y="260" width="60" height="50" fill="#7a746a"/>
+                    <rect x="100" y="250" width="40" height="70" fill="#6a645a"/>
+                    <circle cx="180" cy="290" r="20" fill="#5a544a"/>
+                    <rect x="210" y="270" width="50" height="60" fill="#4a443a"/>
+                    
+                    <!-- Lost figure in clutter -->
+                    <g transform="translate(140, 300)">
+                        <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-15" x2="0" y2="10" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-5" x2="-10" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-5" x2="10" y2="3" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="-7" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="7" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Divider -->
+                    <line x1="300" y1="0" x2="300" y2="400" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Right side: minimal -->
+                    <rect x="300" y="0" width="300" height="400" fill="#f5f0e6"/>
+                    <text x="450" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">MINIMAL</text>
+                    
+                    <!-- Clean horizon line -->
+                    <line x1="320" y1="320" x2="580" y2="320" stroke="#d4cec2" stroke-width="1"/>
+                    
+                    <!-- Single powerful figure -->
+                    <g transform="translate(450, 280)">
+                        <ellipse cx="0" cy="-35" rx="12" ry="15" fill="#1a1a1a"/>
+                        <line x1="0" y1="-20" x2="0" y2="20" stroke="#1a1a1a" stroke-width="5"/>
+                        <line x1="0" y1="-8" x2="-15" y2="8" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="-8" x2="15" y2="5" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="20" x2="-10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="20" x2="10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                    </g>
+                    
+                    <!-- Subtle shadow -->
+                    <ellipse cx="450" cy="340" rx="25" ry="6" fill="#1a1a1a" opacity="0.15"/>
+                    
+                    <!-- Impact indicators -->
+                    <text x="140" y="380" text-anchor="middle" font-size="10" fill="#666">Subject lost</text>
+                    <text x="450" y="380" text-anchor="middle" font-size="10" fill="#e63946">Subject commands</text>
+                </svg>
+                <p class="visualization-caption">The same subject gains tremendous power when freed from visual competition.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The MoMA Principle</h4>
+                <p>Museums of modern art understand that white walls amplify the work. Empty space is not absence—it's presence. The gallery wall gives each piece room to resonate. Your frame is your gallery wall.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Clean Backgrounds</h2>
+            <p>The background is not secondary—it's half your photograph. Minimalist photographers obsess over backgrounds, seeking surfaces that complement without competing: blank walls, overcast skies, fog, shadow, and architectural planes.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Three background examples -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Example 1: Clean wall -->
+                    <rect x="20" y="50" width="170" height="280" fill="#e8e4dc"/>
+                    <text x="105" y="35" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">PLAIN WALL</text>
+                    
+                    <!-- Subtle texture -->
+                    <line x1="30" y1="100" x2="180" y2="100" stroke="#d8d4cc" stroke-width="0.5"/>
+                    <line x1="30" y1="150" x2="180" y2="150" stroke="#d8d4cc" stroke-width="0.5"/>
+                    <line x1="30" y1="200" x2="180" y2="200" stroke="#d8d4cc" stroke-width="0.5"/>
+                    
+                    <!-- Figure against wall -->
+                    <g transform="translate(105, 260)">
+                        <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="-18" x2="0" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="-8" x2="-12" y2="5" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-8" x2="12" y2="3" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="-8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Ground line -->
+                    <line x1="20" y1="310" x2="190" y2="310" stroke="#c8c4bc" stroke-width="1"/>
+                    
+                    <!-- Example 2: Sky/fog -->
+                    <defs>
+                        <linearGradient id="fog-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#d4d8dc"/>
+                            <stop offset="100%" style="stop-color:#e8e4dc"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="215" y="50" width="170" height="280" fill="url(#fog-gradient)"/>
+                    <text x="300" y="35" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">FOG / OVERCAST</text>
+                    
+                    <!-- Distant horizon barely visible -->
+                    <line x1="215" y1="280" x2="385" y2="280" stroke="#c4c8cc" stroke-width="1" opacity="0.5"/>
+                    
+                    <!-- Silhouette figure -->
+                    <g transform="translate(300, 250)">
+                        <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#2a2a2a"/>
+                        <line x1="0" y1="-18" x2="0" y2="15" stroke="#2a2a2a" stroke-width="4"/>
+                        <line x1="0" y1="-8" x2="-12" y2="5" stroke="#2a2a2a" stroke-width="3"/>
+                        <line x1="0" y1="-8" x2="12" y2="3" stroke="#2a2a2a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="-8" y2="42" stroke="#2a2a2a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="8" y2="42" stroke="#2a2a2a" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Example 3: Deep shadow -->
+                    <rect x="410" y="50" width="170" height="280" fill="#1a1a1a"/>
+                    <text x="495" y="35" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DEEP SHADOW</text>
+                    
+                    <!-- Figure emerging from dark -->
+                    <g transform="translate(495, 260)">
+                        <!-- Light hitting figure -->
+                        <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#c8c4bc"/>
+                        <line x1="0" y1="-18" x2="0" y2="15" stroke="#c8c4bc" stroke-width="4"/>
+                        <line x1="0" y1="-8" x2="-12" y2="5" stroke="#a8a49c" stroke-width="3"/>
+                        <line x1="0" y1="-8" x2="12" y2="3" stroke="#c8c4bc" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="-8" y2="42" stroke="#a8a49c" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="8" y2="42" stroke="#c8c4bc" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Labels -->
+                    <text x="105" y="355" text-anchor="middle" font-size="9" fill="#666">Urban surfaces</text>
+                    <text x="300" y="355" text-anchor="middle" font-size="9" fill="#666">Weather as backdrop</text>
+                    <text x="495" y="355" text-anchor="middle" font-size="9" fill="#666">Shadow as canvas</text>
+                </svg>
+                <p class="visualization-caption">Three approaches to clean backgrounds: architectural surfaces, atmospheric conditions, and strategic shadow.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Plain walls</strong> — concrete, stucco, painted brick</li>
+                <li><strong>Overcast skies</strong> — nature's giant softbox</li>
+                <li><strong>Fog and mist</strong> — erases background complexity</li>
+                <li><strong>Deep shadow</strong> — darkness simplifies everything</li>
+                <li><strong>Water surfaces</strong> — reflective, uniform planes</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Single Subject Focus</h2>
+            <p>One subject. One idea. One emotional note. The minimalist image says one thing with absolute clarity. When you introduce a second element, you create relationship. A third creates complexity. Sometimes you want that—but the minimalist knows the power of the singular.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Progression: 1, 2, 3 subjects -->
+                    
+                    <!-- Single subject -->
+                    <rect x="20" y="50" width="170" height="280" fill="#e8e2d6"/>
+                    <text x="105" y="35" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">ONE = STATEMENT</text>
+                    
+                    <g transform="translate(105, 200)">
+                        <ellipse cx="0" cy="-35" rx="14" ry="17" fill="#1a1a1a"/>
+                        <line x1="0" y1="-18" x2="0" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                        <line x1="0" y1="-5" x2="-18" y2="12" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="-5" x2="18" y2="8" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="25" x2="-12" y2="60" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="25" x2="12" y2="60" stroke="#1a1a1a" stroke-width="4"/>
+                    </g>
+                    
+                    <!-- Focus indicator -->
+                    <circle cx="105" cy="200" r="50" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
+                    
+                    <!-- Two subjects -->
+                    <rect x="215" y="50" width="170" height="280" fill="#e8e2d6"/>
+                    <text x="300" y="35" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">TWO = RELATIONSHIP</text>
+                    
+                    <g transform="translate(260, 200)">
+                        <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="-18" x2="0" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="-8" x2="-12" y2="5" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-8" x2="12" y2="3" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="-8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    
+                    <g transform="translate(340, 210)">
+                        <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="-18" x2="0" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="-8" x2="-12" y2="5" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-8" x2="12" y2="3" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="-8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Connection line -->
+                    <line x1="270" y1="200" x2="330" y2="205" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    
+                    <!-- Three subjects -->
+                    <rect x="410" y="50" width="170" height="280" fill="#e8e2d6"/>
+                    <text x="495" y="35" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">THREE = STORY</text>
+                    
+                    <g transform="translate(450, 190)">
+                        <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-15" x2="0" y2="10" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-5" x2="-10" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-5" x2="10" y2="3" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="-6" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="6" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <g transform="translate(495, 210)">
+                        <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-15" x2="0" y2="10" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-5" x2="-10" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-5" x2="10" y2="3" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="-6" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="6" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <g transform="translate(540, 200)">
+                        <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-15" x2="0" y2="10" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-5" x2="-10" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-5" x2="10" y2="3" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="-6" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="6" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Triangle of relationships -->
+                    <line x1="455" y1="195" x2="490" y2="205" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    <line x1="500" y1="205" x2="535" y2="200" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    <line x1="455" y1="195" x2="535" y2="200" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    
+                    <!-- Bottom labels -->
+                    <text x="105" y="355" text-anchor="middle" font-size="9" fill="#e63946">Pure minimalism</text>
+                    <text x="300" y="355" text-anchor="middle" font-size="9" fill="#666">Dialogue</text>
+                    <text x="495" y="355" text-anchor="middle" font-size="9" fill="#666">Narrative begins</text>
+                </svg>
+                <p class="visualization-caption">As elements increase, so does complexity. The single subject makes the clearest statement.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Question Test</h4>
+                <p>Before you press the shutter, ask: "What is this photograph about?" If you can't answer in one word or phrase, consider whether you're trying to say too much. A minimalist image has one clear answer.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Negative Space Mastery</h2>
+            <p>Negative space is the silence between notes, the pause in conversation. It's not emptiness—it's breathing room. The ratio of subject to space determines the emotional weight of your image.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Ratio demonstrations -->
+                    <text x="300" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">NEGATIVE SPACE RATIOS</text>
+                    
+                    <!-- 50/50 -->
+                    <rect x="30" y="50" width="120" height="120" fill="#e8e2d6"/>
+                    <rect x="30" y="50" width="60" height="120" fill="#d4cec2"/>
+                    <g transform="translate(60, 110)">
+                        <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    <text x="90" y="190" text-anchor="middle" font-size="10" fill="#1a1a1a">50 / 50</text>
+                    <text x="90" y="205" text-anchor="middle" font-size="9" fill="#666">Balanced</text>
+                    
+                    <!-- 30/70 -->
+                    <rect x="170" y="50" width="120" height="120" fill="#e8e2d6"/>
+                    <rect x="170" y="50" width="36" height="120" fill="#d4cec2"/>
+                    <g transform="translate(188, 110)">
+                        <ellipse cx="0" cy="-20" rx="6" ry="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-12" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <text x="230" y="190" text-anchor="middle" font-size="10" fill="#1a1a1a">30 / 70</text>
+                    <text x="230" y="205" text-anchor="middle" font-size="9" fill="#666">Breathing room</text>
+                    
+                    <!-- 15/85 -->
+                    <rect x="310" y="50" width="120" height="120" fill="#e8e2d6"/>
+                    <rect x="310" y="50" width="18" height="120" fill="#d4cec2"/>
+                    <g transform="translate(319, 110)">
+                        <ellipse cx="0" cy="-15" rx="4" ry="5" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="8" stroke="#1a1a1a" stroke-width="1.5"/>
+                    </g>
+                    <text x="370" y="190" text-anchor="middle" font-size="10" fill="#e63946">15 / 85</text>
+                    <text x="370" y="205" text-anchor="middle" font-size="9" fill="#e63946">Powerful isolation</text>
+                    
+                    <!-- 5/95 -->
+                    <rect x="450" y="50" width="120" height="120" fill="#e8e2d6"/>
+                    <rect x="450" y="50" width="6" height="120" fill="#d4cec2"/>
+                    <g transform="translate(453, 110)">
+                        <ellipse cx="0" cy="-10" rx="2" ry="3" fill="#1a1a1a"/>
+                        <line x1="0" y1="-7" x2="0" y2="5" stroke="#1a1a1a" stroke-width="1"/>
+                    </g>
+                    <text x="510" y="190" text-anchor="middle" font-size="10" fill="#1a1a1a">5 / 95</text>
+                    <text x="510" y="205" text-anchor="middle" font-size="9" fill="#666">Vast emptiness</text>
+                    
+                    <!-- Full composition example -->
+                    <rect x="30" y="230" width="540" height="150" fill="#e8e2d6"/>
+                    
+                    <!-- Horizon line -->
+                    <line x1="30" y1="350" x2="570" y2="350" stroke="#cac4b8" stroke-width="1"/>
+                    
+                    <!-- Tiny figure with vast space -->
+                    <g transform="translate(480, 330)">
+                        <ellipse cx="0" cy="-15" rx="5" ry="6" fill="#1a1a1a"/>
+                        <line x1="0" y1="-9" x2="0" y2="8" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-3" x2="-7" y2="4" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <line x1="0" y1="-3" x2="7" y2="2" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <line x1="0" y1="8" x2="-4" y2="22" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <line x1="0" y1="8" x2="4" y2="22" stroke="#1a1a1a" stroke-width="1.5"/>
+                    </g>
+                    
+                    <!-- Space measurement -->
+                    <line x1="50" y1="245" x2="460" y2="245" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    <text x="255" y="260" text-anchor="middle" font-size="10" fill="#e63946">NEGATIVE SPACE</text>
+                    
+                    <line x1="475" y1="245" x2="490" y2="245" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="525" y="260" text-anchor="middle" font-size="10" fill="#1a1a1a">Subject</text>
+                </svg>
+                <p class="visualization-caption">More negative space amplifies isolation and creates emotional resonance. The 15/85 ratio is often the sweet spot for powerful minimalism.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Geometric Minimalism</h2>
+            <p>Urban environments are geometric playgrounds. Minimalist photographers find power in pure shapes—the rectangle of a doorway, the arc of a bridge, the grid of windows. These forms, isolated from context, become abstract compositions.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Single bold rectangle -->
+                        <rect x="40" y="30" width="170" height="120" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Figure in geometric context -->
+                        <g transform="translate(125, 120)">
+                            <ellipse cx="0" cy="-20" rx="6" ry="8" fill="#1a1a1a"/>
+                            <line x1="0" y1="-12" x2="0" y2="8" stroke="#1a1a1a" stroke-width="2"/>
+                        </g>
+                    </svg>
+                    <h4>Rectangle: Stability</h4>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Bold circle -->
+                        <circle cx="125" cy="90" r="60" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Figure within circle -->
+                        <g transform="translate(125, 100)">
+                            <ellipse cx="0" cy="-15" rx="5" ry="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="-9" x2="0" y2="6" stroke="#1a1a1a" stroke-width="2"/>
+                        </g>
+                    </svg>
+                    <h4>Circle: Containment</h4>
+                </div>
+            </div>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Triangle -->
+                        <polygon points="125,20 30,160 220,160" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Figure at base -->
+                        <g transform="translate(125, 140)">
+                            <ellipse cx="0" cy="-12" rx="4" ry="5" fill="#1a1a1a"/>
+                            <line x1="0" y1="-7" x2="0" y2="5" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                    </svg>
+                    <h4>Triangle: Direction</h4>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Single diagonal line -->
+                        <line x1="30" y1="150" x2="220" y2="30" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Figure on line -->
+                        <g transform="translate(140, 80)">
+                            <ellipse cx="0" cy="-12" rx="4" ry="5" fill="#1a1a1a"/>
+                            <line x1="0" y1="-7" x2="0" y2="5" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                    </svg>
+                    <h4>Line: Movement</h4>
+                </div>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Geometric Reduction</h4>
+                <p>When you isolate a geometric element, you're creating abstraction from reality. The viewer sees both the pure form and the street context simultaneously. This duality is the essence of geometric minimalism.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Color Minimalism</h2>
+            <p>Color minimalism restricts the palette. Monochromatic scenes, complementary pairs, or images dominated by a single hue create visual cohesion. When everything shares a color relationship, the composition feels inevitable.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Monochromatic example -->
+                    <text x="100" y="30" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">MONOCHROMATIC</text>
+                    <rect x="20" y="50" width="160" height="150" fill="#4a6fa5"/>
+                    <rect x="20" y="50" width="160" height="30" fill="#3d5c87"/>
+                    <rect x="20" y="170" width="160" height="30" fill="#6b8fc5"/>
+                    <!-- Figure in blue tones -->
+                    <g transform="translate(100, 140)">
+                        <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#2a4a75"/>
+                        <line x1="0" y1="-10" x2="0" y2="15" stroke="#2a4a75" stroke-width="3"/>
+                        <line x1="0" y1="-3" x2="-10" y2="8" stroke="#2a4a75" stroke-width="2"/>
+                        <line x1="0" y1="-3" x2="10" y2="6" stroke="#2a4a75" stroke-width="2"/>
+                    </g>
+                    <text x="100" y="220" text-anchor="middle" font-size="9" fill="#666">Single hue, varied tones</text>
+                    
+                    <!-- Complementary example -->
+                    <text x="300" y="30" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">COMPLEMENTARY</text>
+                    <rect x="220" y="50" width="160" height="150" fill="#e8c87a"/>
+                    <!-- Orange accent figure -->
+                    <g transform="translate(300, 130)">
+                        <ellipse cx="0" cy="-20" rx="10" ry="12" fill="#4a6fa5"/>
+                        <line x1="0" y1="-8" x2="0" y2="20" stroke="#4a6fa5" stroke-width="4"/>
+                        <line x1="0" y1="2" x2="-12" y2="14" stroke="#4a6fa5" stroke-width="3"/>
+                        <line x1="0" y1="2" x2="12" y2="10" stroke="#4a6fa5" stroke-width="3"/>
+                    </g>
+                    <text x="300" y="220" text-anchor="middle" font-size="9" fill="#666">Blue subject, yellow field</text>
+                    
+                    <!-- Near-monochrome with accent -->
+                    <text x="500" y="30" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">ACCENT COLOR</text>
+                    <rect x="420" y="50" width="160" height="150" fill="#d4d0c8"/>
+                    <!-- Everything neutral except one element -->
+                    <g transform="translate(500, 130)">
+                        <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#8a8680"/>
+                        <line x1="0" y1="-10" x2="0" y2="15" stroke="#8a8680" stroke-width="3"/>
+                        <line x1="0" y1="-3" x2="-10" y2="8" stroke="#8a8680" stroke-width="2"/>
+                        <line x1="0" y1="-3" x2="10" y2="6" stroke="#8a8680" stroke-width="2"/>
+                        <!-- Red accent -->
+                        <circle cx="12" cy="-25" r="6" fill="#e63946"/>
+                    </g>
+                    <text x="500" y="220" text-anchor="middle" font-size="9" fill="#666">Neutral + single pop</text>
+                    
+                    <!-- B&W section -->
+                    <text x="300" y="260" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">THE ULTIMATE REDUCTION: BLACK & WHITE</text>
+                    
+                    <rect x="100" y="280" width="400" height="100" fill="#1a1a1a"/>
+                    <!-- White figure silhouette -->
+                    <g transform="translate(300, 340)">
+                        <ellipse cx="0" cy="-25" rx="12" ry="15" fill="#f5f0e6"/>
+                        <line x1="0" y1="-10" x2="0" y2="25" stroke="#f5f0e6" stroke-width="5"/>
+                        <line x1="0" y1="5" x2="-15" y2="20" stroke="#f5f0e6" stroke-width="4"/>
+                        <line x1="0" y1="5" x2="15" y2="15" stroke="#f5f0e6" stroke-width="4"/>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Color restriction creates visual harmony. Black and white is the purest form of color minimalism.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Isolated Figure</h2>
+            <p>One person, alone in space. This is the iconic minimalist street photograph. The isolated figure becomes both subject and symbol—representing solitude, individuality, the human condition itself. Scale and placement are everything.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Large empty space -->
+                    <rect x="0" y="0" width="600" height="320" fill="#e8e2d6"/>
+                    
+                    <!-- Subtle horizon -->
+                    <line x1="0" y1="280" x2="600" y2="280" stroke="#d4cec2" stroke-width="1"/>
+                    
+                    <!-- Ground plane -->
+                    <rect x="0" y="280" width="600" height="120" fill="#d4cec2"/>
+                    
+                    <!-- Single small figure - deliberately tiny -->
+                    <g transform="translate(420, 265)">
+                        <ellipse cx="0" cy="-8" rx="3" ry="4" fill="#1a1a1a"/>
+                        <line x1="0" y1="-4" x2="0" y2="6" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <line x1="0" y1="0" x2="-4" y2="5" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="4" y2="4" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="0" y1="6" x2="-2" y2="14" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="0" y1="6" x2="2" y2="14" stroke="#1a1a1a" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Tiny shadow -->
+                    <ellipse cx="420" cy="282" rx="5" ry="2" fill="#1a1a1a" opacity="0.2"/>
+                    
+                    <!-- Visual annotations -->
+                    <text x="60" y="140" font-size="11" fill="#666">The vast empty space</text>
+                    <text x="60" y="158" font-size="11" fill="#666">gives weight to solitude</text>
+                    
+                    <!-- Arrow pointing to figure -->
+                    <line x1="350" y1="270" x2="405" y2="270" stroke="#e63946" stroke-width="1"/>
+                    <polygon points="405,270 398,266 398,274" fill="#e63946"/>
+                    <text x="310" y="275" font-size="9" fill="#e63946">Subject</text>
+                    
+                    <!-- Placement grid hint -->
+                    <line x1="400" y1="0" x2="400" y2="320" stroke="#e63946" stroke-width="0.5" stroke-dasharray="8,8" opacity="0.4"/>
+                    <line x1="0" y1="213" x2="600" y2="213" stroke="#e63946" stroke-width="0.5" stroke-dasharray="8,8" opacity="0.4"/>
+                    <text x="412" y="360" font-size="9" fill="#e63946">Rule of thirds placement</text>
+                </svg>
+                <p class="visualization-caption">Scale creates emotion. A tiny figure in vast space speaks of solitude more powerfully than words.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Scale contrast</strong> — small figure, large space</li>
+                <li><strong>Edge tension</strong> — figure near frame edges creates unease</li>
+                <li><strong>Center placement</strong> — feels formal, iconic, deliberate</li>
+                <li><strong>Walking away</strong> — evokes departure, mystery</li>
+                <li><strong>Walking toward</strong> — creates approach, confrontation</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Subtracting Elements</h2>
+            <p>Minimalism is an editing mindset. It starts before you shoot—waiting for the frame to clear, for distractions to exit—and continues in post-processing, cropping away the unnecessary. Ask not "what can I add?" but "what can I remove?"</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Progressive reduction -->
+                    <text x="300" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">THE SUBTRACTION PROCESS</text>
+                    
+                    <!-- Stage 1: Busy -->
+                    <rect x="20" y="50" width="130" height="140" fill="#e8e2d6" stroke="#ccc" stroke-width="1"/>
+                    <text x="85" y="210" text-anchor="middle" font-size="10" fill="#1a1a1a">1. Initial scene</text>
+                    
+                    <!-- Clutter -->
+                    <rect x="25" y="55" width="30" height="45" fill="#bbb"/>
+                    <rect x="60" y="60" width="25" height="50" fill="#aaa"/>
+                    <circle cx="120" cy="80" r="15" fill="#999"/>
+                    <rect x="100" y="100" width="40" height="30" fill="#888"/>
+                    <rect x="30" y="120" width="35" height="35" fill="#777"/>
+                    <circle cx="90" cy="150" r="12" fill="#666"/>
+                    <!-- Main subject buried -->
+                    <g transform="translate(85, 130)">
+                        <ellipse cx="0" cy="-15" rx="5" ry="6" fill="#1a1a1a"/>
+                        <line x1="0" y1="-9" x2="0" y2="8" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Arrow -->
+                    <path d="M 160,120 L 175,120" stroke="#e63946" stroke-width="2" marker-end="url(#arrow)"/>
+                    
+                    <!-- Stage 2: Waiting -->
+                    <rect x="185" y="50" width="130" height="140" fill="#e8e2d6" stroke="#ccc" stroke-width="1"/>
+                    <text x="250" y="210" text-anchor="middle" font-size="10" fill="#1a1a1a">2. Wait for clarity</text>
+                    
+                    <!-- Some elements remain -->
+                    <rect x="190" y="55" width="30" height="45" fill="#ccc" opacity="0.4"/>
+                    <rect x="280" y="100" width="25" height="30" fill="#bbb" opacity="0.3"/>
+                    <!-- Subject clearer -->
+                    <g transform="translate(250, 130)">
+                        <ellipse cx="0" cy="-18" rx="7" ry="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="12" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-3" x2="-8" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-3" x2="8" y2="4" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Arrow -->
+                    <path d="M 325,120 L 340,120" stroke="#e63946" stroke-width="2" marker-end="url(#arrow)"/>
+                    
+                    <!-- Stage 3: Crop -->
+                    <rect x="350" y="50" width="130" height="140" fill="#e8e2d6" stroke="#ccc" stroke-width="1"/>
+                    <text x="415" y="210" text-anchor="middle" font-size="10" fill="#1a1a1a">3. Tight crop</text>
+                    
+                    <!-- Crop marks -->
+                    <rect x="365" y="60" width="100" height="120" fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    
+                    <!-- Subject with minimal context -->
+                    <g transform="translate(415, 125)">
+                        <ellipse cx="0" cy="-20" rx="9" ry="11" fill="#1a1a1a"/>
+                        <line x1="0" y1="-9" x2="0" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="0" x2="-12" y2="12" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="0" x2="12" y2="10" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Arrow -->
+                    <path d="M 490,120 L 505,120" stroke="#e63946" stroke-width="2" marker-end="url(#arrow)"/>
+                    
+                    <!-- Stage 4: Final -->
+                    <rect x="515" y="65" width="70" height="110" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="2"/>
+                    <text x="550" y="210" text-anchor="middle" font-size="10" fill="#e63946">4. Essential</text>
+                    
+                    <!-- Pure minimal result -->
+                    <g transform="translate(550, 130)">
+                        <ellipse cx="0" cy="-22" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="20" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="2" x2="-14" y2="16" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="2" x2="14" y2="13" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    
+                    <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#e63946"/>
+                        </marker>
+                    </defs>
+                    
+                    <!-- Waiting techniques -->
+                    <rect x="30" y="240" width="540" height="140" fill="none" stroke="#d4cec2" stroke-width="1" stroke-dasharray="4,2"/>
+                    <text x="300" y="260" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">WAITING STRATEGIES</text>
+                    
+                    <text x="60" y="290" font-size="10" fill="#666">• Find the spot, wait for the frame to clear</text>
+                    <text x="60" y="310" font-size="10" fill="#666">• Anticipate movement—people exit, cars pass</text>
+                    <text x="60" y="330" font-size="10" fill="#666">• Weather changes: fog rolls in, clouds cover sun</text>
+                    <text x="60" y="350" font-size="10" fill="#666">• Time of day: early morning, late evening = fewer people</text>
+                    <text x="60" y="370" font-size="10" fill="#666">• Multiple frames: shoot sequences, select the cleanest</text>
+                </svg>
+                <p class="visualization-caption">The minimalist process: observe, wait, capture, crop. Each stage removes distraction until only the essential remains.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Perfection Through Removal</h4>
+                <p>"Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away." — Antoine de Saint-Exupéry. This principle is the heart of minimalist photography.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            
+            <div class="exercise">
+                <h4>Assignment: The Empty Frame</h4>
+                <p>Find a clean background—a plain wall, a clear sky, a uniform surface. Stand there for 30 minutes. Photograph only single figures passing through. Focus entirely on the relationship between subject and negative space. Aim for at least 80% empty space in each frame.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: One Color</h4>
+                <p>Spend a day photographing only scenes dominated by a single color. This might be a red door, a blue wall, yellow light. The color should occupy at least 70% of your frame. Notice how color restriction focuses attention.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: The Ten Second Rule</h4>
+                <p>Before pressing the shutter, count to ten. Use this time to scan every edge of your frame. Is there anything that doesn't need to be there? Can you reframe to eliminate it? Only shoot when you've removed every possible distraction.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Geometric Hunt</h4>
+                <p>Look only for pure geometric forms in your city. Circles, squares, triangles, lines. Photograph them in isolation with maximum negative space. Include a human figure only if they enhance the geometry—otherwise, shoot pure abstraction.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technique</span>
+            </a>
+            <a href="../index.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Home</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

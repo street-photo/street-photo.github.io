@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Processing & Editing — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="editing.html">Editing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Post-Processing</p>
+        <h1>Post-Processing & Editing</h1>
+        <p class="tutorial-intro">The digital darkroom is an extension of your creative vision. Learn to enhance your images while preserving the authenticity of the moment you captured.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>The Editing Philosophy</h2>
+            <p>Post-processing in street photography walks a fine line. Unlike commercial or fine art photography, street photography carries an implicit promise of truth—that what we show existed in that moment. Our role as editors is to enhance what was there, not to fabricate what wasn't.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 300">
+                    <rect x="0" y="0" width="600" height="300" fill="#f5f0e6"/>
+                    
+                    <!-- Spectrum bar -->
+                    <defs>
+                        <linearGradient id="spectrum-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#2a5a2a"/>
+                            <stop offset="50%" style="stop-color:#e8e2d6"/>
+                            <stop offset="100%" style="stop-color:#8b0000"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <rect x="50" y="100" width="500" height="40" fill="url(#spectrum-gradient)" rx="5"/>
+                    
+                    <!-- Markers -->
+                    <g transform="translate(50, 160)">
+                        <line x1="0" y1="0" x2="0" y2="15" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="35" text-anchor="middle" font-size="10" fill="#1a1a1a">RAW FILE</text>
+                        <text x="0" y="48" text-anchor="middle" font-size="9" fill="#666">Unprocessed</text>
+                    </g>
+                    
+                    <g transform="translate(175, 160)">
+                        <line x1="0" y1="0" x2="0" y2="15" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="35" text-anchor="middle" font-size="10" fill="#1a1a1a">BASIC</text>
+                        <text x="0" y="48" text-anchor="middle" font-size="9" fill="#666">Exposure, WB</text>
+                    </g>
+                    
+                    <g transform="translate(300, 160)">
+                        <line x1="0" y1="0" x2="0" y2="20" stroke="#e63946" stroke-width="3"/>
+                        <text x="0" y="40" text-anchor="middle" font-size="11" font-weight="500" fill="#e63946">IDEAL ZONE</text>
+                        <text x="0" y="55" text-anchor="middle" font-size="9" fill="#666">Enhance reality</text>
+                    </g>
+                    
+                    <g transform="translate(425, 160)">
+                        <line x1="0" y1="0" x2="0" y2="15" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="35" text-anchor="middle" font-size="10" fill="#1a1a1a">STYLIZED</text>
+                        <text x="0" y="48" text-anchor="middle" font-size="9" fill="#666">Heavy grades</text>
+                    </g>
+                    
+                    <g transform="translate(550, 160)">
+                        <line x1="0" y1="0" x2="0" y2="15" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="35" text-anchor="middle" font-size="10" fill="#1a1a1a">FABRICATION</text>
+                        <text x="0" y="48" text-anchor="middle" font-size="9" fill="#666">Manipulation</text>
+                    </g>
+                    
+                    <!-- Title -->
+                    <text x="300" y="60" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">THE EDITING SPECTRUM</text>
+                    
+                    <!-- Acceptable zone bracket -->
+                    <path d="M 50,85 L 50,80 L 400,80 L 400,85" fill="none" stroke="#2a5a2a" stroke-width="2"/>
+                    <text x="225" y="72" text-anchor="middle" font-size="9" fill="#2a5a2a">ACCEPTABLE IN STREET PHOTOGRAPHY</text>
+                    
+                    <!-- Labels -->
+                    <text x="75" y="125" font-size="10" fill="#f5f0e6">AUTHENTIC</text>
+                    <text x="480" y="125" font-size="10" fill="#f5f0e6">ALTERED</text>
+                </svg>
+                <p class="visualization-caption">The editing spectrum: from untouched RAW to complete fabrication. Stay in the zone that enhances truth without inventing it.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Guiding Principle</h4>
+                <p>Ask yourself: "Could a witness to this scene verify my photograph?" If your edits change the answer from yes to no, you've crossed the line from enhancement to fabrication. Adjust exposure, fix white balance, crop—but don't add clouds, remove people, or composite multiple moments.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Selection Process</h2>
+            <p>Before any editing begins, you must cull ruthlessly. The selection process is where great photographers separate themselves from good ones. Your best work rises to the top only when you're willing to reject the rest.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <!-- Funnel visualization -->
+                    <polygon points="100,40 500,40 400,180 200,180" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                    <polygon points="200,180 400,180 350,260 250,260" fill="#d4cec2" stroke="#1a1a1a" stroke-width="1"/>
+                    <polygon points="250,260 350,260 320,310 280,310" fill="#c4beb2" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Numbers -->
+                    <text x="300" y="100" text-anchor="middle" font-size="28" font-weight="300" fill="#1a1a1a">500</text>
+                    <text x="300" y="125" text-anchor="middle" font-size="11" fill="#666">images shot</text>
+                    
+                    <text x="300" y="210" text-anchor="middle" font-size="22" font-weight="300" fill="#1a1a1a">50</text>
+                    <text x="300" y="230" text-anchor="middle" font-size="10" fill="#666">worth reviewing</text>
+                    
+                    <text x="300" y="295" text-anchor="middle" font-size="18" font-weight="500" fill="#e63946">5</text>
+                    <text x="300" y="310" text-anchor="middle" font-size="9" fill="#666">keepers</text>
+                    
+                    <!-- Percentage labels -->
+                    <text x="520" y="110" font-size="11" fill="#999">100%</text>
+                    <text x="420" y="220" font-size="11" fill="#999">10%</text>
+                    <text x="370" y="295" font-size="11" fill="#e63946">1%</text>
+                    
+                    <!-- Side note -->
+                    <rect x="30" y="150" width="120" height="80" fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" rx="3"/>
+                    <text x="90" y="175" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">THE 1% RULE</text>
+                    <text x="90" y="195" text-anchor="middle" font-size="9" fill="#666">Great photographers</text>
+                    <text x="90" y="208" text-anchor="middle" font-size="9" fill="#666">keep roughly 1%</text>
+                    <text x="90" y="221" text-anchor="middle" font-size="9" fill="#666">of what they shoot</text>
+                </svg>
+                <p class="visualization-caption">The editing funnel: ruthless culling is what separates a portfolio from a hard drive full of snapshots.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>First pass:</strong> Quick rejections only—remove obvious failures (blurry, mis-timed, badly exposed)</li>
+                <li><strong>Second pass:</strong> Rate what's left—does this image have something to say?</li>
+                <li><strong>Third pass:</strong> Compare similar shots—keep only the strongest from each situation</li>
+                <li><strong>Time test:</strong> Wait a week, then review again with fresh eyes</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Basic Adjustments</h2>
+            <p>These fundamental controls form the foundation of any edit. Master these sliders and you'll handle 90% of what any image needs.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 480">
+                    <rect x="0" y="0" width="600" height="480" fill="#f5f0e6"/>
+                    
+                    <!-- Panel background -->
+                    <rect x="50" y="30" width="500" height="420" fill="#2a2a2a" rx="8"/>
+                    
+                    <!-- Panel header -->
+                    <text x="80" y="65" font-size="14" font-weight="500" fill="#f5f0e6">BASIC ADJUSTMENTS</text>
+                    <line x1="80" y1="80" x2="520" y2="80" stroke="#444" stroke-width="1"/>
+                    
+                    <!-- Exposure slider -->
+                    <g transform="translate(80, 110)">
+                        <text x="0" y="0" font-size="11" fill="#999">Exposure</text>
+                        <text x="360" y="0" font-size="11" fill="#f5f0e6">+0.70</text>
+                        <rect x="0" y="15" width="400" height="6" fill="#444" rx="3"/>
+                        <rect x="0" y="15" width="270" height="6" fill="#e63946" rx="3"/>
+                        <circle cx="270" cy="18" r="10" fill="#f5f0e6" stroke="#e63946" stroke-width="2"/>
+                        <line x1="200" y1="15" x2="200" y2="21" stroke="#666" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Contrast slider -->
+                    <g transform="translate(80, 170)">
+                        <text x="0" y="0" font-size="11" fill="#999">Contrast</text>
+                        <text x="360" y="0" font-size="11" fill="#f5f0e6">+15</text>
+                        <rect x="0" y="15" width="400" height="6" fill="#444" rx="3"/>
+                        <rect x="0" y="15" width="230" height="6" fill="#e63946" rx="3"/>
+                        <circle cx="230" cy="18" r="10" fill="#f5f0e6" stroke="#e63946" stroke-width="2"/>
+                        <line x1="200" y1="15" x2="200" y2="21" stroke="#666" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Highlights slider -->
+                    <g transform="translate(80, 230)">
+                        <text x="0" y="0" font-size="11" fill="#999">Highlights</text>
+                        <text x="360" y="0" font-size="11" fill="#f5f0e6">-45</text>
+                        <rect x="0" y="15" width="400" height="6" fill="#444" rx="3"/>
+                        <rect x="110" y="15" width="90" height="6" fill="#4a90d9" rx="3"/>
+                        <circle cx="110" cy="18" r="10" fill="#f5f0e6" stroke="#4a90d9" stroke-width="2"/>
+                        <line x1="200" y1="15" x2="200" y2="21" stroke="#666" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Shadows slider -->
+                    <g transform="translate(80, 290)">
+                        <text x="0" y="0" font-size="11" fill="#999">Shadows</text>
+                        <text x="360" y="0" font-size="11" fill="#f5f0e6">+30</text>
+                        <rect x="0" y="15" width="400" height="6" fill="#444" rx="3"/>
+                        <rect x="0" y="15" width="260" height="6" fill="#e63946" rx="3"/>
+                        <circle cx="260" cy="18" r="10" fill="#f5f0e6" stroke="#e63946" stroke-width="2"/>
+                        <line x1="200" y1="15" x2="200" y2="21" stroke="#666" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Whites slider -->
+                    <g transform="translate(80, 350)">
+                        <text x="0" y="0" font-size="11" fill="#999">Whites</text>
+                        <text x="360" y="0" font-size="11" fill="#f5f0e6">+5</text>
+                        <rect x="0" y="15" width="400" height="6" fill="#444" rx="3"/>
+                        <rect x="0" y="15" width="210" height="6" fill="#e63946" rx="3"/>
+                        <circle cx="210" cy="18" r="10" fill="#f5f0e6" stroke="#e63946" stroke-width="2"/>
+                        <line x1="200" y1="15" x2="200" y2="21" stroke="#666" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Blacks slider -->
+                    <g transform="translate(80, 410)">
+                        <text x="0" y="0" font-size="11" fill="#999">Blacks</text>
+                        <text x="360" y="0" font-size="11" fill="#f5f0e6">-10</text>
+                        <rect x="0" y="15" width="400" height="6" fill="#444" rx="3"/>
+                        <rect x="180" y="15" width="20" height="6" fill="#4a90d9" rx="3"/>
+                        <circle cx="180" cy="18" r="10" fill="#f5f0e6" stroke="#4a90d9" stroke-width="2"/>
+                        <line x1="200" y1="15" x2="200" y2="21" stroke="#666" stroke-width="1"/>
+                    </g>
+                </svg>
+                <p class="visualization-caption">The basic adjustment panel: these six sliders control the fundamental tonal relationships in your image.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Order Matters</h4>
+                <p>Work in this sequence: Exposure first (set overall brightness), then Highlights and Shadows (recover detail), then Whites and Blacks (set endpoints), and finally Contrast (for punch). This systematic approach prevents chasing your tail with conflicting adjustments.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Cropping Decisions</h2>
+            <p>Cropping is the most powerful tool you have—and the most abused. Every crop should serve the image, either by removing distractions or strengthening the composition. Never crop just to "zoom in."</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Original image representation -->
+                    <rect x="50" y="50" width="220" height="147" fill="#d4cec2" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Scene elements in original -->
+                    <rect x="60" y="60" width="40" height="60" fill="#a8a29a"/>
+                    <rect x="180" y="70" width="30" height="50" fill="#b8b2a6"/>
+                    <circle cx="220" cy="170" r="15" fill="#8a847a"/>
+                    
+                    <!-- Subject -->
+                    <g transform="translate(140, 140)">
+                        <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="0" x2="-10" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="0" x2="10" y2="8" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="15" x2="-6" y2="35" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="15" x2="6" y2="35" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Crop overlay -->
+                    <rect x="100" y="95" width="120" height="80" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="6,3"/>
+                    
+                    <!-- Arrow -->
+                    <line x1="290" y1="130" x2="330" y2="130" stroke="#1a1a1a" stroke-width="2"/>
+                    <polygon points="330,125 345,130 330,135" fill="#1a1a1a"/>
+                    
+                    <!-- Cropped result -->
+                    <rect x="360" y="70" width="180" height="120" fill="#d4cec2" stroke="#e63946" stroke-width="2"/>
+                    
+                    <!-- Subject in cropped version -->
+                    <g transform="translate(440, 125)">
+                        <ellipse cx="0" cy="-25" rx="12" ry="15" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                        <line x1="0" y1="5" x2="-15" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="5" x2="15" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="25" x2="-10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="25" x2="10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                    </g>
+                    
+                    <!-- Labels -->
+                    <text x="160" y="220" text-anchor="middle" font-size="11" fill="#1a1a1a">ORIGINAL (3:2)</text>
+                    <text x="450" y="220" text-anchor="middle" font-size="11" fill="#e63946">CROPPED (3:2)</text>
+                    
+                    <!-- Aspect ratio reference -->
+                    <text x="300" y="270" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">COMMON ASPECT RATIOS</text>
+                    
+                    <g transform="translate(80, 290)">
+                        <rect x="0" y="0" width="60" height="40" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="30" y="55" text-anchor="middle" font-size="9" fill="#666">3:2</text>
+                        <text x="30" y="68" text-anchor="middle" font-size="8" fill="#999">Classic 35mm</text>
+                    </g>
+                    
+                    <g transform="translate(170, 290)">
+                        <rect x="0" y="0" width="53" height="40" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="27" y="55" text-anchor="middle" font-size="9" fill="#666">4:3</text>
+                        <text x="27" y="68" text-anchor="middle" font-size="8" fill="#999">Medium Format</text>
+                    </g>
+                    
+                    <g transform="translate(255, 290)">
+                        <rect x="0" y="0" width="40" height="40" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="20" y="55" text-anchor="middle" font-size="9" fill="#666">1:1</text>
+                        <text x="20" y="68" text-anchor="middle" font-size="8" fill="#999">Square</text>
+                    </g>
+                    
+                    <g transform="translate(325, 290)">
+                        <rect x="0" y="0" width="71" height="40" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="35" y="55" text-anchor="middle" font-size="9" fill="#666">16:9</text>
+                        <text x="35" y="68" text-anchor="middle" font-size="8" fill="#999">Cinematic</text>
+                    </g>
+                    
+                    <g transform="translate(425, 290)">
+                        <rect x="0" y="0" width="30" height="40" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="15" y="55" text-anchor="middle" font-size="9" fill="#666">4:5</text>
+                        <text x="15" y="68" text-anchor="middle" font-size="8" fill="#999">Portrait</text>
+                    </g>
+                    
+                    <g transform="translate(485, 290)">
+                        <rect x="0" y="0" width="60" height="30" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="30" y="45" text-anchor="middle" font-size="9" fill="#666">2.35:1</text>
+                        <text x="30" y="58" text-anchor="middle" font-size="8" fill="#999">Anamorphic</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Cropping should remove distractions and strengthen composition. Maintain consistent aspect ratios in your portfolio.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Crop to strengthen:</strong> Does the crop improve the rule of thirds or leading lines?</li>
+                <li><strong>Crop to simplify:</strong> Are you removing genuinely distracting elements?</li>
+                <li><strong>Never crop to save:</strong> If the shot didn't work, accept it and move on</li>
+                <li><strong>Maintain resolution:</strong> Aggressive crops reduce print quality—know your limits</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Developing a Consistent Style</h2>
+            <p>A recognizable editing style becomes part of your visual signature. This doesn't mean processing every image identically, but developing a coherent aesthetic language that ties your work together.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 320">
+                    <rect x="0" y="0" width="600" height="320" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="35" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a">VISUAL COHERENCE ACROSS A SERIES</text>
+                    
+                    <!-- Inconsistent row -->
+                    <text x="50" y="75" font-size="10" fill="#999">INCONSISTENT</text>
+                    
+                    <rect x="130" y="55" width="80" height="60" fill="#3a5a8a"/>
+                    <rect x="220" y="55" width="80" height="60" fill="#f4e4a4"/>
+                    <rect x="310" y="55" width="80" height="60" fill="#8b2a3a"/>
+                    <rect x="400" y="55" width="80" height="60" fill="#2a4a3a"/>
+                    <rect x="490" y="55" width="80" height="60" fill="#9a4a9a"/>
+                    
+                    <text x="520" y="130" font-size="9" fill="#e63946">✗ Jarring</text>
+                    
+                    <!-- Consistent row - warm tones -->
+                    <text x="50" y="175" font-size="10" fill="#999">CONSISTENT</text>
+                    
+                    <rect x="130" y="155" width="80" height="60" fill="#c4a882"/>
+                    <rect x="220" y="155" width="80" height="60" fill="#b89878"/>
+                    <rect x="310" y="155" width="80" height="60" fill="#a88868"/>
+                    <rect x="400" y="155" width="80" height="60" fill="#d4b892"/>
+                    <rect x="490" y="155" width="80" height="60" fill="#c49872"/>
+                    
+                    <text x="520" y="230" font-size="9" fill="#2a5a2a">✓ Cohesive</text>
+                    
+                    <!-- Style elements -->
+                    <rect x="100" y="250" width="400" height="50" fill="#e8e2d6" rx="3"/>
+                    
+                    <text x="140" y="270" font-size="9" fill="#1a1a1a">TONAL RANGE</text>
+                    <text x="140" y="285" font-size="8" fill="#666">High or low key</text>
+                    
+                    <text x="250" y="270" font-size="9" fill="#1a1a1a">COLOR PALETTE</text>
+                    <text x="250" y="285" font-size="8" fill="#666">Warm, cool, muted</text>
+                    
+                    <text x="370" y="270" font-size="9" fill="#1a1a1a">CONTRAST</text>
+                    <text x="370" y="285" font-size="8" fill="#666">Punchy or soft</text>
+                    
+                    <text x="460" y="270" font-size="9" fill="#1a1a1a">GRAIN</text>
+                    <text x="460" y="285" font-size="8" fill="#666">Clean or textured</text>
+                </svg>
+                <p class="visualization-caption">Style consistency ties individual images into a coherent body of work.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Building Your Preset Foundation</h4>
+                <p>Create 2-3 base presets that represent your vision, then adjust individual images within that framework. Your presets shouldn't do everything—they should establish a starting point that you refine for each image's unique needs.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Color Grading Approaches</h2>
+            <p>Color grading sets the emotional temperature of your work. Whether subtle or dramatic, your color choices communicate mood before the viewer consciously reads the content.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a">COLOR GRADING MOODS</text>
+                    
+                    <!-- Warm / Golden Hour -->
+                    <g transform="translate(50, 50)">
+                        <rect x="0" y="0" width="150" height="100" rx="3"/>
+                        <defs>
+                            <linearGradient id="warm-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#e8a850"/>
+                                <stop offset="100%" style="stop-color:#c47830"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="150" height="100" fill="url(#warm-grad)" rx="3"/>
+                        
+                        <!-- Simple figure silhouette -->
+                        <ellipse cx="75" cy="55" rx="10" ry="12" fill="#2a1a10"/>
+                        <line x1="75" y1="67" x2="75" y2="90" stroke="#2a1a10" stroke-width="4"/>
+                        
+                        <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">WARM / GOLDEN</text>
+                        <text x="75" y="135" text-anchor="middle" font-size="9" fill="#666">Nostalgia, comfort</text>
+                        <text x="75" y="148" text-anchor="middle" font-size="8" fill="#999">+Orange highlights</text>
+                    </g>
+                    
+                    <!-- Cool / Blue Hour -->
+                    <g transform="translate(225, 50)">
+                        <defs>
+                            <linearGradient id="cool-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6090b8"/>
+                                <stop offset="100%" style="stop-color:#304860"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="150" height="100" fill="url(#cool-grad)" rx="3"/>
+                        
+                        <ellipse cx="75" cy="55" rx="10" ry="12" fill="#1a2030"/>
+                        <line x1="75" y1="67" x2="75" y2="90" stroke="#1a2030" stroke-width="4"/>
+                        
+                        <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">COOL / BLUE</text>
+                        <text x="75" y="135" text-anchor="middle" font-size="9" fill="#666">Solitude, distance</text>
+                        <text x="75" y="148" text-anchor="middle" font-size="8" fill="#999">+Blue shadows</text>
+                    </g>
+                    
+                    <!-- Desaturated -->
+                    <g transform="translate(400, 50)">
+                        <defs>
+                            <linearGradient id="desat-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#a8a8a8"/>
+                                <stop offset="100%" style="stop-color:#686868"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="150" height="100" fill="url(#desat-grad)" rx="3"/>
+                        
+                        <ellipse cx="75" cy="55" rx="10" ry="12" fill="#2a2a2a"/>
+                        <line x1="75" y1="67" x2="75" y2="90" stroke="#2a2a2a" stroke-width="4"/>
+                        
+                        <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DESATURATED</text>
+                        <text x="75" y="135" text-anchor="middle" font-size="9" fill="#666">Timeless, classic</text>
+                        <text x="75" y="148" text-anchor="middle" font-size="8" fill="#999">-40% saturation</text>
+                    </g>
+                    
+                    <!-- Teal & Orange -->
+                    <g transform="translate(50, 210)">
+                        <defs>
+                            <linearGradient id="teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#408080"/>
+                                <stop offset="60%" style="stop-color:#406060"/>
+                                <stop offset="100%" style="stop-color:#c87040"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="150" height="100" fill="url(#teal-grad)" rx="3"/>
+                        
+                        <ellipse cx="75" cy="55" rx="10" ry="12" fill="#c87040"/>
+                        <line x1="75" y1="67" x2="75" y2="90" stroke="#c87040" stroke-width="4"/>
+                        
+                        <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">TEAL & ORANGE</text>
+                        <text x="75" y="135" text-anchor="middle" font-size="9" fill="#666">Cinematic, modern</text>
+                        <text x="75" y="148" text-anchor="middle" font-size="8" fill="#999">Split toning</text>
+                    </g>
+                    
+                    <!-- High Contrast B&W -->
+                    <g transform="translate(225, 210)">
+                        <rect x="0" y="0" width="150" height="100" fill="#1a1a1a" rx="3"/>
+                        <rect x="60" y="0" width="30" height="100" fill="#f0f0f0"/>
+                        
+                        <ellipse cx="75" cy="55" rx="10" ry="12" fill="#000"/>
+                        <line x1="75" y1="67" x2="75" y2="90" stroke="#000" stroke-width="4"/>
+                        
+                        <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">HIGH CONTRAST B&W</text>
+                        <text x="75" y="135" text-anchor="middle" font-size="9" fill="#666">Dramatic, graphic</text>
+                        <text x="75" y="148" text-anchor="middle" font-size="8" fill="#999">Push blacks/whites</text>
+                    </g>
+                    
+                    <!-- Muted/Faded -->
+                    <g transform="translate(400, 210)">
+                        <defs>
+                            <linearGradient id="muted-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#c8c0b0"/>
+                                <stop offset="100%" style="stop-color:#a89880"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="150" height="100" fill="url(#muted-grad)" rx="3"/>
+                        
+                        <ellipse cx="75" cy="55" rx="10" ry="12" fill="#605040"/>
+                        <line x1="75" y1="67" x2="75" y2="90" stroke="#605040" stroke-width="4"/>
+                        
+                        <text x="75" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">MUTED / FADED</text>
+                        <text x="75" y="135" text-anchor="middle" font-size="9" fill="#666">Nostalgic, film-like</text>
+                        <text x="75" y="148" text-anchor="middle" font-size="8" fill="#999">Lifted blacks, -clarity</text>
+                    </g>
+                    
+                    <!-- Bottom note -->
+                    <rect x="100" y="370" width="400" height="25" fill="#e8e2d6" rx="3"/>
+                    <text x="300" y="387" text-anchor="middle" font-size="9" fill="#666">Choose grades that complement content—don't let style overpower substance</text>
+                </svg>
+                <p class="visualization-caption">Six common color grading directions, each with distinct emotional associations.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Local Adjustments</h2>
+            <p>While global adjustments affect the entire image, local adjustments let you paint light and attention exactly where you want them. This is the digital equivalent of dodging and burning in the darkroom.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <!-- Before image -->
+                    <g transform="translate(50, 40)">
+                        <text x="100" y="-10" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">BEFORE</text>
+                        <rect x="0" y="0" width="200" height="150" fill="#888" rx="3"/>
+                        
+                        <!-- Flat scene -->
+                        <rect x="0" y="100" width="200" height="50" fill="#666" rx="0 0 3 3"/>
+                        <rect x="20" y="30" width="50" height="70" fill="#777"/>
+                        <rect x="140" y="40" width="40" height="60" fill="#757575"/>
+                        
+                        <!-- Subject (flat) -->
+                        <ellipse cx="100" cy="75" rx="12" ry="15" fill="#707070"/>
+                        <line x1="100" y1="90" x2="100" y2="130" stroke="#707070" stroke-width="5"/>
+                        <line x1="100" y1="100" x2="85" y2="115" stroke="#707070" stroke-width="4"/>
+                        <line x1="100" y1="100" x2="115" y2="112" stroke="#707070" stroke-width="4"/>
+                    </g>
+                    
+                    <!-- Arrow -->
+                    <line x1="270" y1="115" x2="320" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+                    <polygon points="320,110 335,115 320,120" fill="#1a1a1a"/>
+                    
+                    <!-- After image -->
+                    <g transform="translate(350, 40)">
+                        <text x="100" y="-10" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">AFTER</text>
+                        <rect x="0" y="0" width="200" height="150" fill="#9a9a9a" rx="3"/>
+                        
+                        <!-- Scene with adjustment -->
+                        <rect x="0" y="100" width="200" height="50" fill="#555" rx="0 0 3 3"/>
+                        <rect x="20" y="30" width="50" height="70" fill="#666"/>
+                        <rect x="140" y="40" width="40" height="60" fill="#656565"/>
+                        
+                        <!-- Radial gradient highlight on subject -->
+                        <defs>
+                            <radialGradient id="dodge-grad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" style="stop-color:#c0c0c0;stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:#9a9a9a;stop-opacity:0"/>
+                            </radialGradient>
+                        </defs>
+                        <ellipse cx="100" cy="100" rx="60" ry="50" fill="url(#dodge-grad)"/>
+                        
+                        <!-- Subject (highlighted) -->
+                        <ellipse cx="100" cy="75" rx="12" ry="15" fill="#2a2a2a"/>
+                        <line x1="100" y1="90" x2="100" y2="130" stroke="#2a2a2a" stroke-width="5"/>
+                        <line x1="100" y1="100" x2="85" y2="115" stroke="#2a2a2a" stroke-width="4"/>
+                        <line x1="100" y1="100" x2="115" y2="112" stroke="#2a2a2a" stroke-width="4"/>
+                        
+                        <!-- Edge burn -->
+                        <rect x="0" y="0" width="200" height="150" fill="none" stroke="#3a3a3a" stroke-width="30" rx="3" opacity="0.3"/>
+                    </g>
+                    
+                    <!-- Technique labels -->
+                    <g transform="translate(50, 220)">
+                        <rect x="0" y="0" width="150" height="100" fill="#e8e2d6" rx="3"/>
+                        <circle cx="75" cy="35" r="20" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="4,2"/>
+                        <text x="75" y="40" text-anchor="middle" font-size="10" fill="#e63946">+</text>
+                        <text x="75" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DODGING</text>
+                        <text x="75" y="85" text-anchor="middle" font-size="9" fill="#666">Lighten areas</text>
+                    </g>
+                    
+                    <g transform="translate(225, 220)">
+                        <rect x="0" y="0" width="150" height="100" fill="#e8e2d6" rx="3"/>
+                        <circle cx="75" cy="35" r="20" fill="none" stroke="#4a90d9" stroke-width="2" stroke-dasharray="4,2"/>
+                        <text x="75" y="40" text-anchor="middle" font-size="10" fill="#4a90d9">–</text>
+                        <text x="75" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">BURNING</text>
+                        <text x="75" y="85" text-anchor="middle" font-size="9" fill="#666">Darken areas</text>
+                    </g>
+                    
+                    <g transform="translate(400, 220)">
+                        <rect x="0" y="0" width="150" height="100" fill="#e8e2d6" rx="3"/>
+                        <rect x="55" y="20" width="40" height="30" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="4,2"/>
+                        <line x1="55" y1="20" x2="40" y2="5" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="95" y1="20" x2="110" y2="5" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="75" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">VIGNETTE</text>
+                        <text x="75" y="85" text-anchor="middle" font-size="9" fill="#666">Edge darkening</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Local adjustments direct the viewer's attention by controlling where the eye naturally travels.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Subtlety is Key</h4>
+                <p>The best local adjustments are invisible. If a viewer can see your dodging and burning, you've gone too far. Build up adjustments gradually with low opacity passes. The goal is to guide attention, not to create obvious halos or gradients.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The "Straight Out of Camera" Debate</h2>
+            <p>Some purists argue that true street photography should be untouched—"straight out of camera" (SOOC). This misunderstands both history and the nature of the medium. The question isn't whether to process, but how much serves the image.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#888"/>
+                        
+                        <!-- Flat, unprocessed look -->
+                        <rect x="0" y="130" width="250" height="50" fill="#707070"/>
+                        <rect x="30" y="40" width="60" height="90" fill="#7a7a7a"/>
+                        <rect x="160" y="50" width="50" height="80" fill="#767676"/>
+                        
+                        <!-- Subject -->
+                        <g transform="translate(125, 100)">
+                            <ellipse cx="0" cy="-20" rx="10" ry="12" fill="#727272"/>
+                            <line x1="0" y1="-8" x2="0" y2="25" stroke="#727272" stroke-width="4"/>
+                        </g>
+                        
+                        <text x="125" y="170" text-anchor="middle" font-size="9" fill="#ddd">RAW/SOOC</text>
+                    </svg>
+                    <h4>Unprocessed</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted);">Flat, camera's interpretation</p>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#a0a0a0"/>
+                        
+                        <!-- Processed look with better contrast -->
+                        <rect x="0" y="130" width="250" height="50" fill="#505050"/>
+                        <rect x="30" y="40" width="60" height="90" fill="#606060"/>
+                        <rect x="160" y="50" width="50" height="80" fill="#585858"/>
+                        
+                        <!-- Subject with more presence -->
+                        <g transform="translate(125, 100)">
+                            <ellipse cx="0" cy="-20" rx="10" ry="12" fill="#1a1a1a"/>
+                            <line x1="0" y1="-8" x2="0" y2="25" stroke="#1a1a1a" stroke-width="4"/>
+                        </g>
+                        
+                        <text x="125" y="170" text-anchor="middle" font-size="9" fill="#1a1a1a">PROCESSED</text>
+                    </svg>
+                    <h4>Thoughtfully Processed</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted);">Your vision, realized</p>
+                </div>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Historical Reality</h4>
+                <p>Every master of street photography processed their work. Ansel Adams spent hours in the darkroom. Henri Cartier-Bresson worked with printers who understood his vision. Even your camera's JPEG is processed—just not by you. The choice isn't process or not process; it's who controls the interpretation.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>When SOOC works:</strong> When conditions were perfect and camera interpretation matches your vision</li>
+                <li><strong>When processing helps:</strong> Difficult lighting, bringing out shadow detail, correcting color casts</li>
+                <li><strong>When processing hurts:</strong> When it becomes a crutch for poor capture or pushes beyond authenticity</li>
+                <li><strong>The real question:</strong> Does this edit serve the photograph's truth or my ego?</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            <div class="exercise">
+                <h4>Assignment: One Image, Five Interpretations</h4>
+                <p>Take a single strong image and create five distinctly different edits: high-key bright, low-key dark, warm vintage, cool contemporary, and high-contrast black & white. Study how each interpretation changes the emotional impact. Which serves the content best?</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: The Kill Session</h4>
+                <p>Go through your last 500 photographs and delete everything that isn't genuinely strong. Be ruthless. If you hesitate, delete it. The goal is to end with no more than 25 images—your real portfolio, not your hard drive.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Develop Your Preset</h4>
+                <p>Create a single base preset that represents your visual style. Apply it to 20 different images from various lighting conditions. Refine until it provides a consistent starting point that requires only minor tweaks per image.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technical Mastery</span>
+            </a>
+            <a href="../index.html" class="next">
+                <span class="label">Back to →</span>
+                <span class="title">Home</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Portraits — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Street Portraits</p>
+        <h1>The Human Element</h1>
+        <p class="tutorial-intro">Street portraits bridge the gap between documentary and intimacy. Learn to capture the character, context, and soul of the people who give our cities life.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Types of Street Portraits</h2>
+            <p>Street portraits exist on a spectrum from completely candid to fully engaged. Each approach yields different results and requires different skills. Understanding this spectrum helps you choose the right approach for each situation.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Spectrum line -->
+                    <line x1="50" y1="200" x2="550" y2="200" stroke="#1a1a1a" stroke-width="3"/>
+                    
+                    <!-- Gradient bar -->
+                    <defs>
+                        <linearGradient id="spectrum-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e8e2d6"/>
+                            <stop offset="50%" style="stop-color:#c4beb2"/>
+                            <stop offset="100%" style="stop-color:#1a1a1a"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="50" y="190" width="500" height="20" fill="url(#spectrum-grad)" rx="3"/>
+                    
+                    <!-- CANDID (left) -->
+                    <g transform="translate(100, 120)">
+                        <circle cx="0" cy="0" r="35" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Figure looking away -->
+                        <ellipse cx="0" cy="-8" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="4" x2="0" y2="30" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Arrow showing direction of gaze (away) -->
+                        <line x1="12" y1="-8" x2="28" y2="-8" stroke="#e63946" stroke-width="2"/>
+                        <polygon points="28,-8 22,-12 22,-4" fill="#e63946"/>
+                    </g>
+                    <text x="100" y="60" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a">CANDID</text>
+                    <text x="100" y="260" text-anchor="middle" font-size="9" fill="#666">Subject unaware</text>
+                    <text x="100" y="275" text-anchor="middle" font-size="9" fill="#666">Pure documentary</text>
+                    <text x="100" y="290" text-anchor="middle" font-size="9" fill="#666">Natural behavior</text>
+                    
+                    <!-- ENVIRONMENTAL (middle) -->
+                    <g transform="translate(300, 120)">
+                        <circle cx="0" cy="0" r="35" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Figure with context elements -->
+                        <ellipse cx="0" cy="-8" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="4" x2="0" y2="30" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Context squares around figure -->
+                        <rect x="-30" y="-25" width="12" height="15" fill="none" stroke="#999" stroke-width="1"/>
+                        <rect x="18" y="-20" width="10" height="12" fill="none" stroke="#999" stroke-width="1"/>
+                        <rect x="-25" y="10" width="8" height="10" fill="none" stroke="#999" stroke-width="1"/>
+                    </g>
+                    <text x="300" y="60" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a">ENVIRONMENTAL</text>
+                    <text x="300" y="260" text-anchor="middle" font-size="9" fill="#666">Context tells story</text>
+                    <text x="300" y="275" text-anchor="middle" font-size="9" fill="#666">Subject may be aware</text>
+                    <text x="300" y="290" text-anchor="middle" font-size="9" fill="#666">Place + person</text>
+                    
+                    <!-- ENGAGED (right) -->
+                    <g transform="translate(500, 120)">
+                        <circle cx="0" cy="0" r="35" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Figure facing forward with eye contact -->
+                        <ellipse cx="0" cy="-8" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="4" x2="0" y2="30" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Eyes indicating direct gaze -->
+                        <circle cx="-4" cy="-10" r="2" fill="#f5f0e6"/>
+                        <circle cx="4" cy="-10" r="2" fill="#f5f0e6"/>
+                        <!-- Connection line from subject to viewer -->
+                        <line x1="0" y1="-8" x2="0" y2="-50" stroke="#e63946" stroke-width="2" stroke-dasharray="4,2"/>
+                    </g>
+                    <text x="500" y="60" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a">ENGAGED</text>
+                    <text x="500" y="260" text-anchor="middle" font-size="9" fill="#666">Direct eye contact</text>
+                    <text x="500" y="275" text-anchor="middle" font-size="9" fill="#666">Collaborative moment</text>
+                    <text x="500" y="290" text-anchor="middle" font-size="9" fill="#666">Intimate connection</text>
+                    
+                    <!-- Spectrum labels -->
+                    <text x="50" y="340" text-anchor="start" font-size="10" fill="#999">OBSERVER</text>
+                    <text x="550" y="340" text-anchor="end" font-size="10" fill="#999">PARTICIPANT</text>
+                    <text x="300" y="360" text-anchor="middle" font-size="10" fill="#e63946">← YOUR ROLE →</text>
+                </svg>
+                <p class="visualization-caption">The street portrait spectrum: from pure observation to active collaboration with your subject.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Finding Your Approach</h4>
+                <p>There's no "correct" position on this spectrum. Candid portraits reveal unguarded truth; engaged portraits create human connection. Many photographers work across the entire range depending on the situation and what story they want to tell.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Environmental Context</h2>
+            <p>The environment surrounding your subject tells half the story. A fishmonger at their stall, a musician in a jazz club doorway, an elder on their neighborhood stoop—the setting provides context that transforms a face into a narrative.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Left: Portrait without context -->
+                    <g transform="translate(150, 200)">
+                        <rect x="-100" y="-150" width="200" height="300" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <!-- Subject tightly cropped -->
+                        <ellipse cx="0" cy="-30" rx="45" ry="55" fill="#d4cec2"/>
+                        <ellipse cx="0" cy="-40" rx="35" ry="42" fill="#1a1a1a"/>
+                        <!-- Basic features -->
+                        <ellipse cx="-12" cy="-50" rx="5" ry="3" fill="#f5f0e6"/>
+                        <ellipse cx="12" cy="-50" rx="5" ry="3" fill="#f5f0e6"/>
+                        <ellipse cx="0" cy="-30" rx="8" ry="4" fill="#c4beb2"/>
+                        <!-- Shoulders -->
+                        <path d="M -45,40 Q -45,20 0,10 Q 45,20 45,40 L 45,150 L -45,150 Z" fill="#1a1a1a"/>
+                    </g>
+                    <text x="150" y="380" text-anchor="middle" font-size="11" fill="#666">Tight crop: Who is this?</text>
+                    
+                    <!-- Right: Portrait with environmental context -->
+                    <g transform="translate(450, 200)">
+                        <rect x="-100" y="-150" width="200" height="300" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Workshop/environment background -->
+                        <rect x="-100" y="-150" width="200" height="100" fill="#c4beb2"/>
+                        <!-- Shelves with items -->
+                        <line x1="-90" y1="-120" x2="-30" y2="-120" stroke="#8a847a" stroke-width="2"/>
+                        <rect x="-85" y="-140" width="15" height="18" fill="#a8a29a"/>
+                        <rect x="-60" y="-138" width="12" height="16" fill="#9a948a"/>
+                        <rect x="-42" y="-142" width="10" height="20" fill="#8a847a"/>
+                        
+                        <line x1="30" y1="-110" x2="90" y2="-110" stroke="#8a847a" stroke-width="2"/>
+                        <circle cx="45" cy="-125" r="8" fill="#a8a29a"/>
+                        <rect x="60" y="-130" width="20" height="18" fill="#9a948a"/>
+                        
+                        <!-- Tools hanging -->
+                        <line x1="-70" y1="-80" x2="-70" y2="-55" stroke="#666" stroke-width="3"/>
+                        <line x1="-55" y1="-85" x2="-55" y2="-60" stroke="#666" stroke-width="2"/>
+                        
+                        <!-- Workbench -->
+                        <rect x="-100" y="80" width="200" height="70" fill="#8a847a"/>
+                        <rect x="-80" y="70" width="40" height="15" fill="#666"/>
+                        <circle cx="50" cy="90" r="12" fill="#9a948a"/>
+                        
+                        <!-- Subject (smaller, more context) -->
+                        <ellipse cx="0" cy="0" rx="25" ry="30" fill="#d4cec2"/>
+                        <ellipse cx="0" cy="-8" rx="18" ry="22" fill="#1a1a1a"/>
+                        <ellipse cx="-6" cy="-12" rx="3" ry="2" fill="#f5f0e6"/>
+                        <ellipse cx="6" cy="-12" rx="3" ry="2" fill="#f5f0e6"/>
+                        <!-- Apron/work clothes -->
+                        <path d="M -25,30 Q -25,15 0,8 Q 25,15 25,30 L 25,75 L -25,75 Z" fill="#666"/>
+                        <!-- Hands working -->
+                        <ellipse cx="-35" cy="60" rx="8" ry="6" fill="#d4cec2"/>
+                        <ellipse cx="35" cy="55" rx="8" ry="6" fill="#d4cec2"/>
+                    </g>
+                    <text x="450" y="380" text-anchor="middle" font-size="11" fill="#666">Environmental: A craftsperson in their world</text>
+                    
+                    <!-- Arrow between -->
+                    <line x1="270" y1="200" x2="330" y2="200" stroke="#e63946" stroke-width="2"/>
+                    <polygon points="330,200 320,195 320,205" fill="#e63946"/>
+                    <text x="300" y="180" text-anchor="middle" font-size="9" fill="#e63946">ADD CONTEXT</text>
+                </svg>
+                <p class="visualization-caption">Environmental context transforms a face into a story. The surroundings reveal occupation, personality, and life circumstances.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Step back</strong> — Include more environment than you think you need</li>
+                <li><strong>Find telling details</strong> — Tools of their trade, personal items, worn surfaces</li>
+                <li><strong>Use doorways and thresholds</strong> — Natural frames that connect person and place</li>
+                <li><strong>Watch for repeated elements</strong> — Patterns that echo between subject and setting</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Approach</h2>
+            <p>Asking a stranger for their portrait requires confidence, respect, and genuine interest. Your body language and energy determine whether someone says yes or no before you even speak.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">THE APPROACH SEQUENCE</text>
+                    
+                    <!-- Step 1: Observe -->
+                    <g transform="translate(80, 120)">
+                        <circle cx="0" cy="0" r="40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="-55" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">1. OBSERVE</text>
+                        <!-- Eye icon -->
+                        <ellipse cx="0" cy="0" rx="20" ry="12" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="8" fill="#1a1a1a"/>
+                        <circle cx="2" cy="-2" r="2" fill="#f5f0e6"/>
+                    </g>
+                    <text x="80" y="185" text-anchor="middle" font-size="8" fill="#666">Notice someone</text>
+                    <text x="80" y="197" text-anchor="middle" font-size="8" fill="#666">interesting. Watch their</text>
+                    <text x="80" y="209" text-anchor="middle" font-size="8" fill="#666">energy and openness.</text>
+                    
+                    <!-- Arrow -->
+                    <line x1="130" y1="120" x2="170" y2="120" stroke="#e63946" stroke-width="2"/>
+                    <polygon points="170,120 162,115 162,125" fill="#e63946"/>
+                    
+                    <!-- Step 2: Approach with openness -->
+                    <g transform="translate(220, 120)">
+                        <circle cx="0" cy="0" r="40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="-55" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">2. APPROACH</text>
+                        <!-- Two figures, one approaching -->
+                        <g transform="translate(-15, 0)">
+                            <ellipse cx="0" cy="-8" rx="6" ry="7" fill="#1a1a1a"/>
+                            <line x1="0" y1="-1" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
+                        </g>
+                        <g transform="translate(15, 0)">
+                            <ellipse cx="0" cy="-8" rx="6" ry="7" fill="#999"/>
+                            <line x1="0" y1="-1" x2="0" y2="15" stroke="#999" stroke-width="3"/>
+                        </g>
+                        <!-- Movement arrow -->
+                        <path d="M -25,5 Q -5,5 5,5" fill="none" stroke="#e63946" stroke-width="1.5" stroke-dasharray="3,2"/>
+                    </g>
+                    <text x="220" y="185" text-anchor="middle" font-size="8" fill="#666">Walk with relaxed</text>
+                    <text x="220" y="197" text-anchor="middle" font-size="8" fill="#666">posture. Smile. Make</text>
+                    <text x="220" y="209" text-anchor="middle" font-size="8" fill="#666">natural eye contact.</text>
+                    
+                    <!-- Arrow -->
+                    <line x1="270" y1="120" x2="310" y2="120" stroke="#e63946" stroke-width="2"/>
+                    <polygon points="310,120 302,115 302,125" fill="#e63946"/>
+                    
+                    <!-- Step 3: Connect -->
+                    <g transform="translate(360, 120)">
+                        <circle cx="0" cy="0" r="40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="-55" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">3. CONNECT</text>
+                        <!-- Speech bubble -->
+                        <path d="M -20,-15 L 20,-15 Q 25,-15 25,-10 L 25,5 Q 25,10 20,10 L 0,10 L -5,20 L -5,10 L -20,10 Q -25,10 -25,5 L -25,-10 Q -25,-15 -20,-15" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <line x1="-15" y1="-5" x2="15" y2="-5" stroke="#999" stroke-width="1"/>
+                        <line x1="-15" y1="2" x2="10" y2="2" stroke="#999" stroke-width="1"/>
+                    </g>
+                    <text x="360" y="185" text-anchor="middle" font-size="8" fill="#666">Compliment something</text>
+                    <text x="360" y="197" text-anchor="middle" font-size="8" fill="#666">specific. Ask about them.</text>
+                    <text x="360" y="209" text-anchor="middle" font-size="8" fill="#666">Show genuine interest.</text>
+                    
+                    <!-- Arrow -->
+                    <line x1="410" y1="120" x2="450" y2="120" stroke="#e63946" stroke-width="2"/>
+                    <polygon points="450,120 442,115 442,125" fill="#e63946"/>
+                    
+                    <!-- Step 4: Ask -->
+                    <g transform="translate(500, 120)">
+                        <circle cx="0" cy="0" r="40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="-55" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">4. ASK</text>
+                        <!-- Camera icon -->
+                        <rect x="-18" y="-10" width="36" height="24" rx="3" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <circle cx="0" cy="2" r="8" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <rect x="-8" y="-15" width="16" height="6" rx="2" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                    </g>
+                    <text x="500" y="185" text-anchor="middle" font-size="8" fill="#666">"May I take your</text>
+                    <text x="500" y="197" text-anchor="middle" font-size="8" fill="#666">portrait?" Be direct,</text>
+                    <text x="500" y="209" text-anchor="middle" font-size="8" fill="#666">warm, and accepting.</text>
+                    
+                    <!-- Body Language Tips -->
+                    <rect x="50" y="250" width="500" height="120" fill="#e8e2d6" rx="5"/>
+                    <text x="300" y="275" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">BODY LANGUAGE THAT WORKS</text>
+                    
+                    <!-- Positive indicators -->
+                    <g transform="translate(120, 320)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" fill="#2a9d4a">✓ Open palms</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="9" fill="#2a9d4a">✓ Relaxed shoulders</text>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#2a9d4a">✓ Genuine smile</text>
+                    </g>
+                    
+                    <g transform="translate(300, 320)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" fill="#2a9d4a">✓ Slight head tilt</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="9" fill="#2a9d4a">✓ Camera lowered</text>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#2a9d4a">✓ Respectful distance</text>
+                    </g>
+                    
+                    <g transform="translate(480, 320)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" fill="#e63946">✗ Arms crossed</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="9" fill="#e63946">✗ Camera to face</text>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#e63946">✗ Rushed energy</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">The four-step approach sequence. Your energy and body language matter as much as your words.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Magic Words</h4>
+                <p>"I'm a photographer, and I noticed [something specific about them]. Would you mind if I took your portrait?" Specificity shows you see them as an individual, not just a subject. Mention their hat, their hands, the way light falls on them. Make them feel seen.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Focal Lengths for Portraits</h2>
+            <p>Your choice of focal length profoundly affects how your subject appears and relates to their environment. Each length tells a different story.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- 35mm Section -->
+                    <g transform="translate(100, 50)">
+                        <text x="0" y="0" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">35mm</text>
+                        <text x="0" y="18" text-anchor="middle" font-size="10" fill="#666">Wide Environmental</text>
+                        
+                        <!-- Frame showing wide view -->
+                        <rect x="-70" y="35" width="140" height="105" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Environment (more visible) -->
+                        <rect x="-65" y="40" width="40" height="50" fill="#c4beb2"/>
+                        <rect x="30" y="45" width="35" height="55" fill="#d4cec2"/>
+                        <rect x="-60" y="95" width="120" height="40" fill="#a8a29a"/>
+                        
+                        <!-- Subject (smaller in frame) -->
+                        <g transform="translate(0, 95)">
+                            <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
+                            <line x1="0" y1="-10" x2="0" y2="12" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="0" y1="-3" x2="-8" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="0" y1="-3" x2="8" y2="4" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="0" y1="12" x2="-5" y2="28" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="0" y1="12" x2="5" y2="28" stroke="#1a1a1a" stroke-width="2"/>
+                        </g>
+                        
+                        <!-- Field of view indicator -->
+                        <path d="M 0,175 L -70,145 M 0,175 L 70,145" stroke="#e63946" stroke-width="1.5" fill="none"/>
+                        <text x="0" y="195" text-anchor="middle" font-size="9" fill="#e63946">63° field of view</text>
+                        
+                        <!-- Characteristics -->
+                        <text x="0" y="220" text-anchor="middle" font-size="8" fill="#666">• More context</text>
+                        <text x="0" y="233" text-anchor="middle" font-size="8" fill="#666">• Closer working distance</text>
+                        <text x="0" y="246" text-anchor="middle" font-size="8" fill="#666">• Slight perspective distortion</text>
+                    </g>
+                    
+                    <!-- 50mm Section -->
+                    <g transform="translate(300, 50)">
+                        <text x="0" y="0" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">50mm</text>
+                        <text x="0" y="18" text-anchor="middle" font-size="10" fill="#666">Natural Perspective</text>
+                        
+                        <!-- Frame showing normal view -->
+                        <rect x="-70" y="35" width="140" height="105" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Environment (moderate) -->
+                        <rect x="-65" y="40" width="30" height="40" fill="#c4beb2"/>
+                        <rect x="35" y="45" width="30" height="45" fill="#d4cec2"/>
+                        <rect x="-60" y="100" width="120" height="35" fill="#a8a29a"/>
+                        
+                        <!-- Subject (balanced in frame) -->
+                        <g transform="translate(0, 85)">
+                            <ellipse cx="0" cy="-25" rx="12" ry="15" fill="#1a1a1a"/>
+                            <line x1="0" y1="-10" x2="0" y2="20" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="0" x2="-12" y2="10" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="0" y1="0" x2="12" y2="8" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="0" y1="20" x2="-8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="0" y1="20" x2="8" y2="42" stroke="#1a1a1a" stroke-width="3"/>
+                        </g>
+                        
+                        <!-- Field of view indicator -->
+                        <path d="M 0,175 L -50,145 M 0,175 L 50,145" stroke="#e63946" stroke-width="1.5" fill="none"/>
+                        <text x="0" y="195" text-anchor="middle" font-size="9" fill="#e63946">47° field of view</text>
+                        
+                        <!-- Characteristics -->
+                        <text x="0" y="220" text-anchor="middle" font-size="8" fill="#666">• Natural proportions</text>
+                        <text x="0" y="233" text-anchor="middle" font-size="8" fill="#666">• Comfortable distance</text>
+                        <text x="0" y="246" text-anchor="middle" font-size="8" fill="#666">• Versatile classic look</text>
+                    </g>
+                    
+                    <!-- 85mm Section -->
+                    <g transform="translate(500, 50)">
+                        <text x="0" y="0" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">85mm</text>
+                        <text x="0" y="18" text-anchor="middle" font-size="10" fill="#666">Intimate Portrait</text>
+                        
+                        <!-- Frame showing compressed view -->
+                        <rect x="-70" y="35" width="140" height="105" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Background (blurred, minimal) -->
+                        <rect x="-65" y="40" width="130" height="95" fill="#d4cec2" opacity="0.5"/>
+                        
+                        <!-- Subject (fills more frame) -->
+                        <g transform="translate(0, 75)">
+                            <ellipse cx="0" cy="-30" rx="22" ry="28" fill="#1a1a1a"/>
+                            <line x1="0" y1="-2" x2="0" y2="40" stroke="#1a1a1a" stroke-width="6"/>
+                            <line x1="0" y1="12" x2="-20" y2="28" stroke="#1a1a1a" stroke-width="5"/>
+                            <line x1="0" y1="12" x2="20" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                            <line x1="0" y1="40" x2="-12" y2="70" stroke="#1a1a1a" stroke-width="5"/>
+                            <line x1="0" y1="40" x2="12" y2="70" stroke="#1a1a1a" stroke-width="5"/>
+                        </g>
+                        
+                        <!-- Field of view indicator -->
+                        <path d="M 0,175 L -30,145 M 0,175 L 30,145" stroke="#e63946" stroke-width="1.5" fill="none"/>
+                        <text x="0" y="195" text-anchor="middle" font-size="9" fill="#e63946">29° field of view</text>
+                        
+                        <!-- Characteristics -->
+                        <text x="0" y="220" text-anchor="middle" font-size="8" fill="#666">• Flattering compression</text>
+                        <text x="0" y="233" text-anchor="middle" font-size="8" fill="#666">• Background separation</text>
+                        <text x="0" y="246" text-anchor="middle" font-size="8" fill="#666">• More physical distance</text>
+                    </g>
+                    
+                    <!-- Working distance comparison -->
+                    <g transform="translate(300, 310)">
+                        <text x="0" y="0" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">WORKING DISTANCE COMPARISON</text>
+                        
+                        <!-- Camera positions -->
+                        <rect x="-250" y="20" width="500" height="30" fill="#e8e2d6" rx="3"/>
+                        
+                        <!-- Subject position -->
+                        <circle cx="200" cy="35" r="8" fill="#1a1a1a"/>
+                        <text x="200" y="65" text-anchor="middle" font-size="8" fill="#666">Subject</text>
+                        
+                        <!-- 35mm camera position -->
+                        <rect x="-5" y="28" width="15" height="12" rx="2" fill="#e63946"/>
+                        <text x="2" y="55" text-anchor="middle" font-size="7" fill="#e63946">35mm</text>
+                        <line x1="12" y1="35" x2="192" y2="35" stroke="#e63946" stroke-width="1" stroke-dasharray="3,2"/>
+                        
+                        <!-- 50mm camera position -->
+                        <rect x="-80" y="28" width="15" height="12" rx="2" fill="#1a1a1a"/>
+                        <text x="-72" y="55" text-anchor="middle" font-size="7" fill="#1a1a1a">50mm</text>
+                        <line x1="-63" y1="35" x2="192" y2="35" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="3,2"/>
+                        
+                        <!-- 85mm camera position -->
+                        <rect x="-180" y="28" width="15" height="12" rx="2" fill="#666"/>
+                        <text x="-172" y="55" text-anchor="middle" font-size="7" fill="#666">85mm</text>
+                        <line x1="-163" y1="35" x2="192" y2="35" stroke="#666" stroke-width="1" stroke-dasharray="3,2"/>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Focal length affects both perspective and your physical relationship with the subject. Longer lenses require more distance but offer compression and separation.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Background Selection</h2>
+            <p>The background can make or break a portrait. It either supports your subject's story or competes for attention. Learning to see backgrounds before you shoot is essential.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item avoid">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Busy, distracting background -->
+                        <rect x="10" y="10" width="40" height="60" fill="#c4beb2"/>
+                        <rect x="60" y="20" width="35" height="50" fill="#beb8ac"/>
+                        <rect x="180" y="15" width="50" height="55" fill="#cac4b8"/>
+                        <circle cx="140" cy="40" r="20" fill="#d4cec2"/>
+                        <rect x="100" y="60" width="30" height="40" fill="#b8b2a6"/>
+                        <!-- Distracting text/signs -->
+                        <rect x="155" y="85" width="60" height="20" fill="#a8a29a"/>
+                        <line x1="160" y1="95" x2="210" y2="95" stroke="#666" stroke-width="2"/>
+                        <!-- Subject lost in chaos -->
+                        <g transform="translate(125, 120)">
+                            <ellipse cx="0" cy="-25" rx="15" ry="18" fill="#1a1a1a"/>
+                            <line x1="0" y1="-7" x2="0" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                            <line x1="0" y1="5" x2="-15" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="5" x2="15" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        </g>
+                        <!-- Pole coming from head -->
+                        <line x1="125" y1="0" x2="125" y2="85" stroke="#888" stroke-width="4"/>
+                    </svg>
+                    <h4>✗ Distracting Background</h4>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Clean, supporting background -->
+                        <rect x="0" y="0" width="250" height="100" fill="#d4cec2"/>
+                        <!-- Simple texture/wall -->
+                        <line x1="0" y1="30" x2="250" y2="30" stroke="#cac4b8" stroke-width="1" opacity="0.5"/>
+                        <line x1="0" y1="60" x2="250" y2="60" stroke="#cac4b8" stroke-width="1" opacity="0.5"/>
+                        <!-- Ground -->
+                        <rect x="0" y="100" width="250" height="80" fill="#c4beb2"/>
+                        <!-- Subject clear and prominent -->
+                        <g transform="translate(125, 120)">
+                            <ellipse cx="0" cy="-25" rx="15" ry="18" fill="#1a1a1a"/>
+                            <line x1="0" y1="-7" x2="0" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                            <line x1="0" y1="5" x2="-15" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="5" x2="15" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="25" x2="-10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="25" x2="10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                        </g>
+                    </svg>
+                    <h4>✓ Clean Background</h4>
+                </div>
+            </div>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Contextual but not distracting -->
+                        <rect x="0" y="0" width="250" height="80" fill="#c4beb2"/>
+                        <!-- Bookshelves (contextual for scholar/reader) -->
+                        <rect x="10" y="10" width="230" height="60" fill="#a8a29a"/>
+                        <rect x="15" y="15" width="20" height="50" fill="#8a847a" opacity="0.7"/>
+                        <rect x="40" y="15" width="18" height="50" fill="#9a948a" opacity="0.6"/>
+                        <rect x="63" y="15" width="22" height="50" fill="#888" opacity="0.7"/>
+                        <rect x="90" y="15" width="15" height="50" fill="#8a847a" opacity="0.5"/>
+                        <rect x="150" y="15" width="25" height="50" fill="#9a948a" opacity="0.6"/>
+                        <rect x="180" y="15" width="18" height="50" fill="#888" opacity="0.7"/>
+                        <rect x="203" y="15" width="20" height="50" fill="#8a847a" opacity="0.5"/>
+                        <!-- Ground -->
+                        <rect x="0" y="80" width="250" height="100" fill="#d4cec2"/>
+                        <!-- Subject -->
+                        <g transform="translate(125, 115)">
+                            <ellipse cx="0" cy="-25" rx="15" ry="18" fill="#1a1a1a"/>
+                            <line x1="0" y1="-7" x2="0" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                            <!-- Holding book -->
+                            <rect x="-20" y="5" width="15" height="20" fill="#666"/>
+                            <line x1="0" y1="5" x2="-12" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="5" x2="15" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        </g>
+                    </svg>
+                    <h4>✓ Contextual Background</h4>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#e8e2d6"/>
+                        <!-- Shallow DOF representation -->
+                        <defs>
+                            <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="3"/>
+                            </filter>
+                        </defs>
+                        <!-- Blurred background elements -->
+                        <g filter="url(#blur)">
+                            <circle cx="40" cy="50" r="25" fill="#c4beb2"/>
+                            <circle cx="200" cy="40" r="30" fill="#cac4b8"/>
+                            <circle cx="100" cy="30" r="15" fill="#d4cec2"/>
+                            <rect x="150" y="60" width="50" height="40" fill="#beb8ac"/>
+                        </g>
+                        <!-- Ground -->
+                        <rect x="0" y="110" width="250" height="70" fill="#d4cec2" opacity="0.8"/>
+                        <!-- Sharp subject -->
+                        <g transform="translate(125, 115)">
+                            <ellipse cx="0" cy="-25" rx="15" ry="18" fill="#1a1a1a"/>
+                            <line x1="0" y1="-7" x2="0" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                            <line x1="0" y1="5" x2="-15" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="5" x2="15" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="25" x2="-10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                            <line x1="0" y1="25" x2="10" y2="55" stroke="#1a1a1a" stroke-width="4"/>
+                        </g>
+                    </svg>
+                    <h4>✓ Shallow Depth of Field</h4>
+                </div>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Check edges</strong> — Scan the frame edges before shooting for intrusions</li>
+                <li><strong>Watch for "mergers"</strong> — Objects appearing to grow from subject's head</li>
+                <li><strong>Use tonal separation</strong> — Dark subject against light background or vice versa</li>
+                <li><strong>Move your feet</strong> — Often one step changes everything</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Eye Contact & Gaze Direction</h2>
+            <p>Where your subject looks determines how viewers connect with the image. Eye contact creates intimacy; averted gaze invites mystery. The direction of their gaze leads the viewer's eye.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Direct eye contact -->
+                    <g transform="translate(100, 100)">
+                        <rect x="-70" y="-70" width="140" height="140" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="-80" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DIRECT GAZE</text>
+                        
+                        <!-- Face looking at viewer -->
+                        <ellipse cx="0" cy="0" rx="35" ry="42" fill="#d4cec2"/>
+                        <!-- Eyes looking straight out -->
+                        <ellipse cx="-12" cy="-8" rx="8" ry="5" fill="#fff"/>
+                        <ellipse cx="12" cy="-8" rx="8" ry="5" fill="#fff"/>
+                        <circle cx="-12" cy="-8" r="4" fill="#1a1a1a"/>
+                        <circle cx="12" cy="-8" r="4" fill="#1a1a1a"/>
+                        <!-- Connection lines to viewer -->
+                        <line x1="-12" y1="-8" x2="-12" y2="-60" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,2"/>
+                        <line x1="12" y1="-8" x2="12" y2="-60" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4,2"/>
+                    </g>
+                    <text x="100" y="190" text-anchor="middle" font-size="8" fill="#666">Connection</text>
+                    <text x="100" y="202" text-anchor="middle" font-size="8" fill="#666">Confrontation</text>
+                    <text x="100" y="214" text-anchor="middle" font-size="8" fill="#666">Intimacy</text>
+                    
+                    <!-- Looking away (3/4 view) -->
+                    <g transform="translate(300, 100)">
+                        <rect x="-70" y="-70" width="140" height="140" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="-80" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">AWAY GAZE</text>
+                        
+                        <!-- Face looking to side -->
+                        <ellipse cx="0" cy="0" rx="35" ry="42" fill="#d4cec2"/>
+                        <!-- Eyes looking right -->
+                        <ellipse cx="-12" cy="-8" rx="8" ry="5" fill="#fff"/>
+                        <ellipse cx="12" cy="-8" rx="8" ry="5" fill="#fff"/>
+                        <circle cx="-8" cy="-8" r="4" fill="#1a1a1a"/>
+                        <circle cx="16" cy="-8" r="4" fill="#1a1a1a"/>
+                        <!-- Direction of gaze -->
+                        <line x1="25" y1="-8" x2="60" y2="-8" stroke="#e63946" stroke-width="1.5"/>
+                        <polygon points="60,-8 52,-12 52,-4" fill="#e63946"/>
+                    </g>
+                    <text x="300" y="190" text-anchor="middle" font-size="8" fill="#666">Mystery</text>
+                    <text x="300" y="202" text-anchor="middle" font-size="8" fill="#666">Contemplation</text>
+                    <text x="300" y="214" text-anchor="middle" font-size="8" fill="#666">Narrative space</text>
+                    
+                    <!-- Looking down -->
+                    <g transform="translate(500, 100)">
+                        <rect x="-70" y="-70" width="140" height="140" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="-80" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DOWNWARD GAZE</text>
+                        
+                        <!-- Face looking down -->
+                        <ellipse cx="0" cy="0" rx="35" ry="42" fill="#d4cec2"/>
+                        <!-- Eyes looking down (more closed) -->
+                        <ellipse cx="-12" cy="-8" rx="8" ry="4" fill="#fff"/>
+                        <ellipse cx="12" cy="-8" rx="8" ry="4" fill="#fff"/>
+                        <ellipse cx="-12" cy="-6" r="3" fill="#1a1a1a"/>
+                        <ellipse cx="12" cy="-6" r="3" fill="#1a1a1a"/>
+                        <!-- Direction of gaze -->
+                        <line x1="0" y1="10" x2="0" y2="55" stroke="#e63946" stroke-width="1.5"/>
+                        <polygon points="0,55 -4,47 4,47" fill="#e63946"/>
+                    </g>
+                    <text x="500" y="190" text-anchor="middle" font-size="8" fill="#666">Introspection</text>
+                    <text x="500" y="202" text-anchor="middle" font-size="8" fill="#666">Vulnerability</text>
+                    <text x="500" y="214" text-anchor="middle" font-size="8" fill="#666">Thoughtfulness</text>
+                    
+                    <!-- Compositional space for gaze -->
+                    <g transform="translate(150, 320)">
+                        <rect x="-100" y="-60" width="200" height="120" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="-70" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">GIVE SPACE FOR THE GAZE</text>
+                        
+                        <!-- Subject on left, looking right -->
+                        <g transform="translate(-50, 0)">
+                            <ellipse cx="0" cy="0" rx="20" ry="24" fill="#d4cec2"/>
+                            <ellipse cx="-6" cy="-4" rx="4" ry="2.5" fill="#fff"/>
+                            <ellipse cx="6" cy="-4" rx="4" ry="2.5" fill="#fff"/>
+                            <circle cx="-3" cy="-4" r="2" fill="#1a1a1a"/>
+                            <circle cx="9" cy="-4" r="2" fill="#1a1a1a"/>
+                        </g>
+                        
+                        <!-- Arrow showing gaze direction into space -->
+                        <line x1="-20" y1="0" x2="80" y2="0" stroke="#e63946" stroke-width="1.5" stroke-dasharray="6,3"/>
+                        <polygon points="80,0 72,-4 72,4" fill="#e63946"/>
+                        <text x="30" y="-10" text-anchor="middle" font-size="8" fill="#e63946">LOOKING SPACE</text>
+                    </g>
+                    
+                    <!-- Cramped example (avoid) -->
+                    <g transform="translate(450, 320)">
+                        <rect x="-100" y="-60" width="200" height="120" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="-70" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">✗ CRAMPED GAZE</text>
+                        
+                        <!-- Subject on right, looking right (into edge) -->
+                        <g transform="translate(50, 0)">
+                            <ellipse cx="0" cy="0" rx="20" ry="24" fill="#d4cec2"/>
+                            <ellipse cx="-6" cy="-4" rx="4" ry="2.5" fill="#fff"/>
+                            <ellipse cx="6" cy="-4" rx="4" ry="2.5" fill="#fff"/>
+                            <circle cx="-3" cy="-4" r="2" fill="#1a1a1a"/>
+                            <circle cx="9" cy="-4" r="2" fill="#1a1a1a"/>
+                        </g>
+                        
+                        <!-- Arrow hitting edge -->
+                        <line x1="80" y1="0" x2="95" y2="0" stroke="#e63946" stroke-width="1.5"/>
+                        <text x="88" y="-10" text-anchor="middle" font-size="12" fill="#e63946">✗</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Gaze direction affects emotional impact. When subjects look off-frame, leave space in their line of sight.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Power of Contact</h4>
+                <p>Direct eye contact in a photograph is remarkably powerful—it creates an immediate, almost uncomfortable intimacy between subject and viewer. Use it intentionally. Reserve it for portraits where that confrontational energy serves the image.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Capturing Character</h2>
+            <p>Great portraits reveal something essential about their subjects. Character emerges through details—the way someone holds themselves, the lines on their face, their hands, their style. Your job is to notice and emphasize what makes this person uniquely themselves.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">WHERE CHARACTER LIVES</text>
+                    
+                    <!-- Central figure -->
+                    <g transform="translate(300, 200)">
+                        <!-- Body outline -->
+                        <ellipse cx="0" cy="-80" rx="45" ry="55" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <path d="M -50,-25 Q -60,20 -55,80 L 55,80 Q 60,20 50,-25 Z" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Eyes detail -->
+                        <circle cx="0" cy="-90" r="40" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
+                        <line x1="50" y1="-90" x2="120" y2="-90" stroke="#e63946" stroke-width="1"/>
+                        <text x="125" y="-87" font-size="9" fill="#e63946">EYES — Windows to personality,</text>
+                        <text x="125" y="-75" font-size="9" fill="#e63946">emotion, life experience</text>
+                    </g>
+                    
+                    <!-- Hands detail -->
+                    <g transform="translate(300, 200)">
+                        <ellipse cx="-70" cy="50" rx="18" ry="12" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        <ellipse cx="70" cy="50" rx="18" ry="12" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <circle cx="-70" cy="50" r="25" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
+                        <line x1="-95" y1="50" x2="-170" y2="50" stroke="#e63946" stroke-width="1"/>
+                        <text x="-175" y="45" text-anchor="end" font-size="9" fill="#e63946">HANDS — Work, age,</text>
+                        <text x="-175" y="57" text-anchor="end" font-size="9" fill="#e63946">care, character</text>
+                    </g>
+                    
+                    <!-- Posture detail -->
+                    <g transform="translate(300, 200)">
+                        <circle cx="50" cy="20" r="30" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
+                        <line x1="80" y1="20" x2="150" y2="20" stroke="#e63946" stroke-width="1"/>
+                        <text x="155" y="15" font-size="9" fill="#e63946">POSTURE — Confidence,</text>
+                        <text x="155" y="27" font-size="9" fill="#e63946">weariness, pride</text>
+                    </g>
+                    
+                    <!-- Clothing/style detail -->
+                    <g transform="translate(300, 200)">
+                        <circle cx="-30" cy="10" r="25" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
+                        <line x1="-55" y1="10" x2="-130" y2="-20" stroke="#e63946" stroke-width="1"/>
+                        <text x="-135" y="-25" text-anchor="end" font-size="9" fill="#e63946">STYLE — Identity,</text>
+                        <text x="-135" y="-13" text-anchor="end" font-size="9" fill="#e63946">culture, self-expression</text>
+                    </g>
+                    
+                    <!-- Lines on face -->
+                    <g transform="translate(300, 200)">
+                        <line x1="-15" y1="-95" x2="-20" y2="-85" stroke="#999" stroke-width="1"/>
+                        <line x1="15" y1="-95" x2="20" y2="-85" stroke="#999" stroke-width="1"/>
+                        <line x1="-25" y1="-70" x2="-35" y2="-65" stroke="#999" stroke-width="1"/>
+                        <line x1="25" y1="-70" x2="35" y2="-65" stroke="#999" stroke-width="1"/>
+                        
+                        <line x1="30" y1="-65" x2="100" y2="-40" stroke="#e63946" stroke-width="1"/>
+                        <text x="105" y="-45" font-size="9" fill="#e63946">LINES — Stories lived,</text>
+                        <text x="105" y="-33" font-size="9" fill="#e63946">time passed, wisdom earned</text>
+                    </g>
+                    
+                    <!-- Bottom quote -->
+                    <text x="300" y="360" text-anchor="middle" font-size="10" font-style="italic" fill="#666">"Look for what makes them different from everyone else."</text>
+                    <text x="300" y="380" text-anchor="middle" font-size="9" fill="#999">— Richard Avedon</text>
+                </svg>
+                <p class="visualization-caption">Character is found in details. Train your eye to see hands, posture, clothing, and the map of experience on someone's face.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Observe before shooting</strong> — Notice their unique gestures, habits, expressions</li>
+                <li><strong>Focus on hands</strong> — Often the most expressive and revealing feature</li>
+                <li><strong>Embrace imperfection</strong> — Scars, wrinkles, and asymmetry tell stories</li>
+                <li><strong>Find the signature detail</strong> — The one thing that defines them</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Quick Portrait</h2>
+            <p>Sometimes you have thirty seconds or less. The light is perfect, the person is compelling, and you need to work fast. Here's how to make those fleeting moments count.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">THE 30-SECOND PORTRAIT</text>
+                    
+                    <!-- Timeline -->
+                    <line x1="50" y1="80" x2="550" y2="80" stroke="#1a1a1a" stroke-width="3"/>
+                    
+                    <!-- Time markers -->
+                    <g transform="translate(50, 80)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" fill="#666">0s</text>
+                    </g>
+                    <g transform="translate(175, 80)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" fill="#666">10s</text>
+                    </g>
+                    <g transform="translate(300, 80)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" fill="#666">20s</text>
+                    </g>
+                    <g transform="translate(425, 80)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" fill="#666">25s</text>
+                    </g>
+                    <g transform="translate(550, 80)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" fill="#666">30s</text>
+                    </g>
+                    
+                    <!-- Phase blocks -->
+                    <!-- Approach + Ask -->
+                    <rect x="50" y="100" width="125" height="60" fill="#e63946" opacity="0.2" stroke="#e63946" stroke-width="1"/>
+                    <text x="112" y="125" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">APPROACH</text>
+                    <text x="112" y="140" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">+ ASK</text>
+                    
+                    <!-- Position -->
+                    <rect x="175" y="100" width="125" height="60" fill="#2a9d4a" opacity="0.2" stroke="#2a9d4a" stroke-width="1"/>
+                    <text x="237" y="125" text-anchor="middle" font-size="10" font-weight="500" fill="#2a9d4a">POSITION</text>
+                    <text x="237" y="140" text-anchor="middle" font-size="10" font-weight="500" fill="#2a9d4a">+ CHECK LIGHT</text>
+                    
+                    <!-- Shoot -->
+                    <rect x="300" y="100" width="125" height="60" fill="#1a1a1a" opacity="0.2" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="362" y="125" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">SHOOT</text>
+                    <text x="362" y="140" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">3-5 FRAMES</text>
+                    
+                    <!-- Thank -->
+                    <rect x="425" y="100" width="125" height="60" fill="#999" opacity="0.2" stroke="#999" stroke-width="1"/>
+                    <text x="487" y="125" text-anchor="middle" font-size="10" font-weight="500" fill="#666">THANK</text>
+                    <text x="487" y="140" text-anchor="middle" font-size="10" font-weight="500" fill="#666">+ SHOW</text>
+                    
+                    <!-- Details for each phase -->
+                    <g transform="translate(112, 190)">
+                        <text x="0" y="0" text-anchor="middle" font-size="8" fill="#666">• Settings pre-set</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="8" fill="#666">• Smile first</text>
+                        <text x="0" y="24" text-anchor="middle" font-size="8" fill="#666">• Camera visible</text>
+                        <text x="0" y="36" text-anchor="middle" font-size="8" fill="#666">• Brief explanation</text>
+                    </g>
+                    
+                    <g transform="translate(237, 190)">
+                        <text x="0" y="0" text-anchor="middle" font-size="8" fill="#666">• Move them 2 steps</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="8" fill="#666">• Check background</text>
+                        <text x="0" y="24" text-anchor="middle" font-size="8" fill="#666">• Find the light</text>
+                        <text x="0" y="36" text-anchor="middle" font-size="8" fill="#666">• Guide posture</text>
+                    </g>
+                    
+                    <g transform="translate(362, 190)">
+                        <text x="0" y="0" text-anchor="middle" font-size="8" fill="#666">• Talk while shooting</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="8" fill="#666">• Vary framing</text>
+                        <text x="0" y="24" text-anchor="middle" font-size="8" fill="#666">• Watch for moment</text>
+                        <text x="0" y="36" text-anchor="middle" font-size="8" fill="#666">• Shoot through smile</text>
+                    </g>
+                    
+                    <g transform="translate(487, 190)">
+                        <text x="0" y="0" text-anchor="middle" font-size="8" fill="#666">• Show LCD screen</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="8" fill="#666">• Genuine thanks</text>
+                        <text x="0" y="24" text-anchor="middle" font-size="8" fill="#666">• Offer to send</text>
+                        <text x="0" y="36" text-anchor="middle" font-size="8" fill="#666">• Exit gracefully</text>
+                    </g>
+                    
+                    <!-- Quick tips box -->
+                    <rect x="50" y="270" width="500" height="110" fill="#e8e2d6" rx="5"/>
+                    <text x="300" y="295" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">PREPARATION IS EVERYTHING</text>
+                    
+                    <g transform="translate(150, 330)">
+                        <rect x="-8" y="-12" width="16" height="16" fill="#e63946" rx="2"/>
+                        <text x="0" y="0" text-anchor="middle" font-size="10" fill="#fff">1</text>
+                        <text x="0" y="20" text-anchor="middle" font-size="8" fill="#666">Pre-set exposure</text>
+                        <text x="0" y="32" text-anchor="middle" font-size="8" fill="#666">for current light</text>
+                    </g>
+                    
+                    <g transform="translate(300, 330)">
+                        <rect x="-8" y="-12" width="16" height="16" fill="#e63946" rx="2"/>
+                        <text x="0" y="0" text-anchor="middle" font-size="10" fill="#fff">2</text>
+                        <text x="0" y="20" text-anchor="middle" font-size="8" fill="#666">Know your camera</text>
+                        <text x="0" y="32" text-anchor="middle" font-size="8" fill="#666">by muscle memory</text>
+                    </g>
+                    
+                    <g transform="translate(450, 330)">
+                        <rect x="-8" y="-12" width="16" height="16" fill="#e63946" rx="2"/>
+                        <text x="0" y="0" text-anchor="middle" font-size="10" fill="#fff">3</text>
+                        <text x="0" y="20" text-anchor="middle" font-size="8" fill="#666">Keep sentences</text>
+                        <text x="0" y="32" text-anchor="middle" font-size="8" fill="#666">short and warm</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">The 30-second portrait sequence. Preparation and confidence allow you to work quickly while remaining present.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Stay Calm, Work Fast</h4>
+                <p>Speed comes from preparation, not rushing. When you know your camera intimately and have clear intentions, you can work quickly while remaining calm and connected. Your subject feels your energy—if you're stressed, they'll be stressed. Move with purpose, but breathe.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            
+            <div class="exercise">
+                <h4>Assignment: The Spectrum Challenge</h4>
+                <p>In one photography session, capture three portraits that span the full spectrum: one pure candid where the subject never knows they're photographed, one environmental portrait with eye contact, and one fully engaged portrait with conversation. Compare how each approach changes the resulting image and your experience making it.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Ten Strangers</h4>
+                <p>Set a goal to ask ten strangers for their portrait in a single day. Keep track of how many say yes. Notice what approaches work best, how your confidence grows, and how rejection becomes easier. The goal isn't ten great portraits—it's ten genuine human interactions.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: One Focal Length</h4>
+                <p>Spend a full week shooting portraits with only one focal length. If you choose 35mm, embrace the context it provides. If you choose 85mm, master the compression. Limitation breeds creativity. At week's end, reflect on what you learned about that perspective.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Hands Only</h4>
+                <p>Create a series of portraits focused entirely on hands. Photograph five different people, each time making their hands the primary subject. Notice how hands reveal occupation, age, care, and character. No faces allowed—let the hands tell the whole story.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technical Mastery</span>
+            </a>
+            <a href="../index.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Home</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

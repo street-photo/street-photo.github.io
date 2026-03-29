@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion & Movement — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Motion & Movement</p>
+        <h1>Motion & Movement</h1>
+        <p class="tutorial-intro">Time flows through every street photograph. Learn to freeze it, stretch it, blur it, and compress it—transforming the chaos of urban movement into visual poetry.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Freezing vs Blurring</h2>
+            <p>Every photograph captures a slice of time. The question isn't whether to include motion—it's always there. The question is how to render it: as a crisp frozen instant, or as a fluid blur that traces movement through the frame.</p>
+            
+            <p>Neither approach is inherently better. Freezing motion reveals details invisible to the naked eye—the spray of a puddle, suspended droplets, the exact position of limbs mid-stride. Blurring motion emphasizes the sensation of movement itself—the rush, the flow, the energy of urban life.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <!-- Left panel - Frozen -->
+                    <rect x="30" y="40" width="250" height="220" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="155" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">FROZEN — 1/1000s</text>
+                    
+                    <!-- Frozen cyclist -->
+                    <g transform="translate(155, 150)">
+                        <!-- Bicycle wheels - sharp circles -->
+                        <circle cx="-40" cy="30" r="25" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <circle cx="40" cy="30" r="25" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Spokes - visible because frozen -->
+                        <line x1="-40" y1="5" x2="-40" y2="55" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="-65" y1="30" x2="-15" y2="30" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="-57" y1="13" x2="-23" y2="47" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="-57" y1="47" x2="-23" y2="13" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="40" y1="5" x2="40" y2="55" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="15" y1="30" x2="65" y2="30" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="23" y1="13" x2="57" y2="47" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="23" y1="47" x2="57" y2="13" stroke="#1a1a1a" stroke-width="1"/>
+                        <!-- Frame -->
+                        <line x1="-40" y1="30" x2="0" y2="-20" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-20" x2="40" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="-40" y1="30" x2="40" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-20" x2="-10" y2="-35" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Rider - crisp outline -->
+                        <ellipse cx="-5" cy="-55" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="-5" y1="-45" x2="0" y2="-20" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="-5" y1="-35" x2="-20" y2="-45" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-20" x2="-15" y2="15" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <text x="155" y="280" text-anchor="middle" font-size="9" fill="#666">Every detail crisp</text>
+                    <text x="155" y="295" text-anchor="middle" font-size="9" fill="#666">Time suspended</text>
+                    
+                    <!-- Right panel - Blurred -->
+                    <rect x="320" y="40" width="250" height="220" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="445" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">BLURRED — 1/15s</text>
+                    
+                    <!-- Blurred cyclist -->
+                    <g transform="translate(445, 150)">
+                        <!-- Motion blur streaks behind -->
+                        <line x1="-90" y1="30" x2="-50" y2="30" stroke="#ccc" stroke-width="8"/>
+                        <line x1="-85" y1="10" x2="-45" y2="10" stroke="#ddd" stroke-width="4"/>
+                        <line x1="-80" y1="-20" x2="-30" y2="-20" stroke="#ddd" stroke-width="3"/>
+                        <line x1="-90" y1="50" x2="-50" y2="50" stroke="#ddd" stroke-width="4"/>
+                        
+                        <!-- Wheels with motion blur -->
+                        <ellipse cx="-40" cy="30" rx="25" ry="25" fill="none" stroke="#888" stroke-width="4" opacity="0.5"/>
+                        <ellipse cx="-38" cy="30" rx="25" ry="25" fill="none" stroke="#aaa" stroke-width="2" opacity="0.3"/>
+                        <ellipse cx="40" cy="30" rx="25" ry="25" fill="none" stroke="#888" stroke-width="4" opacity="0.5"/>
+                        <ellipse cx="42" cy="30" rx="25" ry="25" fill="none" stroke="#aaa" stroke-width="2" opacity="0.3"/>
+                        
+                        <!-- Frame - slightly blurred -->
+                        <line x1="-40" y1="30" x2="0" y2="-20" stroke="#666" stroke-width="3" opacity="0.7"/>
+                        <line x1="0" y1="-20" x2="40" y2="30" stroke="#666" stroke-width="3" opacity="0.7"/>
+                        
+                        <!-- Rider - blurred -->
+                        <ellipse cx="-5" cy="-55" rx="12" ry="10" fill="#666" opacity="0.6"/>
+                        <ellipse cx="-3" cy="-55" rx="10" ry="9" fill="#888" opacity="0.4"/>
+                        <line x1="-5" y1="-45" x2="0" y2="-20" stroke="#666" stroke-width="5" opacity="0.6"/>
+                    </g>
+                    
+                    <text x="445" y="280" text-anchor="middle" font-size="9" fill="#666">Motion rendered visible</text>
+                    <text x="445" y="295" text-anchor="middle" font-size="9" fill="#666">Time flows through frame</text>
+                    
+                    <!-- Comparison arrow -->
+                    <text x="300" y="170" text-anchor="middle" font-size="20" fill="#e63946">⟷</text>
+                    
+                    <!-- Caption strip -->
+                    <rect x="30" y="310" width="540" height="30" fill="#1a1a1a" opacity="0.05"/>
+                    <text x="300" y="330" text-anchor="middle" font-size="10" fill="#1a1a1a">Same subject, same moment—entirely different emotional impact</text>
+                </svg>
+                <p class="visualization-caption">Shutter speed is a creative choice, not just a technical setting. Choose based on the story you want to tell.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>When to Freeze</h4>
+                <p>Freeze motion when you want to reveal: peak action, fleeting expressions, the geometry of bodies in space, splashes and particles, decisive gestures. The frozen moment creates wonder—"I've never seen it like that."</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>When to Blur</h4>
+                <p>Blur motion when you want to convey: speed, passage of time, the flow of crowds, chaos and energy, the rhythm of the city. The blur creates feeling—"I know exactly how that felt."</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Panning Technique</h2>
+            <p>Panning is the art of tracking a moving subject while shooting at a slow shutter speed. Done well, it produces a sharp subject against a streaked, blurred background—the visual signature of speed and motion.</p>
+            
+            <p>The technique requires practice: your camera movement must match the subject's velocity exactly. Too fast or too slow, and the subject blurs along with the background.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">PANNING TECHNIQUE DIAGRAM</text>
+                    
+                    <!-- Scene frame -->
+                    <rect x="50" y="50" width="500" height="200" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Background blur streaks -->
+                    <defs>
+                        <linearGradient id="blurGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#999;stop-opacity:0.8"/>
+                            <stop offset="100%" style="stop-color:#ccc;stop-opacity:0.2"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Background streaks (buildings, signs, etc) -->
+                    <rect x="50" y="60" width="500" height="25" fill="url(#blurGrad)"/>
+                    <rect x="50" y="90" width="500" height="15" fill="url(#blurGrad)" opacity="0.7"/>
+                    <rect x="50" y="110" width="500" height="30" fill="url(#blurGrad)" opacity="0.5"/>
+                    <rect x="50" y="200" width="500" height="15" fill="#aaa" opacity="0.5"/>
+                    <rect x="50" y="220" width="500" height="20" fill="#bbb" opacity="0.4"/>
+                    
+                    <!-- Ground streaks -->
+                    <line x1="50" y1="240" x2="550" y2="240" stroke="#888" stroke-width="2"/>
+                    
+                    <!-- Sharp subject - runner -->
+                    <g transform="translate(300, 180)">
+                        <!-- Runner - sharp and detailed -->
+                        <ellipse cx="0" cy="-50" rx="10" ry="12" fill="#1a1a1a"/>
+                        <line x1="0" y1="-38" x2="0" y2="-5" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Arms in running position -->
+                        <line x1="0" y1="-30" x2="-20" y2="-15" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-30" x2="18" y2="-40" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Legs in stride -->
+                        <line x1="0" y1="-5" x2="-25" y2="35" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-5" x2="20" y2="25" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Feet -->
+                        <ellipse cx="-25" cy="38" rx="8" ry="4" fill="#1a1a1a"/>
+                        <ellipse cx="22" cy="28" rx="7" ry="4" fill="#1a1a1a"/>
+                        
+                        <!-- Sharp focus indicator -->
+                        <rect x="-35" y="-70" width="70" height="120" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
+                        <text x="0" y="-78" text-anchor="middle" font-size="9" fill="#e63946">SHARP</text>
+                    </g>
+                    
+                    <!-- Movement direction arrows -->
+                    <g transform="translate(300, 280)">
+                        <text x="0" y="0" text-anchor="middle" font-size="10" fill="#1a1a1a" font-weight="500">Camera tracks subject movement</text>
+                        
+                        <!-- Subject movement -->
+                        <line x1="-150" y1="25" x2="150" y2="25" stroke="#1a1a1a" stroke-width="2"/>
+                        <polygon points="150,25 140,20 140,30" fill="#1a1a1a"/>
+                        <text x="0" y="45" text-anchor="middle" font-size="9" fill="#666">Subject direction →</text>
+                        
+                        <!-- Camera arc -->
+                        <path d="M -100,70 Q 0,55 100,70" fill="none" stroke="#e63946" stroke-width="2"/>
+                        <polygon points="100,70 92,62 88,72" fill="#e63946"/>
+                        <text x="0" y="90" text-anchor="middle" font-size="9" fill="#e63946">Camera rotation follows →</text>
+                    </g>
+                    
+                    <!-- Technique steps -->
+                    <g transform="translate(100, 340)">
+                        <circle cx="0" cy="0" r="12" fill="#1a1a1a"/>
+                        <text x="0" y="4" text-anchor="middle" font-size="10" fill="white">1</text>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" fill="#1a1a1a">Pre-focus on</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">predicted path</text>
+                    </g>
+                    
+                    <g transform="translate(250, 340)">
+                        <circle cx="0" cy="0" r="12" fill="#1a1a1a"/>
+                        <text x="0" y="4" text-anchor="middle" font-size="10" fill="white">2</text>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" fill="#1a1a1a">Track subject</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">before shooting</text>
+                    </g>
+                    
+                    <g transform="translate(400, 340)">
+                        <circle cx="0" cy="0" r="12" fill="#1a1a1a"/>
+                        <text x="0" y="4" text-anchor="middle" font-size="10" fill="white">3</text>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" fill="#1a1a1a">Rotate hips,</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">not just arms</text>
+                    </g>
+                    
+                    <g transform="translate(500, 340)">
+                        <circle cx="0" cy="0" r="12" fill="#1a1a1a"/>
+                        <text x="0" y="4" text-anchor="middle" font-size="10" fill="white">4</text>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" fill="#1a1a1a">Follow through</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">after shutter</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Successful panning requires smooth, continuous motion—start tracking before you shoot, continue after.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Panning Settings</h4>
+                <p>Start with 1/30s for cyclists and joggers, 1/60s for faster subjects. Use continuous/servo autofocus if available, or pre-focus on where the subject will pass. Shoot in burst mode—panning is partly a numbers game.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Long Exposure Street</h2>
+            <p>Extended exposures transform the street into something dreamlike. Figures become ghosts, trails of light trace invisible paths, and the chaos of urban movement resolves into flowing patterns.</p>
+            
+            <p>Long exposure work requires either very low light, neutral density filters, or both. The challenge is balancing enough blur to show movement while maintaining recognizable forms.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">LONG EXPOSURE EFFECTS</text>
+                    
+                    <!-- Three panels showing different long exposure effects -->
+                    
+                    <!-- Panel 1: Ghost figures -->
+                    <rect x="30" y="50" width="160" height="180" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="110" y="250" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">GHOST FIGURES</text>
+                    <text x="110" y="265" text-anchor="middle" font-size="8" fill="#666">2-4 seconds</text>
+                    
+                    <!-- Building background -->
+                    <rect x="40" y="60" width="40" height="150" fill="#3a3a3a"/>
+                    <rect x="140" y="80" width="40" height="130" fill="#333"/>
+                    
+                    <!-- Ghost figures - semi-transparent overlapping forms -->
+                    <g opacity="0.3">
+                        <ellipse cx="80" cy="160" rx="8" ry="10" fill="#ddd"/>
+                        <line x1="80" y1="170" x2="80" y2="200" stroke="#ddd" stroke-width="3"/>
+                        <line x1="80" y1="200" x2="72" y2="220" stroke="#ddd" stroke-width="2"/>
+                        <line x1="80" y1="200" x2="88" y2="218" stroke="#ddd" stroke-width="2"/>
+                    </g>
+                    <g opacity="0.2">
+                        <ellipse cx="95" cy="165" rx="8" ry="10" fill="#ccc"/>
+                        <line x1="95" y1="175" x2="95" y2="205" stroke="#ccc" stroke-width="3"/>
+                        <line x1="95" y1="205" x2="87" y2="222" stroke="#ccc" stroke-width="2"/>
+                        <line x1="95" y1="205" x2="103" y2="220" stroke="#ccc" stroke-width="2"/>
+                    </g>
+                    <g opacity="0.15">
+                        <ellipse cx="110" cy="168" rx="8" ry="10" fill="#bbb"/>
+                        <line x1="110" y1="178" x2="110" y2="208" stroke="#bbb" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Panel 2: Light trails -->
+                    <rect x="220" y="50" width="160" height="180" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="300" y="250" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">LIGHT TRAILS</text>
+                    <text x="300" y="265" text-anchor="middle" font-size="8" fill="#666">10-30 seconds</text>
+                    
+                    <!-- Building silhouettes -->
+                    <rect x="230" y="100" width="30" height="110" fill="#2a2a2a"/>
+                    <rect x="340" y="80" width="30" height="130" fill="#252525"/>
+                    
+                    <!-- Light trails - car headlights and taillights -->
+                    <path d="M 220,200 Q 280,195 340,190 Q 360,188 380,185" fill="none" stroke="#ffcc00" stroke-width="3" opacity="0.9"/>
+                    <path d="M 220,202 Q 280,197 340,192 Q 360,190 380,187" fill="none" stroke="#ffcc00" stroke-width="2" opacity="0.6"/>
+                    
+                    <path d="M 380,170 Q 320,175 260,180 Q 240,182 220,185" fill="none" stroke="#e63946" stroke-width="3" opacity="0.9"/>
+                    <path d="M 380,168 Q 320,173 260,178 Q 240,180 220,183" fill="none" stroke="#e63946" stroke-width="2" opacity="0.6"/>
+                    
+                    <!-- Street lamps -->
+                    <circle cx="270" cy="110" r="5" fill="#fff" opacity="0.8"/>
+                    <line x1="270" y1="115" x2="270" y2="150" stroke="#444" stroke-width="2"/>
+                    
+                    <!-- Panel 3: Crowd flow -->
+                    <rect x="410" y="50" width="160" height="180" fill="#3a3a3a" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="490" y="250" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">CROWD FLOW</text>
+                    <text x="490" y="265" text-anchor="middle" font-size="8" fill="#666">1-2 seconds</text>
+                    
+                    <!-- Flowing crowd - streaky forms -->
+                    <defs>
+                        <linearGradient id="crowdFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#888;stop-opacity:0.1"/>
+                            <stop offset="50%" style="stop-color:#aaa;stop-opacity:0.4"/>
+                            <stop offset="100%" style="stop-color:#888;stop-opacity:0.1"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Multiple flow lines representing people -->
+                    <ellipse cx="490" cy="150" rx="60" ry="50" fill="url(#crowdFlow)"/>
+                    <path d="M 420,130 Q 490,120 560,135" fill="none" stroke="#aaa" stroke-width="10" opacity="0.3"/>
+                    <path d="M 420,150 Q 490,145 560,155" fill="none" stroke="#999" stroke-width="15" opacity="0.25"/>
+                    <path d="M 420,175 Q 490,170 560,180" fill="none" stroke="#aaa" stroke-width="8" opacity="0.3"/>
+                    
+                    <!-- Static element - pillar/column -->
+                    <rect x="485" y="100" width="10" height="110" fill="#555"/>
+                    
+                    <!-- Time compression diagram -->
+                    <g transform="translate(300, 320)">
+                        <text x="0" y="0" text-anchor="middle" font-size="11" fill="#1a1a1a">Time Compression: Many moments → One image</text>
+                        
+                        <!-- Timeline showing compression -->
+                        <line x1="-200" y1="25" x2="-50" y2="25" stroke="#1a1a1a" stroke-width="1"/>
+                        <circle cx="-180" cy="25" r="3" fill="#1a1a1a"/>
+                        <circle cx="-150" cy="25" r="3" fill="#1a1a1a"/>
+                        <circle cx="-120" cy="25" r="3" fill="#1a1a1a"/>
+                        <circle cx="-90" cy="25" r="3" fill="#1a1a1a"/>
+                        <circle cx="-60" cy="25" r="3" fill="#1a1a1a"/>
+                        
+                        <text x="-25" y="30" text-anchor="middle" font-size="16" fill="#e63946">→</text>
+                        
+                        <rect x="0" y="15" width="30" height="20" fill="none" stroke="#e63946" stroke-width="2"/>
+                        <line x1="5" y1="20" x2="25" y2="30" stroke="#1a1a1a" stroke-width="4" opacity="0.5"/>
+                        
+                        <text x="-125" y="50" text-anchor="middle" font-size="8" fill="#666">Multiple moments in time</text>
+                        <text x="15" y="50" text-anchor="middle" font-size="8" fill="#666">Single frame</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Long exposures compress time, layering many moments into a single image. Static elements stay sharp; moving elements blur or vanish.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Tripod Question</h4>
+                <p>Traditional long exposure requires a tripod for sharp static elements. But handheld long exposure (intentional camera movement) creates entirely different results—impressionistic, painterly images where even buildings become streaks of color and light.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Frozen Moment</h2>
+            <p>At the opposite extreme from long exposure lies the frozen moment: 1/500s, 1/1000s, 1/2000s and beyond. Time stops. Actions that happen too fast to perceive become sculptures of pure motion.</p>
+            
+            <p>The frozen moment reveals the hidden choreography of ordinary life—the arc of a thrown ball, the splash of a footstep, the exact instant when feet leave the ground.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">PEAK ACTION — THE FROZEN MOMENT</text>
+                    
+                    <!-- Main scene frame -->
+                    <rect x="100" y="50" width="400" height="220" fill="white" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Water splash scene -->
+                    <!-- Puddle surface -->
+                    <ellipse cx="300" cy="240" rx="150" ry="20" fill="#a8d4e6" opacity="0.5"/>
+                    
+                    <!-- Frozen water droplets -->
+                    <circle cx="260" cy="160" r="4" fill="#4a90a8"/>
+                    <circle cx="280" cy="140" r="3" fill="#4a90a8"/>
+                    <circle cx="320" cy="145" r="5" fill="#4a90a8"/>
+                    <circle cx="340" cy="155" r="3" fill="#4a90a8"/>
+                    <circle cx="290" cy="120" r="2" fill="#4a90a8"/>
+                    <circle cx="310" cy="115" r="3" fill="#4a90a8"/>
+                    <circle cx="330" cy="130" r="2" fill="#4a90a8"/>
+                    <circle cx="250" cy="145" r="2" fill="#4a90a8"/>
+                    <circle cx="355" cy="140" r="2" fill="#4a90a8"/>
+                    
+                    <!-- Splash crown -->
+                    <path d="M 270,200 Q 280,170 300,160 Q 320,170 330,200" fill="none" stroke="#4a90a8" stroke-width="3"/>
+                    <path d="M 260,210 Q 265,180 275,165" fill="none" stroke="#4a90a8" stroke-width="2"/>
+                    <path d="M 340,210 Q 335,180 325,165" fill="none" stroke="#4a90a8" stroke-width="2"/>
+                    
+                    <!-- Shoe/foot creating splash -->
+                    <ellipse cx="300" cy="190" rx="25" ry="10" fill="#1a1a1a"/>
+                    <path d="M 275,185 L 280,140 L 320,140 L 325,185 Z" fill="#1a1a1a"/>
+                    
+                    <!-- Leg -->
+                    <line x1="300" y1="140" x2="300" y2="80" stroke="#1a1a1a" stroke-width="8"/>
+                    <line x1="300" y1="80" x2="300" y2="60" stroke="#1a1a1a" stroke-width="8"/>
+                    
+                    <!-- Shutter speed indicator -->
+                    <g transform="translate(480, 150)">
+                        <rect x="-30" y="-30" width="60" height="60" fill="#e63946" opacity="0.1" rx="3"/>
+                        <text x="0" y="-10" text-anchor="middle" font-size="10" fill="#e63946">1/2000s</text>
+                        <text x="0" y="8" text-anchor="middle" font-size="18" fill="#e63946">⚡</text>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" fill="#666">Frozen</text>
+                    </g>
+                    
+                    <!-- Analysis callouts -->
+                    <line x1="280" y1="140" x2="150" y2="100" stroke="#e63946" stroke-width="1" stroke-dasharray="3,2"/>
+                    <text x="130" y="95" text-anchor="end" font-size="8" fill="#e63946">Individual droplets</text>
+                    <text x="130" y="107" text-anchor="end" font-size="8" fill="#e63946">suspended in air</text>
+                    
+                    <line x1="300" y1="180" x2="420" y2="110" stroke="#e63946" stroke-width="1" stroke-dasharray="3,2"/>
+                    <text x="435" y="95" text-anchor="start" font-size="8" fill="#e63946">Crown formation</text>
+                    <text x="435" y="107" text-anchor="start" font-size="8" fill="#e63946">~50ms after impact</text>
+                    
+                    <!-- Peak action diagram below -->
+                    <g transform="translate(300, 305)">
+                        <line x1="-180" y1="0" x2="180" y2="0" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Action curve -->
+                        <path d="M -150,0 Q -100,0 -50,-10 Q 0,-35 0,-35 Q 0,-35 50,-10 Q 100,0 150,0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <!-- Peak marker -->
+                        <circle cx="0" cy="-35" r="5" fill="#e63946"/>
+                        <text x="0" y="-45" text-anchor="middle" font-size="8" fill="#e63946">PEAK ACTION</text>
+                        
+                        <!-- Labels -->
+                        <text x="-120" y="15" text-anchor="middle" font-size="7" fill="#666">Anticipation</text>
+                        <text x="0" y="20" text-anchor="middle" font-size="7" fill="#666">Apex</text>
+                        <text x="120" y="15" text-anchor="middle" font-size="7" fill="#666">Resolution</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">The frozen moment captures what the eye cannot see—the physics of motion made visible.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Anticipating Peak Action</h4>
+                <p>The decisive frozen moment isn't random—it's the apex of an action. A jumper at maximum height. A splash at fullest extension. A gesture at its most expressive point. Learn to anticipate these peaks and time your shot.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Implied Motion</h2>
+            <p>Motion doesn't require blur. A completely sharp image can convey powerful movement through pose, gesture, and compositional tension. The viewer's mind completes the motion.</p>
+            
+            <p>This is perhaps the most sophisticated approach to motion in still photography—creating images so dynamic that viewers feel movement without any technical motion blur at all.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">VISUAL CUES FOR IMPLIED MOTION</text>
+                    
+                    <!-- Four panels showing different implied motion techniques -->
+                    
+                    <!-- Panel 1: Diagonal posture -->
+                    <rect x="40" y="55" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="100" y="215" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">DIAGONAL LEAN</text>
+                    
+                    <!-- Running figure - sharp but diagonal -->
+                    <g transform="translate(100, 125) rotate(-15)">
+                        <ellipse cx="0" cy="-30" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-20" x2="0" y2="10" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Arms opposing legs -->
+                        <line x1="0" y1="-10" x2="-18" y2="5" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="-10" x2="15" y2="-25" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Legs in stride -->
+                        <line x1="0" y1="10" x2="-15" y2="40" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="10" x2="18" y2="35" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    <!-- Diagonal guide line -->
+                    <line x1="55" y1="180" x2="140" y2="70" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" opacity="0.7"/>
+                    
+                    <!-- Panel 2: Gesture extension -->
+                    <rect x="175" y="55" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="235" y="215" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">EXTENDED GESTURE</text>
+                    
+                    <!-- Figure reaching/throwing -->
+                    <g transform="translate(235, 125)">
+                        <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="5" y2="20" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Extended arm - reaching forward -->
+                        <line x1="5" y1="0" x2="40" y2="-15" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Back arm for balance -->
+                        <line x1="0" y1="0" x2="-25" y2="15" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Legs -->
+                        <line x1="5" y1="20" x2="-10" y2="50" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="5" y1="20" x2="20" y2="45" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    <!-- Extension line -->
+                    <line x1="200" y1="140" x2="280" y2="105" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" opacity="0.7"/>
+                    
+                    <!-- Panel 3: Hair/clothing flow -->
+                    <rect x="310" y="55" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="370" y="215" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">FLOWING ELEMENTS</text>
+                    
+                    <!-- Figure with flowing hair/coat -->
+                    <g transform="translate(370, 130)">
+                        <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#1a1a1a"/>
+                        <!-- Hair flowing back -->
+                        <path d="M 5,-30 Q 25,-35 35,-25 Q 40,-20 45,-22" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+                        <path d="M 3,-33 Q 20,-40 30,-35" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Body -->
+                        <line x1="0" y1="-15" x2="0" y2="15" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Coat flowing -->
+                        <path d="M -5,0 Q 15,5 25,20 Q 30,30 35,35" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <path d="M 5,0 Q 20,10 30,25" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <!-- Legs -->
+                        <line x1="0" y1="15" x2="-8" y2="45" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="0" y1="15" x2="8" y2="45" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    
+                    <!-- Panel 4: Entry/exit frame -->
+                    <rect x="445" y="55" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="505" y="215" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">FRAME ENTRY/EXIT</text>
+                    
+                    <!-- Figure partially cut by frame -->
+                    <g transform="translate(505, 125)">
+                        <!-- Only partial figure visible - entering frame -->
+                        <ellipse cx="-35" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="-35" y1="-10" x2="-30" y2="20" stroke="#1a1a1a" stroke-width="4"/>
+                        <!-- Leading arm visible -->
+                        <line x1="-30" y1="0" x2="-5" y2="-10" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Leading leg -->
+                        <line x1="-30" y1="20" x2="-10" y2="45" stroke="#1a1a1a" stroke-width="3"/>
+                        <!-- Trailing leg cut by frame -->
+                        <line x1="-30" y1="20" x2="-50" y2="35" stroke="#1a1a1a" stroke-width="3"/>
+                    </g>
+                    <!-- Direction arrow -->
+                    <line x1="460" y1="125" x2="540" y2="125" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2"/>
+                    <polygon points="540,125 532,120 532,130" fill="#e63946"/>
+                    
+                    <!-- Analysis section -->
+                    <rect x="40" y="240" width="520" height="110" fill="#1a1a1a" opacity="0.03"/>
+                    
+                    <text x="300" y="260" text-anchor="middle" font-size="11" fill="#1a1a1a" font-weight="500">Why Implied Motion Works</text>
+                    
+                    <g transform="translate(120, 290)">
+                        <circle cx="0" cy="0" r="25" fill="#e63946" opacity="0.1"/>
+                        <text x="0" y="-5" text-anchor="middle" font-size="20" fill="#1a1a1a">🧠</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">Brain predicts</text>
+                        <text x="0" y="45" text-anchor="middle" font-size="8" fill="#1a1a1a">next moment</text>
+                    </g>
+                    
+                    <g transform="translate(300, 290)">
+                        <circle cx="0" cy="0" r="25" fill="#e63946" opacity="0.1"/>
+                        <text x="0" y="-5" text-anchor="middle" font-size="20" fill="#1a1a1a">⚖️</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">Unstable poses</text>
+                        <text x="0" y="45" text-anchor="middle" font-size="8" fill="#1a1a1a">imply transition</text>
+                    </g>
+                    
+                    <g transform="translate(480, 290)">
+                        <circle cx="0" cy="0" r="25" fill="#e63946" opacity="0.1"/>
+                        <text x="0" y="-5" text-anchor="middle" font-size="20" fill="#1a1a1a">↗️</text>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#1a1a1a">Diagonals create</text>
+                        <text x="0" y="45" text-anchor="middle" font-size="8" fill="#1a1a1a">visual momentum</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Sharp images can feel more dynamic than blurred ones—when the pose implies inevitable movement.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Multiple Exposures</h2>
+            <p>Multiple exposure—combining several moments into a single frame—visualizes time in ways that mirror human perception more closely than single exposures. We don't experience moments in isolation; they blur into continuous streams of experience.</p>
+            
+            <p>This technique can be achieved in-camera (if your camera supports it) or through post-processing. Either way, the key is intentionality—knowing which moments to layer and why.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">MULTIPLE EXPOSURE — LAYERING TIME</text>
+                    
+                    <!-- Main frame showing multiple exposure -->
+                    <rect x="150" y="50" width="300" height="200" fill="white" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Background - static elements (single exposure) -->
+                    <rect x="160" y="60" width="30" height="150" fill="#ddd"/>
+                    <rect x="410" y="80" width="30" height="130" fill="#ddd"/>
+                    
+                    <!-- Multiple figure positions - walking sequence -->
+                    <!-- Position 1 - most faded -->
+                    <g opacity="0.2">
+                        <ellipse cx="210" cy="160" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="210" y1="170" x2="210" y2="200" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="210" y1="200" x2="202" y2="225" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="210" y1="200" x2="218" y2="230" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="210" y1="180" x2="198" y2="190" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="210" y1="180" x2="222" y2="185" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Position 2 -->
+                    <g opacity="0.35">
+                        <ellipse cx="260" cy="155" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="260" y1="165" x2="260" y2="195" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="260" y1="195" x2="250" y2="225" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="260" y1="195" x2="270" y2="230" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="260" y1="175" x2="245" y2="185" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="260" y1="175" x2="275" y2="180" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Position 3 -->
+                    <g opacity="0.55">
+                        <ellipse cx="310" cy="158" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="310" y1="168" x2="310" y2="198" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="310" y1="198" x2="302" y2="228" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="310" y1="198" x2="318" y2="225" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="310" y1="178" x2="295" y2="188" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="310" y1="178" x2="325" y2="175" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Position 4 - most solid/present -->
+                    <g opacity="0.8">
+                        <ellipse cx="360" cy="155" rx="8" ry="10" fill="#1a1a1a"/>
+                        <line x1="360" y1="165" x2="360" y2="195" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="360" y1="195" x2="350" y2="230" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="360" y1="195" x2="372" y2="225" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="360" y1="175" x2="345" y2="182" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="360" y1="175" x2="378" y2="172" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Time flow indicator -->
+                    <line x1="210" y1="240" x2="360" y2="240" stroke="#e63946" stroke-width="2"/>
+                    <polygon points="360,240 352,235 352,245" fill="#e63946"/>
+                    <text x="285" y="255" text-anchor="middle" font-size="8" fill="#e63946">TIME →</text>
+                    
+                    <!-- Frame labels -->
+                    <text x="210" y="100" text-anchor="middle" font-size="8" fill="#666">t₁</text>
+                    <text x="260" y="100" text-anchor="middle" font-size="8" fill="#666">t₂</text>
+                    <text x="310" y="100" text-anchor="middle" font-size="8" fill="#666">t₃</text>
+                    <text x="360" y="100" text-anchor="middle" font-size="8" fill="#666">t₄</text>
+                    
+                    <!-- Timeline below showing individual frames -->
+                    <g transform="translate(300, 300)">
+                        <text x="0" y="-20" text-anchor="middle" font-size="10" fill="#1a1a1a">Four moments → One image</text>
+                        
+                        <!-- Individual frame boxes -->
+                        <rect x="-180" y="0" width="40" height="30" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                        <ellipse cx="-160" cy="15" rx="4" ry="5" fill="#1a1a1a" opacity="0.3"/>
+                        
+                        <rect x="-120" y="0" width="40" height="30" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                        <ellipse cx="-100" cy="15" rx="4" ry="5" fill="#1a1a1a" opacity="0.5"/>
+                        
+                        <rect x="-60" y="0" width="40" height="30" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                        <ellipse cx="-40" cy="15" rx="4" ry="5" fill="#1a1a1a" opacity="0.7"/>
+                        
+                        <rect x="0" y="0" width="40" height="30" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+                        <ellipse cx="20" cy="15" rx="4" ry="5" fill="#1a1a1a" opacity="0.9"/>
+                        
+                        <!-- Plus signs -->
+                        <text x="-90" y="20" text-anchor="middle" font-size="14" fill="#999">+</text>
+                        <text x="-50" y="20" text-anchor="middle" font-size="14" fill="#999">+</text>
+                        <text x="-10" y="20" text-anchor="middle" font-size="14" fill="#999">+</text>
+                        
+                        <!-- Equals -->
+                        <text x="60" y="20" text-anchor="middle" font-size="14" fill="#1a1a1a">=</text>
+                        
+                        <!-- Result -->
+                        <rect x="80" y="-5" width="60" height="40" fill="white" stroke="#e63946" stroke-width="2"/>
+                        <ellipse cx="95" cy="15" rx="3" ry="4" fill="#1a1a1a" opacity="0.3"/>
+                        <ellipse cx="105" cy="15" rx="3" ry="4" fill="#1a1a1a" opacity="0.5"/>
+                        <ellipse cx="115" cy="15" rx="3" ry="4" fill="#1a1a1a" opacity="0.7"/>
+                        <ellipse cx="125" cy="15" rx="3" ry="4" fill="#1a1a1a" opacity="0.9"/>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Multiple exposure reveals the trajectory of motion—showing where a subject has been and where they're going.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Compositional Considerations</h4>
+                <p>In multiple exposure, the background appears in every layer. Keep backgrounds simple and choose subjects with clear, graphic silhouettes. The motion should trace a clear path—random overlapping creates confusion, not interest.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Shutter Speed Guide</h2>
+            <p>Different subjects move at different speeds. This visual guide matches common street subjects with appropriate shutter speeds for both freezing and blurring effects.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 450">
+                    <rect x="0" y="0" width="600" height="450" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">SHUTTER SPEED REFERENCE CHART</text>
+                    
+                    <!-- Speed scale header -->
+                    <rect x="140" y="50" width="420" height="25" fill="#1a1a1a"/>
+                    <text x="205" y="67" text-anchor="middle" font-size="9" fill="white">1/30s</text>
+                    <text x="275" y="67" text-anchor="middle" font-size="9" fill="white">1/60s</text>
+                    <text x="345" y="67" text-anchor="middle" font-size="9" fill="white">1/125s</text>
+                    <text x="415" y="67" text-anchor="middle" font-size="9" fill="white">1/250s</text>
+                    <text x="485" y="67" text-anchor="middle" font-size="9" fill="white">1/500s</text>
+                    <text x="540" y="67" text-anchor="middle" font-size="9" fill="white">1/1000s+</text>
+                    
+                    <!-- Subject rows -->
+                    <!-- Walking pedestrian -->
+                    <g transform="translate(0, 90)">
+                        <text x="70" y="20" text-anchor="middle" font-size="10" fill="#1a1a1a">🚶 Walking</text>
+                        <text x="70" y="33" text-anchor="middle" font-size="8" fill="#666">~5 km/h</text>
+                        
+                        <!-- Blur zone -->
+                        <rect x="140" y="5" width="65" height="35" fill="#e63946" opacity="0.15"/>
+                        <text x="172" y="27" text-anchor="middle" font-size="7" fill="#666">blur</text>
+                        
+                        <!-- Transition zone -->
+                        <rect x="205" y="5" width="70" height="35" fill="#f5d742" opacity="0.3"/>
+                        <text x="240" y="27" text-anchor="middle" font-size="7" fill="#666">slight blur</text>
+                        
+                        <!-- Sharp zone -->
+                        <rect x="275" y="5" width="285" height="35" fill="#4caf50" opacity="0.15"/>
+                        <text x="415" y="27" text-anchor="middle" font-size="7" fill="#666">sharp ✓</text>
+                    </g>
+                    
+                    <!-- Jogger -->
+                    <g transform="translate(0, 140)">
+                        <text x="70" y="20" text-anchor="middle" font-size="10" fill="#1a1a1a">🏃 Jogging</text>
+                        <text x="70" y="33" text-anchor="middle" font-size="8" fill="#666">~10 km/h</text>
+                        
+                        <rect x="140" y="5" width="135" height="35" fill="#e63946" opacity="0.15"/>
+                        <text x="207" y="27" text-anchor="middle" font-size="7" fill="#666">blur</text>
+                        
+                        <rect x="275" y="5" width="70" height="35" fill="#f5d742" opacity="0.3"/>
+                        <text x="310" y="27" text-anchor="middle" font-size="7" fill="#666">slight blur</text>
+                        
+                        <rect x="345" y="5" width="215" height="35" fill="#4caf50" opacity="0.15"/>
+                        <text x="450" y="27" text-anchor="middle" font-size="7" fill="#666">sharp ✓</text>
+                    </g>
+                    
+                    <!-- Cyclist -->
+                    <g transform="translate(0, 190)">
+                        <text x="70" y="20" text-anchor="middle" font-size="10" fill="#1a1a1a">🚴 Cycling</text>
+                        <text x="70" y="33" text-anchor="middle" font-size="8" fill="#666">~20 km/h</text>
+                        
+                        <rect x="140" y="5" width="205" height="35" fill="#e63946" opacity="0.15"/>
+                        <text x="242" y="27" text-anchor="middle" font-size="7" fill="#666">blur</text>
+                        
+                        <rect x="345" y="5" width="70" height="35" fill="#f5d742" opacity="0.3"/>
+                        <text x="380" y="27" text-anchor="middle" font-size="7" fill="#666">slight blur</text>
+                        
+                        <rect x="415" y="5" width="145" height="35" fill="#4caf50" opacity="0.15"/>
+                        <text x="485" y="27" text-anchor="middle" font-size="7" fill="#666">sharp ✓</text>
+                    </g>
+                    
+                    <!-- Car in city -->
+                    <g transform="translate(0, 240)">
+                        <text x="70" y="20" text-anchor="middle" font-size="10" fill="#1a1a1a">🚗 City traffic</text>
+                        <text x="70" y="33" text-anchor="middle" font-size="8" fill="#666">~40 km/h</text>
+                        
+                        <rect x="140" y="5" width="275" height="35" fill="#e63946" opacity="0.15"/>
+                        <text x="277" y="27" text-anchor="middle" font-size="7" fill="#666">blur</text>
+                        
+                        <rect x="415" y="5" width="70" height="35" fill="#f5d742" opacity="0.3"/>
+                        <text x="450" y="27" text-anchor="middle" font-size="7" fill="#666">slight blur</text>
+                        
+                        <rect x="485" y="5" width="75" height="35" fill="#4caf50" opacity="0.15"/>
+                        <text x="522" y="27" text-anchor="middle" font-size="7" fill="#666">sharp ✓</text>
+                    </g>
+                    
+                    <!-- Gestures/hands -->
+                    <g transform="translate(0, 290)">
+                        <text x="70" y="20" text-anchor="middle" font-size="10" fill="#1a1a1a">👋 Gestures</text>
+                        <text x="70" y="33" text-anchor="middle" font-size="8" fill="#666">quick hands</text>
+                        
+                        <rect x="140" y="5" width="205" height="35" fill="#e63946" opacity="0.15"/>
+                        <text x="242" y="27" text-anchor="middle" font-size="7" fill="#666">blur</text>
+                        
+                        <rect x="345" y="5" width="70" height="35" fill="#f5d742" opacity="0.3"/>
+                        <text x="380" y="27" text-anchor="middle" font-size="7" fill="#666">slight blur</text>
+                        
+                        <rect x="415" y="5" width="145" height="35" fill="#4caf50" opacity="0.15"/>
+                        <text x="485" y="27" text-anchor="middle" font-size="7" fill="#666">sharp ✓</text>
+                    </g>
+                    
+                    <!-- Splash/droplets -->
+                    <g transform="translate(0, 340)">
+                        <text x="70" y="20" text-anchor="middle" font-size="10" fill="#1a1a1a">💧 Splashes</text>
+                        <text x="70" y="33" text-anchor="middle" font-size="8" fill="#666">water drops</text>
+                        
+                        <rect x="140" y="5" width="345" height="35" fill="#e63946" opacity="0.15"/>
+                        <text x="310" y="27" text-anchor="middle" font-size="7" fill="#666">blur</text>
+                        
+                        <rect x="485" y="5" width="75" height="35" fill="#4caf50" opacity="0.15"/>
+                        <text x="522" y="27" text-anchor="middle" font-size="7" fill="#666">sharp ✓</text>
+                    </g>
+                    
+                    <!-- Legend -->
+                    <g transform="translate(150, 400)">
+                        <rect x="0" y="0" width="15" height="15" fill="#e63946" opacity="0.2"/>
+                        <text x="25" y="12" font-size="9" fill="#1a1a1a">Motion blur</text>
+                        
+                        <rect x="100" y="0" width="15" height="15" fill="#f5d742" opacity="0.4"/>
+                        <text x="125" y="12" font-size="9" fill="#1a1a1a">Transition zone</text>
+                        
+                        <rect x="220" y="0" width="15" height="15" fill="#4caf50" opacity="0.2"/>
+                        <text x="245" y="12" font-size="9" fill="#1a1a1a">Frozen motion</text>
+                    </g>
+                    
+                    <!-- Note -->
+                    <text x="300" y="440" text-anchor="middle" font-size="8" fill="#666" font-style="italic">*Subject distance and motion direction affect results. Closer subjects and cross-frame motion require faster speeds.</text>
+                </svg>
+                <p class="visualization-caption">Use this as a starting point—actual results vary with distance, direction of movement, and focal length.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Rhythm of the Street</h2>
+            <p>Every street has a rhythm—the pulse of pedestrian crossings, the surge and pause of traffic lights, the ebb and flow of rush hour. Learning to see and capture this rhythm transforms street photography from hunting for subjects to dancing with the city itself.</p>
+            
+            <p>Rhythm in street photography isn't just about capturing motion; it's about finding the visual patterns that emerge from collective movement.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">URBAN RHYTHM — FLOW PATTERNS</text>
+                    
+                    <!-- Main scene - bird's eye view of intersection -->
+                    <rect x="50" y="50" width="500" height="250" fill="#ddd" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Crosswalks -->
+                    <rect x="250" y="50" width="100" height="30" fill="white"/>
+                    <rect x="250" y="270" width="100" height="30" fill="white"/>
+                    <rect x="50" y="150" width="30" height="60" fill="white"/>
+                    <rect x="520" y="150" width="30" height="60" fill="white"/>
+                    
+                    <!-- Crosswalk stripes -->
+                    <line x1="260" y1="50" x2="260" y2="80" stroke="#333" stroke-width="5"/>
+                    <line x1="280" y1="50" x2="280" y2="80" stroke="#333" stroke-width="5"/>
+                    <line x1="300" y1="50" x2="300" y2="80" stroke="#333" stroke-width="5"/>
+                    <line x1="320" y1="50" x2="320" y2="80" stroke="#333" stroke-width="5"/>
+                    <line x1="340" y1="50" x2="340" y2="80" stroke="#333" stroke-width="5"/>
+                    
+                    <line x1="260" y1="270" x2="260" y2="300" stroke="#333" stroke-width="5"/>
+                    <line x1="280" y1="270" x2="280" y2="300" stroke="#333" stroke-width="5"/>
+                    <line x1="300" y1="270" x2="300" y2="300" stroke="#333" stroke-width="5"/>
+                    <line x1="320" y1="270" x2="320" y2="300" stroke="#333" stroke-width="5"/>
+                    <line x1="340" y1="270" x2="340" y2="300" stroke="#333" stroke-width="5"/>
+                    
+                    <!-- Road surface -->
+                    <rect x="80" y="80" width="440" height="190" fill="#555"/>
+                    
+                    <!-- Flow arrows - pedestrian patterns -->
+                    <defs>
+                        <marker id="flowArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+                        </marker>
+                        <marker id="flowArrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#4a90a8"/>
+                        </marker>
+                    </defs>
+                    
+                    <!-- Pedestrian flow (red) - crossing pattern -->
+                    <path d="M 300,50 C 300,100 290,120 280,150 C 270,180 260,200 260,270" fill="none" stroke="#e63946" stroke-width="3" marker-end="url(#flowArrow)" opacity="0.7"/>
+                    <path d="M 320,270 C 320,220 330,200 340,170 C 350,140 360,120 360,50" fill="none" stroke="#e63946" stroke-width="3" marker-end="url(#flowArrow)" opacity="0.7"/>
+                    
+                    <!-- Vehicle flow (blue) - perpendicular -->
+                    <path d="M 80,160 L 240,160 Q 250,160 250,170 L 250,200" fill="none" stroke="#4a90a8" stroke-width="4" marker-end="url(#flowArrowBlue)" opacity="0.5"/>
+                    <path d="M 350,120 L 350,160 Q 350,170 360,170 L 520,170" fill="none" stroke="#4a90a8" stroke-width="4" marker-end="url(#flowArrowBlue)" opacity="0.5"/>
+                    
+                    <!-- Dots representing people at different density points -->
+                    <!-- Cluster waiting at crosswalk -->
+                    <circle cx="270" cy="255" r="4" fill="#1a1a1a"/>
+                    <circle cx="280" cy="260" r="4" fill="#1a1a1a"/>
+                    <circle cx="290" cy="258" r="4" fill="#1a1a1a"/>
+                    <circle cx="300" cy="262" r="4" fill="#1a1a1a"/>
+                    <circle cx="310" cy="256" r="4" fill="#1a1a1a"/>
+                    <circle cx="285" cy="252" r="4" fill="#1a1a1a"/>
+                    
+                    <!-- Sparse crossing -->
+                    <circle cx="295" cy="200" r="4" fill="#1a1a1a" opacity="0.6"/>
+                    <circle cx="340" cy="120" r="4" fill="#1a1a1a" opacity="0.6"/>
+                    
+                    <!-- Traffic light timing diagram -->
+                    <g transform="translate(300, 330)">
+                        <text x="0" y="0" text-anchor="middle" font-size="10" fill="#1a1a1a" font-weight="500">Traffic Light Rhythm</text>
+                        
+                        <line x1="-200" y1="20" x2="200" y2="20" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <!-- Walk signal -->
+                        <rect x="-200" y="25" width="80" height="15" fill="#4caf50" opacity="0.5"/>
+                        <text x="-160" y="36" text-anchor="middle" font-size="7" fill="#1a1a1a">WALK</text>
+                        
+                        <!-- Don't walk - clearing -->
+                        <rect x="-120" y="25" width="40" height="15" fill="#f5d742" opacity="0.5"/>
+                        <text x="-100" y="36" text-anchor="middle" font-size="7" fill="#1a1a1a">CLEAR</text>
+                        
+                        <!-- Don't walk - stopped -->
+                        <rect x="-80" y="25" width="160" height="15" fill="#e63946" opacity="0.3"/>
+                        <text x="0" y="36" text-anchor="middle" font-size="7" fill="#1a1a1a">DON'T WALK</text>
+                        
+                        <!-- Walk again -->
+                        <rect x="80" y="25" width="80" height="15" fill="#4caf50" opacity="0.5"/>
+                        <text x="120" y="36" text-anchor="middle" font-size="7" fill="#1a1a1a">WALK</text>
+                        
+                        <!-- Time markers -->
+                        <text x="-160" y="55" text-anchor="middle" font-size="7" fill="#666">0s</text>
+                        <text x="-100" y="55" text-anchor="middle" font-size="7" fill="#666">30s</text>
+                        <text x="0" y="55" text-anchor="middle" font-size="7" fill="#666">60s</text>
+                        <text x="120" y="55" text-anchor="middle" font-size="7" fill="#666">90s</text>
+                    </g>
+                    
+                    <!-- Legend -->
+                    <g transform="translate(50, 315)">
+                        <line x1="0" y1="0" x2="20" y2="0" stroke="#e63946" stroke-width="3"/>
+                        <text x="30" y="4" font-size="8" fill="#1a1a1a">Pedestrian flow</text>
+                        
+                        <line x1="100" y1="0" x2="120" y2="0" stroke="#4a90a8" stroke-width="3"/>
+                        <text x="130" y="4" font-size="8" fill="#1a1a1a">Vehicle flow</text>
+                        
+                        <circle cx="210" cy="0" r="4" fill="#1a1a1a"/>
+                        <text x="220" y="4" font-size="8" fill="#1a1a1a">Pedestrians</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">The city pulses with predictable rhythms. Learn the patterns to anticipate moments before they happen.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Working the Rhythm</h4>
+                <p>Position yourself at intersections and observe several light cycles before shooting. Notice where people cluster, which paths they take, when the crowd thins. The rhythm repeats—use it to anticipate your shot.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            
+            <div class="exercise">
+                <h4>Assignment: Speed Bracketing</h4>
+                <p>Choose a busy pedestrian location. Photograph the same scene at five different shutter speeds: 1/500s, 1/125s, 1/30s, 1/8s, and 1s (you'll need a tripod or surface for the slower speeds). Compare the results—which tells the story you want to tell?</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Panning Practice</h4>
+                <p>Find a location with cyclists or joggers moving in a predictable path. Set your camera to 1/30s and practice panning. Shoot 50 frames minimum. Review and identify the keepers—what made those succeed where others failed?</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Implied Motion Only</h4>
+                <p>Spend an afternoon shooting with a shutter speed of 1/500s or faster—eliminating any motion blur. Focus entirely on capturing implied motion through pose, gesture, and composition. Can you create images that feel dynamic without any blur at all?</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Rush Hour Study</h4>
+                <p>Station yourself at a busy intersection during rush hour. Document the rhythms: the cluster at red lights, the surge at green, the stragglers, the patterns. Create a series of 10-20 images that captures the pulse of that specific time and place.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technical Mastery</span>
+            </a>
+            <a href="../index.html" class="next">
+                <span class="label">Back to →</span>
+                <span class="title">Home</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

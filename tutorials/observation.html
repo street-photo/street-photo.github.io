@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Observation — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Observation</p>
+        <h1>The Art of Observation</h1>
+        <p class="tutorial-intro">Before you raise the camera, you must learn to see. Observation is the foundation of street photography—a skill that transforms ordinary walks into visual discoveries.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Seeing vs Looking</h2>
+            <p>Looking is passive; seeing is active. Most people walk through the world on autopilot, filtering out 99% of visual information. As street photographers, we must train ourselves to see everything—the interplay of light and shadow, the geometry of urban spaces, the micro-expressions of passing faces.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Left side: Looking (passive) -->
+                    <g transform="translate(150, 200)">
+                        <!-- Eye shape - half closed -->
+                        <ellipse cx="0" cy="0" rx="60" ry="25" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <ellipse cx="0" cy="0" rx="20" ry="20" fill="#cac4b8"/>
+                        <circle cx="0" cy="0" r="10" fill="#666"/>
+                        <circle cx="3" cy="-3" r="3" fill="#f5f0e6" opacity="0.5"/>
+                        
+                        <!-- Droopy eyelid -->
+                        <path d="M-60,0 Q-30,-15 0,-10 Q30,-15 60,0" fill="#f5f0e6" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <!-- Scattered dots (unfocused attention) -->
+                        <circle cx="-80" cy="-60" r="4" fill="#999" opacity="0.3"/>
+                        <circle cx="90" cy="-40" r="5" fill="#999" opacity="0.3"/>
+                        <circle cx="-70" cy="70" r="3" fill="#999" opacity="0.3"/>
+                        <circle cx="100" cy="50" r="6" fill="#999" opacity="0.3"/>
+                        <circle cx="30" cy="-80" r="4" fill="#999" opacity="0.3"/>
+                    </g>
+                    <text x="150" y="310" text-anchor="middle" font-size="14" fill="#666">LOOKING</text>
+                    <text x="150" y="330" text-anchor="middle" font-size="11" fill="#999">Passive • Filtered • Automatic</text>
+                    
+                    <!-- Divider -->
+                    <line x1="300" y1="80" x2="300" y2="320" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+                    
+                    <!-- Right side: Seeing (active) -->
+                    <g transform="translate(450, 200)">
+                        <!-- Eye shape - wide open -->
+                        <ellipse cx="0" cy="0" rx="60" ry="35" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <ellipse cx="0" cy="0" rx="25" ry="25" fill="#f5f0e6"/>
+                        <circle cx="0" cy="0" r="15" fill="#1a1a1a"/>
+                        <circle cx="4" cy="-4" r="4" fill="#f5f0e6"/>
+                        
+                        <!-- Focused attention rays -->
+                        <line x1="-90" y1="-70" x2="-30" y2="-20" stroke="#e63946" stroke-width="1.5" opacity="0.7"/>
+                        <line x1="90" y1="-60" x2="30" y2="-15" stroke="#e63946" stroke-width="1.5" opacity="0.7"/>
+                        <line x1="-100" y1="50" x2="-35" y2="15" stroke="#e63946" stroke-width="1.5" opacity="0.7"/>
+                        <line x1="100" y1="40" x2="35" y2="12" stroke="#e63946" stroke-width="1.5" opacity="0.7"/>
+                        <line x1="0" y1="-90" x2="0" y2="-38" stroke="#e63946" stroke-width="1.5" opacity="0.7"/>
+                        
+                        <!-- Attention nodes -->
+                        <circle cx="-90" cy="-70" r="6" fill="#e63946"/>
+                        <circle cx="90" cy="-60" r="6" fill="#e63946"/>
+                        <circle cx="-100" cy="50" r="6" fill="#e63946"/>
+                        <circle cx="100" cy="40" r="6" fill="#e63946"/>
+                        <circle cx="0" cy="-90" r="6" fill="#e63946"/>
+                    </g>
+                    <text x="450" y="310" text-anchor="middle" font-size="14" fill="#1a1a1a">SEEING</text>
+                    <text x="450" y="330" text-anchor="middle" font-size="11" fill="#e63946">Active • Absorbing • Intentional</text>
+                </svg>
+                <p class="visualization-caption">Looking filters out information; seeing actively collects it. The photographer's eye must be trained to see.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>The difference between a tourist and a street photographer isn't the camera—it's attention. Tourists photograph what they expect to see; photographers see what's actually there.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Peripheral Vision</h2>
+            <p>Your central vision covers only about 2-3 degrees of your visual field, yet photographers often forget about the remaining 170+ degrees. Street photography happens at the edges—in the periphery where unexpected moments emerge. Train yourself to use your whole field of view.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Eye position -->
+                    <circle cx="300" cy="380" r="8" fill="#1a1a1a"/>
+                    <text x="300" y="398" text-anchor="middle" font-size="10" fill="#1a1a1a">YOU</text>
+                    
+                    <!-- Peripheral vision cone (outer) - 170° -->
+                    <path d="M300,380 L30,50 A290,290 0 0,1 570,50 Z" fill="#e8e2d6" opacity="0.5"/>
+                    
+                    <!-- Mid-peripheral zone - 60° each side -->
+                    <path d="M300,380 L100,80 A220,220 0 0,1 500,80 Z" fill="#d4cec2" opacity="0.6"/>
+                    
+                    <!-- Near-peripheral zone - 30° each side -->
+                    <path d="M300,380 L180,100 A150,150 0 0,1 420,100 Z" fill="#cac4b8" opacity="0.7"/>
+                    
+                    <!-- Central vision cone (foveal) - about 2-3° -->
+                    <path d="M300,380 L285,120 A30,30 0 0,1 315,120 Z" fill="#e63946" opacity="0.3"/>
+                    
+                    <!-- Zone labels -->
+                    <text x="300" y="150" text-anchor="middle" font-size="10" fill="#e63946" font-weight="500">FOVEAL</text>
+                    <text x="300" y="162" text-anchor="middle" font-size="9" fill="#e63946">2-3°</text>
+                    
+                    <text x="220" y="200" text-anchor="middle" font-size="10" fill="#666">NEAR</text>
+                    <text x="380" y="200" text-anchor="middle" font-size="10" fill="#666">PERIPHERAL</text>
+                    
+                    <text x="130" y="220" text-anchor="middle" font-size="10" fill="#666">MID-PERIPHERAL</text>
+                    <text x="470" y="220" text-anchor="middle" font-size="10" fill="#666">60°</text>
+                    
+                    <text x="70" y="160" text-anchor="middle" font-size="10" fill="#999">FAR</text>
+                    <text x="70" y="175" text-anchor="middle" font-size="10" fill="#999">PERIPHERAL</text>
+                    <text x="530" y="160" text-anchor="middle" font-size="10" fill="#999">FAR</text>
+                    <text x="530" y="175" text-anchor="middle" font-size="10" fill="#999">PERIPHERAL</text>
+                    
+                    <!-- Movement detection indicators -->
+                    <g opacity="0.8">
+                        <!-- Left edge movement -->
+                        <circle cx="80" cy="120" r="5" fill="none" stroke="#e63946" stroke-width="2"/>
+                        <line x1="65" y1="120" x2="55" y2="120" stroke="#e63946" stroke-width="1.5"/>
+                        <polygon points="55,117 50,120 55,123" fill="#e63946"/>
+                        
+                        <!-- Right edge movement -->
+                        <circle cx="520" cy="130" r="5" fill="none" stroke="#e63946" stroke-width="2"/>
+                        <line x1="535" y1="130" x2="545" y2="130" stroke="#e63946" stroke-width="1.5"/>
+                        <polygon points="545,127 550,130 545,133" fill="#e63946"/>
+                    </g>
+                    
+                    <!-- Legend -->
+                    <rect x="20" y="300" width="12" height="12" fill="#e63946" opacity="0.3"/>
+                    <text x="40" y="310" font-size="10" fill="#1a1a1a">Sharp detail vision</text>
+                    
+                    <rect x="20" y="320" width="12" height="12" fill="#cac4b8"/>
+                    <text x="40" y="330" font-size="10" fill="#1a1a1a">Movement detection zone</text>
+                    
+                    <circle cx="26" cy="350" r="5" fill="none" stroke="#e63946" stroke-width="2"/>
+                    <text x="40" y="354" font-size="10" fill="#1a1a1a">Where moments emerge</text>
+                </svg>
+                <p class="visualization-caption">Your visual field spans roughly 170°, but sharp focus covers only 2-3°. The periphery detects movement—where street moments often begin.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Soft focus technique</strong>—relax your gaze to take in more peripheral information</li>
+                <li><strong>Movement triggers</strong>—train your peripheral vision to detect motion, not just shapes</li>
+                <li><strong>Side glancing</strong>—use reflections in windows to observe without being noticed</li>
+                <li><strong>The 180° scan</strong>—periodically sweep your full field of view without moving your head</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Pattern Recognition</h2>
+            <p>The urban environment is full of visual rhythms—repeated forms, colors, movements. The trained eye learns to notice these patterns and, more importantly, to recognize when something breaks them. Pattern interruptions are often where the photograph lives.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Pattern of similar figures -->
+                    <g fill="#cac4b8">
+                        <!-- Row 1 -->
+                        <g transform="translate(80, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(160, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(240, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(320, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(400, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(480, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(560, 120)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        
+                        <!-- Row 2 -->
+                        <g transform="translate(40, 200)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(120, 200)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(200, 200)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                    </g>
+                    
+                    <!-- The pattern breaker - person in red -->
+                    <g transform="translate(300, 200)">
+                        <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#1a1a1a"/>
+                        <rect x="-12" y="-5" width="24" height="35" rx="3" fill="#e63946"/>
+                        <!-- Highlight ring -->
+                        <circle cx="0" cy="5" r="40" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="6,3"/>
+                    </g>
+                    
+                    <!-- Continue pattern -->
+                    <g fill="#cac4b8">
+                        <g transform="translate(380, 200)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(460, 200)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(540, 200)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        
+                        <!-- Row 3 -->
+                        <g transform="translate(80, 280)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(160, 280)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(240, 280)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(320, 280)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(400, 280)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                        <g transform="translate(480, 280)">
+                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#999"/>
+                            <rect x="-12" y="-5" width="24" height="35" rx="3"/>
+                        </g>
+                    </g>
+                    
+                    <!-- Labels -->
+                    <text x="300" y="40" text-anchor="middle" font-size="12" fill="#1a1a1a">THE PATTERN</text>
+                    <text x="300" y="58" text-anchor="middle" font-size="10" fill="#666">Repetition creates expectation</text>
+                    
+                    <text x="300" y="340" text-anchor="middle" font-size="12" fill="#e63946">THE BREAK</text>
+                    <text x="300" y="358" text-anchor="middle" font-size="10" fill="#666">Deviation draws the eye</text>
+                </svg>
+                <p class="visualization-caption">The eye is drawn to what breaks the pattern. In a sea of sameness, difference becomes the subject.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>Patterns create visual rhythm; breaking them creates visual accent. Look for: the one person not looking at their phone, the single colorful umbrella in a gray crowd, the still figure in a sea of motion.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Reading the Environment</h2>
+            <p>Experienced street photographers don't just react to moments—they anticipate them. By reading the environment, you can predict where interesting interactions will occur and position yourself before they happen.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background - street scene from above -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Street/sidewalk -->
+                    <rect x="0" y="150" width="600" height="150" fill="#d4cec2"/>
+                    <rect x="0" y="170" width="600" height="110" fill="#cac4b8"/>
+                    
+                    <!-- Building facades -->
+                    <rect x="0" y="0" width="600" height="150" fill="#e8e2d6"/>
+                    <rect x="0" y="300" width="600" height="100" fill="#e8e2d6"/>
+                    
+                    <!-- Doorway - high probability zone -->
+                    <rect x="100" y="80" width="60" height="70" fill="#666"/>
+                    <circle cx="130" cy="200" r="45" fill="#e63946" opacity="0.2"/>
+                    <circle cx="130" cy="200" r="30" fill="#e63946" opacity="0.2"/>
+                    <text x="130" y="260" text-anchor="middle" font-size="9" fill="#e63946">DOORWAY</text>
+                    <text x="130" y="272" text-anchor="middle" font-size="8" fill="#666">People emerge</text>
+                    
+                    <!-- Crosswalk - convergence zone -->
+                    <rect x="250" y="170" width="100" height="110" fill="#e8e2d6" opacity="0.5"/>
+                    <line x1="260" y1="170" x2="260" y2="280" stroke="#f5f0e6" stroke-width="8"/>
+                    <line x1="280" y1="170" x2="280" y2="280" stroke="#f5f0e6" stroke-width="8"/>
+                    <line x1="300" y1="170" x2="300" y2="280" stroke="#f5f0e6" stroke-width="8"/>
+                    <line x1="320" y1="170" x2="320" y2="280" stroke="#f5f0e6" stroke-width="8"/>
+                    <line x1="340" y1="170" x2="340" y2="280" stroke="#f5f0e6" stroke-width="8"/>
+                    
+                    <circle cx="300" cy="225" r="50" fill="#e63946" opacity="0.2"/>
+                    <circle cx="300" cy="225" r="35" fill="#e63946" opacity="0.2"/>
+                    <text x="300" y="295" text-anchor="middle" font-size="9" fill="#e63946">CROSSING</text>
+                    <text x="300" y="307" text-anchor="middle" font-size="8" fill="#666">Paths converge</text>
+                    
+                    <!-- Café seating - interaction zone -->
+                    <rect x="430" y="100" width="80" height="50" fill="#b8b2a6"/>
+                    <circle cx="450" cy="125" r="8" fill="#a8a29a"/>
+                    <circle cx="475" cy="125" r="8" fill="#a8a29a"/>
+                    <circle cx="470" cy="200" r="40" fill="#e63946" opacity="0.2"/>
+                    <circle cx="470" cy="200" r="25" fill="#e63946" opacity="0.2"/>
+                    <text x="470" y="255" text-anchor="middle" font-size="9" fill="#e63946">CAFÉ</text>
+                    <text x="470" y="267" text-anchor="middle" font-size="8" fill="#666">People linger</text>
+                    
+                    <!-- Movement prediction arrows -->
+                    <g stroke="#1a1a1a" stroke-width="1.5" fill="none" opacity="0.4">
+                        <path d="M50,225 Q80,225 100,200" marker-end="url(#arrowhead)"/>
+                        <path d="M200,150 Q220,180 250,200" marker-end="url(#arrowhead)"/>
+                        <path d="M200,300 Q220,270 250,245" marker-end="url(#arrowhead)"/>
+                        <path d="M550,225 Q520,225 500,210" marker-end="url(#arrowhead)"/>
+                    </g>
+                    
+                    <!-- Arrowhead marker -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                            <polygon points="0,0 6,3 0,6" fill="#1a1a1a" opacity="0.4"/>
+                        </marker>
+                    </defs>
+                    
+                    <!-- Legend -->
+                    <circle cx="30" cy="360" r="12" fill="#e63946" opacity="0.2"/>
+                    <text x="50" y="364" font-size="10" fill="#1a1a1a">High probability zones</text>
+                    
+                    <line x1="150" y1="360" x2="180" y2="360" stroke="#1a1a1a" stroke-width="1.5" opacity="0.4"/>
+                    <polygon points="180,357 186,360 180,363" fill="#1a1a1a" opacity="0.4"/>
+                    <text x="195" y="364" font-size="10" fill="#1a1a1a">Predicted movement</text>
+                </svg>
+                <p class="visualization-caption">The street is a system. Learn to read its nodes—where people pause, converge, emerge, and interact.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Doorways</strong>—people emerge, pause, adjust; transitional behavior</li>
+                <li><strong>Crossings</strong>—strangers briefly share space; potential juxtapositions</li>
+                <li><strong>Benches</strong>—contemplation, waiting, human moments at rest</li>
+                <li><strong>Light pools</strong>—people naturally move through light; stage already set</li>
+                <li><strong>Reflective surfaces</strong>—layered realities, unexpected compositions</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Wandering Eye</h2>
+            <p>Systematic scanning prevents you from missing opportunities. Rather than fixating on one point, develop a rhythm of visual exploration that covers your entire environment while remaining sensitive to sudden changes.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background - viewfinder frame -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    <rect x="30" y="30" width="540" height="340" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Scanning pattern visualization -->
+                    <!-- Z-pattern scan -->
+                    <g stroke="#e63946" stroke-width="2.5" fill="none" opacity="0.8">
+                        <path d="M60,60 L540,60" stroke-dasharray="8,4"/>
+                        <path d="M540,60 L60,190" stroke-dasharray="8,4"/>
+                        <path d="M60,190 L540,190" stroke-dasharray="8,4"/>
+                        <path d="M540,190 L60,320" stroke-dasharray="8,4"/>
+                        <path d="M60,320 L540,320" stroke-dasharray="8,4"/>
+                    </g>
+                    
+                    <!-- Numbered scan points -->
+                    <g font-size="14" font-weight="500">
+                        <circle cx="60" cy="60" r="15" fill="#e63946"/>
+                        <text x="60" y="65" text-anchor="middle" fill="white">1</text>
+                        
+                        <circle cx="300" cy="60" r="12" fill="#e63946" opacity="0.8"/>
+                        <text x="300" y="65" text-anchor="middle" fill="white" font-size="12">2</text>
+                        
+                        <circle cx="540" cy="60" r="15" fill="#e63946"/>
+                        <text x="540" y="65" text-anchor="middle" fill="white">3</text>
+                        
+                        <circle cx="300" cy="125" r="12" fill="#e63946" opacity="0.6"/>
+                        <text x="300" y="130" text-anchor="middle" fill="white" font-size="12">4</text>
+                        
+                        <circle cx="60" cy="190" r="15" fill="#e63946"/>
+                        <text x="60" y="195" text-anchor="middle" fill="white">5</text>
+                        
+                        <circle cx="300" cy="190" r="12" fill="#e63946" opacity="0.8"/>
+                        <text x="300" y="195" text-anchor="middle" fill="white" font-size="12">6</text>
+                        
+                        <circle cx="540" cy="190" r="15" fill="#e63946"/>
+                        <text x="540" y="195" text-anchor="middle" fill="white">7</text>
+                        
+                        <circle cx="300" cy="255" r="12" fill="#e63946" opacity="0.6"/>
+                        <text x="300" y="260" text-anchor="middle" fill="white" font-size="12">8</text>
+                        
+                        <circle cx="60" cy="320" r="15" fill="#e63946"/>
+                        <text x="60" y="325" text-anchor="middle" fill="white">9</text>
+                        
+                        <circle cx="300" cy="320" r="12" fill="#e63946" opacity="0.8"/>
+                        <text x="300" y="325" text-anchor="middle" fill="white" font-size="12">10</text>
+                        
+                        <circle cx="540" cy="320" r="15" fill="#e63946"/>
+                        <text x="540" y="325" text-anchor="middle" fill="white">11</text>
+                    </g>
+                    
+                    <!-- Zone labels -->
+                    <rect x="80" y="75" width="80" height="22" fill="#f5f0e6" opacity="0.9"/>
+                    <text x="120" y="91" text-anchor="middle" font-size="10" fill="#666">BACKGROUND</text>
+                    
+                    <rect x="80" y="195" width="80" height="22" fill="#f5f0e6" opacity="0.9"/>
+                    <text x="120" y="211" text-anchor="middle" font-size="10" fill="#666">MID-GROUND</text>
+                    
+                    <rect x="80" y="280" width="80" height="22" fill="#f5f0e6" opacity="0.9"/>
+                    <text x="120" y="296" text-anchor="middle" font-size="10" fill="#666">FOREGROUND</text>
+                </svg>
+                <p class="visualization-caption">The Z-pattern scan: systematically cover your field of view from background to foreground, left to right.</p>
+            </div>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item avoid">
+                    <svg viewBox="0 0 200 150">
+                        <rect x="0" y="0" width="200" height="150" fill="#f5f0e6"/>
+                        <circle cx="100" cy="75" r="30" fill="#e63946" opacity="0.4"/>
+                        <circle cx="100" cy="75" r="20" fill="#e63946" opacity="0.4"/>
+                        <circle cx="100" cy="75" r="10" fill="#e63946" opacity="0.4"/>
+                        <text x="100" y="130" text-anchor="middle" font-size="10" fill="#666">Tunnel vision</text>
+                    </svg>
+                    <h4>Avoid: Fixation</h4>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 200 150">
+                        <rect x="0" y="0" width="200" height="150" fill="#f5f0e6"/>
+                        <circle cx="40" cy="40" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="100" cy="35" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="160" cy="45" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="50" cy="80" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="100" cy="75" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="150" cy="85" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="45" cy="120" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="100" cy="115" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <circle cx="155" cy="110" r="8" fill="#2d6a4f" opacity="0.5"/>
+                        <text x="100" y="145" text-anchor="middle" font-size="10" fill="#666">Distributed attention</text>
+                    </svg>
+                    <h4>Better: Scanning</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Slowness as Strategy</h2>
+            <p>In a world obsessed with speed, slowness becomes a superpower. The photographer who lingers sees what the rushing crowd misses. Patience is not passive waiting—it's active anticipation.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Timeline visualization -->
+                    <line x1="50" y1="200" x2="550" y2="200" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Time markers -->
+                    <g font-size="10" fill="#666" text-anchor="middle">
+                        <line x1="100" y1="195" x2="100" y2="205" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="100" y="220">0 min</text>
+                        
+                        <line x1="200" y1="195" x2="200" y2="205" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="200" y="220">5 min</text>
+                        
+                        <line x1="300" y1="195" x2="300" y2="205" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="300" y="220">10 min</text>
+                        
+                        <line x1="400" y1="195" x2="400" y2="205" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="400" y="220">15 min</text>
+                        
+                        <line x1="500" y1="195" x2="500" y2="205" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="500" y="220">20 min</text>
+                    </g>
+                    
+                    <!-- Rushing photographer path -->
+                    <g opacity="0.6">
+                        <path d="M80,100 L150,100 L180,100" stroke="#999" stroke-width="2" fill="none"/>
+                        <polygon points="180,97 188,100 180,103" fill="#999"/>
+                        <text x="135" y="85" font-size="10" fill="#999">Rushing photographer</text>
+                        <text x="135" y="95" font-size="9" fill="#999" font-style="italic">sees surface only</text>
+                        
+                        <!-- Quick shots, misses -->
+                        <circle cx="100" cy="100" r="4" fill="#999"/>
+                        <circle cx="150" cy="100" r="4" fill="#999"/>
+                        <text x="220" y="103" font-size="9" fill="#999">→ moves on</text>
+                    </g>
+                    
+                    <!-- Patient photographer - stays in one place -->
+                    <g>
+                        <circle cx="135" cy="300" r="8" fill="#1a1a1a"/>
+                        <text x="135" y="340" text-anchor="middle" font-size="10" fill="#1a1a1a">Patient photographer</text>
+                        <text x="135" y="352" text-anchor="middle" font-size="9" fill="#666" font-style="italic">waits, observes, anticipates</text>
+                        
+                        <!-- Observation rays -->
+                        <line x1="143" y1="295" x2="200" y2="250" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+                        <line x1="143" y1="300" x2="280" y2="250" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+                        <line x1="143" y1="305" x2="350" y2="250" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+                        <line x1="143" y1="300" x2="430" y2="250" stroke="#e63946" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+                        
+                        <!-- Moments discovered over time -->
+                        <circle cx="200" cy="250" r="6" fill="none" stroke="#666" stroke-width="1"/>
+                        <text x="200" y="240" text-anchor="middle" font-size="8" fill="#666">miss</text>
+                        
+                        <circle cx="280" cy="250" r="6" fill="none" stroke="#666" stroke-width="1"/>
+                        <text x="280" y="240" text-anchor="middle" font-size="8" fill="#666">miss</text>
+                        
+                        <circle cx="350" cy="250" r="10" fill="#e63946"/>
+                        <text x="350" y="240" text-anchor="middle" font-size="9" fill="#e63946" font-weight="500">THE MOMENT</text>
+                        
+                        <circle cx="430" cy="250" r="6" fill="none" stroke="#666" stroke-width="1"/>
+                        <text x="430" y="240" text-anchor="middle" font-size="8" fill="#666">bonus</text>
+                    </g>
+                    
+                    <!-- Quote -->
+                    <text x="300" y="50" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">"The longer you wait, the more you see."</text>
+                </svg>
+                <p class="visualization-caption">The rushing photographer captures surfaces. The patient photographer captures revelations.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>Henri Cartier-Bresson would sometimes wait for hours at a single location. The decisive moment doesn't arrive on a schedule—it reveals itself to those who wait.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Observing Without Camera</h2>
+            <p>The best way to train your photographic eye is to practice seeing without taking pictures. Leave the camera at home. Walk the streets as pure observer. This removes the anxiety of capture and allows you to develop pure visual awareness.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 300">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="300" fill="#f5f0e6"/>
+                    
+                    <!-- Brain/mind visualization -->
+                    <ellipse cx="300" cy="120" rx="120" ry="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Visual input streams -->
+                    <g stroke="#e63946" stroke-width="1.5" fill="none">
+                        <path d="M50,200 Q100,150 180,120"/>
+                        <path d="M80,250 Q130,180 185,130"/>
+                        <path d="M150,280 Q200,200 200,140"/>
+                        
+                        <path d="M550,200 Q500,150 420,120"/>
+                        <path d="M520,250 Q470,180 415,130"/>
+                        <path d="M450,280 Q400,200 400,140"/>
+                    </g>
+                    
+                    <!-- Input sources -->
+                    <g font-size="9" fill="#666">
+                        <circle cx="50" cy="200" r="20" fill="#e8e2d6" stroke="#cac4b8"/>
+                        <text x="50" y="203" text-anchor="middle">Light</text>
+                        
+                        <circle cx="80" cy="250" r="20" fill="#e8e2d6" stroke="#cac4b8"/>
+                        <text x="80" y="253" text-anchor="middle">Motion</text>
+                        
+                        <circle cx="150" cy="280" r="20" fill="#e8e2d6" stroke="#cac4b8"/>
+                        <text x="150" y="283" text-anchor="middle">Faces</text>
+                        
+                        <circle cx="550" cy="200" r="20" fill="#e8e2d6" stroke="#cac4b8"/>
+                        <text x="550" y="203" text-anchor="middle">Gesture</text>
+                        
+                        <circle cx="520" cy="250" r="20" fill="#e8e2d6" stroke="#cac4b8"/>
+                        <text x="520" y="253" text-anchor="middle">Pattern</text>
+                        
+                        <circle cx="450" cy="280" r="20" fill="#e8e2d6" stroke="#cac4b8"/>
+                        <text x="450" y="283" text-anchor="middle">Story</text>
+                    </g>
+                    
+                    <!-- Mental frame -->
+                    <rect x="260" y="90" width="80" height="60" fill="none" stroke="#e63946" stroke-width="2"/>
+                    <text x="300" y="125" text-anchor="middle" font-size="11" fill="#e63946">FRAME</text>
+                    
+                    <!-- No camera symbol -->
+                    <g transform="translate(300, 35)">
+                        <rect x="-20" y="-10" width="40" height="25" rx="3" fill="none" stroke="#999" stroke-width="1.5"/>
+                        <circle cx="0" cy="3" r="8" fill="none" stroke="#999" stroke-width="1.5"/>
+                        <line x1="-25" y1="-15" x2="25" y2="20" stroke="#e63946" stroke-width="2"/>
+                    </g>
+                    <text x="300" y="65" text-anchor="middle" font-size="9" fill="#666">Practice without camera</text>
+                </svg>
+                <p class="visualization-caption">Train the mental frame. Without camera pressure, you learn to compose in your mind, building visual instincts.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Exercise: The Mental Frame</h4>
+                <p>Walk for 30 minutes without your camera. When you see a potential photograph, stop. Frame it mentally. Consider: Where would the edges be? What's included, what's excluded? What's the subject? What story does it tell? Then walk on. You're training the eye, not building a portfolio.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Exercise: The Café Window</h4>
+                <p>Sit at a café window for one hour. Watch the street without any intention to photograph. Notice who walks by, how they move, what patterns emerge. Who pauses? Who hurries? Where do eyes go? What would make a photograph? This is pure observation practice.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Exercise: Light Mapping</h4>
+                <p>Choose one street corner. Visit it at three different times of day—morning, midday, evening. Without photographing, observe how light changes everything: the shapes, the moods, the behaviors of people. Understand how light transforms space.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Photographer's Walk</h2>
+            <p>A photographer's walk is different from ordinary walking. It's a state of heightened awareness—relaxed yet alert, aimless yet purposeful. You're not going somewhere; you're being somewhere, fully present in the visual now.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Two paths comparison -->
+                    
+                    <!-- Normal walking path (left) -->
+                    <g transform="translate(150, 0)">
+                        <text x="0" y="40" text-anchor="middle" font-size="14" fill="#666">NORMAL WALKING</text>
+                        
+                        <!-- Straight, direct path -->
+                        <line x1="0" y1="80" x2="0" y2="350" stroke="#999" stroke-width="3"/>
+                        
+                        <!-- Person icon -->
+                        <g transform="translate(0, 100)">
+                            <ellipse cx="0" cy="-10" rx="6" ry="8" fill="#999"/>
+                            <line x1="0" y1="0" x2="0" y2="25" stroke="#999" stroke-width="3"/>
+                        </g>
+                        
+                        <!-- Phone/distraction -->
+                        <rect x="-6" y="108" width="12" height="18" rx="1" fill="#666"/>
+                        
+                        <!-- Direction arrow -->
+                        <polygon points="0,350 -8,330 8,330" fill="#999"/>
+                        
+                        <!-- Labels -->
+                        <text x="40" y="150" font-size="10" fill="#999">Point A</text>
+                        <text x="40" y="340" font-size="10" fill="#999">Point B</text>
+                        <text x="40" y="250" font-size="9" fill="#999" font-style="italic">Efficient</text>
+                        <text x="40" y="262" font-size="9" fill="#999" font-style="italic">Distracted</text>
+                        <text x="40" y="274" font-size="9" fill="#999" font-style="italic">Goal-oriented</text>
+                    </g>
+                    
+                    <!-- Photographer's walk (right) -->
+                    <g transform="translate(450, 0)">
+                        <text x="0" y="40" text-anchor="middle" font-size="14" fill="#1a1a1a">PHOTOGRAPHER'S WALK</text>
+                        
+                        <!-- Meandering, exploratory path -->
+                        <path d="M0,80 Q30,120 -20,150 Q-50,180 0,200 Q40,220 20,260 Q-10,300 -30,320 Q-40,340 -20,360"
+                              stroke="#e63946" stroke-width="3" fill="none"/>
+                        
+                        <!-- Pause points (circles) -->
+                        <circle cx="-20" cy="150" r="8" fill="#e63946" opacity="0.3"/>
+                        <circle cx="0" cy="200" r="10" fill="#e63946" opacity="0.3"/>
+                        <circle cx="20" cy="260" r="8" fill="#e63946" opacity="0.3"/>
+                        
+                        <!-- Observation rays from pause points -->
+                        <g stroke="#e63946" stroke-width="1" opacity="0.4">
+                            <line x1="-20" y1="150" x2="-60" y2="130"/>
+                            <line x1="-20" y1="150" x2="20" y2="140"/>
+                            <line x1="-20" y1="150" x2="-40" y2="170"/>
+                            
+                            <line x1="0" y1="200" x2="-50" y2="190"/>
+                            <line x1="0" y1="200" x2="50" y2="180"/>
+                            <line x1="0" y1="200" x2="30" y2="220"/>
+                            <line x1="0" y1="200" x2="-30" y2="215"/>
+                            
+                            <line x1="20" y1="260" x2="-30" y2="250"/>
+                            <line x1="20" y1="260" x2="60" y2="245"/>
+                        </g>
+                        
+                        <!-- Person icon - alert posture -->
+                        <g transform="translate(0, 200)">
+                            <ellipse cx="0" cy="-12" rx="6" ry="8" fill="#1a1a1a"/>
+                            <line x1="0" y1="-4" x2="0" y2="20" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="0" y1="5" x2="12" y2="-5" stroke="#1a1a1a" stroke-width="2"/>
+                        </g>
+                        
+                        <!-- Labels -->
+                        <text x="50" y="200" font-size="9" fill="#e63946" font-style="italic">Present</text>
+                        <text x="50" y="212" font-size="9" fill="#e63946" font-style="italic">Alert</text>
+                        <text x="50" y="224" font-size="9" fill="#e63946" font-style="italic">Open</text>
+                        
+                        <text x="-80" y="155" font-size="8" fill="#666">pause</text>
+                        <text x="-80" y="205" font-size="8" fill="#666">observe</text>
+                        <text x="-80" y="265" font-size="8" fill="#666">sense</text>
+                    </g>
+                    
+                    <!-- Divider -->
+                    <line x1="300" y1="60" x2="300" y2="380" stroke="#cac4b8" stroke-width="1" stroke-dasharray="6,4"/>
+                </svg>
+                <p class="visualization-caption">The photographer's walk is non-linear, punctuated by pauses, driven by curiosity rather than destination.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>No destination</strong>—walk without a goal; let the streets guide you</li>
+                <li><strong>Variable pace</strong>—slow when richness appears, quick through empty stretches</li>
+                <li><strong>Regular stops</strong>—pause every few minutes to scan, absorb, reset</li>
+                <li><strong>Look back</strong>—periodically turn around; the view behind is a different world</li>
+                <li><strong>Follow curiosity</strong>—if something catches your eye, pursue it</li>
+                <li><strong>Phone away</strong>—eliminate distractions; be fully present</li>
+            </ul>
+            
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>The photographer's walk is meditation in motion. You're not hunting for images—you're cultivating a state of receptivity where images find you. The best photographs come from this state of relaxed alertness.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: The Slow Walk</h4>
+                <p>Choose a single block. Walk it five times, each time slower than the last. On the fifth pass, you should take at least ten minutes for one block. Notice how much more you see when you slow down. What did you miss at normal speed?</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: The Reverse Route</h4>
+                <p>Walk your usual route backwards—not literally, but in reverse direction. Everything familiar becomes strange when seen from the opposite angle. Light falls differently. Compositions invert. This exercise breaks habitual seeing.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technique</span>
+            </a>
+            <a href="composition.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Composition</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

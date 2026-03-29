@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentary Street Photography — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Documentary</p>
+        <h1>Documentary Street Photography</h1>
+        <p class="tutorial-intro">Where art meets witness. Documentary photography bears testimony to the human condition—capturing not just moments, but histories, communities, and social truths that demand to be seen.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Street vs Documentary</h2>
+            <p>Street photography and documentary photography are distinct yet overlapping practices. Street photography often privileges the aesthetic moment—geometry, light, the decisive instant. Documentary photography prioritizes bearing witness—telling stories, exposing conditions, creating historical record. The most powerful work often lives in the overlap.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <!-- Venn Diagram -->
+                    <defs>
+                        <clipPath id="leftCircle">
+                            <circle cx="220" cy="175" r="120"/>
+                        </clipPath>
+                        <clipPath id="rightCircle">
+                            <circle cx="380" cy="175" r="120"/>
+                        </clipPath>
+                    </defs>
+                    
+                    <!-- Street Photography Circle -->
+                    <circle cx="220" cy="175" r="120" fill="#2a2a2a" opacity="0.1" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Documentary Circle -->
+                    <circle cx="380" cy="175" r="120" fill="#e63946" opacity="0.1" stroke="#e63946" stroke-width="2"/>
+                    
+                    <!-- Overlap area highlight -->
+                    <g clip-path="url(#leftCircle)">
+                        <circle cx="380" cy="175" r="120" fill="#e63946" opacity="0.2"/>
+                    </g>
+                    
+                    <!-- Labels -->
+                    <text x="160" y="40" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">STREET</text>
+                    <text x="160" y="55" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">PHOTOGRAPHY</text>
+                    
+                    <text x="440" y="40" text-anchor="middle" font-size="12" font-weight="500" fill="#e63946">DOCUMENTARY</text>
+                    <text x="440" y="55" text-anchor="middle" font-size="12" font-weight="500" fill="#e63946">PHOTOGRAPHY</text>
+                    
+                    <!-- Street-only characteristics -->
+                    <text x="140" y="145" text-anchor="middle" font-size="9" fill="#666">Aesthetic focus</text>
+                    <text x="140" y="165" text-anchor="middle" font-size="9" fill="#666">Formal beauty</text>
+                    <text x="140" y="185" text-anchor="middle" font-size="9" fill="#666">The moment</text>
+                    <text x="140" y="205" text-anchor="middle" font-size="9" fill="#666">Spontaneity</text>
+                    
+                    <!-- Documentary-only characteristics -->
+                    <text x="460" y="145" text-anchor="middle" font-size="9" fill="#666">Historical record</text>
+                    <text x="460" y="165" text-anchor="middle" font-size="9" fill="#666">Social issues</text>
+                    <text x="460" y="185" text-anchor="middle" font-size="9" fill="#666">Extended time</text>
+                    <text x="460" y="205" text-anchor="middle" font-size="9" fill="#666">Context/caption</text>
+                    
+                    <!-- Overlap characteristics -->
+                    <text x="300" y="155" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Human condition</text>
+                    <text x="300" y="175" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Authenticity</text>
+                    <text x="300" y="195" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Public space</text>
+                    
+                    <!-- Masters examples -->
+                    <text x="140" y="250" text-anchor="middle" font-size="8" fill="#999">Cartier-Bresson</text>
+                    <text x="140" y="265" text-anchor="middle" font-size="8" fill="#999">Winogrand</text>
+                    
+                    <text x="300" y="250" text-anchor="middle" font-size="8" fill="#999">Robert Frank</text>
+                    <text x="300" y="265" text-anchor="middle" font-size="8" fill="#999">Mary Ellen Mark</text>
+                    
+                    <text x="460" y="250" text-anchor="middle" font-size="8" fill="#999">Sebastião Salgado</text>
+                    <text x="460" y="265" text-anchor="middle" font-size="8" fill="#999">James Nachtwey</text>
+                    
+                    <!-- Bottom label -->
+                    <text x="300" y="330" text-anchor="middle" font-size="9" fill="#666">The overlap is where aesthetic power meets social purpose</text>
+                </svg>
+                <p class="visualization-caption">Street and documentary photography share common ground but differ in intent and approach.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Intent Defines the Work</h4>
+                <p>The same photograph can be both street and documentary. What matters is intent: are you seeking the perfect formal moment, or are you building a body of work that tells a larger story? The finest practitioners often do both simultaneously.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Bearing Witness</h2>
+            <p>The documentary photographer serves as a witness to history. Unlike the journalist who reports, or the artist who interprets, the witness simply sees—and through seeing, creates testimony. This is photography as evidence, as memory, as moral act.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 300">
+                    <rect x="0" y="0" width="600" height="300" fill="#f5f0e6"/>
+                    
+                    <!-- The Eye as Witness -->
+                    <g transform="translate(300, 130)">
+                        <!-- Large eye symbol -->
+                        <ellipse cx="0" cy="0" rx="80" ry="45" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="30" fill="#1a1a1a"/>
+                        <circle cx="5" cy="-5" r="8" fill="#f5f0e6"/>
+                        
+                        <!-- Rays of perception going outward -->
+                        <g opacity="0.6">
+                            <line x1="-120" y1="-60" x2="-85" y2="-30" stroke="#e63946" stroke-width="1"/>
+                            <line x1="-140" y1="0" x2="-85" y2="0" stroke="#e63946" stroke-width="1"/>
+                            <line x1="-120" y1="60" x2="-85" y2="30" stroke="#e63946" stroke-width="1"/>
+                            <line x1="120" y1="-60" x2="85" y2="-30" stroke="#e63946" stroke-width="1"/>
+                            <line x1="140" y1="0" x2="85" y2="0" stroke="#e63946" stroke-width="1"/>
+                            <line x1="120" y1="60" x2="85" y2="30" stroke="#e63946" stroke-width="1"/>
+                        </g>
+                        
+                        <!-- Scene elements being witnessed -->
+                        <!-- Left side: figures -->
+                        <g transform="translate(-160, -40)" opacity="0.5">
+                            <ellipse cx="0" cy="0" rx="6" ry="8" fill="#666"/>
+                            <line x1="0" y1="8" x2="0" y2="25" stroke="#666" stroke-width="2"/>
+                        </g>
+                        <g transform="translate(-150, 40)" opacity="0.5">
+                            <ellipse cx="0" cy="0" rx="6" ry="8" fill="#666"/>
+                            <line x1="0" y1="8" x2="0" y2="25" stroke="#666" stroke-width="2"/>
+                        </g>
+                        
+                        <!-- Right side: scene elements -->
+                        <g transform="translate(160, -30)" opacity="0.5">
+                            <rect x="-15" y="0" width="30" height="50" fill="none" stroke="#666" stroke-width="1"/>
+                        </g>
+                        <g transform="translate(150, 50)" opacity="0.5">
+                            <ellipse cx="0" cy="0" rx="6" ry="8" fill="#666"/>
+                            <line x1="0" y1="8" x2="0" y2="20" stroke="#666" stroke-width="2"/>
+                        </g>
+                    </g>
+                    
+                    <!-- Label: The Witness -->
+                    <text x="300" y="40" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">THE PHOTOGRAPHER AS WITNESS</text>
+                    
+                    <!-- Three principles -->
+                    <g transform="translate(100, 220)">
+                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">PRESENCE</text>
+                        <text x="0" y="18" text-anchor="middle" font-size="8" fill="#666">Being there</text>
+                    </g>
+                    <g transform="translate(300, 220)">
+                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">ATTENTION</text>
+                        <text x="0" y="18" text-anchor="middle" font-size="8" fill="#666">Truly seeing</text>
+                    </g>
+                    <g transform="translate(500, 220)">
+                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">RECORD</text>
+                        <text x="0" y="18" text-anchor="middle" font-size="8" fill="#666">Preserving truth</text>
+                    </g>
+                    
+                    <!-- Connecting line -->
+                    <line x1="100" y1="260" x2="500" y2="260" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,4"/>
+                    <text x="300" y="280" text-anchor="middle" font-size="9" fill="#666">"I was there. This happened. Remember."</text>
+                </svg>
+                <p class="visualization-caption">The witness sees without intervening, creating testimony for those who weren't present.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Social Documentary</h2>
+            <p>Social documentary photography illuminates communities, subcultures, and social conditions. It asks us to look at lives different from our own—not with pity or spectacle, but with understanding. The best social documentary work creates empathy across difference.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 320">
+                    <rect x="0" y="0" width="600" height="320" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">SUBJECTS OF SOCIAL DOCUMENTARY</text>
+                    
+                    <!-- Community circles -->
+                    <!-- Working class -->
+                    <g transform="translate(100, 120)">
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <g transform="translate(-15, -10)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="6" x2="0" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(15, -5)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="6" x2="0" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(0, 15)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="6" x2="0" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <text x="0" y="70" text-anchor="middle" font-size="9" fill="#666">Working Class</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="8" fill="#999">Lewis Hine, Dorothea Lange</text>
+                    </g>
+                    
+                    <!-- Subcultures -->
+                    <g transform="translate(250, 120)">
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#e63946" stroke-width="1.5"/>
+                        <g transform="translate(-12, -15)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#e63946"/>
+                            <line x1="0" y1="6" x2="0" y2="16" stroke="#e63946" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(12, -8)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#e63946"/>
+                            <line x1="0" y1="6" x2="0" y2="16" stroke="#e63946" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(-8, 10)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#e63946"/>
+                            <line x1="0" y1="6" x2="0" y2="16" stroke="#e63946" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(10, 12)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#e63946"/>
+                            <line x1="0" y1="6" x2="0" y2="16" stroke="#e63946" stroke-width="1.5"/>
+                        </g>
+                        <text x="0" y="70" text-anchor="middle" font-size="9" fill="#666">Subcultures</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="8" fill="#999">Nan Goldin, Larry Clark</text>
+                    </g>
+                    
+                    <!-- Marginalized -->
+                    <g transform="translate(400, 120)">
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <g transform="translate(0, -5)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="6" x2="0" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <g transform="translate(-20, 5)">
+                            <ellipse cx="0" cy="0" rx="5" ry="6" fill="#888" opacity="0.5"/>
+                            <line x1="0" y1="6" x2="0" y2="18" stroke="#888" stroke-width="1.5" opacity="0.5"/>
+                        </g>
+                        <text x="0" y="70" text-anchor="middle" font-size="9" fill="#666">Marginalized</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="8" fill="#999">Jacob Riis, Gordon Parks</text>
+                    </g>
+                    
+                    <!-- Global Issues -->
+                    <g transform="translate(500, 120)">
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <!-- Globe hint -->
+                        <ellipse cx="0" cy="0" rx="25" ry="25" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <ellipse cx="0" cy="0" rx="10" ry="25" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-25" y1="0" x2="25" y2="0" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="9" fill="#666">Global Issues</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="8" fill="#999">Salgado, Nachtwey</text>
+                    </g>
+                    
+                    <!-- Approach principles -->
+                    <g transform="translate(0, 220)">
+                        <line x1="50" y1="0" x2="550" y2="0" stroke="#1a1a1a" stroke-width="1" opacity="0.3"/>
+                        
+                        <text x="150" y="30" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">ACCESS</text>
+                        <text x="150" y="48" text-anchor="middle" font-size="8" fill="#666">Earning trust over time</text>
+                        
+                        <text x="300" y="30" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">IMMERSION</text>
+                        <text x="300" y="48" text-anchor="middle" font-size="8" fill="#666">Living within the story</text>
+                        
+                        <text x="450" y="30" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">RESPECT</text>
+                        <text x="450" y="48" text-anchor="middle" font-size="8" fill="#666">Dignity in portrayal</text>
+                    </g>
+                    
+                    <text x="300" y="300" text-anchor="middle" font-size="9" fill="#666">"Show me a life I haven't lived, help me understand it."</text>
+                </svg>
+                <p class="visualization-caption">Social documentary reveals communities to themselves and to the wider world.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Photo Essay</h2>
+            <p>A photo essay is more than a collection of images—it's a narrative structure. Like a written essay, it has an argument, a beginning, middle, and end. Images build upon each other, creating meaning through sequence that no single photograph could achieve alone.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">PHOTO ESSAY STRUCTURE — THE STORY ARC</text>
+                    
+                    <!-- Story arc curve -->
+                    <path d="M 60 250 Q 150 250 200 200 Q 280 120 350 100 Q 420 80 450 140 Q 500 220 540 250" 
+                          fill="none" stroke="#e63946" stroke-width="3"/>
+                    
+                    <!-- Plot points on the arc -->
+                    <!-- Opening -->
+                    <circle cx="60" cy="250" r="8" fill="#1a1a1a"/>
+                    <rect x="35" y="265" width="50" height="35" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="60" y="320" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">OPENER</text>
+                    <text x="60" y="335" text-anchor="middle" font-size="7" fill="#666">Establish world</text>
+                    
+                    <!-- Rising Action -->
+                    <circle cx="180" cy="215" r="8" fill="#1a1a1a"/>
+                    <rect x="155" y="160" width="50" height="35" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="180" y="130" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">BUILD</text>
+                    <text x="180" y="145" text-anchor="middle" font-size="7" fill="#666">Develop story</text>
+                    
+                    <!-- Climax -->
+                    <circle cx="350" cy="100" r="12" fill="#e63946"/>
+                    <rect x="325" y="45" width="50" height="35" fill="#fff" stroke="#e63946" stroke-width="2"/>
+                    <text x="350" y="25" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">CLIMAX</text>
+                    <text x="350" y="40" text-anchor="middle" font-size="7" fill="#666">Key image</text>
+                    
+                    <!-- Falling Action -->
+                    <circle cx="450" cy="140" r="8" fill="#1a1a1a"/>
+                    <rect x="425" y="85" width="50" height="35" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="450" y="145" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">REFLECT</text>
+                    <text x="450" y="160" text-anchor="middle" font-size="7" fill="#666">Aftermath</text>
+                    
+                    <!-- Resolution -->
+                    <circle cx="540" cy="250" r="8" fill="#1a1a1a"/>
+                    <rect x="515" y="265" width="50" height="35" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="540" y="320" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">CLOSER</text>
+                    <text x="540" y="335" text-anchor="middle" font-size="7" fill="#666">Leave meaning</text>
+                    
+                    <!-- Essay structure notes -->
+                    <g transform="translate(60, 360)">
+                        <text x="0" y="0" font-size="8" fill="#999">← INTRODUCE</text>
+                    </g>
+                    <g transform="translate(300, 360)">
+                        <text x="0" y="0" text-anchor="middle" font-size="8" fill="#999">DEVELOP →</text>
+                    </g>
+                    <g transform="translate(500, 360)">
+                        <text x="0" y="0" text-anchor="middle" font-size="8" fill="#999">RESOLVE →</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">A photo essay follows narrative structure—each image advances the story toward resolution.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Edit is the Essay</h4>
+                <p>Making photos is only half the work. The essay emerges in the edit—choosing which images to include, which to exclude, and how to sequence them. A strong edit can transform good photographs into a powerful narrative. A weak edit can bury your best work.</p>
+            </div>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 200">
+                    <rect x="0" y="0" width="600" height="200" fill="#f5f0e6"/>
+                    
+                    <!-- Essay types -->
+                    <text x="300" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">ESSAY STRUCTURES</text>
+                    
+                    <!-- Linear narrative -->
+                    <g transform="translate(100, 60)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">LINEAR</text>
+                        <rect x="-60" y="10" width="30" height="25" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="-25" y1="22" x2="-15" y2="22" stroke="#1a1a1a" stroke-width="1"/>
+                        <polygon points="-15,22 -20,18 -20,26" fill="#1a1a1a"/>
+                        <rect x="-10" y="10" width="30" height="25" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="25" y1="22" x2="35" y2="22" stroke="#1a1a1a" stroke-width="1"/>
+                        <polygon points="35,22 30,18 30,26" fill="#1a1a1a"/>
+                        <rect x="40" y="10" width="30" height="25" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="60" text-anchor="middle" font-size="7" fill="#666">A → B → C</text>
+                        <text x="0" y="75" text-anchor="middle" font-size="7" fill="#999">Time-based, chronological</text>
+                    </g>
+                    
+                    <!-- Thematic -->
+                    <g transform="translate(300, 60)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">THEMATIC</text>
+                        <rect x="-40" y="15" width="25" height="20" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="-10" y="10" width="25" height="20" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="20" y="18" width="25" height="20" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <ellipse cx="0" cy="25" rx="55" ry="25" fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="3,2"/>
+                        <text x="0" y="60" text-anchor="middle" font-size="7" fill="#666">Grouped by idea</text>
+                        <text x="0" y="75" text-anchor="middle" font-size="7" fill="#999">Concept connections</text>
+                    </g>
+                    
+                    <!-- Circular -->
+                    <g transform="translate(500, 60)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">CIRCULAR</text>
+                        <circle cx="0" cy="30" r="25" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="-30" y="22" width="15" height="12" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="15" y="22" width="15" height="12" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="-8" y="45" width="15" height="12" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <polygon points="0,5 -3,12 3,12" fill="#e63946"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="7" fill="#666">Returns to start</text>
+                        <text x="0" y="85" text-anchor="middle" font-size="7" fill="#999">Echo, transformation</text>
+                    </g>
+                    
+                    <text x="300" y="180" text-anchor="middle" font-size="9" fill="#666">Choose the structure that serves your story</text>
+                </svg>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Context & Caption</h2>
+            <p>In documentary work, words and images work together. Unlike pure street photography where the image must stand alone, documentary photographs often benefit from—or even require—contextual information. The challenge is providing enough context without over-explaining.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 280">
+                    <rect x="0" y="0" width="600" height="280" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">THE IMAGE-TEXT RELATIONSHIP</text>
+                    
+                    <!-- Spectrum bar -->
+                    <defs>
+                        <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#1a1a1a"/>
+                            <stop offset="100%" style="stop-color:#e63946"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <rect x="80" y="70" width="440" height="8" fill="url(#spectrumGrad)" rx="4"/>
+                    
+                    <!-- Spectrum labels -->
+                    <text x="80" y="60" text-anchor="middle" font-size="9" fill="#1a1a1a">IMAGE ALONE</text>
+                    <text x="520" y="60" text-anchor="middle" font-size="9" fill="#e63946">TEXT DOMINANT</text>
+                    
+                    <!-- Position markers -->
+                    <g transform="translate(80, 90)">
+                        <line x1="0" y1="0" x2="0" y2="10" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">Street</text>
+                        <text x="0" y="38" text-anchor="middle" font-size="7" fill="#666">No caption</text>
+                    </g>
+                    
+                    <g transform="translate(190, 90)">
+                        <line x1="0" y1="0" x2="0" y2="10" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">Art Photo</text>
+                        <text x="0" y="38" text-anchor="middle" font-size="7" fill="#666">Title only</text>
+                    </g>
+                    
+                    <g transform="translate(300, 90)">
+                        <line x1="0" y1="0" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <circle cx="0" cy="5" r="4" fill="#e63946"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" font-weight="500" fill="#e63946">Documentary</text>
+                        <text x="0" y="38" text-anchor="middle" font-size="7" fill="#666">Essential context</text>
+                    </g>
+                    
+                    <g transform="translate(410, 90)">
+                        <line x1="0" y1="0" x2="0" y2="10" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">Photojournalism</text>
+                        <text x="0" y="38" text-anchor="middle" font-size="7" fill="#666">Full caption</text>
+                    </g>
+                    
+                    <g transform="translate(520, 90)">
+                        <line x1="0" y1="0" x2="0" y2="10" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">Illustrated text</text>
+                        <text x="0" y="38" text-anchor="middle" font-size="7" fill="#666">Image supports</text>
+                    </g>
+                    
+                    <!-- Caption types -->
+                    <g transform="translate(100, 170)">
+                        <rect x="-50" y="0" width="100" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="-40" y="10" width="80" height="25" fill="#e8e2d6"/>
+                        <line x1="-40" y1="45" x2="40" y2="45" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <text x="0" y="55" text-anchor="middle" font-size="6" fill="#666">Location, Date</text>
+                        <text x="0" y="80" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">MINIMAL</text>
+                        <text x="0" y="95" text-anchor="middle" font-size="7" fill="#666">Who, Where, When</text>
+                    </g>
+                    
+                    <g transform="translate(300, 170)">
+                        <rect x="-50" y="0" width="100" height="60" fill="#fff" stroke="#e63946" stroke-width="2"/>
+                        <rect x="-40" y="10" width="80" height="25" fill="#e8e2d6"/>
+                        <line x1="-40" y1="42" x2="40" y2="42" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-40" y1="48" x2="40" y2="48" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-40" y1="54" x2="20" y2="54" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <text x="0" y="80" text-anchor="middle" font-size="8" font-weight="500" fill="#e63946">CONTEXTUAL</text>
+                        <text x="0" y="95" text-anchor="middle" font-size="7" fill="#666">Adds meaning image can't</text>
+                    </g>
+                    
+                    <g transform="translate(500, 170)">
+                        <rect x="-50" y="0" width="100" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="-40" y="5" width="80" height="18" fill="#e8e2d6"/>
+                        <line x1="-40" y1="28" x2="40" y2="28" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-40" y1="34" x2="40" y2="34" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-40" y1="40" x2="40" y2="40" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-40" y1="46" x2="40" y2="46" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <line x1="-40" y1="52" x2="30" y2="52" stroke="#1a1a1a" stroke-width="0.5"/>
+                        <text x="0" y="80" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">EXTENDED</text>
+                        <text x="0" y="95" text-anchor="middle" font-size="7" fill="#666">Full story with image</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Documentary often lives in the middle—images that need context but aren't mere illustration.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Good Caption</h4>
+                <p>A good documentary caption provides what the image cannot: names, places, dates, context for unfamiliar situations. It never describes what we can see, never tells us what to feel, and never overwhelms the image with text. The best captions open doors; they don't close them.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Objectivity vs Subjectivity</h2>
+            <p>Every photograph is a choice. Where to stand, when to shoot, what to include, what to exclude—each decision embeds the photographer's perspective. True objectivity is impossible; the question is how honestly we acknowledge our subjectivity.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">EVERY FRAME IS A CHOICE</text>
+                    
+                    <!-- The scene (reality) -->
+                    <g transform="translate(300, 150)">
+                        <text x="0" y="-100" text-anchor="middle" font-size="10" fill="#999">REALITY (infinite)</text>
+                        
+                        <!-- Large "reality" area -->
+                        <ellipse cx="0" cy="0" rx="200" ry="100" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+                        
+                        <!-- Multiple elements in scene -->
+                        <g opacity="0.4">
+                            <!-- Buildings -->
+                            <rect x="-180" y="-60" width="40" height="80" fill="#888"/>
+                            <rect x="-130" y="-40" width="30" height="60" fill="#999"/>
+                            <rect x="140" y="-70" width="50" height="90" fill="#777"/>
+                            
+                            <!-- People scattered -->
+                            <circle cx="-100" cy="20" r="8" fill="#666"/>
+                            <circle cx="-50" cy="-10" r="8" fill="#666"/>
+                            <circle cx="30" cy="30" r="8" fill="#666"/>
+                            <circle cx="80" cy="-20" r="8" fill="#666"/>
+                            <circle cx="100" cy="40" r="8" fill="#666"/>
+                            <circle cx="-20" cy="50" r="8" fill="#666"/>
+                        </g>
+                        
+                        <!-- The frame (choice) -->
+                        <rect x="-60" y="-40" width="120" height="80" fill="none" stroke="#e63946" stroke-width="3"/>
+                        
+                        <!-- Subject within frame -->
+                        <g>
+                            <circle cx="0" cy="0" r="12" fill="#1a1a1a"/>
+                            <line x1="0" y1="12" x2="0" y2="35" stroke="#1a1a1a" stroke-width="3"/>
+                        </g>
+                        
+                        <!-- Excluded elements marked -->
+                        <line x1="-100" y1="10" x2="-100" y2="30" stroke="#e63946" stroke-width="1" stroke-dasharray="2,2"/>
+                        <text x="-100" y="45" text-anchor="middle" font-size="7" fill="#e63946">excluded</text>
+                        
+                        <line x1="80" y1="-30" x2="80" y2="-10" stroke="#e63946" stroke-width="1" stroke-dasharray="2,2"/>
+                        <text x="80" y="-35" text-anchor="middle" font-size="7" fill="#e63946">excluded</text>
+                    </g>
+                    
+                    <!-- Choice breakdown -->
+                    <g transform="translate(100, 280)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">POSITION</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="7" fill="#666">Where you stand</text>
+                    </g>
+                    <g transform="translate(200, 280)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">FRAMING</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="7" fill="#666">What you include</text>
+                    </g>
+                    <g transform="translate(300, 280)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#e63946">TIMING</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="7" fill="#666">When you shoot</text>
+                    </g>
+                    <g transform="translate(400, 280)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">EDITING</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="7" fill="#666">What you show</text>
+                    </g>
+                    <g transform="translate(500, 280)">
+                        <text x="0" y="0" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">CONTEXT</text>
+                        <text x="0" y="15" text-anchor="middle" font-size="7" fill="#666">How you present</text>
+                    </g>
+                    
+                    <text x="300" y="330" text-anchor="middle" font-size="9" fill="#666">"The camera never lies—but the photographer always does." — Not literally, but inevitably.</text>
+                </svg>
+                <p class="visualization-caption">From infinite reality, we extract a frame. That extraction is always subjective.</p>
+            </div>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 200">
+                    <rect x="0" y="0" width="600" height="200" fill="#f5f0e6"/>
+                    
+                    <!-- Approach spectrum -->
+                    <text x="300" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DOCUMENTARY APPROACHES</text>
+                    
+                    <!-- Spectrum line -->
+                    <line x1="80" y1="70" x2="520" y2="70" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Positions -->
+                    <g transform="translate(80, 70)">
+                        <circle cx="0" cy="0" r="6" fill="#1a1a1a"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">"Objective"</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#666">Observational</text>
+                        <text x="0" y="55" text-anchor="middle" font-size="7" fill="#666">Fly-on-wall</text>
+                        <text x="0" y="75" text-anchor="middle" font-size="7" fill="#999">Frederick Wiseman</text>
+                    </g>
+                    
+                    <g transform="translate(220, 70)">
+                        <circle cx="0" cy="0" r="6" fill="#666"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">Balanced</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#666">Multiple views</text>
+                        <text x="0" y="55" text-anchor="middle" font-size="7" fill="#666">Fair representation</text>
+                        <text x="0" y="75" text-anchor="middle" font-size="7" fill="#999">Eugene Richards</text>
+                    </g>
+                    
+                    <g transform="translate(370, 70)">
+                        <circle cx="0" cy="0" r="6" fill="#e63946"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" font-weight="500" fill="#e63946">Advocacy</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#666">Clear perspective</text>
+                        <text x="0" y="55" text-anchor="middle" font-size="7" fill="#666">Call to action</text>
+                        <text x="0" y="75" text-anchor="middle" font-size="7" fill="#999">Lewis Hine</text>
+                    </g>
+                    
+                    <g transform="translate(520, 70)">
+                        <circle cx="0" cy="0" r="6" fill="#1a1a1a"/>
+                        <text x="0" y="25" text-anchor="middle" font-size="9" font-weight="500" fill="#1a1a1a">Personal</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#666">Explicit subjectivity</text>
+                        <text x="0" y="55" text-anchor="middle" font-size="7" fill="#666">Autobiography</text>
+                        <text x="0" y="75" text-anchor="middle" font-size="7" fill="#999">Nan Goldin</text>
+                    </g>
+                    
+                    <text x="300" y="180" text-anchor="middle" font-size="9" fill="#666">No position is more "true"—what matters is honesty about your stance</text>
+                </svg>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Long-Term Documentation</h2>
+            <p>Some of the most powerful documentary work emerges from sustained engagement with subjects over years or even decades. Time itself becomes a subject, revealing transformations that no single session could capture.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 320">
+                    <rect x="0" y="0" width="600" height="320" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">TIME AS SUBJECT — LONG-TERM DOCUMENTATION</text>
+                    
+                    <!-- Timeline -->
+                    <line x1="50" y1="150" x2="550" y2="150" stroke="#1a1a1a" stroke-width="2"/>
+                    
+                    <!-- Time markers -->
+                    <g transform="translate(100, 150)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#666">YEAR 1</text>
+                        
+                        <!-- First visit frame -->
+                        <rect x="-30" y="-80" width="60" height="45" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <g transform="translate(0, -55)">
+                            <ellipse cx="0" cy="0" rx="8" ry="10" fill="#1a1a1a"/>
+                            <line x1="0" y1="10" x2="0" y2="25" stroke="#1a1a1a" stroke-width="2"/>
+                        </g>
+                        <text x="0" y="-85" text-anchor="middle" font-size="7" fill="#999">Initial contact</text>
+                    </g>
+                    
+                    <g transform="translate(225, 150)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#666">YEAR 3</text>
+                        
+                        <!-- Middle frame -->
+                        <rect x="-30" y="-80" width="60" height="45" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <g transform="translate(0, -55)">
+                            <ellipse cx="0" cy="0" rx="8" ry="10" fill="#1a1a1a"/>
+                            <line x1="0" y1="10" x2="0" y2="25" stroke="#1a1a1a" stroke-width="2"/>
+                            <ellipse cx="15" cy="5" rx="5" ry="6" fill="#666"/>
+                        </g>
+                        <text x="0" y="-85" text-anchor="middle" font-size="7" fill="#999">Deeper access</text>
+                    </g>
+                    
+                    <g transform="translate(350, 150)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#e63946" stroke-width="2"/>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#e63946">YEAR 7</text>
+                        
+                        <!-- Key moment frame -->
+                        <rect x="-30" y="-80" width="60" height="45" fill="#fff" stroke="#e63946" stroke-width="2"/>
+                        <g transform="translate(0, -55)">
+                            <ellipse cx="0" cy="0" rx="8" ry="10" fill="#1a1a1a"/>
+                            <line x1="0" y1="10" x2="0" y2="25" stroke="#1a1a1a" stroke-width="2"/>
+                            <ellipse cx="15" cy="5" rx="5" ry="6" fill="#666"/>
+                            <ellipse cx="-12" cy="8" rx="4" ry="5" fill="#888"/>
+                        </g>
+                        <text x="0" y="-85" text-anchor="middle" font-size="7" fill="#e63946">Transformation</text>
+                    </g>
+                    
+                    <g transform="translate(475, 150)">
+                        <line x1="0" y1="-10" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="30" text-anchor="middle" font-size="9" fill="#666">YEAR 15</text>
+                        
+                        <!-- Later frame -->
+                        <rect x="-30" y="-80" width="60" height="45" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                        <g transform="translate(0, -55)">
+                            <ellipse cx="0" cy="0" rx="8" ry="10" fill="#888"/>
+                            <line x1="0" y1="10" x2="0" y2="25" stroke="#888" stroke-width="2"/>
+                            <ellipse cx="-15" cy="-5" rx="8" ry="10" fill="#1a1a1a"/>
+                            <ellipse cx="18" cy="10" rx="6" ry="7" fill="#666"/>
+                        </g>
+                        <text x="0" y="-85" text-anchor="middle" font-size="7" fill="#999">Legacy/continuity</text>
+                    </g>
+                    
+                    <!-- Connecting arc showing relationship -->
+                    <path d="M 100 100 Q 225 50 350 100" fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="4,4"/>
+                    <path d="M 350 100 Q 410 80 475 100" fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="4,4"/>
+                    
+                    <!-- Examples -->
+                    <g transform="translate(100, 220)">
+                        <text x="0" y="0" font-size="8" font-weight="500" fill="#1a1a1a">Examples of Long-Term Projects:</text>
+                        <text x="0" y="20" font-size="8" fill="#666">• Nicholas Nixon — "The Brown Sisters" (1975–present)</text>
+                        <text x="0" y="35" font-size="8" fill="#666">• Milton Rogovin — Working-class families over 20+ years</text>
+                        <text x="0" y="50" font-size="8" fill="#666">• LaToya Ruby Frazier — "The Notion of Family" (2001–2014)</text>
+                        <text x="0" y="65" font-size="8" fill="#666">• Zed Nelson — "The Family" (1991–present)</text>
+                    </g>
+                    
+                    <text x="300" y="305" text-anchor="middle" font-size="9" fill="#666">Time reveals what a single visit cannot: change, growth, continuity, loss</text>
+                </svg>
+                <p class="visualization-caption">Returning to subjects over years creates a unique form of documentary truth.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Building Trust Over Time</h4>
+                <p>Long-term documentation isn't just about capturing change—it's about the deepening relationship between photographer and subject. With trust comes access. With access comes intimacy. With intimacy comes truth that surfaces-level encounters can never reveal.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Ethical Documentary</h2>
+            <p>Documentary photography carries profound ethical responsibilities. We photograph people who cannot control how they're represented. Our images outlive the moment, enter contexts we cannot predict, and shape perceptions in ways we may not intend. Ethics isn't a constraint on documentary work—it's foundational to it.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">ETHICAL FRAMEWORK FOR DOCUMENTARY</text>
+                    
+                    <!-- Central triangle of concerns -->
+                    <g transform="translate(300, 180)">
+                        <!-- Triangle -->
+                        <polygon points="0,-100 -115,70 115,70" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <!-- Center -->
+                        <circle cx="0" cy="10" r="25" fill="#e63946" opacity="0.2"/>
+                        <text x="0" y="15" text-anchor="middle" font-size="9" font-weight="500" fill="#e63946">THE WORK</text>
+                        
+                        <!-- Vertex 1: Subject -->
+                        <circle cx="0" cy="-100" r="20" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="0" y="-95" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">SUBJECT</text>
+                        
+                        <text x="0" y="-130" text-anchor="middle" font-size="8" fill="#666">• Dignity</text>
+                        <text x="0" y="-118" text-anchor="middle" font-size="8" fill="#666">• Consent</text>
+                        
+                        <!-- Vertex 2: Audience -->
+                        <circle cx="-115" cy="70" r="20" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="-115" y="75" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">AUDIENCE</text>
+                        
+                        <text x="-170" y="50" text-anchor="middle" font-size="8" fill="#666">• Truth</text>
+                        <text x="-170" y="62" text-anchor="middle" font-size="8" fill="#666">• Context</text>
+                        
+                        <!-- Vertex 3: Self -->
+                        <circle cx="115" cy="70" r="20" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+                        <text x="115" y="75" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">SELF</text>
+                        
+                        <text x="170" y="50" text-anchor="middle" font-size="8" fill="#666">• Integrity</text>
+                        <text x="170" y="62" text-anchor="middle" font-size="8" fill="#666">• Intent</text>
+                    </g>
+                    
+                    <!-- Key questions -->
+                    <g transform="translate(50, 300)">
+                        <text x="0" y="0" font-size="9" font-weight="500" fill="#1a1a1a">Questions to ask yourself:</text>
+                        
+                        <text x="0" y="25" font-size="8" fill="#666">1. Would I show this image to the subject? Would they recognize themselves?</text>
+                        <text x="0" y="40" font-size="8" fill="#666">2. Am I exploiting vulnerability for emotional impact?</text>
+                        <text x="0" y="55" font-size="8" fill="#666">3. Does my presence change what I'm documenting?</text>
+                        <text x="0" y="70" font-size="8" fill="#666">4. Who benefits from this image being seen? Who might be harmed?</text>
+                        <text x="0" y="85" font-size="8" fill="#666">5. Am I telling their story, or using them to tell mine?</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Ethical documentary balances obligations to subjects, audiences, and one's own integrity.</p>
+            </div>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 220">
+                    <rect x="0" y="0" width="600" height="220" fill="#f5f0e6"/>
+                    
+                    <!-- Exploitation spectrum -->
+                    <text x="300" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">THE REPRESENTATION SPECTRUM</text>
+                    
+                    <!-- Gradient bar -->
+                    <defs>
+                        <linearGradient id="ethicsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e63946"/>
+                            <stop offset="50%" style="stop-color:#f5f0e6"/>
+                            <stop offset="100%" style="stop-color:#2d6a4f"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <rect x="80" y="50" width="440" height="12" fill="url(#ethicsGrad)" stroke="#1a1a1a" stroke-width="1"/>
+                    
+                    <!-- Labels -->
+                    <text x="80" y="45" text-anchor="middle" font-size="9" fill="#e63946">EXPLOITATION</text>
+                    <text x="300" y="45" text-anchor="middle" font-size="9" fill="#666">DOCUMENTATION</text>
+                    <text x="520" y="45" text-anchor="middle" font-size="9" fill="#2d6a4f">EMPOWERMENT</text>
+                    
+                    <!-- Descriptions -->
+                    <g transform="translate(80, 80)">
+                        <text x="0" y="0" text-anchor="middle" font-size="7" fill="#666">Using subjects</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="7" fill="#666">for your gain</text>
+                        <text x="0" y="28" text-anchor="middle" font-size="7" fill="#999">Poverty porn</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#999">Trauma voyeurism</text>
+                    </g>
+                    
+                    <g transform="translate(190, 80)">
+                        <text x="0" y="0" text-anchor="middle" font-size="7" fill="#666">Othering</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="7" fill="#666">without context</text>
+                        <text x="0" y="28" text-anchor="middle" font-size="7" fill="#999">Exoticizing</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#999">Stereotyping</text>
+                    </g>
+                    
+                    <g transform="translate(300, 80)">
+                        <text x="0" y="0" text-anchor="middle" font-size="7" fill="#1a1a1a">Honest witness</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="7" fill="#1a1a1a">with respect</text>
+                        <text x="0" y="28" text-anchor="middle" font-size="7" fill="#999">Balanced</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#999">Contextualized</text>
+                    </g>
+                    
+                    <g transform="translate(410, 80)">
+                        <text x="0" y="0" text-anchor="middle" font-size="7" fill="#666">Amplifying</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="7" fill="#666">subject voices</text>
+                        <text x="0" y="28" text-anchor="middle" font-size="7" fill="#999">Collaborative</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#999">Subject agency</text>
+                    </g>
+                    
+                    <g transform="translate(520, 80)">
+                        <text x="0" y="0" text-anchor="middle" font-size="7" fill="#666">Subject-led</text>
+                        <text x="0" y="12" text-anchor="middle" font-size="7" fill="#666">storytelling</text>
+                        <text x="0" y="28" text-anchor="middle" font-size="7" fill="#999">Participatory</text>
+                        <text x="0" y="40" text-anchor="middle" font-size="7" fill="#999">Self-representation</text>
+                    </g>
+                    
+                    <!-- Bottom note -->
+                    <rect x="100" y="160" width="400" height="40" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="300" y="180" text-anchor="middle" font-size="8" font-weight="500" fill="#1a1a1a">Power flows from the person holding the camera.</text>
+                    <text x="300" y="193" text-anchor="middle" font-size="8" fill="#666">Ethical documentary acknowledges this power and uses it responsibly.</text>
+                </svg>
+                <p class="visualization-caption">Consider where your work falls on the spectrum—and where you want it to be.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Consent Is Complex</h4>
+                <p>In public spaces, legal consent may not be required—but ethical considerations go beyond law. Power dynamics matter: photographing those with less power than you (the poor, the displaced, children) demands greater ethical care than photographing those with more. And consent in the moment doesn't guarantee comfort with how images are later used.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            
+            <div class="exercise">
+                <h4>Exercise: The 10-Day Document</h4>
+                <p>Choose a subject you can return to for 10 consecutive days—a street corner, a café, a park bench. Photograph the same subject each day at the same time. Notice how your relationship with the subject deepens, how your eye finds new details, how the subject changes over time. Edit into a coherent sequence.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Exercise: Write First, Shoot Second</h4>
+                <p>Before you photograph, write. Spend one hour writing about a community, issue, or place you want to document. What's the story? Who are the characters? What do you want to understand? Only then should you pick up the camera. Let words shape your visual inquiry.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Exercise: The Ethical Audit</h4>
+                <p>Take ten of your documentary images and subject each to the ethical framework above. For each image, write answers to the five questions. Be honest. Some images may reveal uncomfortable truths about your own practice. This discomfort is valuable—it's how we grow.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Exercise: The Photo Essay Edit</h4>
+                <p>From your archive, select 15-20 images on a single theme. Now edit ruthlessly: reduce to exactly 7 images that tell a complete story with beginning, middle, and end. Write a 100-word statement about your essay. Show to three people and observe their readings. Do they understand what you intended?</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technical Mastery</span>
+            </a>
+            <a href="composition.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Composition</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

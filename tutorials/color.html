@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color in Street Photography — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Color</p>
+        <h1>The Power of Color</h1>
+        <p class="tutorial-intro">Color transforms street photography from documentation into emotion. Learn to see, compose, and harness color to create images that resonate on a visceral level.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>Color Theory Basics</h2>
+            <p>Understanding the color wheel is fundamental to composing with color. Colors relate to each other in predictable ways—complementary colors create tension, analogous colors create harmony, and the temperature of colors affects mood.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <defs>
+                        <linearGradient id="warm-cool-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e63946"/>
+                            <stop offset="50%" style="stop-color:#f5f0e6"/>
+                            <stop offset="100%" style="stop-color:#457b9d"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#f5f0e6"/>
+                    
+                    <!-- Color Wheel -->
+                    <g transform="translate(150, 180)">
+                        <!-- Primary and secondary colors as wheel segments -->
+                        <path d="M 0,-80 A 80,80 0 0,1 69.28,-40 L 0,0 Z" fill="#e63946"/>
+                        <path d="M 69.28,-40 A 80,80 0 0,1 69.28,40 L 0,0 Z" fill="#f4a261"/>
+                        <path d="M 69.28,40 A 80,80 0 0,1 0,80 L 0,0 Z" fill="#e9c46a"/>
+                        <path d="M 0,80 A 80,80 0 0,1 -69.28,40 L 0,0 Z" fill="#2a9d8f"/>
+                        <path d="M -69.28,40 A 80,80 0 0,1 -69.28,-40 L 0,0 Z" fill="#457b9d"/>
+                        <path d="M -69.28,-40 A 80,80 0 0,1 0,-80 L 0,0 Z" fill="#9b5de5"/>
+                        
+                        <!-- Center -->
+                        <circle cx="0" cy="0" r="25" fill="#f5f0e6"/>
+                        
+                        <!-- Labels -->
+                        <text x="0" y="-95" text-anchor="middle" font-size="9" fill="#1a1a1a">RED</text>
+                        <text x="85" y="0" text-anchor="start" font-size="9" fill="#1a1a1a">ORANGE</text>
+                        <text x="55" y="85" text-anchor="middle" font-size="9" fill="#1a1a1a">YELLOW</text>
+                        <text x="-55" y="85" text-anchor="middle" font-size="9" fill="#1a1a1a">GREEN</text>
+                        <text x="-95" y="0" text-anchor="end" font-size="9" fill="#1a1a1a">BLUE</text>
+                        <text x="0" y="-95" text-anchor="middle" font-size="9" fill="#1a1a1a">RED</text>
+                        <text x="-55" y="-75" text-anchor="middle" font-size="9" fill="#1a1a1a">VIOLET</text>
+                    </g>
+                    
+                    <!-- Complementary Colors Example -->
+                    <g transform="translate(420, 100)">
+                        <text x="0" y="-20" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">COMPLEMENTARY</text>
+                        <text x="0" y="-5" text-anchor="middle" font-size="9" fill="#666">Opposite on wheel</text>
+                        
+                        <rect x="-60" y="10" width="50" height="50" fill="#e63946" rx="3"/>
+                        <rect x="10" y="10" width="50" height="50" fill="#2a9d8f" rx="3"/>
+                        <line x1="-10" y1="35" x2="10" y2="35" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="80" text-anchor="middle" font-size="8" fill="#666">High contrast</text>
+                    </g>
+                    
+                    <!-- Analogous Colors Example -->
+                    <g transform="translate(420, 220)">
+                        <text x="0" y="-20" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">ANALOGOUS</text>
+                        <text x="0" y="-5" text-anchor="middle" font-size="9" fill="#666">Adjacent on wheel</text>
+                        
+                        <rect x="-75" y="10" width="40" height="40" fill="#e63946" rx="3"/>
+                        <rect x="-25" y="10" width="40" height="40" fill="#f4a261" rx="3"/>
+                        <rect x="25" y="10" width="40" height="40" fill="#e9c46a" rx="3"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="8" fill="#666">Harmonious</text>
+                    </g>
+                    
+                    <!-- Warm vs Cool -->
+                    <g transform="translate(150, 340)">
+                        <text x="0" y="-25" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">WARM vs COOL</text>
+                        <rect x="-100" y="-15" width="200" height="20" fill="url(#warm-cool-gradient)" rx="3"/>
+                        <text x="-90" y="20" text-anchor="start" font-size="8" fill="#666">Energetic</text>
+                        <text x="90" y="20" text-anchor="end" font-size="8" fill="#666">Calming</text>
+                    </g>
+                    
+                    <!-- Triadic Example -->
+                    <g transform="translate(420, 340)">
+                        <text x="0" y="-25" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">TRIADIC</text>
+                        <rect x="-70" y="-15" width="35" height="35" fill="#e63946" rx="3"/>
+                        <rect x="-25" y="-15" width="35" height="35" fill="#e9c46a" rx="3"/>
+                        <rect x="20" y="-15" width="35" height="35" fill="#457b9d" rx="3"/>
+                        <text x="0" y="35" text-anchor="middle" font-size="8" fill="#666">Dynamic balance</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">The color wheel reveals relationships: complementary colors oppose, analogous colors neighbor.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Temperature Matters</h4>
+                <p>Warm colors (reds, oranges, yellows) advance toward the viewer and feel energetic. Cool colors (blues, greens, purples) recede and feel calming. Understanding this helps you control what draws the eye first in your frame.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Emotional Impact of Color</h2>
+            <p>Colors carry emotional weight. While cultural associations vary, certain colors consistently evoke specific feelings. Understanding these associations helps you choose scenes that communicate your intended mood.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 450">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="450" fill="#f5f0e6"/>
+                    
+                    <!-- Red - Energy/Passion -->
+                    <g transform="translate(100, 80)">
+                        <circle cx="0" cy="0" r="45" fill="#e63946"/>
+                        <text x="0" y="65" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">RED</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="9" fill="#666">Energy • Passion</text>
+                        <text x="0" y="96" text-anchor="middle" font-size="9" fill="#666">Danger • Love</text>
+                        <!-- Energy lines radiating -->
+                        <line x1="50" y1="0" x2="65" y2="0" stroke="#e63946" stroke-width="2"/>
+                        <line x1="35" y1="35" x2="46" y2="46" stroke="#e63946" stroke-width="2"/>
+                        <line x1="-50" y1="0" x2="-65" y2="0" stroke="#e63946" stroke-width="2"/>
+                        <line x1="-35" y1="-35" x2="-46" y2="-46" stroke="#e63946" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Orange - Warmth/Joy -->
+                    <g transform="translate(250, 80)">
+                        <circle cx="0" cy="0" r="45" fill="#f4a261"/>
+                        <text x="0" y="65" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">ORANGE</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="9" fill="#666">Warmth • Joy</text>
+                        <text x="0" y="96" text-anchor="middle" font-size="9" fill="#666">Creativity • Fun</text>
+                    </g>
+                    
+                    <!-- Yellow - Optimism -->
+                    <g transform="translate(400, 80)">
+                        <circle cx="0" cy="0" r="45" fill="#e9c46a"/>
+                        <text x="0" y="65" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">YELLOW</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="9" fill="#666">Optimism • Hope</text>
+                        <text x="0" y="96" text-anchor="middle" font-size="9" fill="#666">Attention • Caution</text>
+                    </g>
+                    
+                    <!-- Green - Nature/Growth -->
+                    <g transform="translate(100, 230)">
+                        <circle cx="0" cy="0" r="45" fill="#2a9d8f"/>
+                        <text x="0" y="65" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">GREEN</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="9" fill="#666">Nature • Growth</text>
+                        <text x="0" y="96" text-anchor="middle" font-size="9" fill="#666">Harmony • Fresh</text>
+                    </g>
+                    
+                    <!-- Blue - Calm/Trust -->
+                    <g transform="translate(250, 230)">
+                        <circle cx="0" cy="0" r="45" fill="#457b9d"/>
+                        <text x="0" y="65" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">BLUE</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="9" fill="#666">Calm • Trust</text>
+                        <text x="0" y="96" text-anchor="middle" font-size="9" fill="#666">Sadness • Depth</text>
+                        <!-- Calm waves -->
+                        <path d="M -55,0 Q -45,-8 -35,0 Q -25,8 -15,0" fill="none" stroke="#457b9d" stroke-width="2" opacity="0.5"/>
+                        <path d="M 15,0 Q 25,-8 35,0 Q 45,8 55,0" fill="none" stroke="#457b9d" stroke-width="2" opacity="0.5"/>
+                    </g>
+                    
+                    <!-- Purple - Mystery -->
+                    <g transform="translate(400, 230)">
+                        <circle cx="0" cy="0" r="45" fill="#9b5de5"/>
+                        <text x="0" y="65" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">PURPLE</text>
+                        <text x="0" y="82" text-anchor="middle" font-size="9" fill="#666">Mystery • Luxury</text>
+                        <text x="0" y="96" text-anchor="middle" font-size="9" fill="#666">Spirituality</text>
+                    </g>
+                    
+                    <!-- Black & White reference -->
+                    <g transform="translate(175, 380)">
+                        <circle cx="0" cy="0" r="35" fill="#1a1a1a"/>
+                        <text x="0" y="50" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">BLACK</text>
+                        <text x="0" y="65" text-anchor="middle" font-size="8" fill="#666">Power • Elegance</text>
+                    </g>
+                    
+                    <g transform="translate(325, 380)">
+                        <circle cx="0" cy="0" r="35" fill="#ffffff" stroke="#1a1a1a" stroke-width="1"/>
+                        <text x="0" y="50" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">WHITE</text>
+                        <text x="0" y="65" text-anchor="middle" font-size="8" fill="#666">Purity • Space</text>
+                    </g>
+                    
+                    <!-- Connection note -->
+                    <text x="500" y="380" text-anchor="middle" font-size="9" fill="#666" font-style="italic">Colors evoke</text>
+                    <text x="500" y="395" text-anchor="middle" font-size="9" fill="#666" font-style="italic">before we think</text>
+                </svg>
+                <p class="visualization-caption">Each color carries psychological associations that influence how viewers feel about your image.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Color Harmony in Street Photography</h2>
+            <p>Urban environments are rich with color opportunities. Learning to spot complementary color combinations in chaotic street scenes separates casual snapshots from intentional compositions.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6"/>
+                    
+                    <!-- Street Scene with Color Harmony -->
+                    <g transform="translate(0, 20)">
+                        <!-- Sky -->
+                        <rect x="20" y="20" width="260" height="150" fill="#a8d5e5"/>
+                        
+                        <!-- Buildings - cool tones -->
+                        <rect x="20" y="80" width="60" height="90" fill="#5d7a8c"/>
+                        <rect x="90" y="60" width="50" height="110" fill="#4a6670"/>
+                        <rect x="200" y="70" width="80" height="100" fill="#6b8a99"/>
+                        
+                        <!-- Orange element - complementary pop -->
+                        <rect x="150" y="100" width="40" height="70" fill="#e07020"/>
+                        <text x="170" y="145" text-anchor="middle" font-size="8" fill="#fff">TAXI</text>
+                        
+                        <!-- Yellow umbrella - accent -->
+                        <ellipse cx="120" cy="130" rx="20" ry="8" fill="#e9c46a"/>
+                        <line x1="120" y1="130" x2="120" y2="165" stroke="#333" stroke-width="2"/>
+                        
+                        <!-- Frame border -->
+                        <rect x="20" y="20" width="260" height="150" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <!-- Annotation -->
+                        <text x="150" y="195" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Blue/Orange Complementary</text>
+                        <text x="150" y="210" text-anchor="middle" font-size="8" fill="#666">The orange taxi pops against cool blue tones</text>
+                    </g>
+                    
+                    <!-- Second example - Red/Green -->
+                    <g transform="translate(310, 20)">
+                        <!-- Scene background -->
+                        <rect x="20" y="20" width="260" height="150" fill="#c8d5c8"/>
+                        
+                        <!-- Greenery -->
+                        <ellipse cx="80" cy="100" rx="50" ry="40" fill="#4a7c59"/>
+                        <ellipse cx="200" cy="90" rx="45" ry="35" fill="#5a8c69"/>
+                        <ellipse cx="140" cy="120" rx="60" ry="30" fill="#3d6b4a"/>
+                        
+                        <!-- Red subject -->
+                        <rect x="130" y="95" width="30" height="50" fill="#c1292e"/>
+                        <circle cx="145" cy="85" r="12" fill="#d4a574"/>
+                        
+                        <!-- Red accents -->
+                        <circle cx="60" cy="130" r="5" fill="#c1292e" opacity="0.8"/>
+                        <circle cx="220" cy="115" r="4" fill="#c1292e" opacity="0.8"/>
+                        
+                        <!-- Frame border -->
+                        <rect x="20" y="20" width="260" height="150" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <!-- Annotation -->
+                        <text x="150" y="195" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Red/Green Complementary</text>
+                        <text x="150" y="210" text-anchor="middle" font-size="8" fill="#666">Red figure stands out in green environment</text>
+                    </g>
+                    
+                    <!-- Urban color opportunities list -->
+                    <g transform="translate(50, 260)">
+                        <text x="0" y="0" font-size="11" font-weight="500" fill="#1a1a1a">Where to Find Color Harmony:</text>
+                        
+                        <circle cx="10" cy="25" r="6" fill="#e63946"/>
+                        <text x="25" y="29" font-size="9" fill="#1a1a1a">Red — Fire hydrants, signs, clothing, doors</text>
+                        
+                        <circle cx="10" cy="50" r="6" fill="#457b9d"/>
+                        <text x="25" y="54" font-size="9" fill="#1a1a1a">Blue — Sky, water reflections, neon, uniforms</text>
+                        
+                        <circle cx="10" cy="75" r="6" fill="#e9c46a"/>
+                        <text x="25" y="79" font-size="9" fill="#1a1a1a">Yellow — Taxis, caution tape, storefronts, sunlight</text>
+                        
+                        <circle cx="10" cy="100" r="6" fill="#2a9d8f"/>
+                        <text x="25" y="104" font-size="9" fill="#1a1a1a">Green — Parks, awnings, street vendors, patina</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Train your eye to spot complementary color pairs in urban chaos.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li>Scout locations for their color palettes, not just their subjects</li>
+                <li>Wait for a complementary-colored subject to enter your pre-composed frame</li>
+                <li>Position yourself so background colors support your subject</li>
+                <li>Look for repeating color accents that create rhythm</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Dominant Color Strategy</h2>
+            <p>Sometimes the most powerful approach is building your entire image around a single dominant color. This creates cohesion, mood, and immediate visual impact.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Red dominant scene -->
+                        <rect x="0" y="0" width="250" height="200" fill="#1a1a1a"/>
+                        
+                        <!-- Red elements -->
+                        <rect x="30" y="30" width="80" height="140" fill="#b81c1c"/>
+                        <rect x="130" y="60" width="50" height="110" fill="#8b1515"/>
+                        <rect x="190" y="40" width="40" height="80" fill="#d42020"/>
+                        
+                        <!-- Figure silhouette -->
+                        <ellipse cx="100" cy="140" rx="12" ry="15" fill="#0a0a0a"/>
+                        <rect x="90" y="155" width="20" height="35" fill="#0a0a0a"/>
+                        
+                        <!-- Red accents -->
+                        <circle cx="70" cy="80" r="8" fill="#ff3333"/>
+                        <rect x="150" y="130" width="15" height="8" fill="#cc2020"/>
+                    </svg>
+                    <h4>Red Dominant</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Intense, urgent, passionate</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Blue dominant scene -->
+                        <rect x="0" y="0" width="250" height="200" fill="#1a2a3a"/>
+                        
+                        <!-- Blue hour buildings -->
+                        <rect x="20" y="50" width="60" height="150" fill="#234567"/>
+                        <rect x="90" y="30" width="50" height="170" fill="#1a3a5a"/>
+                        <rect x="150" y="60" width="70" height="140" fill="#2a4a6a"/>
+                        
+                        <!-- Blue sky gradient -->
+                        <rect x="0" y="0" width="250" height="50" fill="#3a5a7a"/>
+                        
+                        <!-- Window lights - slight warm contrast -->
+                        <rect x="35" y="70" width="10" height="12" fill="#e9c46a" opacity="0.8"/>
+                        <rect x="55" y="100" width="10" height="12" fill="#e9c46a" opacity="0.6"/>
+                        <rect x="105" y="80" width="8" height="10" fill="#e9c46a" opacity="0.7"/>
+                        <rect x="175" y="90" width="12" height="15" fill="#e9c46a" opacity="0.5"/>
+                    </svg>
+                    <h4>Blue Dominant</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Melancholic, calm, contemplative</p>
+                </div>
+            </div>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Yellow/Gold dominant -->
+                        <rect x="0" y="0" width="250" height="200" fill="#c9a227"/>
+                        
+                        <!-- Golden hour elements -->
+                        <rect x="0" y="120" width="250" height="80" fill="#b8942a"/>
+                        <rect x="40" y="80" width="50" height="120" fill="#a07820" opacity="0.8"/>
+                        <rect x="160" y="60" width="60" height="140" fill="#987020" opacity="0.7"/>
+                        
+                        <!-- Warm shadows -->
+                        <polygon points="90,120 150,120 180,200 60,200" fill="#8a6a15" opacity="0.6"/>
+                        
+                        <!-- Figure in golden light -->
+                        <ellipse cx="120" cy="130" rx="10" ry="12" fill="#1a1a1a" opacity="0.7"/>
+                        <rect x="112" y="142" width="16" height="28" fill="#1a1a1a" opacity="0.7"/>
+                    </svg>
+                    <h4>Yellow/Gold Dominant</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Warm, nostalgic, hopeful</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Green dominant -->
+                        <rect x="0" y="0" width="250" height="200" fill="#2d5a3d"/>
+                        
+                        <!-- Foliage layers -->
+                        <ellipse cx="60" cy="100" rx="80" ry="60" fill="#1e4a2d"/>
+                        <ellipse cx="180" cy="80" rx="70" ry="50" fill="#3a6a4d"/>
+                        <ellipse cx="120" cy="150" rx="100" ry="40" fill="#254a35"/>
+                        
+                        <!-- Path -->
+                        <path d="M 125,200 Q 130,150 120,100 Q 115,60 125,0" fill="none" stroke="#4a7a5d" stroke-width="20" opacity="0.5"/>
+                        
+                        <!-- Figure -->
+                        <ellipse cx="122" cy="140" rx="8" ry="10" fill="#1a1a1a"/>
+                        <rect x="115" y="150" width="14" height="25" fill="#1a1a1a"/>
+                    </svg>
+                    <h4>Green Dominant</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Natural, peaceful, refreshing</p>
+                </div>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The 80/20 Rule</h4>
+                <p>For dominant color impact, aim for roughly 80% of your frame in variations of one color family, with 20% or less as accent. This creates cohesion while maintaining visual interest. The accent color often becomes the focal point.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Color Contrast</h2>
+            <p>Juxtaposing contrasting colors creates visual tension and draws the eye. The greater the contrast, the more dramatic the effect. Use this intentionally to direct attention or create energy.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
+                    
+                    <!-- High contrast example -->
+                    <g transform="translate(20, 30)">
+                        <text x="130" y="0" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">HIGH CONTRAST</text>
+                        
+                        <!-- Scene frame -->
+                        <rect x="20" y="15" width="220" height="140" fill="#1a5276"/>
+                        
+                        <!-- Yellow element cutting through -->
+                        <rect x="100" y="40" width="60" height="90" fill="#f4d03f"/>
+                        
+                        <!-- Tension indicator -->
+                        <path d="M 90,85 L 100,85" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="2,2"/>
+                        <path d="M 160,85 L 170,85" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="2,2"/>
+                        
+                        <text x="130" y="175" text-anchor="middle" font-size="9" fill="#666">Maximum visual tension</text>
+                        <text x="130" y="190" text-anchor="middle" font-size="9" fill="#666">Eye immediately drawn to yellow</text>
+                    </g>
+                    
+                    <!-- Medium contrast example -->
+                    <g transform="translate(280, 30)">
+                        <text x="130" y="0" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">MEDIUM CONTRAST</text>
+                        
+                        <!-- Scene frame -->
+                        <rect x="20" y="15" width="220" height="140" fill="#5dade2"/>
+                        
+                        <!-- Orange element -->
+                        <rect x="100" y="40" width="60" height="90" fill="#e67e22"/>
+                        
+                        <text x="130" y="175" text-anchor="middle" font-size="9" fill="#666">Strong but not jarring</text>
+                        <text x="130" y="190" text-anchor="middle" font-size="9" fill="#666">Pleasing tension</text>
+                    </g>
+                    
+                    <!-- Contrast types diagram -->
+                    <g transform="translate(30, 230)">
+                        <text x="0" y="0" font-size="11" font-weight="500" fill="#1a1a1a">Types of Color Contrast:</text>
+                        
+                        <!-- Hue contrast -->
+                        <g transform="translate(0, 25)">
+                            <rect x="0" y="0" width="30" height="30" fill="#e63946"/>
+                            <rect x="35" y="0" width="30" height="30" fill="#457b9d"/>
+                            <text x="80" y="20" font-size="9" fill="#1a1a1a">Hue Contrast — Different colors</text>
+                        </g>
+                        
+                        <!-- Value contrast -->
+                        <g transform="translate(0, 65)">
+                            <rect x="0" y="0" width="30" height="30" fill="#1a1a1a"/>
+                            <rect x="35" y="0" width="30" height="30" fill="#e0e0e0"/>
+                            <text x="80" y="20" font-size="9" fill="#1a1a1a">Value Contrast — Light vs dark</text>
+                        </g>
+                        
+                        <!-- Saturation contrast -->
+                        <g transform="translate(280, 25)">
+                            <rect x="0" y="0" width="30" height="30" fill="#e63946"/>
+                            <rect x="35" y="0" width="30" height="30" fill="#d4a5a5"/>
+                            <text x="80" y="20" font-size="9" fill="#1a1a1a">Saturation Contrast — Vivid vs muted</text>
+                        </g>
+                        
+                        <!-- Temperature contrast -->
+                        <g transform="translate(280, 65)">
+                            <rect x="0" y="0" width="30" height="30" fill="#e07020"/>
+                            <rect x="35" y="0" width="30" height="30" fill="#4a90a4"/>
+                            <text x="80" y="20" font-size="9" fill="#1a1a1a">Temperature Contrast — Warm vs cool</text>
+                        </g>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Different types of contrast create different levels of visual tension and impact.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Working with Neon & Artificial Light</h2>
+            <p>Urban nights offer a completely different color palette. Neon signs, LED displays, and mixed artificial lighting create surreal color combinations impossible in daylight.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <!-- Dark background -->
+                    <rect x="0" y="0" width="600" height="400" fill="#0a0a15"/>
+                    
+                    <!-- Neon glow effects -->
+                    <defs>
+                        <filter id="neon-glow-pink">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <filter id="neon-glow-blue">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <radialGradient id="pink-ambient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ff1493;stop-opacity:0.3"/>
+                            <stop offset="100%" style="stop-color:#ff1493;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="blue-ambient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#00bfff;stop-opacity:0.3"/>
+                            <stop offset="100%" style="stop-color:#00bfff;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="green-ambient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#00ff7f;stop-opacity:0.2"/>
+                            <stop offset="100%" style="stop-color:#00ff7f;stop-opacity:0"/>
+                        </radialGradient>
+                    </defs>
+                    
+                    <!-- Building silhouettes -->
+                    <rect x="30" y="100" width="100" height="300" fill="#151520"/>
+                    <rect x="150" y="80" width="80" height="320" fill="#12121a"/>
+                    <rect x="400" y="120" width="90" height="280" fill="#151520"/>
+                    <rect x="510" y="90" width="70" height="310" fill="#10101a"/>
+                    
+                    <!-- Pink neon sign -->
+                    <g filter="url(#neon-glow-pink)">
+                        <rect x="55" y="140" width="50" height="6" fill="#ff1493"/>
+                        <rect x="55" y="155" width="35" height="5" fill="#ff1493"/>
+                    </g>
+                    <circle cx="80" cy="150" r="60" fill="url(#pink-ambient)"/>
+                    
+                    <!-- Blue neon sign -->
+                    <g filter="url(#neon-glow-blue)">
+                        <text x="170" y="130" font-size="24" fill="#00bfff" font-weight="bold">酒吧</text>
+                    </g>
+                    <circle cx="195" cy="120" r="70" fill="url(#blue-ambient)"/>
+                    
+                    <!-- Green neon -->
+                    <g filter="url(#neon-glow-blue)">
+                        <path d="M 420,160 L 460,160 L 440,200 Z" fill="none" stroke="#00ff7f" stroke-width="3"/>
+                    </g>
+                    <circle cx="440" cy="175" r="50" fill="url(#green-ambient)"/>
+                    
+                    <!-- Wet street reflections -->
+                    <rect x="0" y="340" width="600" height="60" fill="#0a0a12"/>
+                    <rect x="60" y="345" width="40" height="50" fill="#ff1493" opacity="0.15"/>
+                    <rect x="175" y="350" width="35" height="45" fill="#00bfff" opacity="0.12"/>
+                    <rect x="420" y="348" width="30" height="47" fill="#00ff7f" opacity="0.1"/>
+                    
+                    <!-- Figure silhouette with color spill -->
+                    <g transform="translate(280, 280)">
+                        <ellipse cx="0" cy="-50" rx="15" ry="18" fill="#1a1a25"/>
+                        <rect x="-12" y="-32" width="24" height="50" fill="#1a1a25"/>
+                        <line x1="-8" y1="18" x2="-15" y2="55" stroke="#15151f" stroke-width="8"/>
+                        <line x1="8" y1="18" x2="15" y2="55" stroke="#15151f" stroke-width="8"/>
+                        
+                        <!-- Color spill on figure -->
+                        <ellipse cx="-10" cy="-45" rx="8" ry="12" fill="#ff1493" opacity="0.2"/>
+                        <ellipse cx="10" cy="-45" rx="8" ry="12" fill="#00bfff" opacity="0.2"/>
+                    </g>
+                    
+                    <!-- Labels -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" fill="#ffffff" opacity="0.8">URBAN NIGHT COLOR</text>
+                    
+                    <g transform="translate(250, 380)">
+                        <circle cx="0" cy="0" r="6" fill="#ff1493"/>
+                        <circle cx="40" cy="0" r="6" fill="#00bfff"/>
+                        <circle cx="80" cy="0" r="6" fill="#00ff7f"/>
+                        <text x="40" y="20" text-anchor="middle" font-size="8" fill="#666">Neon palette</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Neon and artificial light create surreal color palettes unique to urban nights.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li>Shoot in RAW to preserve the full range of artificial color</li>
+                <li>Look for wet surfaces that reflect and multiply neon colors</li>
+                <li>Position subjects where multiple light sources create color mixing</li>
+                <li>Embrace unconventional white balance—the "wrong" color can be right</li>
+                <li>Silhouettes against neon create powerful graphic shapes</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Muted vs Saturated Palettes</h2>
+            <p>The saturation level you choose dramatically affects your image's aesthetic. Muted tones feel sophisticated and timeless; saturated colors feel bold and contemporary. Neither is better—choose based on your intent.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Muted palette scene -->
+                        <rect x="0" y="0" width="250" height="200" fill="#d4cfc4"/>
+                        
+                        <!-- Buildings in muted tones -->
+                        <rect x="20" y="40" width="60" height="160" fill="#8a8477"/>
+                        <rect x="90" y="60" width="50" height="140" fill="#a09a8c"/>
+                        <rect x="150" y="30" width="70" height="170" fill="#7a756a"/>
+                        
+                        <!-- Muted accents -->
+                        <rect x="100" y="120" width="30" height="40" fill="#b8a090"/>
+                        <circle cx="70" cy="100" r="15" fill="#9a8a7a"/>
+                        
+                        <!-- Figure -->
+                        <ellipse cx="120" cy="150" rx="10" ry="12" fill="#6a645a"/>
+                        <rect x="112" y="162" width="16" height="28" fill="#5a5450"/>
+                    </svg>
+                    <h4>Muted Palette</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Subtle, sophisticated, timeless, film-like</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <!-- Saturated palette scene -->
+                        <rect x="0" y="0" width="250" height="200" fill="#87ceeb"/>
+                        
+                        <!-- Buildings in saturated tones -->
+                        <rect x="20" y="40" width="60" height="160" fill="#ff6b6b"/>
+                        <rect x="90" y="60" width="50" height="140" fill="#4ecdc4"/>
+                        <rect x="150" y="30" width="70" height="170" fill="#f9ca24"/>
+                        
+                        <!-- Vivid accents -->
+                        <rect x="100" y="120" width="30" height="40" fill="#6c5ce7"/>
+                        <circle cx="70" cy="100" r="15" fill="#fd79a8"/>
+                        
+                        <!-- Figure -->
+                        <ellipse cx="120" cy="150" rx="10" ry="12" fill="#2d3436"/>
+                        <rect x="112" y="162" width="16" height="28" fill="#1a1a1a"/>
+                    </svg>
+                    <h4>Saturated Palette</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Bold, energetic, contemporary, vivid</p>
+                </div>
+            </div>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 150">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="150" fill="#f5f0e6"/>
+                    
+                    <!-- Saturation scale -->
+                    <text x="300" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">SATURATION SPECTRUM</text>
+                    
+                    <!-- Red scale -->
+                    <rect x="50" y="45" width="45" height="35" fill="#d4a5a5" rx="2"/>
+                    <rect x="105" y="45" width="45" height="35" fill="#c88080" rx="2"/>
+                    <rect x="160" y="45" width="45" height="35" fill="#b85a5a" rx="2"/>
+                    <rect x="215" y="45" width="45" height="35" fill="#c93535" rx="2"/>
+                    <rect x="270" y="45" width="45" height="35" fill="#e02020" rx="2"/>
+                    <rect x="325" y="45" width="45" height="35" fill="#ff0000" rx="2"/>
+                    
+                    <!-- Blue scale -->
+                    <rect x="50" y="90" width="45" height="35" fill="#a5b5c4" rx="2"/>
+                    <rect x="105" y="90" width="45" height="35" fill="#8099b0" rx="2"/>
+                    <rect x="160" y="90" width="45" height="35" fill="#5a7a9a" rx="2"/>
+                    <rect x="215" y="90" width="45" height="35" fill="#3a6090" rx="2"/>
+                    <rect x="270" y="90" width="45" height="35" fill="#1a4a85" rx="2"/>
+                    <rect x="325" y="90" width="45" height="35" fill="#0033aa" rx="2"/>
+                    
+                    <!-- Labels -->
+                    <text x="50" y="140" font-size="9" fill="#666">Desaturated</text>
+                    <text x="330" y="140" text-anchor="end" font-size="9" fill="#666">Fully saturated</text>
+                    
+                    <!-- Example applications -->
+                    <g transform="translate(420, 55)">
+                        <text x="0" y="0" font-size="9" fill="#1a1a1a" font-weight="500">When to use:</text>
+                        <text x="0" y="18" font-size="8" fill="#666">Muted → Documentary, moody, vintage</text>
+                        <text x="0" y="33" font-size="8" fill="#666">Medium → Balanced, natural</text>
+                        <text x="0" y="48" font-size="8" fill="#666">Saturated → Bold, graphic, pop</text>
+                    </g>
+                </svg>
+                <p class="visualization-caption">Consistent saturation choices create a cohesive body of work.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Color as Subject</h2>
+            <p>Sometimes color itself becomes the primary subject of your photograph—more important than any person, object, or action in the frame. This is color as pure visual experience.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6"/>
+                    
+                    <!-- Example 1: Color field -->
+                    <g transform="translate(30, 30)">
+                        <text x="80" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">COLOR FIELD</text>
+                        
+                        <rect x="10" y="15" width="140" height="100" fill="#e63946"/>
+                        <rect x="10" y="15" width="140" height="100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <!-- Minimal element -->
+                        <line x1="120" y1="95" x2="145" y2="110" stroke="#1a1a1a" stroke-width="1"/>
+                        
+                        <text x="80" y="135" text-anchor="middle" font-size="8" fill="#666">Single color dominates</text>
+                        <text x="80" y="148" text-anchor="middle" font-size="8" fill="#666">Minimal subject matter</text>
+                    </g>
+                    
+                    <!-- Example 2: Color blocking -->
+                    <g transform="translate(220, 30)">
+                        <text x="80" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">COLOR BLOCKS</text>
+                        
+                        <rect x="10" y="15" width="70" height="100" fill="#457b9d"/>
+                        <rect x="80" y="15" width="70" height="100" fill="#e9c46a"/>
+                        <rect x="10" y="15" width="140" height="100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <text x="80" y="135" text-anchor="middle" font-size="8" fill="#666">Geometric color areas</text>
+                        <text x="80" y="148" text-anchor="middle" font-size="8" fill="#666">Architecture as palette</text>
+                    </g>
+                    
+                    <!-- Example 3: Color accent -->
+                    <g transform="translate(410, 30)">
+                        <text x="80" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">ISOLATED COLOR</text>
+                        
+                        <rect x="10" y="15" width="140" height="100" fill="#4a4a4a"/>
+                        <!-- Single color element -->
+                        <circle cx="100" cy="70" r="12" fill="#e63946"/>
+                        <rect x="10" y="15" width="140" height="100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <text x="80" y="135" text-anchor="middle" font-size="8" fill="#666">One color in neutral field</text>
+                        <text x="80" y="148" text-anchor="middle" font-size="8" fill="#666">Color as punctuation</text>
+                    </g>
+                    
+                    <!-- Example 4: Gradients -->
+                    <g transform="translate(30, 190)">
+                        <text x="80" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">COLOR GRADIENT</text>
+                        
+                        <defs>
+                            <linearGradient id="sunset-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ff6b6b"/>
+                                <stop offset="50%" style="stop-color:#f4a261"/>
+                                <stop offset="100%" style="stop-color:#e9c46a"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="10" y="15" width="140" height="100" fill="url(#sunset-grad)"/>
+                        <rect x="10" y="15" width="140" height="100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <text x="80" y="135" text-anchor="middle" font-size="8" fill="#666">Smooth color transitions</text>
+                        <text x="80" y="148" text-anchor="middle" font-size="8" fill="#666">Sky, reflections, light</text>
+                    </g>
+                    
+                    <!-- Example 5: Pattern -->
+                    <g transform="translate(220, 190)">
+                        <text x="80" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">COLOR PATTERN</text>
+                        
+                        <rect x="10" y="15" width="140" height="100" fill="#2a9d8f"/>
+                        <!-- Pattern elements -->
+                        <circle cx="35" cy="40" r="8" fill="#e9c46a"/>
+                        <circle cx="60" cy="65" r="8" fill="#e9c46a"/>
+                        <circle cx="85" cy="40" r="8" fill="#e9c46a"/>
+                        <circle cx="110" cy="65" r="8" fill="#e9c46a"/>
+                        <circle cx="135" cy="40" r="8" fill="#e9c46a"/>
+                        <circle cx="35" cy="90" r="8" fill="#e9c46a"/>
+                        <circle cx="85" cy="90" r="8" fill="#e9c46a"/>
+                        <circle cx="135" cy="90" r="8" fill="#e9c46a"/>
+                        <rect x="10" y="15" width="140" height="100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <text x="80" y="135" text-anchor="middle" font-size="8" fill="#666">Repeating color elements</text>
+                        <text x="80" y="148" text-anchor="middle" font-size="8" fill="#666">Rhythm through color</text>
+                    </g>
+                    
+                    <!-- Example 6: Color collision -->
+                    <g transform="translate(410, 190)">
+                        <text x="80" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">COLOR COLLISION</text>
+                        
+                        <rect x="10" y="15" width="70" height="100" fill="#e63946"/>
+                        <rect x="80" y="15" width="70" height="100" fill="#00ff7f"/>
+                        <!-- Overlap/meeting point emphasis -->
+                        <line x1="80" y1="15" x2="80" y2="115" stroke="#1a1a1a" stroke-width="3"/>
+                        <rect x="10" y="15" width="140" height="100" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+                        
+                        <text x="80" y="135" text-anchor="middle" font-size="8" fill="#666">Clashing colors meet</text>
+                        <text x="80" y="148" text-anchor="middle" font-size="8" fill="#666">Visual vibration/energy</text>
+                    </g>
+                    
+                    <!-- Quote -->
+                    <text x="300" y="360" text-anchor="middle" font-size="10" fill="#666" font-style="italic">"Color is a power which directly influences the soul." — Wassily Kandinsky</text>
+                </svg>
+                <p class="visualization-caption">When color becomes the subject, composition serves the color experience rather than narrative.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Abstracting Reality</h4>
+                <p>When shooting color as subject, look for walls, doors, signage, vehicles, and other urban surfaces that become pure color fields. Move in close, eliminate context, and let the color relationship dominate. The viewer doesn't need to know what the subject "is"—only how it feels.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            <div class="exercise">
+                <h4>Assignment: Complementary Hunt</h4>
+                <p>Spend an afternoon photographing only complementary color pairs. Choose one pair (red/green, blue/orange, or yellow/purple) and seek out scenes where these colors appear together. Pay attention to how the colors interact and which naturally dominates.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: One Color Day</h4>
+                <p>Challenge yourself to photograph using only one dominant color throughout an entire shooting session. This trains your eye to spot that color everywhere and teaches you about building cohesion in a series.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Night Color</h4>
+                <p>Explore your city after dark, focusing on artificial light sources. Photograph how neon, LEDs, and mixed lighting create unexpected color combinations. Experiment with wet surfaces and reflections.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Muted to Saturated</h4>
+                <p>Take the same scene and process it three ways: heavily desaturated, natural saturation, and boosted saturation. Compare how each treatment affects the mood and your emotional response to the image.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="light.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Light & Shadow</span>
+            </a>
+            <a href="moment.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">The Decisive Moment</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>

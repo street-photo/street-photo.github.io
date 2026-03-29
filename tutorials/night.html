@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Street Photography — Street Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Street Photography</a>
+            <ul class="nav-links">
+                <li><a href="composition.html">Composition</a></li>
+                <li><a href="light.html">Light</a></li>
+                <li><a href="moment.html">The Moment</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="technique.html">Technique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tutorial-hero">
+        <p class="breadcrumb">Tutorials / Night Street Photography</p>
+        <h1>After Dark</h1>
+        <p class="tutorial-intro">When the sun sets, the city transforms. Night reveals a different world—neon reflections, dramatic shadows, and intimate moments illuminated by artificial light. Master the technical and creative challenges of nocturnal street photography.</p>
+    </header>
+
+    <main class="tutorial-content">
+        <section class="tutorial-section">
+            <h2>The Magic of Night</h2>
+            <p>Night transforms the ordinary into the extraordinary. Familiar streets become mysterious corridors of light and shadow. The visual language shifts entirely—high contrast, pools of light, silhouettes against glowing windows. What's hidden becomes as important as what's revealed.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <defs>
+                        <radialGradient id="streetlamp-glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ffcc66;stop-opacity:0.9"/>
+                            <stop offset="40%" style="stop-color:#ffaa33;stop-opacity:0.4"/>
+                            <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="window-glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#fff5e6;stop-opacity:0.8"/>
+                            <stop offset="100%" style="stop-color:#ffcc66;stop-opacity:0"/>
+                        </radialGradient>
+                        <linearGradient id="night-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0a0a15"/>
+                            <stop offset="100%" style="stop-color:#1a1a2e"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Night sky background -->
+                    <rect x="0" y="0" width="600" height="400" fill="url(#night-sky)"/>
+                    
+                    <!-- Stars -->
+                    <circle cx="50" cy="30" r="1" fill="#ffffff" opacity="0.8"/>
+                    <circle cx="120" cy="55" r="0.8" fill="#ffffff" opacity="0.6"/>
+                    <circle cx="200" cy="25" r="1.2" fill="#ffffff" opacity="0.9"/>
+                    <circle cx="350" cy="40" r="0.7" fill="#ffffff" opacity="0.5"/>
+                    <circle cx="480" cy="20" r="1" fill="#ffffff" opacity="0.7"/>
+                    <circle cx="550" cy="50" r="0.9" fill="#ffffff" opacity="0.6"/>
+                    
+                    <!-- Buildings - left -->
+                    <rect x="20" y="80" width="120" height="320" fill="#0d0d0d"/>
+                    <!-- Windows with warm glow -->
+                    <rect x="40" y="120" width="25" height="35" fill="#ffcc66" opacity="0.8"/>
+                    <rect x="95" y="120" width="25" height="35" fill="#1a1a1a"/>
+                    <rect x="40" y="180" width="25" height="35" fill="#1a1a1a"/>
+                    <rect x="95" y="180" width="25" height="35" fill="#fff5e6" opacity="0.6"/>
+                    <rect x="40" y="240" width="25" height="35" fill="#ffcc66" opacity="0.9"/>
+                    <rect x="95" y="240" width="25" height="35" fill="#ffcc66" opacity="0.5"/>
+                    
+                    <!-- Buildings - right -->
+                    <rect x="460" y="60" width="140" height="340" fill="#0f0f0f"/>
+                    <rect x="480" y="100" width="30" height="40" fill="#fff5e6" opacity="0.7"/>
+                    <rect x="540" y="100" width="30" height="40" fill="#1a1a1a"/>
+                    <rect x="480" y="170" width="30" height="40" fill="#1a1a1a"/>
+                    <rect x="540" y="170" width="30" height="40" fill="#ffcc66" opacity="0.6"/>
+                    <rect x="480" y="240" width="30" height="40" fill="#ffcc66" opacity="0.4"/>
+                    <rect x="540" y="240" width="30" height="40" fill="#ffffff" opacity="0.9"/>
+                    
+                    <!-- Street -->
+                    <rect x="0" y="330" width="600" height="70" fill="#111"/>
+                    
+                    <!-- Streetlamp -->
+                    <rect x="295" y="160" width="10" height="180" fill="#222"/>
+                    <ellipse cx="300" cy="160" rx="20" ry="8" fill="#333"/>
+                    <ellipse cx="300" cy="155" rx="15" ry="5" fill="#ffcc66"/>
+                    
+                    <!-- Streetlamp light cone -->
+                    <ellipse cx="300" cy="300" rx="120" ry="60" fill="url(#streetlamp-glow)"/>
+                    
+                    <!-- Figure in silhouette -->
+                    <g transform="translate(300, 310)">
+                        <ellipse cx="0" cy="-50" rx="10" ry="12" fill="#000"/>
+                        <rect x="-8" y="-38" width="16" height="35" fill="#000"/>
+                        <line x1="-6" y1="-3" x2="-10" y2="25" stroke="#000" stroke-width="5"/>
+                        <line x1="6" y1="-3" x2="10" y2="25" stroke="#000" stroke-width="5"/>
+                    </g>
+                    
+                    <!-- Reflection on wet street -->
+                    <ellipse cx="300" cy="365" rx="80" ry="15" fill="#ffcc66" opacity="0.15"/>
+                    
+                    <!-- Labels -->
+                    <text x="300" y="390" text-anchor="middle" font-size="10" fill="#666">The lone figure, the pool of light—night distills scenes to their essence</text>
+                </svg>
+                <p class="visualization-caption">Night photography reveals a different visual language: isolated pools of light, deep shadows, and the interplay between darkness and illumination.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>Embrace the Darkness</h4>
+                <p>Don't fight the darkness—use it. At night, shadows aren't empty space; they're compositional elements that frame your subjects and add mystery. Let large areas go completely black. The contrast between light and dark is what makes night photography compelling.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Light Sources at Night</h2>
+            <p>Understanding the different light sources you'll encounter at night is crucial. Each has distinct characteristics—color temperature, intensity, direction, and quality. Learning to recognize and work with these sources is the foundation of night street photography.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 450">
+                    <defs>
+                        <radialGradient id="sodium-glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ffaa44;stop-opacity:0.9"/>
+                            <stop offset="100%" style="stop-color:#ffaa44;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="neon-pink" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ff66aa;stop-opacity:0.9"/>
+                            <stop offset="100%" style="stop-color:#ff66aa;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="neon-blue" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#66ccff;stop-opacity:0.9"/>
+                            <stop offset="100%" style="stop-color:#66ccff;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="headlight-beam" cx="50%" cy="0%" r="100%">
+                            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8"/>
+                            <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+                        </radialGradient>
+                    </defs>
+                    
+                    <!-- Background -->
+                    <rect x="0" y="0" width="600" height="450" fill="#0d0d12"/>
+                    
+                    <!-- Section dividers -->
+                    <line x1="150" y1="0" x2="150" y2="450" stroke="#333" stroke-width="0.5" stroke-dasharray="4,4"/>
+                    <line x1="300" y1="0" x2="300" y2="450" stroke="#333" stroke-width="0.5" stroke-dasharray="4,4"/>
+                    <line x1="450" y1="0" x2="450" y2="450" stroke="#333" stroke-width="0.5" stroke-dasharray="4,4"/>
+                    
+                    <!-- STREETLAMPS (Sodium vapor - warm orange) -->
+                    <text x="75" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#ffaa44">STREETLAMPS</text>
+                    
+                    <!-- Lamp post -->
+                    <rect x="72" y="60" width="6" height="120" fill="#333"/>
+                    <ellipse cx="75" cy="60" rx="12" ry="5" fill="#444"/>
+                    <ellipse cx="75" cy="55" rx="8" ry="3" fill="#ffaa44"/>
+                    
+                    <!-- Light cone -->
+                    <ellipse cx="75" cy="150" rx="50" ry="30" fill="url(#sodium-glow)" opacity="0.6"/>
+                    
+                    <!-- Subject in pool of light -->
+                    <ellipse cx="75" cy="175" rx="6" ry="7" fill="#1a1a1a"/>
+                    <rect x="70" y="182" width="10" height="20" fill="#1a1a1a"/>
+                    
+                    <!-- Info -->
+                    <text x="75" y="230" text-anchor="middle" font-size="8" fill="#ffaa44">2700K - Warm</text>
+                    <text x="75" y="245" text-anchor="middle" font-size="8" fill="#666">Orange/amber cast</text>
+                    <text x="75" y="260" text-anchor="middle" font-size="8" fill="#666">Directional, overhead</text>
+                    
+                    <!-- NEON SIGNS -->
+                    <text x="225" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#ff66aa">NEON SIGNS</text>
+                    
+                    <!-- Neon sign glow -->
+                    <ellipse cx="225" cy="100" rx="45" ry="30" fill="url(#neon-pink)" opacity="0.4"/>
+                    
+                    <!-- Neon sign frame -->
+                    <rect x="185" y="75" width="80" height="50" fill="none" stroke="#ff66aa" stroke-width="3"/>
+                    <text x="225" y="105" text-anchor="middle" font-size="14" fill="#ff66aa" font-weight="500">OPEN</text>
+                    
+                    <!-- Reflected light on surface -->
+                    <rect x="190" y="140" width="70" height="40" fill="#ff66aa" opacity="0.15"/>
+                    
+                    <!-- Subject with colored cast -->
+                    <ellipse cx="225" cy="165" rx="6" ry="7" fill="#4a2030"/>
+                    <rect x="220" y="172" width="10" height="20" fill="#4a2030"/>
+                    
+                    <!-- Info -->
+                    <text x="225" y="230" text-anchor="middle" font-size="8" fill="#ff66aa">Variable colors</text>
+                    <text x="225" y="245" text-anchor="middle" font-size="8" fill="#666">Strong color cast</text>
+                    <text x="225" y="260" text-anchor="middle" font-size="8" fill="#666">Creates mood</text>
+                    
+                    <!-- WINDOWS -->
+                    <text x="375" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#fff5e6">WINDOW LIGHT</text>
+                    
+                    <!-- Building with lit window -->
+                    <rect x="340" y="60" width="70" height="130" fill="#1a1a1a"/>
+                    <rect x="355" y="80" width="40" height="50" fill="#fff5e6" opacity="0.8"/>
+                    
+                    <!-- Light spill from window -->
+                    <polygon points="355,130 340,190 410,190 395,130" fill="#fff5e6" opacity="0.15"/>
+                    
+                    <!-- Subject lit from side -->
+                    <ellipse cx="375" cy="175" rx="6" ry="7" fill="#2a2520"/>
+                    <rect x="370" y="182" width="10" height="20" fill="#2a2520"/>
+                    <!-- Highlight on subject -->
+                    <ellipse cx="378" cy="175" rx="3" ry="5" fill="#4a4035" opacity="0.8"/>
+                    
+                    <!-- Info -->
+                    <text x="375" y="230" text-anchor="middle" font-size="8" fill="#fff5e6">3000-4000K</text>
+                    <text x="375" y="245" text-anchor="middle" font-size="8" fill="#666">Soft, warm glow</text>
+                    <text x="375" y="260" text-anchor="middle" font-size="8" fill="#666">Side/rim lighting</text>
+                    
+                    <!-- HEADLIGHTS -->
+                    <text x="525" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#ffffff">HEADLIGHTS</text>
+                    
+                    <!-- Car shape -->
+                    <rect x="490" y="130" width="70" height="35" rx="5" fill="#1a1a1a"/>
+                    <rect x="485" y="145" width="80" height="25" rx="3" fill="#222"/>
+                    
+                    <!-- Headlight beams -->
+                    <ellipse cx="495" cy="145" rx="8" ry="5" fill="#ffffff"/>
+                    <ellipse cx="555" cy="145" rx="8" ry="5" fill="#ffffff"/>
+                    <polygon points="485,145 450,190 500,190 495,145" fill="url(#headlight-beam)" opacity="0.3"/>
+                    <polygon points="565,145 600,190 550,190 555,145" fill="url(#headlight-beam)" opacity="0.3"/>
+                    
+                    <!-- Subject backlit by headlights (silhouette) -->
+                    <ellipse cx="525" cy="90" rx="6" ry="7" fill="#000"/>
+                    <rect x="520" y="97" width="10" height="20" fill="#000"/>
+                    <!-- Rim light -->
+                    <ellipse cx="525" cy="90" rx="7" ry="8" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+                    
+                    <!-- Info -->
+                    <text x="525" y="230" text-anchor="middle" font-size="8" fill="#ffffff">5500-6500K</text>
+                    <text x="525" y="245" text-anchor="middle" font-size="8" fill="#666">Harsh, directional</text>
+                    <text x="525" y="260" text-anchor="middle" font-size="8" fill="#666">Great for silhouettes</text>
+                    
+                    <!-- Bottom comparison bar -->
+                    <rect x="20" y="290" width="560" height="130" fill="#111" rx="5"/>
+                    
+                    <!-- Color temperature scale -->
+                    <text x="300" y="315" text-anchor="middle" font-size="11" fill="#888">COLOR TEMPERATURE SPECTRUM</text>
+                    
+                    <!-- Gradient bar -->
+                    <defs>
+                        <linearGradient id="temp-scale" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff6622"/>
+                            <stop offset="30%" style="stop-color:#ffaa44"/>
+                            <stop offset="50%" style="stop-color:#fff5e6"/>
+                            <stop offset="70%" style="stop-color:#aaddff"/>
+                            <stop offset="100%" style="stop-color:#6699ff"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="50" y="330" width="500" height="20" fill="url(#temp-scale)" rx="3"/>
+                    
+                    <!-- Temperature markers -->
+                    <text x="50" y="370" text-anchor="start" font-size="9" fill="#666">1800K</text>
+                    <text x="140" y="370" text-anchor="middle" font-size="9" fill="#666">2700K</text>
+                    <text x="275" y="370" text-anchor="middle" font-size="9" fill="#666">4000K</text>
+                    <text x="410" y="370" text-anchor="middle" font-size="9" fill="#666">5500K</text>
+                    <text x="550" y="370" text-anchor="end" font-size="9" fill="#666">8000K+</text>
+                    
+                    <!-- Source labels -->
+                    <text x="80" y="400" text-anchor="start" font-size="8" fill="#ffaa44">Candles</text>
+                    <text x="140" y="400" text-anchor="middle" font-size="8" fill="#ffaa44">Sodium</text>
+                    <text x="275" y="400" text-anchor="middle" font-size="8" fill="#fff5e6">Tungsten</text>
+                    <text x="410" y="400" text-anchor="middle" font-size="8" fill="#ffffff">Daylight/LED</text>
+                    <text x="520" y="400" text-anchor="end" font-size="8" fill="#aaddff">Blue hour</text>
+                </svg>
+                <p class="visualization-caption">Different light sources at night have distinct color temperatures and qualities. Understanding these helps you predict and work with the light.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Sodium vapor streetlamps:</strong> Cast strong orange/amber tones—embrace or correct in post</li>
+                <li><strong>LED streetlights:</strong> Cooler, more neutral—increasingly common in modern cities</li>
+                <li><strong>Neon and signage:</strong> Dramatic colored light perfect for mood and atmosphere</li>
+                <li><strong>Car headlights:</strong> Brief but powerful—great for silhouettes and rim lighting</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Exposing for Night</h2>
+            <p>Night metering is challenging because scenes have extreme contrast. Your camera's meter will often be fooled by large dark areas, leading to overexposure. The key is learning to expose for the highlights—the lit areas—and let shadows fall where they may.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#0d0d12"/>
+                    
+                    <!-- Section labels -->
+                    <text x="150" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#e63946">OVEREXPOSED</text>
+                    <text x="450" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#4ade80">CORRECT</text>
+                    
+                    <!-- OVEREXPOSED SCENE (left) -->
+                    <g transform="translate(0, 0)">
+                        <!-- Washed out background -->
+                        <rect x="20" y="50" width="260" height="200" fill="#2a2a35"/>
+                        
+                        <!-- Streetlamp - blown out -->
+                        <rect x="145" y="80" width="8" height="100" fill="#555"/>
+                        <ellipse cx="149" cy="80" rx="15" ry="6" fill="#666"/>
+                        <ellipse cx="149" cy="76" rx="10" ry="4" fill="#ffffff"/>
+                        
+                        <!-- Light is completely blown -->
+                        <ellipse cx="149" cy="140" rx="70" ry="45" fill="#ffffff" opacity="0.7"/>
+                        
+                        <!-- Subject - no detail in highlights -->
+                        <ellipse cx="149" cy="200" rx="12" ry="15" fill="#999"/>
+                        <rect x="140" y="215" width="18" height="30" fill="#888"/>
+                        
+                        <!-- "Lost detail" indicators -->
+                        <line x1="149" y1="76" x2="220" y2="60" stroke="#e63946" stroke-width="1"/>
+                        <text x="225" y="63" font-size="8" fill="#e63946">Blown highlights</text>
+                        <text x="225" y="75" font-size="8" fill="#e63946">No recovery possible</text>
+                        
+                        <!-- Noise indicator in shadows -->
+                        <rect x="40" y="200" width="60" height="30" fill="#2a2a35"/>
+                        <text x="70" y="220" text-anchor="middle" font-size="7" fill="#666">Noisy grays</text>
+                    </g>
+                    
+                    <!-- CORRECT EXPOSURE (right) -->
+                    <g transform="translate(300, 0)">
+                        <!-- Dark background preserved -->
+                        <rect x="20" y="50" width="260" height="200" fill="#0a0a0f"/>
+                        
+                        <!-- Streetlamp - properly exposed -->
+                        <rect x="145" y="80" width="8" height="100" fill="#222"/>
+                        <ellipse cx="149" cy="80" rx="15" ry="6" fill="#333"/>
+                        <ellipse cx="149" cy="76" rx="10" ry="4" fill="#ffcc66"/>
+                        
+                        <!-- Light with detail -->
+                        <ellipse cx="149" cy="140" rx="55" ry="35" fill="#ffcc66" opacity="0.25"/>
+                        <ellipse cx="149" cy="155" rx="40" ry="25" fill="#ffcc66" opacity="0.15"/>
+                        
+                        <!-- Subject with good tonal range -->
+                        <ellipse cx="149" cy="195" rx="10" ry="12" fill="#1a1a1a"/>
+                        <rect x="142" y="207" width="14" height="25" fill="#1a1a1a"/>
+                        <!-- Highlight on face from lamp -->
+                        <ellipse cx="152" cy="193" rx="5" ry="7" fill="#332a20"/>
+                        
+                        <!-- "Detail preserved" indicators -->
+                        <line x1="149" y1="76" x2="220" y2="60" stroke="#4ade80" stroke-width="1"/>
+                        <text x="225" y="63" font-size="8" fill="#4ade80">Highlight detail</text>
+                        <text x="225" y="75" font-size="8" fill="#4ade80">preserved</text>
+                        
+                        <!-- Rich blacks -->
+                        <rect x="40" y="200" width="60" height="30" fill="#0a0a0f"/>
+                        <text x="70" y="220" text-anchor="middle" font-size="7" fill="#333">Clean blacks</text>
+                    </g>
+                    
+                    <!-- Metering advice -->
+                    <rect x="50" y="275" width="500" height="55" fill="#111" rx="5"/>
+                    
+                    <text x="300" y="295" text-anchor="middle" font-size="10" fill="#888">METERING STRATEGY</text>
+                    <text x="300" y="315" text-anchor="middle" font-size="9" fill="#666">Spot meter on lit areas (faces, signs) • Use exposure compensation -1 to -2 stops</text>
+                    <text x="300" y="328" text-anchor="middle" font-size="9" fill="#666">Review histogram—protect highlights • Let shadows go black</text>
+                </svg>
+                <p class="visualization-caption">At night, expose for the highlights. Lost shadow detail can often be recovered; blown highlights cannot.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>ETTR? Not at Night</h4>
+                <p>"Expose to the right" works in daylight, but at night, protect your highlights instead. Use spot metering on the brightest important area (a face lit by a sign, a figure under a lamp) and let everything else fall into shadow. The contrast is part of the night aesthetic.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>High ISO Mastery</h2>
+            <p>Night photography means high ISO. Modern cameras handle ISO 3200-12800 remarkably well—far better than film ever did. Learn to embrace noise as texture rather than fighting it, while understanding how to minimize it when needed.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <rect x="0" y="0" width="250" height="200" fill="#0d0d12"/>
+                        
+                        <!-- Low ISO - clean but too dark/blurry -->
+                        <text x="125" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#e63946">ISO 400</text>
+                        <text x="125" y="40" text-anchor="middle" font-size="9" fill="#666">1/15s @ f/2.8</text>
+                        
+                        <!-- Blurry figure (motion blur from slow shutter) -->
+                        <ellipse cx="125" cy="100" rx="15" ry="18" fill="#222" opacity="0.6"/>
+                        <ellipse cx="130" cy="102" rx="14" ry="17" fill="#2a2a2a" opacity="0.5"/>
+                        <ellipse cx="135" cy="104" rx="13" ry="16" fill="#333" opacity="0.4"/>
+                        <rect x="110" y="118" width="30" height="45" fill="#222" opacity="0.5"/>
+                        <rect x="115" y="120" width="30" height="45" fill="#2a2a2a" opacity="0.4"/>
+                        
+                        <text x="125" y="185" text-anchor="middle" font-size="9" fill="#e63946">✗ Motion blur</text>
+                    </svg>
+                    <h4>Too Slow</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Clean image but subject is blurred</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <rect x="0" y="0" width="250" height="200" fill="#0d0d12"/>
+                        
+                        <!-- High ISO - sharp with grain -->
+                        <text x="125" y="25" text-anchor="middle" font-size="11" font-weight="500" fill="#4ade80">ISO 6400</text>
+                        <text x="125" y="40" text-anchor="middle" font-size="9" fill="#666">1/250s @ f/2.8</text>
+                        
+                        <!-- Sharp figure -->
+                        <ellipse cx="125" cy="100" rx="12" ry="15" fill="#1a1a1a"/>
+                        <rect x="116" y="115" width="18" height="40" fill="#1a1a1a"/>
+                        <line x1="120" y1="155" x2="115" y2="175" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="130" y1="155" x2="135" y2="175" stroke="#1a1a1a" stroke-width="4"/>
+                        
+                        <!-- Subtle noise texture (represented by dots) -->
+                        <circle cx="50" cy="60" r="0.8" fill="#333"/>
+                        <circle cx="80" cy="75" r="0.6" fill="#2a2a2a"/>
+                        <circle cx="170" cy="55" r="0.7" fill="#333"/>
+                        <circle cx="200" cy="80" r="0.5" fill="#2a2a2a"/>
+                        <circle cx="60" cy="140" r="0.6" fill="#333"/>
+                        <circle cx="190" cy="130" r="0.8" fill="#2a2a2a"/>
+                        
+                        <text x="125" y="185" text-anchor="middle" font-size="9" fill="#4ade80">✓ Sharp + acceptable grain</text>
+                    </svg>
+                    <h4>Usable High ISO</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 8px;">Some noise, but the moment is captured sharp</p>
+                </div>
+            </div>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 200">
+                    <rect x="0" y="0" width="600" height="200" fill="#111"/>
+                    
+                    <!-- ISO scale -->
+                    <text x="300" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#888">ISO NOISE PROGRESSION</text>
+                    
+                    <!-- ISO boxes with increasing noise representation -->
+                    <g transform="translate(50, 50)">
+                        <rect x="0" y="0" width="80" height="80" fill="#1a1a1a"/>
+                        <text x="40" y="100" text-anchor="middle" font-size="10" fill="#666">ISO 800</text>
+                        <text x="40" y="115" text-anchor="middle" font-size="8" fill="#4ade80">Clean</text>
+                    </g>
+                    
+                    <g transform="translate(170, 50)">
+                        <rect x="0" y="0" width="80" height="80" fill="#1a1a1a"/>
+                        <!-- Light noise -->
+                        <circle cx="20" cy="20" r="0.8" fill="#333"/>
+                        <circle cx="50" cy="35" r="0.6" fill="#2a2a2a"/>
+                        <circle cx="30" cy="60" r="0.7" fill="#333"/>
+                        <circle cx="65" cy="55" r="0.5" fill="#2a2a2a"/>
+                        <text x="40" y="100" text-anchor="middle" font-size="10" fill="#666">ISO 3200</text>
+                        <text x="40" y="115" text-anchor="middle" font-size="8" fill="#4ade80">Usable</text>
+                    </g>
+                    
+                    <g transform="translate(290, 50)">
+                        <rect x="0" y="0" width="80" height="80" fill="#1a1a1a"/>
+                        <!-- Medium noise -->
+                        <circle cx="15" cy="15" r="1" fill="#444"/>
+                        <circle cx="40" cy="25" r="0.8" fill="#3a3a3a"/>
+                        <circle cx="65" cy="20" r="0.9" fill="#333"/>
+                        <circle cx="25" cy="45" r="0.7" fill="#3a3a3a"/>
+                        <circle cx="55" cy="50" r="1" fill="#444"/>
+                        <circle cx="35" cy="70" r="0.8" fill="#333"/>
+                        <circle cx="70" cy="65" r="0.6" fill="#3a3a3a"/>
+                        <text x="40" y="100" text-anchor="middle" font-size="10" fill="#666">ISO 6400</text>
+                        <text x="40" y="115" text-anchor="middle" font-size="8" fill="#ffcc66">Visible grain</text>
+                    </g>
+                    
+                    <g transform="translate(410, 50)">
+                        <rect x="0" y="0" width="80" height="80" fill="#1a1a1a"/>
+                        <!-- Heavy noise -->
+                        <circle cx="10" cy="10" r="1.2" fill="#555"/>
+                        <circle cx="30" cy="15" r="1" fill="#444"/>
+                        <circle cx="55" cy="12" r="1.1" fill="#4a4a4a"/>
+                        <circle cx="75" cy="20" r="0.9" fill="#555"/>
+                        <circle cx="20" cy="35" r="1" fill="#444"/>
+                        <circle cx="45" cy="40" r="1.2" fill="#555"/>
+                        <circle cx="70" cy="45" r="1" fill="#4a4a4a"/>
+                        <circle cx="15" cy="60" r="1.1" fill="#555"/>
+                        <circle cx="40" cy="65" r="0.9" fill="#444"/>
+                        <circle cx="65" cy="70" r="1.2" fill="#555"/>
+                        <circle cx="50" cy="25" r="0.8" fill="#444"/>
+                        <text x="40" y="100" text-anchor="middle" font-size="10" fill="#666">ISO 12800</text>
+                        <text x="40" y="115" text-anchor="middle" font-size="8" fill="#ffcc66">Heavy grain</text>
+                    </g>
+                    
+                    <g transform="translate(530, 50)">
+                        <rect x="0" y="0" width="50" height="80" fill="#1a1a1a"/>
+                        <!-- Extreme noise pattern -->
+                        <rect x="5" y="5" width="40" height="70" fill="#222" opacity="0.5"/>
+                        <circle cx="15" cy="15" r="1.5" fill="#666"/>
+                        <circle cx="35" cy="20" r="1.3" fill="#555"/>
+                        <circle cx="25" cy="35" r="1.4" fill="#5a5a5a"/>
+                        <circle cx="10" cy="50" r="1.2" fill="#555"/>
+                        <circle cx="40" cy="55" r="1.5" fill="#666"/>
+                        <circle cx="20" cy="70" r="1.3" fill="#5a5a5a"/>
+                        <text x="25" y="100" text-anchor="middle" font-size="9" fill="#666">25600+</text>
+                        <text x="25" y="115" text-anchor="middle" font-size="8" fill="#e63946">Emergency</text>
+                    </g>
+                    
+                    <!-- Bottom note -->
+                    <text x="300" y="170" text-anchor="middle" font-size="9" fill="#666">Modern full-frame cameras maintain excellent quality up to ISO 6400</text>
+                    <text x="300" y="185" text-anchor="middle" font-size="9" fill="#666">Crop sensors typically 1-2 stops worse—adjust expectations accordingly</text>
+                </svg>
+                <p class="visualization-caption">Know your camera's usable ISO range. A sharp, grainy photo beats a clean, blurry one every time.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Grain as aesthetic:</strong> Black and white film has always had grain—digital noise in B&W can feel cinematic</li>
+                <li><strong>Expose properly:</strong> Underexposure + ISO boost = ugly noise. Proper exposure at high ISO = clean grain</li>
+                <li><strong>Full frame advantage:</strong> Larger sensors handle high ISO significantly better than crop sensors</li>
+                <li><strong>Modern processing:</strong> AI denoise tools can recover incredible detail from high-ISO images</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Fast Lenses After Dark</h2>
+            <p>At night, every stop of light matters. A fast lens (f/1.4-f/2.8) isn't a luxury—it's often essential. The difference between f/1.8 and f/4 is over 2 stops: the difference between ISO 6400 and ISO 25600, or 1/125s and 1/30s.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <rect x="0" y="0" width="600" height="350" fill="#0d0d12"/>
+                    
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#888">APERTURE & LIGHT GATHERING</text>
+                    
+                    <!-- Aperture comparison -->
+                    <g transform="translate(100, 120)">
+                        <!-- f/1.4 -->
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#444" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="48" fill="#ffcc66" opacity="0.4"/>
+                        <circle cx="0" cy="0" r="5" fill="#1a1a1a"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="12" font-weight="500" fill="#ffcc66">f/1.4</text>
+                        <text x="0" y="85" text-anchor="middle" font-size="9" fill="#666">Maximum light</text>
+                        <text x="0" y="100" text-anchor="middle" font-size="9" fill="#4ade80">ISO 1600</text>
+                    </g>
+                    
+                    <g transform="translate(250, 120)">
+                        <!-- f/2.8 -->
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#444" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="24" fill="#ffcc66" opacity="0.4"/>
+                        <circle cx="0" cy="0" r="5" fill="#1a1a1a"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="12" font-weight="500" fill="#ffcc66">f/2.8</text>
+                        <text x="0" y="85" text-anchor="middle" font-size="9" fill="#666">2 stops less</text>
+                        <text x="0" y="100" text-anchor="middle" font-size="9" fill="#ffcc66">ISO 6400</text>
+                    </g>
+                    
+                    <g transform="translate(400, 120)">
+                        <!-- f/4 -->
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#444" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="17" fill="#ffcc66" opacity="0.4"/>
+                        <circle cx="0" cy="0" r="5" fill="#1a1a1a"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="12" font-weight="500" fill="#ffcc66">f/4</text>
+                        <text x="0" y="85" text-anchor="middle" font-size="9" fill="#666">3 stops less</text>
+                        <text x="0" y="100" text-anchor="middle" font-size="9" fill="#e63946">ISO 12800</text>
+                    </g>
+                    
+                    <g transform="translate(500, 120)">
+                        <!-- f/5.6 -->
+                        <circle cx="0" cy="0" r="50" fill="none" stroke="#444" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="12" fill="#ffcc66" opacity="0.4"/>
+                        <circle cx="0" cy="0" r="5" fill="#1a1a1a"/>
+                        <text x="0" y="70" text-anchor="middle" font-size="12" font-weight="500" fill="#888">f/5.6</text>
+                        <text x="0" y="85" text-anchor="middle" font-size="9" fill="#666">4 stops less</text>
+                        <text x="0" y="100" text-anchor="middle" font-size="9" fill="#e63946">ISO 25600</text>
+                    </g>
+                    
+                    <!-- Depth of field trade-off -->
+                    <rect x="50" y="250" width="500" height="80" fill="#111" rx="5"/>
+                    <text x="300" y="275" text-anchor="middle" font-size="11" fill="#888">SHALLOW DEPTH OF FIELD TRADE-OFF</text>
+                    
+                    <!-- DoF visualization -->
+                    <line x1="100" y1="305" x2="500" y2="305" stroke="#333" stroke-width="1"/>
+                    
+                    <!-- Focus plane -->
+                    <line x1="300" y1="290" x2="300" y2="320" stroke="#ffcc66" stroke-width="2"/>
+                    <text x="300" y="285" text-anchor="middle" font-size="8" fill="#ffcc66">Focus</text>
+                    
+                    <!-- f/1.4 DoF (very narrow) -->
+                    <rect x="280" y="298" width="40" height="14" fill="#4ade80" opacity="0.3"/>
+                    <text x="250" y="308" text-anchor="end" font-size="8" fill="#4ade80">f/1.4</text>
+                    
+                    <!-- f/2.8 DoF -->
+                    <rect x="250" y="298" width="100" height="14" fill="#ffcc66" opacity="0.2"/>
+                    
+                    <!-- f/5.6 DoF (wider) -->
+                    <rect x="200" y="298" width="200" height="14" fill="#888" opacity="0.15"/>
+                    
+                    <text x="490" y="308" text-anchor="start" font-size="8" fill="#888">f/5.6</text>
+                </svg>
+                <p class="visualization-caption">Fast apertures gather dramatically more light, but require precise focusing due to shallow depth of field.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>The Night Photography Kit</h4>
+                <p>A 35mm f/1.4 or 50mm f/1.8 is ideal for night street work. These focal lengths suit the intimate feel of night photography, and the wide apertures make handheld shooting possible in surprisingly dark conditions. Consider: at f/1.4 you can shoot at 1/125s and ISO 3200 in conditions that would require ISO 25600 at f/5.6.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Silhouettes & Backlight</h2>
+            <p>Night provides endless opportunities for silhouettes. Any bright light source behind your subject—a storefront, headlights, a lit doorway—creates dramatic rim lighting and bold shapes. The key is positioning and exposing for the bright background.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 350">
+                    <defs>
+                        <linearGradient id="backlight-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ffcc66;stop-opacity:0.6"/>
+                            <stop offset="100%" style="stop-color:#ffaa33;stop-opacity:0"/>
+                        </linearGradient>
+                        <radialGradient id="doorway-light" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#fff5e6;stop-opacity:0.9"/>
+                            <stop offset="70%" style="stop-color:#ffcc66;stop-opacity:0.4"/>
+                            <stop offset="100%" style="stop-color:#ffcc66;stop-opacity:0"/>
+                        </radialGradient>
+                    </defs>
+                    
+                    <rect x="0" y="0" width="600" height="350" fill="#0a0a0f"/>
+                    
+                    <!-- Scene: Lit doorway with silhouette -->
+                    
+                    <!-- Building walls -->
+                    <rect x="100" y="50" width="150" height="280" fill="#0d0d0d"/>
+                    <rect x="350" y="50" width="150" height="280" fill="#0d0d0d"/>
+                    
+                    <!-- Lit doorway/passage -->
+                    <rect x="250" y="80" width="100" height="250" fill="#fff5e6" opacity="0.8"/>
+                    
+                    <!-- Light spilling out -->
+                    <ellipse cx="300" cy="250" rx="120" ry="60" fill="url(#doorway-light)" opacity="0.5"/>
+                    
+                    <!-- Silhouette figure in doorway -->
+                    <g transform="translate(300, 240)">
+                        <ellipse cx="0" cy="-80" rx="15" ry="18" fill="#000"/>
+                        <rect x="-12" y="-62" width="24" height="50" fill="#000"/>
+                        <line x1="-8" y1="-12" x2="-15" y2="30" stroke="#000" stroke-width="6"/>
+                        <line x1="8" y1="-12" x2="15" y2="30" stroke="#000" stroke-width="6"/>
+                        <!-- Arms -->
+                        <line x1="-12" y1="-45" x2="-25" y2="-25" stroke="#000" stroke-width="5"/>
+                        <line x1="12" y1="-45" x2="25" y2="-25" stroke="#000" stroke-width="5"/>
+                        
+                        <!-- Rim light on edges -->
+                        <path d="M -15,-80 Q -20,-60 -15,-40 L -18,-40 Q -25,-60 -18,-82 Z" fill="#ffcc66" opacity="0.6"/>
+                        <path d="M 15,-80 Q 20,-60 15,-40 L 18,-40 Q 25,-60 18,-82 Z" fill="#ffcc66" opacity="0.6"/>
+                    </g>
+                    
+                    <!-- Technique labels -->
+                    <line x1="220" y1="100" x2="170" y2="60" stroke="#888" stroke-width="1"/>
+                    <text x="100" y="55" font-size="9" fill="#888">Light source behind subject</text>
+                    
+                    <line x1="340" y1="170" x2="420" y2="140" stroke="#888" stroke-width="1"/>
+                    <text x="425" y="135" font-size="9" fill="#888">Rim light on edges</text>
+                    <text x="425" y="148" font-size="9" fill="#888">separates from background</text>
+                    
+                    <line x1="300" y1="275" x2="380" y2="300" stroke="#888" stroke-width="1"/>
+                    <text x="385" y="300" font-size="9" fill="#888">Expose for the bright area</text>
+                    <text x="385" y="313" font-size="9" fill="#888">Subject goes black</text>
+                    
+                    <!-- Bottom tips -->
+                    <rect x="50" y="290" width="180" height="50" fill="#111" rx="5"/>
+                    <text x="140" y="310" text-anchor="middle" font-size="9" fill="#ffcc66">Pro Tip</text>
+                    <text x="140" y="325" text-anchor="middle" font-size="8" fill="#666">Position subject at edge of light</text>
+                    <text x="140" y="337" text-anchor="middle" font-size="8" fill="#666">for partial rim lighting</text>
+                </svg>
+                <p class="visualization-caption">Backlit silhouettes create bold, graphic images. The shape alone tells the story.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Find the light first:</strong> Scout for lit doorways, windows, storefronts—then wait for subjects</li>
+                <li><strong>Expose for highlights:</strong> Meter on the bright background; let the subject go black</li>
+                <li><strong>Edge positioning:</strong> Subjects at the edge of light pools get beautiful rim lighting</li>
+                <li><strong>Simplify shapes:</strong> Silhouettes work best when the subject's outline is clear and recognizable</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Light Trails & Long Exposure</h2>
+            <p>Long exposures transform the city at night. Car headlights become ribbons of light. Crowds blur into ghosts. The static and the moving create a dialogue. This technique requires a tripod or stable surface, but the results can be spectacular.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 400">
+                    <defs>
+                        <linearGradient id="light-trail-red" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff3333;stop-opacity:0"/>
+                            <stop offset="50%" style="stop-color:#ff3333;stop-opacity:0.8"/>
+                            <stop offset="100%" style="stop-color:#ff3333;stop-opacity:0"/>
+                        </linearGradient>
+                        <linearGradient id="light-trail-white" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0"/>
+                            <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.9"/>
+                            <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+                        </linearGradient>
+                        <linearGradient id="trail-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ffcc33;stop-opacity:0"/>
+                            <stop offset="100%" style="stop-color:#ffcc33;stop-opacity:0.7"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <rect x="0" y="0" width="600" height="400" fill="#080810"/>
+                    
+                    <!-- Night sky -->
+                    <circle cx="550" cy="40" r="1" fill="#ffffff" opacity="0.6"/>
+                    <circle cx="480" cy="65" r="0.8" fill="#ffffff" opacity="0.5"/>
+                    <circle cx="380" cy="35" r="1" fill="#ffffff" opacity="0.7"/>
+                    
+                    <!-- Buildings -->
+                    <rect x="0" y="100" width="100" height="300" fill="#0d0d0d"/>
+                    <rect x="500" y="80" width="100" height="320" fill="#0d0d0d"/>
+                    <rect x="120" y="150" width="80" height="250" fill="#0a0a0a"/>
+                    <rect x="400" y="130" width="90" height="270" fill="#0a0a0a"/>
+                    
+                    <!-- Windows -->
+                    <rect x="20" y="140" width="20" height="25" fill="#ffcc66" opacity="0.5"/>
+                    <rect x="60" y="140" width="20" height="25" fill="#1a1a1a"/>
+                    <rect x="20" y="190" width="20" height="25" fill="#ffcc66" opacity="0.7"/>
+                    <rect x="520" y="120" width="25" height="30" fill="#fff5e6" opacity="0.6"/>
+                    <rect x="555" y="120" width="25" height="30" fill="#1a1a1a"/>
+                    <rect x="420" y="170" width="20" height="25" fill="#ffcc66" opacity="0.4"/>
+                    <rect x="455" y="170" width="20" height="25" fill="#fff5e6" opacity="0.8"/>
+                    
+                    <!-- Street -->
+                    <rect x="0" y="320" width="600" height="80" fill="#111"/>
+                    
+                    <!-- Light trails - multiple layers for glow effect -->
+                    
+                    <!-- Red taillights (going away) -->
+                    <path d="M 50,350 Q 150,345 300,340 Q 450,335 550,350" fill="none" stroke="#ff3333" stroke-width="8" opacity="0.6"/>
+                    <path d="M 50,350 Q 150,345 300,340 Q 450,335 550,350" fill="none" stroke="#ff6666" stroke-width="4" opacity="0.8"/>
+                    <path d="M 50,350 Q 150,345 300,340 Q 450,335 550,350" fill="none" stroke="#ffaaaa" stroke-width="2"/>
+                    
+                    <path d="M 50,360 Q 150,358 300,355 Q 450,352 550,365" fill="none" stroke="#ff3333" stroke-width="6" opacity="0.5"/>
+                    <path d="M 50,360 Q 150,358 300,355 Q 450,352 550,365" fill="none" stroke="#ff6666" stroke-width="3" opacity="0.7"/>
+                    
+                    <!-- White headlights (coming towards) -->
+                    <path d="M 550,375 Q 400,372 250,368 Q 100,365 50,380" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.5"/>
+                    <path d="M 550,375 Q 400,372 250,368 Q 100,365 50,380" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.8"/>
+                    <path d="M 550,375 Q 400,372 250,368 Q 100,365 50,380" fill="none" stroke="#ffffff" stroke-width="2"/>
+                    
+                    <path d="M 550,385 Q 400,380 250,378 Q 100,376 50,390" fill="none" stroke="#ffffcc" stroke-width="8" opacity="0.4"/>
+                    <path d="M 550,385 Q 400,380 250,378 Q 100,376 50,390" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.7"/>
+                    
+                    <!-- Static figure (sharp against blurred traffic) -->
+                    <g transform="translate(300, 300)">
+                        <ellipse cx="0" cy="-35" rx="8" ry="10" fill="#1a1a1a"/>
+                        <rect x="-6" y="-25" width="12" height="25" fill="#1a1a1a"/>
+                        <line x1="-4" y1="0" x2="-6" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="4" y1="0" x2="6" y2="18" stroke="#1a1a1a" stroke-width="4"/>
+                    </g>
+                    
+                    <!-- Exposure info -->
+                    <rect x="220" y="50" width="160" height="60" fill="#111" rx="5"/>
+                    <text x="300" y="72" text-anchor="middle" font-size="11" fill="#888">SETTINGS</text>
+                    <text x="300" y="90" text-anchor="middle" font-size="10" fill="#ffcc66">8 seconds • f/11 • ISO 100</text>
+                    <text x="300" y="103" text-anchor="middle" font-size="8" fill="#666">Tripod required</text>
+                </svg>
+                <p class="visualization-caption">Long exposures turn moving traffic into rivers of light while keeping static elements sharp.</p>
+            </div>
+            
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#0a0a0f"/>
+                        <text x="125" y="20" text-anchor="middle" font-size="10" fill="#888">1-2 SECONDS</text>
+                        
+                        <!-- Short trails -->
+                        <line x1="30" y1="100" x2="100" y2="95" stroke="#ff3333" stroke-width="4" opacity="0.7"/>
+                        <line x1="150" y1="110" x2="220" y2="105" stroke="#ffffff" stroke-width="4" opacity="0.7"/>
+                        
+                        <!-- Ghost figure -->
+                        <ellipse cx="125" cy="85" rx="8" ry="10" fill="#333" opacity="0.5"/>
+                        <rect x="119" y="95" width="12" height="25" fill="#333" opacity="0.5"/>
+                        
+                        <text x="125" y="150" text-anchor="middle" font-size="8" fill="#666">Subtle movement</text>
+                        <text x="125" y="162" text-anchor="middle" font-size="8" fill="#666">Ghostly pedestrians</text>
+                    </svg>
+                    <h4>Short Long Exposure</h4>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#0a0a0f"/>
+                        <text x="125" y="20" text-anchor="middle" font-size="10" fill="#888">15-30 SECONDS</text>
+                        
+                        <!-- Long trails -->
+                        <path d="M 20,95 Q 80,90 125,88 Q 170,86 230,95" fill="none" stroke="#ff3333" stroke-width="6" opacity="0.6"/>
+                        <path d="M 20,95 Q 80,90 125,88 Q 170,86 230,95" fill="none" stroke="#ff6666" stroke-width="3"/>
+                        
+                        <path d="M 20,110 Q 80,105 125,103 Q 170,101 230,110" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.5"/>
+                        <path d="M 20,110 Q 80,105 125,103 Q 170,101 230,110" fill="none" stroke="#ffffff" stroke-width="2"/>
+                        
+                        <!-- People disappeared -->
+                        <text x="125" y="150" text-anchor="middle" font-size="8" fill="#666">Smooth light ribbons</text>
+                        <text x="125" y="162" text-anchor="middle" font-size="8" fill="#666">People disappear entirely</text>
+                    </svg>
+                    <h4>Extended Exposure</h4>
+                </div>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Tripod or stable surface:</strong> Essential for exposures over 1/30s</li>
+                <li><strong>Low ISO, small aperture:</strong> Use ISO 100 and f/8-f/16 to enable longer exposures</li>
+                <li><strong>ND filters:</strong> Allow long exposures even when there's too much ambient light</li>
+                <li><strong>Remote shutter:</strong> Prevents camera shake when triggering the exposure</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Color Temperature Mixing</h2>
+            <p>Night brings a collision of color temperatures: warm sodium streetlights, cool LED signs, tungsten windows, daylight-balanced headlights. Rather than correcting to a single temperature, embrace the mix. The contrast between warm and cool tones creates visual tension and depth.</p>
+            
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <defs>
+                        <radialGradient id="warm-pool" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#ffaa44;stop-opacity:0.7"/>
+                            <stop offset="100%" style="stop-color:#ffaa44;stop-opacity:0"/>
+                        </radialGradient>
+                        <radialGradient id="cool-pool" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#4488ff;stop-opacity:0.6"/>
+                            <stop offset="100%" style="stop-color:#4488ff;stop-opacity:0"/>
+                        </radialGradient>
+                        <linearGradient id="mixed-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ffaa44"/>
+                            <stop offset="50%" style="stop-color:#aa7799"/>
+                            <stop offset="100%" style="stop-color:#4488ff"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <rect x="0" y="0" width="600" height="380" fill="#0d0d15"/>
+                    
+                    <!-- Title -->
+                    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#888">WARM/COOL CONTRAST</text>
+                    
+                    <!-- Building backdrop -->
+                    <rect x="50" y="60" width="200" height="230" fill="#0a0a0a"/>
+                    <rect x="350" y="60" width="200" height="230" fill="#0a0a0a"/>
+                    
+                    <!-- Warm-lit building (left) -->
+                    <rect x="80" y="100" width="40" height="50" fill="#ffcc66" opacity="0.8"/>
+                    <rect x="140" y="100" width="40" height="50" fill="#ffcc66" opacity="0.6"/>
+                    <rect x="80" y="170" width="40" height="50" fill="#ffaa44" opacity="0.7"/>
+                    <rect x="140" y="170" width="40" height="50" fill="#ffcc66" opacity="0.5"/>
+                    
+                    <!-- Warm light pool -->
+                    <ellipse cx="150" cy="290" rx="100" ry="50" fill="url(#warm-pool)"/>
+                    
+                    <!-- Cool-lit building (right) -->
+                    <rect x="380" y="100" width="40" height="50" fill="#88aaff" opacity="0.7"/>
+                    <rect x="440" y="100" width="40" height="50" fill="#66ccff" opacity="0.8"/>
+                    <rect x="380" y="170" width="40" height="50" fill="#66ccff" opacity="0.6"/>
+                    <rect x="440" y="170" width="40" height="50" fill="#aaccff" opacity="0.9"/>
+                    
+                    <!-- Cool light pool -->
+                    <ellipse cx="450" cy="290" rx="100" ry="50" fill="url(#cool-pool)"/>
+                    
+                    <!-- Street -->
+                    <rect x="0" y="270" width="600" height="110" fill="#111"/>
+                    
+                    <!-- Figure in the mixed zone (center) -->
+                    <g transform="translate(300, 280)">
+                        <!-- Split lighting on figure -->
+                        <ellipse cx="0" cy="-40" rx="10" ry="12" fill="#1a1a1a"/>
+                        <rect x="-8" y="-28" width="16" height="35" fill="#1a1a1a"/>
+                        <line x1="-5" y1="7" x2="-8" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                        <line x1="5" y1="7" x2="8" y2="25" stroke="#1a1a1a" stroke-width="5"/>
+                        
+                        <!-- Warm side highlight -->
+                        <ellipse cx="-6" cy="-40" rx="4" ry="8" fill="#664422" opacity="0.6"/>
+                        <!-- Cool side highlight -->
+                        <ellipse cx="6" cy="-40" rx="4" ry="8" fill="#223366" opacity="0.6"/>
+                    </g>
+                    
+                    <!-- Labels -->
+                    <text x="150" y="330" text-anchor="middle" font-size="10" fill="#ffaa44">WARM: 2700K</text>
+                    <text x="150" y="345" text-anchor="middle" font-size="8" fill="#666">Sodium/Tungsten</text>
+                    
+                    <text x="450" y="330" text-anchor="middle" font-size="10" fill="#6699ff">COOL: 6500K+</text>
+                    <text x="450" y="345" text-anchor="middle" font-size="8" fill="#666">LED/Moonlight</text>
+                    
+                    <!-- Center annotation -->
+                    <text x="300" y="330" text-anchor="middle" font-size="9" fill="#aa7799">Mixed zone</text>
+                    <text x="300" y="345" text-anchor="middle" font-size="8" fill="#666">creates visual interest</text>
+                    
+                    <!-- Color harmony bar -->
+                    <rect x="150" y="360" width="300" height="10" rx="3" fill="url(#mixed-gradient)"/>
+                </svg>
+                <p class="visualization-caption">The collision of warm and cool light sources creates dynamic color tension. Position subjects where different lights meet.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h4>White Balance Strategy</h4>
+                <p>Don't try to "fix" mixed lighting. Set a middle-ground white balance (around 4000K) that allows both warm and cool tones to show their character. Or shoot RAW and experiment in post—the same scene can convey different moods depending on how you balance the colors.</p>
+            </div>
+            
+            <ul class="tips-list">
+                <li><strong>Embrace the clash:</strong> Warm/cool contrast creates depth and visual interest</li>
+                <li><strong>Position subjects strategically:</strong> Place people where different colored lights meet</li>
+                <li><strong>Use reflections:</strong> Wet streets double your color palette with reflections</li>
+                <li><strong>Shoot RAW:</strong> Maximum flexibility to fine-tune color balance later</li>
+            </ul>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Practice Exercises</h2>
+            <div class="exercise">
+                <h4>Assignment: The Pool of Light</h4>
+                <p>Find a single streetlamp or lit storefront. Spend 30 minutes photographing only what enters that pool of light. Wait for subjects to pass through. Focus on the contrast between the lit area and the surrounding darkness. Make the light itself a character in your images.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Color Study</h4>
+                <p>Find an area with mixed lighting—neon signs, streetlamps, shop windows. Make 20 images exploring how different white balance settings change the mood. Try the same scene at 3000K (warm), 5500K (neutral), and 7500K (cool). Note how the emotional content shifts.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Silhouette Series</h4>
+                <p>Create a series of 10 silhouettes in one evening. Look for backlit situations: doorways, windows, headlights, illuminated signs. Focus on finding subjects with interesting, recognizable outlines. The shape alone should tell the story.</p>
+            </div>
+            
+            <div class="exercise">
+                <h4>Assignment: Light Trails</h4>
+                <p>Find an intersection or busy road. Using a tripod, create long exposures from 2 seconds to 30 seconds. Compare the results. Notice how different exposure times create different effects. Try including a static element (a building, a parked car) to anchor the composition.</p>
+            </div>
+        </section>
+
+        <nav class="tutorial-nav">
+            <a href="technique.html" class="prev">
+                <span class="label">← Previous</span>
+                <span class="title">Technical Mastery</span>
+            </a>
+            <a href="composition.html" class="next">
+                <span class="label">Next →</span>
+                <span class="title">Composition</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Street Photography — A Visual Guide</p>
+            <p class="footer-note">An educational resource for photographers</p>
+        </div>
+    </footer>
+</body>
+</html>
