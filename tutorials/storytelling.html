@@ -19,7 +19,6 @@
                 <li><a href="moment.html">The Moment</a></li>
                 <li><a href="storytelling.html">Storytelling</a></li>
                 <li><a href="technique.html">Technique</a></li>
-                <li><a href="style.html">Style</a></li>
             </ul>
         </div>
     </nav>
@@ -27,439 +26,700 @@
     <header class="tutorial-hero">
         <p class="breadcrumb">Tutorials / Visual Storytelling</p>
         <h1>Creating Narratives in a Single Frame</h1>
-        <p class="tutorial-intro">A photograph tells a story. Learn to craft compelling visual narratives through juxtaposition, layers, tension, and the careful arrangement of elements.</p>
+        <p class="tutorial-intro">A photograph is never just a record of what was there. It is an argument about what matters. The street photographer&rsquo;s deepest craft lies in arranging visible elements so they imply an invisible story&mdash;one the viewer completes through imagination, memory, and empathy. This tutorial explores the architecture of visual narrative: how juxtaposition, layering, detail, ambiguity, and environment conspire to transform a fraction of a second into something that feels as rich as a novel.</p>
     </header>
 
     <main class="tutorial-content">
+
         <section class="tutorial-section">
             <h2>The Story Within</h2>
-            <p>Unlike cinema or literature, street photography must tell its story in a single frozen moment. Yet within that constraint lies remarkable power—a well-crafted image can suggest an entire narrative arc, leaving viewers to construct the before and after in their imagination.</p>
-            
+            <p>Cinema unfolds across time. Literature accumulates across pages. A street photograph has only a single frozen instant&mdash;yet the most powerful images feel as though they contain an entire narrative arc. This paradox is the medium&rsquo;s greatest strength: by capturing one precisely chosen moment, the photographer forces the viewer to construct everything that came before and everything that will follow.</p>
+
+            <p>Consider a woman mid-stride, her umbrella just beginning to invert in a gust of wind. We see neither the calm before the gust nor the laughter or frustration that follows. But we feel both. The photograph creates a gap&mdash;a narrative space&mdash;and the human mind cannot resist filling it. This is the &ldquo;story within&rdquo;: not what is shown, but what is implied.</p>
+
             <div class="visualization">
-                <svg viewBox="0 0 600 280">
-                    <rect x="0" y="0" width="600" height="280" fill="#f5f0e6"/>
-                    
-                    <!-- Three act structure -->
-                    <!-- Act 1: Past -->
-                    <rect x="30" y="80" width="150" height="120" fill="#e8e2d6" opacity="0.5"/>
-                    <rect x="30" y="80" width="150" height="120" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
-                    <text x="105" y="60" text-anchor="middle" font-size="10" fill="#999">IMPLIED PAST</text>
-                    
-                    <!-- Fading figure (past) -->
-                    <g transform="translate(105, 150)" opacity="0.3">
-                        <ellipse cx="0" cy="-25" rx="10" ry="12" fill="#666"/>
-                        <line x1="0" y1="-13" x2="0" y2="15" stroke="#666" stroke-width="3"/>
-                        <line x1="-6" y1="15" x2="-10" y2="35" stroke="#666" stroke-width="2.5"/>
-                        <line x1="6" y1="15" x2="10" y2="35" stroke="#666" stroke-width="2.5"/>
+                <svg viewBox="0 0 600 300">
+                    <rect x="0" y="0" width="600" height="300" fill="#f5f0e6"/>
+                    <rect x="30" y="70" width="160" height="160" fill="#e8e2d6" opacity="0.5"/>
+                    <rect x="30" y="70" width="160" height="160" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+                    <text x="110" y="55" text-anchor="middle" font-size="11" font-weight="500" fill="#999">IMPLIED PAST</text>
+
+                    <rect x="220" y="70" width="160" height="160" fill="#fff" opacity="0.6"/>
+                    <rect x="220" y="70" width="160" height="160" fill="none" stroke="#e63946" stroke-width="2"/>
+                    <text x="300" y="55" text-anchor="middle" font-size="11" font-weight="500" fill="#e63946">THE PHOTOGRAPH</text>
+
+                    <rect x="410" y="70" width="160" height="160" fill="#e8e2d6" opacity="0.5"/>
+                    <rect x="410" y="70" width="160" height="160" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+                    <text x="490" y="55" text-anchor="middle" font-size="11" font-weight="500" fill="#999">IMPLIED FUTURE</text>
+                    <g transform="translate(110, 155)" opacity="0.3">
+                        <circle cx="0" cy="-28" r="9" fill="#1a1a1a"/>
+                        <line x1="0" y1="-19" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-8" x2="-12" y2="2" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-8" x2="12" y2="2" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="-8" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="8" y2="30" stroke="#1a1a1a" stroke-width="2"/>
                     </g>
-                    
-                    <!-- Act 2: Present - THE PHOTOGRAPH -->
-                    <rect x="220" y="60" width="160" height="160" fill="white"/>
-                    <rect x="220" y="60" width="160" height="160" fill="none" stroke="#e63946" stroke-width="3"/>
-                    <text x="300" y="45" text-anchor="middle" font-size="11" fill="#e63946" font-weight="500">THE PHOTOGRAPH</text>
-                    
-                    <!-- Central figure (present) -->
-                    <g transform="translate(300, 150)">
-                        <ellipse cx="0" cy="-30" rx="12" ry="14" fill="#1a1a1a"/>
-                        <line x1="0" y1="-16" x2="0" y2="20" stroke="#1a1a1a" stroke-width="4"/>
-                        <line x1="0" y1="0" x2="-15" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                        <line x1="0" y1="0" x2="15" y2="10" stroke="#1a1a1a" stroke-width="3"/>
-                        <line x1="-5" y1="20" x2="-12" y2="50" stroke="#1a1a1a" stroke-width="3"/>
-                        <line x1="5" y1="20" x2="12" y2="50" stroke="#1a1a1a" stroke-width="3"/>
+                    <text x="110" y="210" text-anchor="middle" font-size="9" fill="#999">Calm approach</text>
+                    <g transform="translate(300, 150)" opacity="1">
+                        <circle cx="0" cy="-28" r="9" fill="#1a1a1a"/>
+                        <line x1="0" y1="-19" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="0" y1="-8" x2="-15" y2="-2" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="0" y1="-8" x2="15" y2="-18" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="0" y1="10" x2="-10" y2="30" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="0" y1="10" x2="10" y2="28" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="15" y1="-18" x2="20" y2="-38" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <path d="M 8,-38 Q 20,-48 32,-38" stroke="#e63946" stroke-width="2" fill="none"/>
                     </g>
-                    
-                    <!-- Act 3: Future -->
-                    <rect x="420" y="80" width="150" height="120" fill="#e8e2d6" opacity="0.5"/>
-                    <rect x="420" y="80" width="150" height="120" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
-                    <text x="495" y="60" text-anchor="middle" font-size="10" fill="#999">IMPLIED FUTURE</text>
-                    
-                    <!-- Fading figure (future) -->
-                    <g transform="translate(495, 150)" opacity="0.3">
-                        <ellipse cx="0" cy="-25" rx="10" ry="12" fill="#666"/>
-                        <line x1="0" y1="-13" x2="0" y2="15" stroke="#666" stroke-width="3"/>
-                        <line x1="-6" y1="15" x2="-10" y2="35" stroke="#666" stroke-width="2.5"/>
-                        <line x1="6" y1="15" x2="10" y2="35" stroke="#666" stroke-width="2.5"/>
+                    <text x="300" y="210" text-anchor="middle" font-size="9" fill="#e63946">Frozen instant</text>
+                    <g transform="translate(490, 155)" opacity="0.3">
+                        <circle cx="0" cy="-28" r="9" fill="#1a1a1a"/>
+                        <line x1="0" y1="-19" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-8" x2="-14" y2="-16" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-8" x2="14" y2="-16" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="-8" y2="30" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="10" x2="8" y2="30" stroke="#1a1a1a" stroke-width="2"/>
                     </g>
-                    
-                    <!-- Arrows showing narrative flow -->
-                    <line x1="180" y1="140" x2="210" y2="140" stroke="#999" stroke-width="1"/>
-                    <polygon points="215,140 205,135 205,145" fill="#999"/>
-                    
-                    <line x1="390" y1="140" x2="420" y2="140" stroke="#999" stroke-width="1"/>
-                    <polygon points="420,140 410,135 410,145" fill="#999"/>
-                    
-                    <!-- Labels -->
-                    <text x="300" y="260" text-anchor="middle" font-size="9" fill="#666">A single frame suggests the complete story</text>
+                    <text x="490" y="210" text-anchor="middle" font-size="9" fill="#999">Laughter? Frustration?</text>
+                    <defs>
+                        <marker id="arrow-gray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#999"/>
+                        </marker>
+                    </defs>
+                    <line x1="190" y1="150" x2="218" y2="150" stroke="#999" stroke-width="1" marker-end="url(#arrow-gray)"/>
+                    <line x1="380" y1="150" x2="408" y2="150" stroke="#999" stroke-width="1" marker-end="url(#arrow-gray)"/>
+
+                    <text x="300" y="265" text-anchor="middle" font-size="10" fill="#1a1a1a">The viewer&apos;s imagination fills the dashed frames</text>
                 </svg>
-                <p class="visualization-caption">The photograph captures a single moment, but implies a past and suggests a future.</p>
+                <p class="visualization-caption">A photograph captures only the center panel&mdash;yet the implied past and implied future are what give the image its narrative weight. The viewer cannot help but construct the missing story.</p>
+            </div>
+
+            <p>The best street photographs are not answers but questions. They present evidence&mdash;an expression, a gesture, a relationship between figures&mdash;and let the viewer play detective. Henri Cartier-Bresson called this &ldquo;the decisive moment,&rdquo; but the storytelling dimension goes further: it is not merely the right instant, but the right instant <em>for narrative implication</em>. The shutter falls at the point of maximum ambiguity, maximum suggestion.</p>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>A photograph&rsquo;s story exists primarily in the viewer&rsquo;s mind, not on the print. Your job is not to tell the story but to provide precisely enough evidence for the viewer to construct one. Too much information kills mystery; too little leaves confusion. The mastery lies in calibrating that balance.</p>
             </div>
         </section>
 
         <section class="tutorial-section">
             <h2>Juxtaposition</h2>
-            <p>One of the most powerful storytelling tools is juxtaposition—placing contrasting elements together to create meaning through their relationship. The tension between opposites generates narrative energy.</p>
-            
+            <p>Juxtaposition is the engine of visual narrative. When two contrasting elements coexist within a single frame, the viewer&rsquo;s mind instinctively searches for the relationship between them. Old beside young. Wealth beside poverty. Stillness beside motion. The meaning arises not from either element alone, but from the tension between them.</p>
+
+            <p>In cinema, contrast unfolds sequentially&mdash;a scene of opulence followed by a scene of squalor. In street photography, both exist simultaneously. This spatial compression is tremendously powerful: the viewer cannot look at one element without being aware of the other. The frame becomes a stage on which opposing forces confront each other.</p>
+
             <div class="visualization">
                 <svg viewBox="0 0 600 350">
                     <rect x="0" y="0" width="600" height="350" fill="#f5f0e6"/>
-                    
-                    <!-- Example 1: Old and New -->
-                    <g transform="translate(100, 50)">
-                        <text x="0" y="0" font-size="10" font-weight="500" fill="#1a1a1a">OLD ↔ NEW</text>
-                        <rect x="-60" y="20" width="120" height="100" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Old building -->
-                        <rect x="-50" y="50" width="40" height="60" fill="#b8a89a"/>
-                        <rect x="-45" y="60" width="12" height="15" fill="#8a7a6a"/>
-                        <rect x="-25" y="60" width="12" height="15" fill="#8a7a6a"/>
-                        <rect x="-45" y="85" width="12" height="15" fill="#8a7a6a"/>
-                        
-                        <!-- Modern building -->
-                        <rect x="10" y="30" width="45" height="80" fill="#4a5568"/>
-                        <rect x="15" y="35" width="35" height="10" fill="#63b3ed" opacity="0.6"/>
-                        <rect x="15" y="50" width="35" height="10" fill="#63b3ed" opacity="0.6"/>
-                        <rect x="15" y="65" width="35" height="10" fill="#63b3ed" opacity="0.6"/>
-                        <rect x="15" y="80" width="35" height="10" fill="#63b3ed" opacity="0.6"/>
+                    <rect x="40" y="40" width="520" height="240" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                    <g transform="translate(140, 180)">
+                        <rect x="-40" y="20" width="80" height="6" fill="#cac4b8" rx="1"/>
+                        <rect x="-36" y="26" width="4" height="18" fill="#cac4b8"/>
+                        <rect x="32" y="26" width="4" height="18" fill="#cac4b8"/>
+                        <circle cx="0" cy="-30" r="10" fill="#1a1a1a"/>
+                        <line x1="0" y1="-20" x2="-4" y2="8" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="-4" y1="0" x2="-18" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="-4" y1="0" x2="12" y2="8" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="-4" y1="8" x2="-14" y2="20" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="-4" y1="8" x2="10" y2="20" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="14" y1="6" x2="18" y2="42" stroke="#1a1a1a" stroke-width="1.5"/>
                     </g>
-                    
-                    <!-- Example 2: Rich and Poor -->
-                    <g transform="translate(300, 50)">
-                        <text x="0" y="0" font-size="10" font-weight="500" fill="#1a1a1a">WEALTH ↔ POVERTY</text>
-                        <rect x="-60" y="20" width="120" height="100" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Luxury car silhouette -->
-                        <ellipse cx="-25" cy="90" rx="25" ry="8" fill="#333"/>
-                        <rect x="-45" y="75" width="40" height="15" rx="5" fill="#333"/>
-                        <circle cx="-35" cy="93" r="5" fill="#1a1a1a"/>
-                        <circle cx="-15" cy="93" r="5" fill="#1a1a1a"/>
-                        
-                        <!-- Figure with cardboard -->
-                        <g transform="translate(35, 70)">
-                            <ellipse cx="0" cy="-12" rx="5" ry="6" fill="#666"/>
-                            <line x1="0" y1="-6" x2="0" y2="10" stroke="#666" stroke-width="2"/>
-                            <rect x="-15" y="10" width="30" height="18" fill="#b8a89a"/>
-                        </g>
+                    <text x="140" y="260" text-anchor="middle" font-size="9" fill="#666">Stillness / Age / Rest</text>
+                    <line x1="300" y1="50" x2="300" y2="270" stroke="#e63946" stroke-width="1" stroke-dasharray="6,3"/>
+                    <text x="300" y="295" text-anchor="middle" font-size="10" font-weight="500" fill="#e63946">TENSION LINE</text>
+                    <g transform="translate(450, 175)">
+                        <circle cx="0" cy="-22" r="7" fill="#1a1a1a"/>
+                        <line x1="0" y1="-15" x2="3" y2="5" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="2" y1="-6" x2="16" y2="-12" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="2" y1="-6" x2="-14" y2="-2" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="3" y1="5" x2="16" y2="20" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="3" y1="5" x2="-10" y2="22" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="-24" y1="-10" x2="-34" y2="-10" stroke="#999" stroke-width="1"/>
+                        <line x1="-22" y1="-2" x2="-32" y2="-2" stroke="#999" stroke-width="1"/>
+                        <line x1="-20" y1="6" x2="-30" y2="6" stroke="#999" stroke-width="1"/>
                     </g>
-                    
-                    <!-- Example 3: Solitude in Crowd -->
-                    <g transform="translate(500, 50)">
-                        <text x="0" y="0" font-size="10" font-weight="500" fill="#1a1a1a">ALONE ↔ CROWD</text>
-                        <rect x="-60" y="20" width="120" height="100" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Crowd (blurred figures) -->
-                        <g opacity="0.3">
-                            <ellipse cx="-40" cy="70" rx="8" ry="10" fill="#666"/>
-                            <ellipse cx="-25" cy="75" rx="7" ry="9" fill="#666"/>
-                            <ellipse cx="25" cy="72" rx="8" ry="10" fill="#666"/>
-                            <ellipse cx="40" cy="78" rx="7" ry="9" fill="#666"/>
-                            <ellipse cx="-10" cy="85" rx="6" ry="8" fill="#666"/>
-                            <ellipse cx="10" cy="82" rx="7" ry="9" fill="#666"/>
-                        </g>
-                        
-                        <!-- Isolated figure (sharp) -->
-                        <g transform="translate(0, 65)">
-                            <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
-                            <line x1="0" y1="-10" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="-5" y1="15" x2="-8" y2="30" stroke="#1a1a1a" stroke-width="2"/>
-                            <line x1="5" y1="15" x2="8" y2="30" stroke="#1a1a1a" stroke-width="2"/>
-                        </g>
-                    </g>
-                    
-                    <!-- Bottom row examples -->
-                    <!-- Example 4: Static vs Motion -->
-                    <g transform="translate(150, 200)">
-                        <text x="0" y="0" font-size="10" font-weight="500" fill="#1a1a1a">STILL ↔ MOTION</text>
-                        <rect x="-70" y="20" width="140" height="100" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Static figure -->
-                        <g transform="translate(-35, 75)">
-                            <ellipse cx="0" cy="-20" rx="8" ry="10" fill="#1a1a1a"/>
-                            <line x1="0" y1="-10" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="-5" y1="15" x2="-7" y2="35" stroke="#1a1a1a" stroke-width="2"/>
-                            <line x1="5" y1="15" x2="7" y2="35" stroke="#1a1a1a" stroke-width="2"/>
-                        </g>
-                        
-                        <!-- Motion blur figure -->
-                        <g transform="translate(30, 70)">
-                            <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#888" opacity="0.6"/>
-                            <ellipse cx="8" cy="-15" rx="8" ry="10" fill="#aaa" opacity="0.4"/>
-                            <ellipse cx="16" cy="-15" rx="8" ry="10" fill="#ccc" opacity="0.2"/>
-                            <line x1="-5" y1="0" x2="25" y2="0" stroke="#999" stroke-width="2" opacity="0.5"/>
-                        </g>
-                    </g>
-                    
-                    <!-- Example 5: Nature vs Urban -->
-                    <g transform="translate(450, 200)">
-                        <text x="0" y="0" font-size="10" font-weight="500" fill="#1a1a1a">NATURE ↔ URBAN</text>
-                        <rect x="-70" y="20" width="140" height="100" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Concrete/urban -->
-                        <rect x="-60" y="40" width="60" height="70" fill="#9ca3af"/>
-                        <rect x="-55" y="50" width="20" height="15" fill="#e5e7eb"/>
-                        <rect x="-25" y="50" width="20" height="15" fill="#e5e7eb"/>
-                        
-                        <!-- Tree/nature -->
-                        <line x1="35" y1="110" x2="35" y2="70" stroke="#7c5c42" stroke-width="4"/>
-                        <ellipse cx="35" cy="55" rx="25" ry="20" fill="#6b8e4e"/>
-                        <ellipse cx="25" cy="60" rx="15" ry="12" fill="#8baf6a"/>
-                    </g>
+                    <text x="450" y="260" text-anchor="middle" font-size="9" fill="#666">Motion / Youth / Energy</text>
+                    <defs>
+                        <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+                        </marker>
+                    </defs>
+                    <path d="M 160,310 Q 300,325 440,310" fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow-red)"/>
+                    <text x="300" y="340" text-anchor="middle" font-size="9" fill="#e63946">The eye oscillates between poles of contrast</text>
                 </svg>
-                <p class="visualization-caption">Juxtaposition creates meaning through contrast. The story emerges from the relationship between opposites.</p>
+                <p class="visualization-caption">Juxtaposition creates a visual dialogue. The viewer&rsquo;s eye bounces between the contrasting elements, and meaning emerges from the comparison itself&mdash;not from either element in isolation.</p>
             </div>
-            
+
+            <p>Effective juxtaposition is rarely accidental. The street photographer learns to see in pairs: to notice a contrast and then position themselves so both elements coexist within the frame. Sometimes this means waiting&mdash;you find one element (a billboard advertising luxury) and wait for the second (a homeless person passing beneath it). Sometimes it means moving&mdash;sidestepping until two disparate realities align through your viewfinder.</p>
+
+            <ul class="tips-list">
+                <li><strong>Scale contrast</strong> &mdash; large against small implies power dynamics and vulnerability</li>
+                <li><strong>Temporal contrast</strong> &mdash; old alongside new (a horse cart beside a sports car) collapses time</li>
+                <li><strong>Emotional contrast</strong> &mdash; joy beside grief, boredom beside excitement, creates dramatic tension</li>
+                <li><strong>Material contrast</strong> &mdash; organic vs. synthetic, rough vs. polished, signals cultural friction</li>
+                <li><strong>Behavioral contrast</strong> &mdash; one figure rushing while another is still reveals competing realities</li>
+            </ul>
+
             <div class="key-concept">
-                <h4>The Space Between</h4>
-                <p>The most powerful juxtapositions aren't about the individual elements—they're about the space between them. That space is where the viewer constructs meaning. Leave room for interpretation.</p>
+                <h4>Key Insight</h4>
+                <p>The most resonant juxtapositions are not merely visual contrasts but conceptual ones. A difference in color or size is interesting; a difference that reveals a social truth&mdash;inequality, absurdity, tenderness&mdash;is unforgettable. Train your eye to see contrasts that <em>mean</em> something.</p>
             </div>
         </section>
 
         <section class="tutorial-section">
-            <h2>Visual Tension</h2>
-            <p>Tension keeps viewers engaged. It can be created through opposing forces, unresolved relationships, or elements that seem about to collide or separate.</p>
-            
+            <h2>Layering &amp; Depth</h2>
+            <p>A flat photograph shows what is in front of the camera. A layered photograph shows an entire world. By organizing elements across foreground, middle ground, and background, the street photographer creates depth that serves narrative: each layer can carry different information, different time scales, different emotional registers.</p>
+
+            <p>Think of the frame as a stage with three curtains. The foreground might show a hand reaching for a door&mdash;intimate, urgent, present. The middle ground might reveal a figure watching from across the street&mdash;context, relationship, tension. The background might contain a church steeple or a factory smokestack&mdash;setting, implication, the larger world pressing in. Together, these layers tell a story no single plane could convey.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 380">
+                    <rect x="0" y="0" width="600" height="380" fill="#f5f0e6"/>
+                    <rect x="100" y="50" width="400" height="200" fill="#e8e2d6" rx="2"/>
+                    <text x="300" y="42" text-anchor="middle" font-size="10" font-weight="500" fill="#457b9d">BACKGROUND — Implication</text>
+                    <rect x="120" y="120" width="60" height="130" fill="#d4cec2"/>
+                    <rect x="200" y="100" width="45" height="150" fill="#cac4b8"/>
+                    <rect x="350" y="90" width="70" height="160" fill="#d4cec2"/>
+                    <rect x="440" y="110" width="40" height="140" fill="#cac4b8"/>
+                    <line x1="385" y1="102" x2="385" y2="122" stroke="#e63946" stroke-width="2.5"/>
+                    <line x1="375" y1="112" x2="395" y2="112" stroke="#e63946" stroke-width="2.5"/>
+                    <text x="385" y="86" text-anchor="middle" font-size="8" fill="#e63946">Hospital</text>
+                    <rect x="70" y="180" width="460" height="90" fill="#d4cec2" opacity="0.6" rx="2"/>
+                    <text x="530" y="220" text-anchor="start" font-size="10" font-weight="500" fill="#2a9d8f">MIDGROUND</text>
+                    <text x="530" y="232" text-anchor="start" font-size="9" fill="#2a9d8f">Context</text>
+                    <g transform="translate(250, 230)">
+                        <circle cx="0" cy="-22" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-14" x2="0" y2="10" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="0" y1="-4" x2="-12" y2="4" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="0" y1="-4" x2="12" y2="4" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="0" y1="10" x2="-7" y2="28" stroke="#1a1a1a" stroke-width="1.8"/>
+                        <line x1="0" y1="10" x2="7" y2="28" stroke="#1a1a1a" stroke-width="1.8"/>
+                    </g>
+                    <rect x="40" y="260" width="520" height="80" fill="#beb8ac" opacity="0.5" rx="2"/>
+                    <text x="560" y="295" text-anchor="start" font-size="10" font-weight="500" fill="#e63946">FOREGROUND</text>
+                    <text x="560" y="307" text-anchor="start" font-size="9" fill="#e63946">Action</text>
+                    <g transform="translate(180, 300)">
+                        <line x1="-60" y1="10" x2="0" y2="0" stroke="#1a1a1a" stroke-width="4"/>
+                        <line x1="0" y1="0" x2="20" y2="-4" stroke="#1a1a1a" stroke-width="3"/>
+                        <line x1="20" y1="-4" x2="28" y2="-10" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="20" y1="-4" x2="30" y2="-6" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="20" y1="-4" x2="29" y2="-1" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <defs>
+                        <marker id="arrow-depth" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#1a1a1a"/>
+                        </marker>
+                    </defs>
+                    <line x1="30" y1="320" x2="30" y2="60" stroke="#1a1a1a" stroke-width="1" marker-end="url(#arrow-depth)"/>
+                    <text x="25" y="195" text-anchor="end" font-size="9" fill="#1a1a1a" transform="rotate(-90, 25, 195)">DEPTH →</text>
+
+                    <text x="300" y="368" text-anchor="middle" font-size="10" fill="#1a1a1a">Each layer carries different narrative information</text>
+                </svg>
+                <p class="visualization-caption">Three-layer narrative structure: the foreground hand reaching toward something urgent, a watching figure in the middle ground providing relational context, and a hospital in the background implying stakes. Together they tell a story no single layer could convey alone.</p>
+            </div>
+
+            <ul class="tips-list">
+                <li><strong>Use a wide-angle lens</strong> (28&ndash;35mm) to exaggerate spatial relationships between layers</li>
+                <li><strong>Stop down to f/8&ndash;f/11</strong> to keep all three layers acceptably sharp</li>
+                <li><strong>Look for frames within frames</strong> &mdash; doorways, arches, windows that separate layers</li>
+                <li><strong>Let the foreground anchor</strong> &mdash; it provides physical proximity, pulling the viewer into the scene</li>
+                <li><strong>Use the background for irony</strong> &mdash; a billboard, a sign, or an environmental clue that recontextualizes the foreground action</li>
+            </ul>
+
+            <div class="exercise">
+                <h4>Assignment: The Three-Layer Narrative</h4>
+                <p>Find a busy urban intersection. Position yourself so you can see three distinct depth layers: a foreground element (a street sign, a railing, a person&rsquo;s shoulder), a middle-ground subject, and a background environment. Make twenty exposures, consciously varying which layer carries the primary narrative weight. In review, identify which configurations tell the most compelling stories and why.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Telling Detail</h2>
+            <p>A panoramic view shows everything and says nothing. A telling detail&mdash;a single, precisely observed particular&mdash;can say everything. In street photography, the difference between a good image and a great one is often a matter of noticing: the way a man&rsquo;s fingers grip a newspaper too tightly, the single wilted flower in a bride&rsquo;s bouquet, the child&rsquo;s shoe left on the curb.</p>
+
+            <p>The telling detail works because it is synecdochic: a part that stands for the whole. We do not need to see the man&rsquo;s face to know he is anxious if his knuckles are white around the newspaper. We do not need to see the entire wedding to sense something is wrong if the bouquet is wilting. The detail is a compression device&mdash;an enormous amount of narrative packed into a tiny visual space.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item avoid">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#f5f0e6"/>
+                        <rect x="20" y="30" width="210" height="120" fill="#e8e2d6" rx="2"/>
+                        <g transform="translate(60, 95)" opacity="0.5">
+                            <circle cx="0" cy="-8" r="4" fill="#1a1a1a"/>
+                            <line x1="0" y1="-4" x2="0" y2="8" stroke="#1a1a1a" stroke-width="1"/>
+                        </g>
+                        <g transform="translate(90, 100)" opacity="0.5">
+                            <circle cx="0" cy="-8" r="4" fill="#1a1a1a"/>
+                            <line x1="0" y1="-4" x2="0" y2="8" stroke="#1a1a1a" stroke-width="1"/>
+                        </g>
+                        <g transform="translate(125, 92)" opacity="0.5">
+                            <circle cx="0" cy="-8" r="4" fill="#1a1a1a"/>
+                            <line x1="0" y1="-4" x2="0" y2="8" stroke="#1a1a1a" stroke-width="1"/>
+                        </g>
+                        <g transform="translate(155, 98)" opacity="0.5">
+                            <circle cx="0" cy="-8" r="4" fill="#1a1a1a"/>
+                            <line x1="0" y1="-4" x2="0" y2="8" stroke="#1a1a1a" stroke-width="1"/>
+                        </g>
+                        <g transform="translate(185, 95)" opacity="0.5">
+                            <circle cx="0" cy="-8" r="4" fill="#1a1a1a"/>
+                            <line x1="0" y1="-4" x2="0" y2="8" stroke="#1a1a1a" stroke-width="1"/>
+                        </g>
+                        <text x="125" y="170" text-anchor="middle" font-size="9" fill="#666">Everything visible, nothing felt</text>
+                    </svg>
+                    <h4>✗ Wide &amp; Generic</h4>
+                </div>
+                <div class="comparison-item good">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#f5f0e6"/>
+                        <rect x="40" y="30" width="170" height="120" fill="#e8e2d6" rx="2"/>
+                        <g transform="translate(125, 90)">
+                            <rect x="-40" y="-15" width="80" height="40" fill="#d4cec2" rx="1"/>
+                            <line x1="-30" y1="-5" x2="30" y2="-5" stroke="#beb8ac" stroke-width="0.5"/>
+                            <line x1="-30" y1="2" x2="30" y2="2" stroke="#beb8ac" stroke-width="0.5"/>
+                            <line x1="-30" y1="9" x2="30" y2="9" stroke="#beb8ac" stroke-width="0.5"/>
+                            <line x1="-40" y1="20" x2="-40" y2="-8" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="-40" y1="-8" x2="-36" y2="-14" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="-40" y1="-4" x2="-35" y2="-10" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="40" y1="20" x2="40" y2="-8" stroke="#1a1a1a" stroke-width="3"/>
+                            <line x1="40" y1="-8" x2="36" y2="-14" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="40" y1="-4" x2="35" y2="-10" stroke="#1a1a1a" stroke-width="2"/>
+                            <line x1="-48" y1="-2" x2="-52" y2="-2" stroke="#e63946" stroke-width="1"/>
+                            <line x1="48" y1="-2" x2="52" y2="-2" stroke="#e63946" stroke-width="1"/>
+                        </g>
+                        <text x="125" y="170" text-anchor="middle" font-size="9" fill="#e63946">One detail tells the whole story</text>
+                    </svg>
+                    <h4>✓ The Telling Detail</h4>
+                </div>
+            </div>
+
+            <p>The photographer Robert Frank understood this intuitively. His images rarely try to show everything. Instead, they isolate a fragment&mdash;a jukebox, a covered baby carriage, fingers on a steering wheel&mdash;and let that fragment resonate outward. The viewer fills in what is unseen, and in doing so, becomes a co-author of the image&rsquo;s meaning.</p>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>When you find yourself trying to include everything in the frame, stop. Ask: what single element carries the emotional weight of this scene? Move closer. Isolate it. The detail that makes you <em>feel</em> something is almost always more powerful than the wide view that merely <em>describes</em> something.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Implied Relationships</h2>
+            <p>Human beings are exquisitely tuned to social signals. We read body language before we read words. In a photograph, the space between two figures, the direction of a gaze, the angle of a shoulder&mdash;these are not incidental details. They are the primary carriers of relational meaning.</p>
+
+            <p>Two people sitting close together on a bench, bodies angled inward, hands nearly touching: intimacy, connection, shared warmth. The same two people separated by three feet of empty bench, bodies angled away, gazes fixed on opposite horizons: distance, alienation, a relationship fraying. The photographer changed nothing about the individuals&mdash;only the spatial and postural relationship between them. Yet the story is entirely different.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 260">
+                    <rect x="0" y="0" width="600" height="260" fill="#f5f0e6"/>
+                    <text x="300" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">BODY LANGUAGE AS NARRATIVE</text>
+
+                    <rect x="30" y="40" width="160" height="150" fill="none" stroke="#2a9d8f" stroke-width="1.5" rx="4"/>
+                    <text x="110" y="58" text-anchor="middle" font-size="10" font-weight="500" fill="#2a9d8f">Connection</text>
+                    <g transform="translate(90, 125)">
+                        <circle cx="0" cy="-18" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="3" y2="18" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <g transform="translate(130, 125)">
+                        <circle cx="0" cy="-18" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="-3" y2="18" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <line x1="95" y1="105" x2="110" y2="112" stroke="#2a9d8f" stroke-width="1" stroke-dasharray="3,2"/>
+                    <line x1="125" y1="105" x2="110" y2="112" stroke="#2a9d8f" stroke-width="1" stroke-dasharray="3,2"/>
+                    <text x="110" y="172" text-anchor="middle" font-size="8" fill="#666">Bodies angled inward, gazes meeting</text>
+
+                    <rect x="220" y="40" width="160" height="150" fill="none" stroke="#f4a261" stroke-width="1.5" rx="4"/>
+                    <text x="300" y="58" text-anchor="middle" font-size="10" font-weight="500" fill="#f4a261">Tension</text>
+                    <g transform="translate(265, 125)">
+                        <circle cx="0" cy="-18" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="18" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <g transform="translate(335, 125)">
+                        <circle cx="0" cy="-18" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="0" y2="18" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <line x1="274" y1="105" x2="326" y2="105" stroke="#f4a261" stroke-width="1.5"/>
+                    <text x="300" y="172" text-anchor="middle" font-size="8" fill="#666">Bodies squared off, direct confrontation</text>
+
+                    <rect x="410" y="40" width="160" height="150" fill="none" stroke="#999" stroke-width="1.5" rx="4"/>
+                    <text x="490" y="58" text-anchor="middle" font-size="10" font-weight="500" fill="#999">Disconnection</text>
+                    <g transform="translate(445, 125)">
+                        <circle cx="0" cy="-18" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="-3" y2="18" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <g transform="translate(535, 125)">
+                        <circle cx="0" cy="-18" r="8" fill="#1a1a1a"/>
+                        <line x1="0" y1="-10" x2="3" y2="18" stroke="#1a1a1a" stroke-width="2"/>
+                    </g>
+                    <line x1="438" y1="105" x2="420" y2="99" stroke="#999" stroke-width="1" stroke-dasharray="3,2"/>
+                    <line x1="542" y1="105" x2="560" y2="99" stroke="#999" stroke-width="1" stroke-dasharray="3,2"/>
+                    <text x="490" y="172" text-anchor="middle" font-size="8" fill="#666">Bodies angled away, empty space between</text>
+
+                    <text x="300" y="215" text-anchor="middle" font-size="10" fill="#1a1a1a">Proximity, angle, and gaze direction encode relationship without words</text>
+                    <rect x="120" y="232" width="12" height="3" fill="#2a9d8f"/>
+                    <text x="140" y="236" font-size="8" fill="#666">Warmth</text>
+                    <rect x="240" y="232" width="12" height="3" fill="#f4a261"/>
+                    <text x="260" y="236" font-size="8" fill="#666">Conflict</text>
+                    <rect x="360" y="232" width="12" height="3" fill="#999"/>
+                    <text x="380" y="236" font-size="8" fill="#666">Isolation</text>
+                </svg>
+                <p class="visualization-caption">Three identical pairs of figures tell three entirely different stories through nothing more than spacing, body angle, and gaze direction. The space between people is as narrative as the people themselves.</p>
+            </div>
+
+            <p>Gaze direction is particularly potent. When a figure looks at something outside the frame, the viewer instinctively wants to see what they see. This creates a narrative vector&mdash;an invisible line extending beyond the photograph&rsquo;s edge, pulling the story outward. When two figures look at each other, the line closes into a circuit, creating a self-contained relational narrative. When they look in opposite directions, the circuit breaks, and we feel the disconnection viscerally.</p>
+
+            <div class="exercise">
+                <h4>Assignment: The Space Between</h4>
+                <p>Go to a public space&mdash;a park, a caf&eacute;, a waiting room&mdash;and photograph pairs of people without capturing their faces. Focus only on the space between them: the gap on a shared bench, the angle of their shoulders, the position of their hands. Review your images and note how each spatial relationship implies a different emotional story. Can a viewer determine the relationship (lovers, strangers, estranged friends) from body language alone?</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Text &amp; Signs in the Frame</h2>
+            <p>Words found in the street&mdash;on billboards, shop signs, graffiti walls, bumper stickers, discarded flyers&mdash;add a dimension unavailable to most visual art: literal language. When text interacts with a human subject, the result can be ironic, poignant, humorous, or devastating. The photograph becomes a visual poem where image and word modify each other.</p>
+
+            <p>Lee Friedlander made an entire career partly on this collision of text and image. A man walking beneath a sign that reads &ldquo;PARADISE&rdquo; while the neighborhood crumbles. A woman framed by a billboard promoting eternal youth. The words are not the photographer&rsquo;s&mdash;they belong to the environment&mdash;yet by choosing to include them in the frame, the photographer activates them as commentary.</p>
+
             <div class="visualization">
                 <svg viewBox="0 0 600 300">
                     <rect x="0" y="0" width="600" height="300" fill="#f5f0e6"/>
-                    
-                    <!-- Tension example: Near collision -->
-                    <g transform="translate(150, 150)">
-                        <text x="0" y="-90" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">NEAR COLLISION</text>
-                        
-                        <!-- Figure walking right -->
-                        <g transform="translate(-40, 0)">
-                            <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#1a1a1a"/>
-                            <line x1="0" y1="-18" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="-5" y1="15" x2="-12" y2="40" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <line x1="5" y1="15" x2="15" y2="35" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <!-- Direction arrow -->
-                            <line x1="15" y1="-20" x2="30" y2="-20" stroke="#e63946" stroke-width="1.5"/>
-                            <polygon points="30,-20 25,-15 25,-25" fill="#e63946"/>
-                        </g>
-                        
-                        <!-- Figure walking left -->
-                        <g transform="translate(40, 0)">
-                            <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#1a1a1a"/>
-                            <line x1="0" y1="-18" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="-5" y1="15" x2="-15" y2="35" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <line x1="5" y1="15" x2="12" y2="40" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <!-- Direction arrow -->
-                            <line x1="-15" y1="-20" x2="-30" y2="-20" stroke="#e63946" stroke-width="1.5"/>
-                            <polygon points="-30,-20 -25,-15 -25,-25" fill="#e63946"/>
-                        </g>
-                        
-                        <!-- Tension zone -->
-                        <ellipse cx="0" cy="0" rx="25" ry="40" fill="#e63946" opacity="0.1"/>
-                        <text x="0" y="70" text-anchor="middle" font-size="8" fill="#e63946">TENSION ZONE</text>
+                    <rect x="50" y="30" width="500" height="220" fill="#e8e2d6" rx="2"/>
+                    <rect x="100" y="45" width="400" height="60" fill="#fff" stroke="#cac4b8" stroke-width="1"/>
+                    <text x="300" y="72" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">LIVE YOUR BEST LIFE</text>
+                    <text x="300" y="92" text-anchor="middle" font-size="9" fill="#999">Luxury Condominiums from $2.5M</text>
+                    <line x1="150" y1="105" x2="150" y2="130" stroke="#cac4b8" stroke-width="3"/>
+                    <line x1="450" y1="105" x2="450" y2="130" stroke="#cac4b8" stroke-width="3"/>
+                    <rect x="50" y="130" width="500" height="120" fill="#d4cec2" opacity="0.4"/>
+                    <g transform="translate(300, 190)">
+                        <circle cx="0" cy="-18" r="9" fill="#1a1a1a"/>
+                        <path d="M -18,0 Q 0,-10 18,0 Q 18,20 0,22 Q -18,20 -18,0" fill="#1a1a1a" opacity="0.6"/>
+                        <rect x="24" y="10" width="8" height="10" fill="none" stroke="#1a1a1a" stroke-width="1.5" rx="1"/>
                     </g>
-                    
-                    <!-- Tension example: Unresolved gaze -->
-                    <g transform="translate(450, 150)">
-                        <text x="0" y="-90" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">UNRESOLVED GAZE</text>
-                        
-                        <!-- Observer figure -->
-                        <g transform="translate(-50, 0)">
-                            <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#1a1a1a"/>
-                            <line x1="0" y1="-18" x2="0" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="-5" y1="15" x2="-8" y2="40" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <line x1="5" y1="15" x2="8" y2="40" stroke="#1a1a1a" stroke-width="2.5"/>
-                        </g>
-                        
-                        <!-- Gaze line (dashed) -->
-                        <line x1="-35" y1="-30" x2="35" y2="-30" stroke="#e63946" stroke-width="1" stroke-dasharray="5,3"/>
-                        
-                        <!-- Oblivious figure -->
-                        <g transform="translate(50, 0)">
-                            <ellipse cx="0" cy="-30" rx="10" ry="12" fill="#888"/>
-                            <line x1="0" y1="-18" x2="0" y2="15" stroke="#888" stroke-width="3"/>
-                            <line x1="-5" y1="15" x2="-8" y2="40" stroke="#888" stroke-width="2.5"/>
-                            <line x1="5" y1="15" x2="8" y2="40" stroke="#888" stroke-width="2.5"/>
-                        </g>
-                        
-                        <!-- Question mark -->
-                        <text x="0" y="0" text-anchor="middle" font-size="20" fill="#e63946">?</text>
-                        <text x="0" y="70" text-anchor="middle" font-size="8" fill="#666">What is the relationship?</text>
-                    </g>
-                </svg>
-                <p class="visualization-caption">Tension creates engagement. Viewers lean in to understand what will happen next.</p>
-            </div>
-        </section>
+                    <defs>
+                        <marker id="arrow-irony" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+                        </marker>
+                    </defs>
+                    <line x1="300" y1="100" x2="300" y2="160" stroke="#e63946" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-irony)"/>
+                    <text x="330" y="140" font-size="9" fill="#e63946">Ironic collision</text>
 
-        <section class="tutorial-section">
-            <h2>Reading Direction & Visual Flow</h2>
-            <p>Viewers in Western cultures typically read images from left to right, top to bottom. You can use this to create narrative flow—or deliberately subvert it for effect.</p>
-            
-            <div class="visualization">
-                <svg viewBox="0 0 600 300">
-                    <rect x="0" y="0" width="600" height="300" fill="#f5f0e6"/>
-                    
-                    <!-- Natural flow example -->
-                    <g transform="translate(0, 20)">
-                        <text x="150" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">NATURAL FLOW (→)</text>
-                        <rect x="30" y="20" width="240" height="120" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Sequential elements left to right -->
-                        <g transform="translate(60, 80)">
-                            <text x="0" y="-30" text-anchor="middle" font-size="8" fill="#999">1</text>
-                            <ellipse cx="0" cy="0" rx="12" ry="15" fill="#1a1a1a"/>
-                        </g>
-                        
-                        <line x1="80" y1="80" x2="110" y2="80" stroke="#e63946" stroke-width="1.5"/>
-                        <polygon points="115,80 105,75 105,85" fill="#e63946"/>
-                        
-                        <g transform="translate(150, 80)">
-                            <text x="0" y="-30" text-anchor="middle" font-size="8" fill="#999">2</text>
-                            <ellipse cx="0" cy="0" rx="15" ry="18" fill="#1a1a1a"/>
-                        </g>
-                        
-                        <line x1="175" y1="80" x2="205" y2="80" stroke="#e63946" stroke-width="1.5"/>
-                        <polygon points="210,80 200,75 200,85" fill="#e63946"/>
-                        
-                        <g transform="translate(240, 80)">
-                            <text x="0" y="-30" text-anchor="middle" font-size="8" fill="#999">3</text>
-                            <ellipse cx="0" cy="0" rx="12" ry="15" fill="#1a1a1a"/>
-                        </g>
-                        
-                        <text x="150" y="165" text-anchor="middle" font-size="8" fill="#666">Comfortable, expected progression</text>
-                    </g>
-                    
-                    <!-- Against flow example -->
-                    <g transform="translate(300, 20)">
-                        <text x="150" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">AGAINST FLOW (←)</text>
-                        <rect x="30" y="20" width="240" height="120" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Figure moving against reading direction -->
-                        <g transform="translate(200, 80)">
-                            <ellipse cx="0" cy="-15" rx="12" ry="15" fill="#1a1a1a"/>
-                            <line x1="0" y1="0" x2="0" y2="30" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="0" y1="10" x2="15" y2="20" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <line x1="0" y1="10" x2="-10" y2="25" stroke="#1a1a1a" stroke-width="2.5"/>
-                            <!-- Moving left (against reading) -->
-                            <line x1="-15" y1="10" x2="-30" y2="10" stroke="#e63946" stroke-width="2"/>
-                            <polygon points="-35,10 -25,5 -25,15" fill="#e63946"/>
-                        </g>
-                        
-                        <!-- Stationary element -->
-                        <rect x="60" y="50" width="50" height="60" fill="#ccc"/>
-                        
-                        <text x="150" y="165" text-anchor="middle" font-size="8" fill="#666">Creates resistance, departure, tension</text>
-                    </g>
-                    
-                    <!-- Circular flow -->
-                    <g transform="translate(150, 200)">
-                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">CIRCULAR FLOW</text>
-                        <rect x="-90" y="15" width="180" height="80" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Circular arrow -->
-                        <ellipse cx="0" cy="55" rx="50" ry="25" fill="none" stroke="#e63946" stroke-width="1.5" stroke-dasharray="5,3"/>
-                        <polygon points="50,52 45,45 55,48" fill="#e63946"/>
-                        
-                        <text x="0" y="110" text-anchor="middle" font-size="8" fill="#666">Eye travels around the image</text>
-                    </g>
-                    
-                    <!-- Z-pattern -->
-                    <g transform="translate(450, 200)">
-                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Z-PATTERN</text>
-                        <rect x="-90" y="15" width="180" height="80" fill="white" stroke="#ddd" stroke-width="1"/>
-                        
-                        <!-- Z path -->
-                        <path d="M -70,30 L 70,30 L -70,80 L 70,80" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="5,3"/>
-                        <circle cx="-70" cy="30" r="3" fill="#e63946"/>
-                        <polygon points="70,80 60,75 65,85" fill="#e63946"/>
-                        
-                        <text x="0" y="110" text-anchor="middle" font-size="8" fill="#666">Natural reading pattern</text>
-                    </g>
+                    <text x="300" y="270" text-anchor="middle" font-size="10" fill="#1a1a1a">Environmental text recontextualizes the human subject</text>
                 </svg>
-                <p class="visualization-caption">Visual flow guides how viewers experience your image. Use it intentionally to support your narrative.</p>
+                <p class="visualization-caption">When found text collides with human reality, the photograph gains a verbal-visual double meaning. The words &ldquo;Live Your Best Life&rdquo; become bitterly ironic above a figure living on the street. The photographer did not write the words&mdash;but by framing them together, activated their commentary.</p>
             </div>
-        </section>
 
-        <section class="tutorial-section">
-            <h2>The Unrevealed</h2>
-            <p>Sometimes what you don't show is more powerful than what you do. Partial information, faces turned away, figures cropped at the frame's edge—these create mystery and invite imagination.</p>
-            
-            <div class="visualization">
-                <svg viewBox="0 0 600 250">
-                    <rect x="0" y="0" width="600" height="250" fill="#f5f0e6"/>
-                    
-                    <!-- Example 1: Cropped figure -->
-                    <g transform="translate(100, 40)">
-                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">PARTIAL FIGURE</text>
-                        <rect x="-60" y="20" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="2"/>
-                        
-                        <!-- Figure entering frame (partially cropped) -->
-                        <g transform="translate(-45, 90)">
-                            <ellipse cx="0" cy="-30" rx="12" ry="15" fill="#1a1a1a"/>
-                            <line x1="0" y1="-15" x2="0" y2="25" stroke="#1a1a1a" stroke-width="4"/>
-                            <line x1="0" y1="0" x2="20" y2="15" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="0" y1="25" x2="-8" y2="55" stroke="#1a1a1a" stroke-width="3"/>
-                            <line x1="0" y1="25" x2="15" y2="50" stroke="#1a1a1a" stroke-width="3"/>
-                        </g>
-                        
-                        <text x="0" y="180" text-anchor="middle" font-size="8" fill="#666">Where are they going?</text>
-                    </g>
-                    
-                    <!-- Example 2: Back turned -->
-                    <g transform="translate(300, 40)">
-                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">FACE CONCEALED</text>
-                        <rect x="-60" y="20" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="2"/>
-                        
-                        <!-- Figure with back to camera -->
-                        <g transform="translate(0, 90)">
-                            <!-- Back of head -->
-                            <ellipse cx="0" cy="-30" rx="15" ry="18" fill="#4a4a4a"/>
-                            <line x1="0" y1="-12" x2="0" y2="30" stroke="#1a1a1a" stroke-width="5"/>
-                            <line x1="0" y1="5" x2="-15" y2="20" stroke="#1a1a1a" stroke-width="3.5"/>
-                            <line x1="0" y1="5" x2="15" y2="18" stroke="#1a1a1a" stroke-width="3.5"/>
-                            <line x1="-4" y1="30" x2="-10" y2="60" stroke="#1a1a1a" stroke-width="3.5"/>
-                            <line x1="4" y1="30" x2="10" y2="60" stroke="#1a1a1a" stroke-width="3.5"/>
-                        </g>
-                        
-                        <text x="0" y="180" text-anchor="middle" font-size="8" fill="#666">What expression? Who?</text>
-                    </g>
-                    
-                    <!-- Example 3: Shadow only -->
-                    <g transform="translate(500, 40)">
-                        <text x="0" y="0" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">SHADOW PRESENCE</text>
-                        <rect x="-60" y="20" width="120" height="140" fill="white" stroke="#1a1a1a" stroke-width="2"/>
-                        
-                        <!-- Ground with shadow only -->
-                        <rect x="-50" y="100" width="100" height="50" fill="#e8e2d6"/>
-                        
-                        <!-- Shadow of unseen figure -->
-                        <g transform="translate(0, 120) skewX(-20)">
-                            <ellipse cx="0" cy="-30" rx="8" ry="3" fill="#1a1a1a" opacity="0.4"/>
-                            <rect x="-4" y="-27" width="8" height="40" fill="#1a1a1a" opacity="0.35"/>
-                            <rect x="-10" y="10" width="6" height="25" fill="#1a1a1a" opacity="0.3"/>
-                            <rect x="4" y="12" width="6" height="23" fill="#1a1a1a" opacity="0.3"/>
-                        </g>
-                        
-                        <text x="0" y="180" text-anchor="middle" font-size="8" fill="#666">Presence without figure</text>
-                    </g>
-                </svg>
-                <p class="visualization-caption">What you conceal can be more evocative than what you reveal. Mystery invites the viewer in.</p>
-            </div>
-        </section>
+            <ul class="tips-list">
+                <li><strong>Ironic juxtaposition</strong> &mdash; text contradicts the visible reality (an &ldquo;Open&rdquo; sign on a permanently shuttered shop)</li>
+                <li><strong>Reinforcing commentary</strong> &mdash; text echoes or amplifies the mood (a &ldquo;Fragile&rdquo; sticker on a box carried by an elderly person)</li>
+                <li><strong>Accidental poetry</strong> &mdash; partial or torn text creates new, unintended meanings</li>
+                <li><strong>Scale play</strong> &mdash; enormous billboard text dwarfing the human figure below creates power commentary</li>
+            </ul>
 
-        <section class="tutorial-section">
-            <h2>Practice Exercise</h2>
             <div class="exercise">
-                <h4>Assignment: Juxtaposition Hunt</h4>
-                <p>Spend a day looking specifically for juxtapositions. Find and photograph at least five instances of contrasting elements: old/new, rich/poor, nature/urban, still/moving. For each, consider: what story does this contrast tell?</p>
+                <h4>Assignment: Ironic Text</h4>
+                <p>Spend a day photographing only scenes where found text (signs, graffiti, advertisements, bumper stickers) creates an ironic or poignant relationship with a human subject. The text must already exist in the environment&mdash;you are curating collisions, not creating them. Aim for at least one image where the text transforms the entire meaning of the scene.</p>
             </div>
-            
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Environmental Storytelling</h2>
+            <p>Every environment tells a story before any human enters it. A hospital waiting room, a playground at dusk, a courtroom hallway, a factory floor&mdash;each carries associations, expectations, and emotional charge. The street photographer who is sensitive to environment lets the setting do half the narrative work, so the human element within it only needs to provide the other half.</p>
+
+            <p>This is the difference between photographing a person who happens to be near a courthouse and photographing a person <em>framed by</em> a courthouse&mdash;where the architecture, the steps, the inscribed words &ldquo;EQUAL JUSTICE UNDER LAW&rdquo; become active participants in the narrative. Environment is not background; it is context. And context is meaning.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <rect x="0" y="0" width="250" height="200" fill="#f5f0e6"/>
+                        <rect x="20" y="100" width="210" height="4" fill="#cac4b8"/>
+                        <line x1="60" y1="40" x2="60" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="130" y1="40" x2="130" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+                        <line x1="50" y1="40" x2="140" y2="40" stroke="#1a1a1a" stroke-width="2.5"/>
+                        <line x1="95" y1="40" x2="85" y2="80" stroke="#1a1a1a" stroke-width="1"/>
+                        <line x1="95" y1="40" x2="105" y2="80" stroke="#1a1a1a" stroke-width="1"/>
+                        <rect x="82" y="80" width="26" height="4" fill="#1a1a1a" rx="1"/>
+                        <g transform="translate(180, 72)">
+                            <circle cx="0" cy="-12" r="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="-6" x2="0" y2="14" stroke="#1a1a1a" stroke-width="1.8"/>
+                            <line x1="0" y1="2" x2="-8" y2="10" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <line x1="0" y1="2" x2="8" y2="10" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <line x1="0" y1="14" x2="-5" y2="28" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <line x1="0" y1="14" x2="5" y2="28" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <text x="125" y="125" text-anchor="middle" font-size="8" fill="#666">Empty playground + lone adult</text>
+                        <text x="125" y="137" text-anchor="middle" font-size="8" fill="#666">= loss, memory, absence</text>
+                    </svg>
+                    <h4>Setting as Emotion</h4>
+                    <p>The empty swing tells its own story of absence; the lone adult completes the narrative of loss.</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 200">
+                        <rect x="0" y="0" width="250" height="200" fill="#f5f0e6"/>
+                        <rect x="40" y="30" width="170" height="110" fill="#e8e2d6"/>
+                        <rect x="90" y="50" width="70" height="90" fill="#d4cec2"/>
+                        <line x1="125" y1="35" x2="125" y2="50" stroke="#e63946" stroke-width="3"/>
+                        <line x1="118" y1="42" x2="132" y2="42" stroke="#e63946" stroke-width="3"/>
+                        <rect x="100" y="80" width="50" height="60" fill="#beb8ac"/>
+                        <g transform="translate(125, 115)">
+                            <circle cx="0" cy="-12" r="6" fill="#1a1a1a"/>
+                            <line x1="0" y1="-6" x2="2" y2="12" stroke="#1a1a1a" stroke-width="1.8"/>
+                            <line x1="1" y1="2" x2="-8" y2="10" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <line x1="1" y1="2" x2="10" y2="8" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <line x1="2" y1="12" x2="-3" y2="28" stroke="#1a1a1a" stroke-width="1.5"/>
+                            <line x1="2" y1="12" x2="7" y2="26" stroke="#1a1a1a" stroke-width="1.5"/>
+                        </g>
+                        <text x="125" y="160" text-anchor="middle" font-size="8" fill="#666">Hospital entrance + bowed head</text>
+                        <text x="125" y="172" text-anchor="middle" font-size="8" fill="#666">= diagnosis, worry, gravity</text>
+                    </svg>
+                    <h4>Setting as Stakes</h4>
+                    <p>The red cross identifies the building; the bowed head supplies the emotional weight. Together: a story of medical news.</p>
+                </div>
+            </div>
+
+            <p>The key is to recognize that environments are not neutral. Every location carries cultural associations that your viewer will bring to the image. A figure running means something different in a park (exercise, joy) than in an alley at night (danger, flight). The same gesture of raising a hand means something different inside a courtroom (testimony) than at a bus stop (hailing). Let the environment do narrative work so the human gesture can do emotional work.</p>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>Before photographing a person, ask yourself: what story does this <em>place</em> already tell? A hospital implies health and mortality. A playground implies childhood and innocence. A courthouse implies justice and judgment. Position your subject so the environment&rsquo;s associations become part of&mdash;or create tension with&mdash;the human narrative.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Ambiguity as Strength</h2>
+            <p>The inexperienced photographer fears ambiguity: what if the viewer doesn&rsquo;t understand what&rsquo;s happening? The experienced photographer courts it: what if the viewer finds <em>more</em> meaning than was intended? A photograph that can be read in only one way is consumed and discarded. A photograph that supports multiple readings is returned to again and again, each viewing revealing new possibilities.</p>
+
+            <p>Ambiguity is not confusion. A confusing photograph fails to organize its elements into any coherent reading. An ambiguous photograph organizes its elements so that two or more coherent readings coexist&mdash;and the tension between them becomes part of the image&rsquo;s power. Is the woman laughing or crying? Is the man leaving or arriving? Is the embrace tender or desperate? When the photograph holds the answer in suspension, the viewer becomes an active participant, bringing their own experience to the interpretation.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 280">
+                    <rect x="0" y="0" width="600" height="280" fill="#f5f0e6"/>
+
+                    <text x="300" y="28" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">THE SPECTRUM OF CLARITY</text>
+                    <defs>
+                        <linearGradient id="clarity-spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e63946;stop-opacity:0.3"/>
+                            <stop offset="35%" style="stop-color:#2a9d8f;stop-opacity:0.5"/>
+                            <stop offset="70%" style="stop-color:#2a9d8f;stop-opacity:0.5"/>
+                            <stop offset="100%" style="stop-color:#e63946;stop-opacity:0.3"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="60" y="50" width="480" height="16" fill="url(#clarity-spectrum)" rx="8"/>
+                    <text x="80" y="45" text-anchor="middle" font-size="9" fill="#e63946">CONFUSING</text>
+                    <text x="230" y="45" text-anchor="middle" font-size="9" fill="#2a9d8f">AMBIGUOUS</text>
+                    <text x="370" y="45" text-anchor="middle" font-size="9" fill="#2a9d8f">EVOCATIVE</text>
+                    <text x="520" y="45" text-anchor="middle" font-size="9" fill="#e63946">LITERAL</text>
+                    <text x="80" y="82" text-anchor="middle" font-size="8" fill="#999">No coherent</text>
+                    <text x="80" y="92" text-anchor="middle" font-size="8" fill="#999">reading possible</text>
+
+                    <text x="520" y="82" text-anchor="middle" font-size="8" fill="#999">Only one reading</text>
+                    <text x="520" y="92" text-anchor="middle" font-size="8" fill="#999">possible</text>
+                    <line x1="180" y1="70" x2="180" y2="78" stroke="#2a9d8f" stroke-width="1.5"/>
+                    <line x1="180" y1="78" x2="420" y2="78" stroke="#2a9d8f" stroke-width="1.5"/>
+                    <line x1="420" y1="70" x2="420" y2="78" stroke="#2a9d8f" stroke-width="1.5"/>
+                    <text x="300" y="96" text-anchor="middle" font-size="10" font-weight="500" fill="#2a9d8f">THE SWEET SPOT</text>
+                    <text x="300" y="110" text-anchor="middle" font-size="9" fill="#666">Multiple coherent readings coexist</text>
+                    <rect x="60" y="130" width="220" height="110" fill="none" stroke="#cac4b8" stroke-width="1" rx="3"/>
+                    <text x="170" y="148" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Two figures embracing</text>
+
+                    <text x="90" y="168" font-size="9" fill="#1a1a1a">Reading A:</text>
+                    <text x="90" y="180" font-size="9" fill="#666">Reunion after long absence</text>
+                    <text x="90" y="198" font-size="9" fill="#1a1a1a">Reading B:</text>
+                    <text x="90" y="210" font-size="9" fill="#666">Farewell before departure</text>
+                    <text x="90" y="228" font-size="9" fill="#1a1a1a">Reading C:</text>
+                    <text x="90" y="240" font-size="9" fill="#666">Comfort after bad news</text>
+
+                    <rect x="320" y="130" width="220" height="110" fill="none" stroke="#cac4b8" stroke-width="1" rx="3"/>
+                    <text x="430" y="148" text-anchor="middle" font-size="10" font-weight="500" fill="#1a1a1a">Man running in alley</text>
+
+                    <text x="350" y="168" font-size="9" fill="#1a1a1a">Reading A:</text>
+                    <text x="350" y="180" font-size="9" fill="#666">Fleeing from danger</text>
+                    <text x="350" y="198" font-size="9" fill="#1a1a1a">Reading B:</text>
+                    <text x="350" y="210" font-size="9" fill="#666">Late for an appointment</text>
+                    <text x="350" y="228" font-size="9" fill="#1a1a1a">Reading C:</text>
+                    <text x="350" y="240" font-size="9" fill="#666">Joy or exhilaration</text>
+
+                    <text x="300" y="270" text-anchor="middle" font-size="10" fill="#1a1a1a">The richest photographs live in the teal zone&mdash;structured yet open</text>
+                </svg>
+                <p class="visualization-caption">The spectrum of narrative clarity. Photographs at the extremes&mdash;either totally confusing or totally literal&mdash;fail to hold the viewer&rsquo;s attention. The richest images live in the ambiguous-evocative zone, where structure and mystery coexist.</p>
+            </div>
+
+            <p>Saul Leiter, whose softly focused color images resist easy reading, understood this: &ldquo;I don&rsquo;t have a philosophy. I have a camera.&rdquo; His images invite lingering precisely because they refuse to declare their meaning. Obstructed views, reflections, condensation on glass&mdash;these are not failures of clarity but invitations to interpretation. The photograph becomes a collaboration between maker and viewer.</p>
+
             <div class="exercise">
-                <h4>Assignment: The Unseen Story</h4>
-                <p>Create a series of five images where the main subject is implied but not shown. Use shadows, reflections, partial figures, or environmental clues. Challenge yourself to suggest a complete narrative without directly depicting your subject.</p>
+                <h4>Assignment: Three Readings</h4>
+                <p>Make ten photographs over the course of a week. For each image, write down three plausible interpretations of what is happening. If you cannot generate three distinct readings, the image may be too literal. If you cannot generate even one coherent reading, the image may be too confusing. The best images will be those where all three readings feel equally valid&mdash;and equally compelling.</p>
             </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>Sequencing &amp; Pairing</h2>
+            <p>A single photograph tells a story. Two photographs placed side by side tell a different, often richer one. Sequencing&mdash;the deliberate ordering and pairing of images&mdash;is where street photography crosses into the territory of cinema and literature. The juxtaposition of images creates meaning that neither image contains alone, just as the juxtaposition of elements within a single frame creates meaning no single element carries.</p>
+
+            <p>This principle, sometimes called the Kuleshov effect after the Soviet filmmaker who demonstrated it, is fundamental: the same face photographed before a plate of soup suggests hunger; before a coffin, grief; before a child, tenderness. Context transforms content. When you pair two street photographs, each becomes context for the other.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 260">
+                    <rect x="0" y="0" width="600" height="260" fill="#f5f0e6"/>
+                    <text x="300" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">THE KULESHOV EFFECT IN PHOTOGRAPHY</text>
+
+                    <rect x="40" y="50" width="120" height="80" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                    <g transform="translate(100, 85)">
+                        <circle cx="0" cy="0" r="14" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+                        <circle cx="-4" cy="-3" r="1.5" fill="#1a1a1a"/>
+                        <circle cx="4" cy="-3" r="1.5" fill="#1a1a1a"/>
+                        <line x1="-4" y1="5" x2="4" y2="5" stroke="#1a1a1a" stroke-width="1"/>
+                    </g>
+                    <text x="100" y="146" text-anchor="middle" font-size="9" fill="#1a1a1a">Same face (neutral)</text>
+                    <text x="185" y="95" text-anchor="middle" font-size="18" fill="#e63946">+</text>
+
+                    <defs>
+                        <marker id="arrow-pair" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#1a1a1a"/>
+                        </marker>
+                    </defs>
+
+                    <rect x="210" y="50" width="100" height="60" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                    <ellipse cx="260" cy="78" rx="20" ry="7" fill="#d4cec2" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="260" y="126" text-anchor="middle" font-size="9" fill="#1a1a1a">= &ldquo;Hunger&rdquo;</text>
+                    <line x1="162" y1="90" x2="208" y2="78" stroke="#1a1a1a" stroke-width="1" marker-end="url(#arrow-pair)"/>
+
+                    <rect x="340" y="50" width="100" height="60" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                    <rect x="360" y="64" width="50" height="18" fill="#1a1a1a" opacity="0.3" rx="3"/>
+                    <text x="390" y="126" text-anchor="middle" font-size="9" fill="#1a1a1a">= &ldquo;Grief&rdquo;</text>
+                    <line x1="162" y1="90" x2="338" y2="78" stroke="#1a1a1a" stroke-width="1" marker-end="url(#arrow-pair)"/>
+
+                    <rect x="470" y="50" width="100" height="60" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                    <circle cx="520" cy="75" r="5" fill="#1a1a1a"/>
+                    <line x1="520" y1="80" x2="520" y2="92" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="520" y="126" text-anchor="middle" font-size="9" fill="#1a1a1a">= &ldquo;Tenderness&rdquo;</text>
+                    <line x1="162" y1="90" x2="468" y2="78" stroke="#1a1a1a" stroke-width="1" marker-end="url(#arrow-pair)"/>
+
+                    <text x="300" y="160" text-anchor="middle" font-size="11" font-weight="500" fill="#1a1a1a">DIPTYCH PAIRING</text>
+
+                    <rect x="80" y="172" width="180" height="55" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1"/>
+                    <circle cx="130" cy="200" r="3" fill="#1a1a1a"/>
+                    <circle cx="150" cy="198" r="3" fill="#1a1a1a"/>
+                    <circle cx="170" cy="202" r="3" fill="#1a1a1a"/>
+                    <circle cx="195" cy="199" r="3" fill="#1a1a1a"/>
+                    <text x="170" y="240" text-anchor="middle" font-size="8" fill="#666">Morning rush: compressed</text>
+
+                    <text x="290" y="203" text-anchor="middle" font-size="14" fill="#e63946">+</text>
+
+                    <rect x="320" y="172" width="180" height="55" fill="#d4cec2" stroke="#1a1a1a" stroke-width="1"/>
+                    <text x="410" y="240" text-anchor="middle" font-size="8" fill="#666">Same street, evening: empty</text>
+
+                    <text x="300" y="258" text-anchor="middle" font-size="10" fill="#e63946">Together: a meditation on the cycle of urban life</text>
+                </svg>
+                <p class="visualization-caption">Sequencing transforms meaning. The same neutral face reads as hunger, grief, or tenderness depending on what accompanies it. A diptych of the same street at two times becomes a meditation on city life that neither image achieves alone.</p>
+            </div>
+
+            <p>When building a body of work or preparing a series, consider how images converse with each other. Does one image pose a question that the next answers? Does the sequence build emotional intensity? Does a quiet image after a dramatic one create space for reflection&mdash;the visual equivalent of a rest in music?</p>
+
+            <div class="key-concept">
+                <h4>Key Insight</h4>
+                <p>Editing&mdash;the selection and ordering of photographs&mdash;is the final act of storytelling. A powerful image can be weakened by poor placement, and a modest image can be elevated by perfect pairing. The contact sheet is where the story is first told; the sequence is where it is refined.</p>
+            </div>
+
+            <div class="exercise">
+                <h4>Assignment: The Ambiguous Diptych</h4>
+                <p>Over two weeks, collect pairs of photographs that create new meaning when placed side by side. The images need not be from the same day, location, or even the same city. The only requirement: together they must tell a story that neither tells alone. Present your strongest three pairings and explain what narrative emerges from the combination.</p>
+            </div>
+        </section>
+
+        <section class="tutorial-section">
+            <h2>The Emotional Arc</h2>
+            <p>In fiction, a story&rsquo;s emotional arc moves through exposition, rising tension, climax, and resolution. A single street photograph can achieve the same trajectory within its frame&mdash;not across time, but across space. The viewer&rsquo;s eye enters the image, encounters escalating visual tension, reaches a focal point of maximum intensity, and then finds release or irresolution. This spatial arc is the structural foundation of visual storytelling.</p>
+
+            <p>The key is understanding that the eye does not take in a photograph all at once. It scans, following lines, contrasts, and areas of detail. A skilled photographer can choreograph this scan&mdash;leading the eye from a calm entry point, through areas of increasing complexity or tension, to a climactic element, and finally to a quieter zone that resolves (or deliberately refuses to resolve) the narrative.</p>
+
+            <div class="visualization">
+                <svg viewBox="0 0 600 280">
+                    <rect x="0" y="0" width="600" height="280" fill="#f5f0e6"/>
+                    <text x="300" y="25" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a">EMOTIONAL ARC WITHIN A SINGLE FRAME</text>
+                    <rect x="50" y="45" width="500" height="160" fill="#e8e2d6" stroke="#1a1a1a" stroke-width="1.5"/>
+
+                    <rect x="55" y="50" width="110" height="150" fill="#2a9d8f" opacity="0.08"/>
+                    <text x="110" y="218" text-anchor="middle" font-size="9" font-weight="500" fill="#2a9d8f">ENTRY</text>
+                    <text x="110" y="230" text-anchor="middle" font-size="8" fill="#666">Calm, simple</text>
+                    <rect x="70" y="140" width="80" height="40" fill="#d4cec2" opacity="0.4"/>
+
+                    <rect x="170" y="50" width="120" height="150" fill="#f4a261" opacity="0.08"/>
+                    <text x="230" y="218" text-anchor="middle" font-size="9" font-weight="500" fill="#f4a261">TENSION</text>
+                    <text x="230" y="230" text-anchor="middle" font-size="8" fill="#666">Complexity builds</text>
+                    <circle cx="210" cy="130" r="5" fill="#1a1a1a"/>
+                    <circle cx="250" cy="115" r="5" fill="#1a1a1a"/>
+
+                    <rect x="295" y="50" width="110" height="150" fill="#e63946" opacity="0.08"/>
+                    <text x="350" y="218" text-anchor="middle" font-size="9" font-weight="500" fill="#e63946">CLIMAX</text>
+                    <text x="350" y="230" text-anchor="middle" font-size="8" fill="#666">Maximum intensity</text>
+                    <circle cx="340" cy="95" r="8" fill="#1a1a1a"/>
+                    <line x1="350" y1="85" x2="358" y2="78" stroke="#e63946" stroke-width="1"/>
+                    <line x1="352" y1="92" x2="362" y2="87" stroke="#e63946" stroke-width="1"/>
+
+                    <rect x="410" y="50" width="135" height="150" fill="#457b9d" opacity="0.08"/>
+                    <text x="477" y="218" text-anchor="middle" font-size="9" font-weight="500" fill="#457b9d">RESOLUTION</text>
+                    <text x="477" y="230" text-anchor="middle" font-size="8" fill="#666">Quiet exit</text>
+                    <circle cx="480" cy="145" r="4" fill="#1a1a1a" opacity="0.4"/>
+
+                    <defs>
+                        <marker id="arrow-arc" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+                        </marker>
+                    </defs>
+                    <path d="M 100,252 C 180,240 260,236 340,238 C 400,240 460,246 520,256" fill="none" stroke="#e63946" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-arc)"/>
+                    <text x="300" y="274" text-anchor="middle" font-size="9" fill="#e63946">Eye path follows the emotional arc through the frame</text>
+                </svg>
+                <p class="visualization-caption">The emotional arc mapped onto spatial zones within a single photograph. The viewer&rsquo;s eye enters at a calm area, encounters rising tension, reaches a climactic focal point, and exits through a quieter resolution zone.</p>
+            </div>
+
+            <p>Not every photograph needs a resolved arc. Some of the most powerful street photographs end on the climax&mdash;the eye reaches the point of maximum intensity and finds no exit, no resolution. This is the visual equivalent of a story that ends mid-sentence, leaving the reader suspended in tension. It is uncomfortable, and that discomfort is the point.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#f5f0e6"/>
+                        <rect x="20" y="20" width="210" height="130" fill="#e8e2d6" rx="2"/>
+                        <path d="M 40,120 C 70,110 100,70 130,50 C 150,80 170,110 210,120" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+                        <circle cx="40" cy="120" r="4" fill="#2a9d8f"/>
+                        <circle cx="130" cy="50" r="5" fill="#e63946"/>
+                        <circle cx="210" cy="120" r="4" fill="#457b9d"/>
+                        <text x="40" y="140" font-size="7" fill="#2a9d8f">Entry</text>
+                        <text x="122" y="42" font-size="7" fill="#e63946">Peak</text>
+                        <text x="200" y="140" font-size="7" fill="#457b9d">Rest</text>
+                        <text x="125" y="170" text-anchor="middle" font-size="8" fill="#666">Satisfying, complete, resolved</text>
+                    </svg>
+                    <h4>Resolved Arc</h4>
+                    <p>The eye finds a resting place after the climax&mdash;a quiet corner, negative space, a receding figure. The viewer feels narrative completion.</p>
+                </div>
+                <div class="comparison-item">
+                    <svg viewBox="0 0 250 180">
+                        <rect x="0" y="0" width="250" height="180" fill="#f5f0e6"/>
+                        <rect x="20" y="20" width="210" height="130" fill="#e8e2d6" rx="2"/>
+                        <path d="M 40,120 C 80,100 120,60 180,35" fill="none" stroke="#e63946" stroke-width="2"/>
+                        <circle cx="40" cy="120" r="4" fill="#2a9d8f"/>
+                        <circle cx="180" cy="35" r="6" fill="#e63946"/>
+                        <line x1="185" y1="32" x2="225" y2="25" stroke="#e63946" stroke-width="1.5" stroke-dasharray="3,2"/>
+                        <text x="40" y="140" font-size="7" fill="#2a9d8f">Entry</text>
+                        <text x="172" y="28" font-size="7" fill="#e63946">Peak</text>
+                        <text x="210" y="42" font-size="7" fill="#e63946">?</text>
+                        <text x="125" y="170" text-anchor="middle" font-size="8" fill="#666">Tense, unresolved, lingering</text>
+                    </svg>
+                    <h4>Unresolved Arc</h4>
+                    <p>The climax sits at the frame&rsquo;s edge with no visual resolution. Tension persists after viewing&mdash;the image lingers in the mind.</p>
+                </div>
+            </div>
+
+            <ul class="tips-list">
+                <li><strong>Control entry points</strong> &mdash; the eye typically enters from the left or from areas of high contrast; use this to begin your arc</li>
+                <li><strong>Escalate gradually</strong> &mdash; each zone should be slightly more complex or intense than the last</li>
+                <li><strong>Place the climax off-center</strong> &mdash; a climax dead-center feels static; offset it for dynamic energy</li>
+                <li><strong>Choose resolution consciously</strong> &mdash; decide whether the story ends with comfort or with tension, then compose accordingly</li>
+                <li><strong>Use negative space for resolution</strong> &mdash; empty areas after the climax let the viewer exhale</li>
+            </ul>
         </section>
 
         <nav class="tutorial-nav">
             <a href="moment.html" class="prev">
-                <span class="label">← Previous</span>
+                <span class="label">&larr; Previous</span>
                 <span class="title">The Decisive Moment</span>
             </a>
             <a href="technique.html" class="next">
-                <span class="label">Next →</span>
+                <span class="label">Next &rarr;</span>
                 <span class="title">Technical Mastery</span>
             </a>
         </nav>
@@ -467,7 +727,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>Street Photography — A Visual Guide</p>
+            <p>Street Photography &mdash; A Visual Guide</p>
             <p class="footer-note">An educational resource for photographers</p>
         </div>
     </footer>
